@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rounds &amp; presenting · UNM Vascular Surgery Field Guide</title>
+<meta name="description" content="How to pre-round, gather the numbers, write the note, and present a vascular patient at UNM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
+<div class="scrim" id="scrim"></div>
+<div class="progress" id="progress"></div>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-head">
+      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
+        <span>
+          <p class="sb-mark">Field Guide</p>
+          <p class="sb-title">Vascular <em>Surgery</em></p>
+        </span>
+      </a>
+      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">A</span> Start here</div>
+        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
+        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
+        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
+      </div>
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
+        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
+        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
+        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
+        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
+      </div>
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
+        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
+        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
+      </div>
+    </nav>
+    <div class="sb-foot">
+      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="hero">
+      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
+        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
+      </svg>
+      <div class="hero-inner wrap">
+        <p class="eyebrow seq d1">Chapter 02 &middot; Start here</p>
+        <h1 class="title seq d2"><span class="l1">Rounds &amp;</span> <em>presenting</em></h1>
+        <p class="lede seq d3">The part of the rotation nobody formally teaches you. How to pre-round, which numbers a vascular team actually wants, how to turn them into a clean presentation, and how to write the note. Do this well and you will be trusted with more, faster.</p>
+        <div class="hero-meta seq d4">
+          <span class="chip ven"><b>Pre-round</b></span>
+          <span class="chip"><b>Get the numbers</b></span>
+          <span class="chip"><b>Present</b></span>
+          <span class="chip ven"><b>Write the note</b></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+
+      <section class="section first" id="preround" data-title="Pre-rounding">
+        <div class="sec-head reveal">
+          <span class="sec-num">CHAPTER 02</span>
+          <h2 class="sec-title">Pre-<em>rounding</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">Pre-rounding is the quiet hour before the team gathers, when you see your patients, gather their data, and decide what you think. Done properly it is the difference between presenting and reciting.</p>
+        </div>
+        <p>Arrive early enough to see every patient you are following before rounds. Work the same way each time so nothing is missed under time pressure. Pull the overnight events and the new vitals and labs from PowerChart, then go to the bedside, because the chart does not tell you that the foot is now cool or the dressing is soaked. Form an assessment and a plan for each patient before you present, even if it is wrong, because the attending is teaching you to think, not to read a screen back to them.</p>
+        <ol class="steps ven">
+          <li><span class="st">Get the list and the overnight story.</span> Note any events overnight, new consults, and anyone who went to or returned from the OR or the angiography suite.</li>
+          <li><span class="st">Pull the numbers.</span> Vitals and trends, ins and outs, the morning labs, and the status of any drips or drains. Gather them before you walk in so the bedside visit is for examining, not charting.</li>
+          <li><span class="st">See the patient and the limb.</span> Lay eyes on them, examine the relevant vascular bed, Doppler the pulses if they are not palpable, and look under the dressing if a wound or incision needs checking.</li>
+          <li><span class="st">Decide what you think.</span> Frame each patient in one line, then an assessment and a plan. Walk in ready to commit to a recommendation.</li>
+        </ol>
+      </section>
+
+      <section class="section" id="numbers" data-title="The numbers to get">
+        <div class="sec-head reveal">
+          <span class="sec-num">GET THE DATA</span>
+          <h2 class="sec-title">The numbers <em>to get</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">Every service wants vitals and labs. A vascular team also wants the limb, the lines, and the anticoagulation, because those are what change the plan. Collect these on every patient, every morning.</p>
+        </div>
+        <div class="board stagger">
+          <div class="tile">
+            <span class="t-k">Vitals</span>
+            <p class="t-h">And the trend</p>
+            <p>Temperature, heart rate and rhythm (atrial fibrillation matters here), blood pressure, and oxygen. Report the trend, not just the last value, and note blood pressures in both arms when carotid or subclavian disease is in play.</p>
+          </div>
+          <div class="tile">
+            <span class="t-k">Ins &amp; outs</span>
+            <p class="t-h">Especially urine</p>
+            <p>Fluid balance and urine output, which matter after open aneurysm repair, after contrast, and in anyone whose kidneys are at risk. Falling urine output is an early warning.</p>
+          </div>
+          <div class="tile">
+            <span class="t-k">Labs</span>
+            <p class="t-h">The vascular set</p>
+            <p>Hemoglobin and platelets (a falling platelet count raises the question of HIT), the basic metabolic panel for creatinine after contrast and potassium after revascularization, and coagulation studies if the patient is on heparin.</p>
+          </div>
+          <div class="tile">
+            <span class="t-k">Lactate</span>
+            <p class="t-h">If ischemia is possible</p>
+            <p>A rising lactate in the right setting points to ischemic tissue, whether a threatened limb or threatened bowel. Know it before rounds if it is relevant.</p>
+          </div>
+          <div class="tile art">
+            <span class="t-k">The limb</span>
+            <p class="t-h">Pulses &amp; perfusion</p>
+            <p>The pulse exam at each level, the Doppler signal where pulses are not palpable, capillary refill, and the look of the foot. This is the heart of a vascular exam and it should be specific.</p>
+          </div>
+          <div class="tile art">
+            <span class="t-k">The wound</span>
+            <p class="t-h">Incision, ulcer, flap</p>
+            <p>Incision or ulcer appearance, drainage, the dressing or wound vac, and fasciotomy sites. Look under the dressing when it matters rather than reporting yesterday's finding.</p>
+          </div>
+          <div class="tile art">
+            <span class="t-k">Lines &amp; drains</span>
+            <p class="t-h">Access &amp; output</p>
+            <p>Arterial and central lines, drain outputs, and the access site after any catheter procedure (check for hematoma, bleeding, or a new bruit).</p>
+          </div>
+          <div class="tile">
+            <span class="t-k">Anticoagulation</span>
+            <p class="t-h">Drip &amp; agents</p>
+            <p>Is the heparin drip therapeutic, and at what rate? Is the patient on aspirin and a statin? Was anticoagulation held for a planned procedure? These change the plan most mornings.</p>
+          </div>
+          <div class="tile ">
+            <span class="t-k">The basics</span>
+            <p class="t-h">Pain, diet, mobility</p>
+            <p>Pain control, diet status, mobility, and disposition. The plan for going home or to rehab starts being built on day one.</p>
+          </div>
+        </div>
+        <div class="box pearl reveal">
+          <div class="lab"><span class="dot"></span>Pearl</div>
+          <p>For a post-operative patient, anchor everything to the operation and the day. Knowing that a patient is post-operative day two from an open aneurysm repair tells you to be watching urine output, the potassium, and the first passage of stool, while post-operative day one from a carotid endarterectomy tells you to be watching the blood pressure and the neck. The <a href="operations.html">operations chapter</a> lists what to anticipate after each case.</p>
+        </div>
+      </section>
+
+      <section class="section" id="present" data-title="Presenting a patient">
+        <div class="sec-head reveal">
+          <span class="sec-num">SAY IT WELL</span>
+          <h2 class="sec-title">Presenting a <em>patient</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">A vascular presentation is organized around a vessel and the tissue it feeds, so lead with the vascular bed and the severity of the threat to it, then build the rest of the story around that.</p>
+        </div>
+        <p>The attending wants to know how worried to be and how quickly, which means your first two sentences should locate the problem and grade it. Move from the one-liner, through the vascular symptom and the pulse and perfusion exam, to the hemodynamic and cardiac status, the imaging framed as inflow, outflow, and target, and finally a clear assessment and plan.</p>
+        <ol class="steps">
+          <li><span class="st">One-line summary.</span> Age, the relevant risk factors (smoking, diabetes, prior revascularization), and the vascular problem framed by severity. Say "68-year-old smoker with rest pain and a non-healing toe ulcer, so tissue-loss CLTI," not simply "leg pain."</li>
+          <li><span class="st">The symptom, in vascular terms.</span> For arterial disease, distinguish claudication from rest pain from tissue loss. For an aneurysm, whether it is asymptomatic, symptomatic, or ruptured. For carotid disease, whether it is symptomatic or asymptomatic and when the event was.</li>
+          <li><span class="st">The pulse and perfusion exam.</span> Pulses at each level, graded consistently, the ABI or toe pressures, capillary refill, the skin and ulcer description, and the other side for comparison. This is the part that earns credibility.</li>
+          <li><span class="st">Hemodynamic and cardiac status.</span> Because the vascular patient is a cardiac patient, give the blood pressure, heart rate and rhythm, and any active cardiac, pulmonary, or renal issue bearing on operative risk.</li>
+          <li><span class="st">Imaging and the question.</span> Summarize the duplex, CTA, or angiogram as inflow, outflow, and target, then close with an assessment and a plan rather than trailing off. Ending on a recommendation is what separates a strong presentation from a weak one.</li>
+        </ol>
+
+        <div class="script reveal">
+          <p class="lab">A model post-operative presentation</p>
+          <p>This is <span class="fill">[name]</span>, a <span class="fill">[age]</span>-year-old with <span class="fill">[smoking, diabetes, CAD]</span>, now post-operative day <span class="fill">[2]</span> from a <span class="fill">[right fem-pop bypass with reversed saphenous vein]</span>. Overnight, <span class="fill">[no events; pain controlled]</span>. This morning the patient is <b>afebrile and hemodynamically stable</b>, vitals <span class="fill">[HR 78 and in sinus, BP 132 over 74]</span>, and urine output is <span class="fill">[adequate]</span>. The <span class="fill">[right]</span> leg is <b>warm and well perfused</b>, with a <span class="fill">[palpable graft pulse and a biphasic dorsalis pedis signal on Doppler]</span>, and the incision is <b>clean, dry, and intact</b>. Labs are notable for <span class="fill">[hemoglobin 10.4, creatinine 1.1, potassium 4.1]</span>. The patient is on <b>aspirin and a statin</b> and <span class="fill">[no heparin drip]</span>. Assessment is a stable post-operative day two with a <b>patent graft</b>. Plan is to <span class="fill">[advance diet, continue aspirin and statin, get out of bed today, arrange graft duplex surveillance, and plan discharge tomorrow]</span>.</p>
+        </div>
+
+        <div class="box pearl reveal">
+          <div class="lab"><span class="dot"></span>Pearl</div>
+          <p>Whenever you describe a revascularization candidate, think and speak in the language of inflow, outflow, and conduit. Naming the inflow source, the outflow target, and the conduit you would use signals that you understand the operation, not just the diagnosis.</p>
+        </div>
+      </section>
+
+      <section class="section" id="note" data-title="Writing the note">
+        <div class="sec-head reveal">
+          <span class="sec-num">DOCUMENT IT</span>
+          <h2 class="sec-title">Writing the <em>note</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">A good vascular progress note reads the way the team thinks. It is short, it is current, and it puts the limb and the perfusion exam where they belong, near the top.</p>
+        </div>
+        <ul class="clean">
+          <li><strong>Open with the operative day and the operation.</strong> "POD 2, right fem-pop bypass" orients every reader in five words.</li>
+          <li><strong>Put the focused vascular exam high in the note.</strong> Pulses by level, Doppler signals, the wound or incision, and the access site. This is the information the team is making decisions on.</li>
+          <li><strong>Report numbers that are true today.</strong> Re-pull the vitals, the ins and outs, and the labs. Never copy yesterday's exam forward; an outdated note that looks confident is dangerous.</li>
+          <li><strong>State the anticoagulation plan explicitly.</strong> Whether the heparin drip is therapeutic, whether aspirin and a statin are on board, and whether anything is held for a procedure.</li>
+          <li><strong>Close with a problem-based assessment and plan.</strong> Tie each plan to the inflow, outflow, or conduit logic where it applies, and name the disposition target.</li>
+        </ul>
+        <div class="box flag reveal">
+          <div class="lab"><span class="dot"></span>Red flag &middot; the stale exam</div>
+          <p>The most common and most dangerous documentation error on a vascular service is carrying forward a pulse exam or a wound description that is no longer true. If the note says the foot has a palpable pulse and the foot is in fact cool and pulseless, that error can delay recognition of a clotted graft. Examine, then write.</p>
+        </div>
+      </section>
+
+      <section class="section" id="or" data-title="In the operating room">
+        <div class="sec-head reveal">
+          <span class="sec-num">THE ROOM</span>
+          <h2 class="sec-title">In the operating <em>room</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">Your job as a student or junior is to be useful, unobtrusive, and anticipatory, which mostly means protecting the field, following the flow of the case, and being ready half a step before you are asked.</p>
+        </div>
+        <ul class="clean">
+          <li><strong>Scrub and glove correctly, and stay sterile.</strong> Keep your hands above the waist and in front of you, do not turn your back to the field, and tell someone immediately if you think you have contaminated rather than hoping no one noticed.</li>
+          <li><strong>Hold retraction steadily and without complaint.</strong> Exposure is the operation. A still, well-placed retractor that gives the surgeon a view of the anastomosis is a genuine contribution. Maintain the tension you were given until you are asked to change it.</li>
+          <li><strong>Follow the rhythm of the vascular case.</strong> Expect the sequence of expose, control proximal and distal, heparinize, clamp, perform the anastomosis or endarterectomy, flush, unclamp, and confirm flow, and you will understand why each instrument is being asked for.</li>
+          <li><strong>Anticipate heparin, clamps, and flushing.</strong> Know that systemic heparin precedes clamping, that flow is restored in an order that flushes debris away from the brain or the distal bed, and that the team will check an activated clotting time, so these moments will not surprise you.</li>
+          <li><strong>Know the anatomy of the case you are in.</strong> Read the operation the night before and be able to name the structures in the wound. This is precisely where the questions in the <a href="questions.html">questions chapter</a> come from, and answering in the room is far more impressive than answering in the workroom.</li>
+          <li><strong>Manage the small things.</strong> Learn to tie and to cut suture at the length the surgeon prefers, keep the field dry with suction when asked, and handle tissue gently, since rough handling of an artery or a vein graft has real consequences.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="consults" data-title="The common consults">
+        <div class="sec-head reveal">
+          <span class="sec-num">THE PAGER</span>
+          <h2 class="sec-title">The common <em>consults</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">A handful of consults make up most of the pages to a vascular service, and each has a predictable workup, so knowing the first few moves lets you start before the senior arrives. In every case the questions are how acute it is, how threatened the tissue is, and what the perfusion exam and imaging show.</p>
+        </div>
+
+        <h4><span class="pin">&raquo;</span> The acutely cold, painful leg</h4>
+        <p>Treat this as <strong>acute limb ischemia</strong> until proven otherwise, which makes it the most time-sensitive vascular consult. Run the six Ps, establish the onset and whether the patient is in atrial fibrillation or has prior claudication, examine and Doppler both legs, and <strong>start systemic heparin immediately</strong> unless contraindicated. Then grade the limb with the Rutherford acute-ischemia categories to decide whether you have time for imaging and catheter-directed therapy, or whether the threat (a category IIb limb) demands the operating room now.</p>
+
+        <h4><span class="pin">&raquo;</span> The non-healing foot ulcer</h4>
+        <p>Frame this around the triad of <strong>neuropathy, ischemia, and infection</strong>, since the management hinges on which are present. Examine pulses and obtain an <strong>ABI and toe pressures</strong> (remembering that diabetic vessels can be falsely noncompressible), probe the wound and assess for deep infection or osteomyelitis, and look for the rocker-bottom deformity of Charcot. The plan follows three threads in parallel, which are to offload and debride, to treat infection, and to revascularize if perfusion is inadequate. Tibial disease with patent pedal targets is the classic setting for distal bypass or pedal intervention.</p>
+
+        <h4><span class="pin">&raquo;</span> The asymptomatic aneurysm found on imaging</h4>
+        <p>The two questions are <strong>how big</strong> and <strong>is it symptomatic</strong>. Confirm the diameter, ask specifically about back or abdominal pain and tenderness that would reclassify it as symptomatic, and apply the repair thresholds (about 5.5 cm in men, 5.0 cm in women, rapid growth, or symptoms). Below threshold the work is surveillance ultrasound and risk-factor control, principally smoking cessation and cardiovascular optimization, while you arrange anatomy-defining CT angiography only when repair is on the table.</p>
+
+        <h4><span class="pin">&raquo;</span> The carotid bruit or asymptomatic stenosis</h4>
+        <p>Decide first whether the patient is <strong>symptomatic</strong>, meaning a stroke, TIA, or amaurosis fugax in the matching territory, because symptomatic disease is treated more aggressively and more urgently. Get a carotid duplex to grade the stenosis, ensure the patient is on optimal medical therapy (antiplatelet, statin, blood-pressure control, smoking cessation) regardless of what else is decided, and then apply the thresholds. Symptomatic stenosis at or above 50 to 70 percent generally warrants intervention, asymptomatic disease at higher grades is more selective, and the timing for symptomatic disease is usually within about two weeks of the event.</p>
+
+        <div class="box flag reveal">
+          <div class="lab"><span class="dot"></span>Red flag &middot; the consults you do not sit on</div>
+          <p>A category IIb acutely ischemic limb, a ruptured or symptomatic aneurysm, acute mesenteric ischemia with pain out of proportion, and an acute type A dissection are emergencies. For these the correct move is to start resuscitation and heparin or rate control as appropriate and to call the senior or attending at once, not to complete a leisurely workup.</p>
+        </div>
+      </section>
+
+      <div class="pagenav">
+        <a class="pagenav-a prev" href="first-day.html"><div class="dir">&larr; Previous</div><div class="nm">Your first day</div></a>
+        <a class="pagenav-a next" href="foundations.html"><div class="dir">Next &rarr;</div><div class="nm">Foundations</div></a>
+      </div>
+
+      <footer class="foot">
+        <p><b>Rounds</b></p>
+        <p>The trainee who pre-rounds thoroughly, gathers the right numbers, and presents a crisp assessment and plan is the one who gets taught and trusted. Lead with the limb, speak in inflow, outflow, and conduit, and always close on a recommendation.</p>
+        <p class="mantra">See the patient, get the numbers, commit to a plan.</p>
+      </footer>
+    </div>
+  </main>
+
+</div><!-- /.shell -->
+<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
+<script src="assets/app.js"></script>
+</body>
+</html>

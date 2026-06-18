@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home · UNM Vascular Surgery Field Guide</title>
+<meta name="description" content="A field guide to the vascular surgery service at the University of New Mexico, for students, sub-interns, and new residents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
+<div class="scrim" id="scrim"></div>
+<div class="progress" id="progress"></div>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-head">
+      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
+        <span>
+          <p class="sb-mark">Field Guide</p>
+          <p class="sb-title">Vascular <em>Surgery</em></p>
+        </span>
+      </a>
+      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">A</span> Start here</div>
+        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
+        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
+        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
+      </div>
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
+        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
+        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
+        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
+        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
+      </div>
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
+        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
+        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
+      </div>
+    </nav>
+    <div class="sb-foot">
+      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="hero cover">
+      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
+        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
+      </svg>
+      <div class="hero-inner wrap">
+        <p class="eyebrow seq d1">University of New Mexico &middot; Surgery</p>
+        <h1 class="title seq d2"><span class="l1">The Vascular</span> <em>Field Guide</em></h1>
+        <p class="lede seq d3">Everything a medical student, sub-intern, or new resident needs when joining the vascular surgery service at UNM. The anatomy and physiology you will be asked about, the presentations that fill the consult pager, the open and endovascular cases you will scrub, and how to actually function on rounds and in the operating room.</p>
+        <div class="hero-meta seq d4">
+          <span class="chip"><b data-count="9">0</b> chapters</span>
+          <span class="chip"><b data-count="12">0</b> presentations</span>
+          <span class="chip"><b data-count="11">0</b> operations</span>
+          <span class="chip"><b data-count="60" data-suffix="+">0</b> teaching questions</span>
+          <span class="chip ven"><b>Inflow &middot; Outflow &middot; Conduit</b></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="disclaimer">
+      <div class="box reveal">
+        <b>Read me first</b>
+        This is an educational orientation and study aid for trainees rotating on vascular surgery at UNM. It is not a clinical protocol and it is not official hospital policy. Thresholds, classifications, and trial data drift over time and vary by institution, so verify specifics against current society guidelines (SVS, ESVS), your attendings, and local UNM pathways before applying anything to a real patient. Logistics such as access and onboarding change often, so confirm the day-one details with your clerkship or program coordinator.
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="credit reveal">
+        <img class="avatar" src="assets/portrait.jpg" alt="Portrait of the author" width="70" height="70">
+        <div class="who">
+          <p class="ck">Compiled by</p>
+          <p class="cname">Hashim Salar</p>
+          <p class="cbio">A medical trainee with an interest in vascular surgery and interventional radiology, who put this together to make the first weeks on the service less disorienting for whoever comes next.</p>
+        </div>
+      </div>
+
+      <!-- WHO THIS IS FOR -->
+      <section class="section first" id="who" data-title="Who this is for">
+        <div class="sec-head reveal">
+          <span class="sec-num">START HERE</span>
+          <h2 class="sec-title">Who this is <em>for</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">Written for whoever walks onto the vascular service and needs to be useful quickly. Read what fits your role, and ignore the rest until it becomes relevant.</p>
+        </div>
+        <div class="aud stagger">
+          <div class="a-card">
+            <p class="who">MS3s</p>
+            <p>On your core surgery clerkship and new to the wards. Start with the first-day and rounds chapters, then read foundations before your first case.</p>
+          </div>
+          <div class="a-card">
+            <p class="who">Sub-interns</p>
+            <p>Acting interns expected to carry patients and present. Lean on rounds, presentations, and operations, and answer the teaching questions out loud.</p>
+          </div>
+          <div class="a-card">
+            <p class="who">New residents</p>
+            <p>Interns and off-service residents rotating through. The reference and endovascular chapters are the fastest on-ramp to sounding fluent.</p>
+          </div>
+          <div class="a-card">
+            <p class="who">Anyone joining</p>
+            <p>Visiting students, advanced practice providers, and rotators of every kind. The whole guide is built to get you oriented and contributing fast.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER INDEX -->
+      <section class="section" id="chapters" data-title="The chapters">
+        <div class="sec-head reveal">
+          <span class="sec-num">CONTENTS</span>
+          <h2 class="sec-title">The <em>chapters</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">Nine chapters, in roughly the order you will need them. The first three get you onto the service; the middle four are the knowledge; the last two are for the night before and the ten minutes before rounds.</p>
+        </div>
+        <div class="idx stagger">
+          <a class="idx-card ven" href="first-day.html">
+            <span class="num">01</span>
+            <h3>Your first day</h3>
+            <p>Badge and ID, scrubs, PowerChart access, parking, pagers, and who to find before rounds start.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card ven" href="rounds.html">
+            <span class="num">02</span>
+            <h3>Rounds &amp; presenting</h3>
+            <p>How to pre-round, gather the numbers a vascular team wants, write the note, and present like you belong.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card" href="foundations.html">
+            <span class="num">03</span>
+            <h3>Foundations</h3>
+            <p>Arterial and venous anatomy, hemodynamics, the exam, noninvasive testing, imaging, and anticoagulation.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card" href="presentations.html">
+            <span class="num">04</span>
+            <h3>Presentations</h3>
+            <p>PAD, CLTI, acute limb ischemia, aneurysms, carotid disease, dissection, mesenteric ischemia, and venous disease.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card" href="operations.html">
+            <span class="num">05</span>
+            <h3>Open operations</h3>
+            <p>Carotid endarterectomy, open aneurysm repair, bypass, dialysis access, amputation, and fasciotomy.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card" href="endovascular.html">
+            <span class="num">06</span>
+            <h3>Endovascular</h3>
+            <p>Access, wires and catheters, angiography, radiation and contrast, EVAR and TEVAR, stenting, and thrombectomy.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card" href="questions.html">
+            <span class="num">07</span>
+            <h3>Questions you'll be asked</h3>
+            <p>The classic teaching questions, grouped by angle, each with the answer an attending wants to hear.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+          <a class="idx-card ven" href="reference.html">
+            <span class="num">08</span>
+            <h3>Quick reference</h3>
+            <p>Every table, classification, and high-yield number in one place for the pre-round cram.</p>
+            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- MINDSET -->
+      <section class="section" id="mindset" data-title="The vascular mindset">
+        <div class="sec-head reveal">
+          <span class="sec-num">ORIENTATION</span>
+          <h2 class="sec-title">The vascular <em>mindset</em></h2>
+          <div class="rule"></div>
+          <p class="sec-intro">Before the facts, the frame. Vascular is a small, intense service with a logic of its own. Get the logic and the facts hang on it.</p>
+        </div>
+        <p>Three habits of thought will make you sound like you belong on the service.</p>
+        <p><span class="lead-in">First, everything reduces to inflow, outflow, and conduit.</span> A leg, a graft, a bypass, a fistula, all of it. Is there enough blood arriving (inflow), a healthy bed for it to drain into (outflow, or runoff), and an intact channel between the two (conduit)? When a graft clots or a wound will not heal, the question is always which of those three failed.</p>
+        <p><span class="lead-in">Second, the vascular patient is a cardiac patient who happens to have a leg or carotid problem.</span> Atherosclerosis is systemic. The person with claudication almost certainly has coronary disease too, which is why the leading cause of death after nearly every vascular operation is myocardial infarction rather than the operated territory itself. Optimize the heart, and treat the limb in that context.</p>
+        <p><span class="lead-in">Third, time is tissue.</span> Acute limb ischemia, ruptured aneurysm, acute mesenteric ischemia, a cold mottled foot after a catheterization, these are clocks running against muscle, bowel, and brain. The reflex is to anticoagulate early, image fast, and call for help before the window closes.</p>
+        <div class="box pearl reveal">
+          <div class="lab"><span class="dot"></span>Pearl</div>
+          <p>When you present a patient on this service, lead with the vascular bed, the symptom severity, the pulse exam, and the hemodynamics (ABI or duplex). An attending wants the limb characterized before the social history. Structure your thinking the way the service thinks and you will rarely be lost. The next chapter turns this into an actual presentation script.</p>
+        </div>
+
+        <h3 id="how-to-use">How to use this guide</h3>
+        <p>Read <a href="first-day.html">Your first day</a> and <a href="rounds.html">Rounds and presenting</a> before you show up, because they are the difference between a smooth first morning and a lost one. Read <a href="foundations.html">Foundations</a> and <a href="presentations.html">Presentations</a> in the first week, since they cover the language and reasoning everyone will assume you have. Skim the relevant entry in <a href="operations.html">Operations</a> or <a href="endovascular.html">Endovascular</a> the night before you scrub a given case, then re-read it after while it is fresh. <a href="questions.html">Questions you'll be asked</a> is for the ten minutes before rounds, and <a href="reference.html">Quick reference</a> is what you screenshot and keep on your phone.</p>
+        <p>The colored boxes recur throughout, and each one means something specific.</p>
+        <div class="box q-box reveal">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p>A question you will actually be asked, with the answer an attending wants to hear. If you can answer these cold, you are ahead of most rotators.</p>
+        </div>
+        <div class="box pearl reveal">
+          <div class="lab"><span class="dot"></span>Pearl</div>
+          <p>A clinical or operative point that separates someone who memorized a list from someone who understands the disease.</p>
+        </div>
+        <div class="box flag reveal">
+          <div class="lab"><span class="dot"></span>Red flag</div>
+          <p>A do-not-miss finding, an emergency, or a classic trap. These are the things that hurt patients and end rotations badly.</p>
+        </div>
+        <div class="box mnem reveal">
+          <div class="lab"><span class="dot"></span>Mnemonic</div>
+          <p>A memory hook. Use the ones that stick and ignore the rest.</p>
+        </div>
+      </section>
+
+      <div class="divider"><svg viewBox="0 0 120 24" aria-hidden="true"><path d="M0,12 L46,12 L52,3 L60,21 L66,12 L120,12" fill="none" stroke="#9b1d20" stroke-width="2"></path></svg></div>
+
+      <footer class="foot">
+        <p><b>How to use this</b></p>
+        <p>This guide distills the orientation, anatomy, presentations, operations, and questions that a trainee rotating on vascular surgery is most likely to need. It is deliberately concise and is <strong>not a clinical protocol</strong>. Read it the night before, skim it on the way in, and let the cases turn the lists into knowledge.</p>
+        <p class="mantra">Inflow, outflow, conduit, and the vascular patient is always a cardiac patient.</p>
+      </footer>
+    </div>
+  </main>
+
+</div><!-- /.shell -->
+<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
+<script src="assets/app.js"></script>
+</body>
+</html>

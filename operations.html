@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open operations · UNM Vascular Surgery Field Guide</title>
+<meta name="description" content="The open cases you will scrub: indication, key steps, the anatomy you will be asked to name, and the complications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
+<div class="scrim" id="scrim"></div>
+<div class="progress" id="progress"></div>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-head">
+      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
+        <span>
+          <p class="sb-mark">Field Guide</p>
+          <p class="sb-title">Vascular <em>Surgery</em></p>
+        </span>
+      </a>
+      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">A</span> Start here</div>
+        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
+        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
+        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
+      </div>
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
+        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
+        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
+        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
+        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
+      </div>
+      <div class="sb-group">
+        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
+        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
+        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
+      </div>
+    </nav>
+    <div class="sb-foot">
+      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="hero">
+      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
+        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
+        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
+      </svg>
+      <div class="hero-inner wrap">
+        <p class="eyebrow seq d1">Chapter 05 &middot; The knowledge</p>
+        <h1 class="title seq d2">Open <em>operations</em></h1>
+        <p class="lede seq d3">The cases you will scrub. For each: the indication, the key steps in order, the anatomy you will be asked to name while holding a retractor, and the complications to watch for afterward. Read the relevant entry the night before, then re-read it once it is fresh.</p>
+        <div class="hero-meta seq d4">
+          <span class="chip"><b>CEA</b></span>
+          <span class="chip"><b>Open AAA</b></span>
+          <span class="chip"><b>Bypass</b></span>
+          <span class="chip ven"><b>Access</b></span>
+          <span class="chip"><b>Amputation</b></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+
+      <section class="section first reveal" id="cea" data-title="Carotid endarterectomy">
+        <h3>Carotid endarterectomy (CEA)</h3>
+        <p>Removal of the atherosclerotic plaque at the carotid bifurcation to prevent stroke. The patient is positioned with the neck extended and turned away, and the incision runs along the anterior border of the sternocleidomastoid.</p>
+        <h4><span class="pin">&raquo;</span> The steps, in order</h4>
+        <ol class="steps">
+          <li><span class="st">Expose the carotid sheath.</span> Open it to find the common, internal, and external carotid arteries and the vagus nerve coursing within. Dissect with care, since manipulating the bulb can dislodge plaque.</li>
+          <li><span class="st">Heparinize, then clamp.</span> Give systemic heparin and confirm the activated clotting time before clamping the internal, common, and external carotids in a deliberate order.</li>
+          <li><span class="st">Decide on a shunt.</span> A temporary shunt can carry flow to the brain during the clamp, used routinely by some surgeons and selectively by others based on stump pressure or neuromonitoring.</li>
+          <li><span class="st">Arteriotomy and endarterectomy.</span> Open the artery, develop the plane, and remove the plaque with a smooth distal end point so no flap is left to lift.</li>
+          <li><span class="st">Close, usually with a patch.</span> A patch (bovine pericardium, Dacron, or vein) widens the lumen and lowers the restenosis rate compared with primary closure.</li>
+          <li><span class="st">Restore flow in sequence.</span> Flush and unclamp in an order that directs any debris into the <em>external</em> carotid first, away from the brain, before opening the internal carotid.</li>
+        </ol>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">Which nerves are at risk during a CEA, and what does each injury look like?</p>
+          <p class="a">The <strong>hypoglossal (CN XII)</strong>, causing tongue deviation toward the side of injury. The <strong>vagus (CN X)</strong> and its recurrent laryngeal branch, causing hoarseness. The <strong>marginal mandibular branch of the facial nerve</strong>, causing a drooped corner of the mouth. And the <strong>superior laryngeal nerve</strong>, affecting voice pitch. The hypoglossal and vagus are the classic answers.</p>
+        </div>
+        <div class="box flag">
+          <div class="lab"><span class="dot"></span>Red flag &middot; the three early disasters</div>
+          <p><strong>Neck hematoma</strong> can compress the airway fast, so an expanding neck swelling with stridor is a surgical airway emergency, and the wound may need to be opened at the bedside. <strong>Hyperperfusion syndrome</strong> (ipsilateral headache, seizures, hemorrhage) follows restoring high flow to a chronically low-flow hemisphere, and hinges on strict blood-pressure control. A new <strong>focal neurologic deficit</strong> on waking suggests an embolus or a technical flap and may mean going back to the operating room.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="open-aaa" data-title="Open AAA repair">
+        <h3>Open abdominal aortic aneurysm repair</h3>
+        <p>Replacement of the aneurysmal aorta with a prosthetic (Dacron or PTFE) tube or bifurcated graft, through either a transperitoneal or a retroperitoneal approach. It remains the durable repair, used when anatomy is unsuitable for a stent graft or in younger, fit patients.</p>
+        <h4><span class="pin">&raquo;</span> The steps, in order</h4>
+        <ol class="steps">
+          <li><span class="st">Expose the aorta.</span> Reach the neck of the aneurysm above and the iliac vessels below, identifying the renal arteries and the inferior mesenteric origin.</li>
+          <li><span class="st">Heparinize and clamp.</span> Give heparin, then apply the <strong>proximal clamp</strong> (infrarenal where possible) and the distal clamps. The moment of clamping causes a sharp rise in afterload that stresses the heart.</li>
+          <li><span class="st">Open the sac and sew the graft.</span> Open the aneurysm, control back-bleeding lumbar arteries from inside, and sew the graft to healthy aorta proximally and to the distal target.</li>
+          <li><span class="st">Reimplant vessels as needed.</span> Reattach the inferior mesenteric artery or accessory renal arteries when colonic or renal perfusion depends on them.</li>
+          <li><span class="st">Unclamp carefully, then close the sac over the graft.</span> Release the clamp gradually to blunt the drop in afterload and the washout of metabolites, then wrap the old aneurysm wall around the graft to separate it from the bowel.</li>
+        </ol>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">What happens hemodynamically at aortic cross-clamp and unclamp?</p>
+          <p class="a"><strong>Clamping</strong> sharply raises afterload and can strain the left ventricle, so it is a high-risk moment for cardiac ischemia. <strong>Unclamping</strong> causes a fall in afterload plus washout of acid and potassium from ischemic tissue, producing hypotension ("declamping shock"), which is why the surgeon and anesthesiologist coordinate a slow release with volume loading.</p>
+        </div>
+        <div class="box flag">
+          <div class="lab"><span class="dot"></span>Red flag &middot; colonic ischemia</div>
+          <p>If the inferior mesenteric artery and the internal iliac supply are interrupted without adequate collateral flow, the <strong>left colon and sigmoid</strong> can become ischemic. The warning sign is <strong>bloody diarrhea in the first days after repair</strong>. Diagnose with bedside flexible sigmoidoscopy and treat early, because transmural necrosis is lethal. The leading cause of death after open AAA repair overall remains <strong>myocardial infarction</strong>.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="evar" data-title="EVAR &amp; endoleaks">
+        <h3>EVAR &amp; endoleaks</h3>
+        <p><strong>Endovascular aneurysm repair</strong> excludes the aneurysm from within by deploying a stent graft through the femoral arteries, so the blood now flows through the graft and the sac is meant to depressurize. It is less invasive than open repair, with lower early mortality but a need for <strong>lifelong surveillance imaging</strong>. The detailed mechanics live in the <a href="endovascular.html">endovascular chapter</a>; what every trainee must know cold are the endoleaks.</p>
+        <h4><span class="pin">&raquo;</span> Endoleaks, the defining complication</h4>
+        <p>An endoleak is persistent blood flow into the aneurysm sac after stent-graft placement, which keeps the sac pressurized and at risk. The five types are a perennial question.</p>
+        <div class="tbl-wrap">
+          <table>
+            <caption>Endoleak classification</caption>
+            <thead><tr><th>Type</th><th>Source</th><th>Management</th></tr></thead>
+            <tbody>
+              <tr><td><b>I</b></td><td>Inadequate seal at the proximal (Ia) or distal (Ib) graft attachment</td><td><b>Treat</b> (high pressure): extension cuff or balloon</td></tr>
+              <tr><td><b>II</b></td><td>Retrograde backfilling from a branch (lumbar artery or the IMA). <b>Most common</b></td><td>Often <b>observe</b>; treat by embolization if the sac enlarges</td></tr>
+              <tr><td><b>III</b></td><td>Mechanical failure: a defect in the fabric or separation of graft components</td><td><b>Treat</b> (high pressure): relining</td></tr>
+              <tr><td><b>IV</b></td><td>Porosity of the graft fabric</td><td>Self-limited; observe</td></tr>
+              <tr><td><b>V</b></td><td>"Endotension": sac growth with no leak seen on imaging</td><td>Surveillance, sometimes reintervention</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">Which endoleak is the most common, and which types must you treat?</p>
+          <p class="a"><strong>Type II</strong> is the most common and is often watched if the sac is stable. <strong>Types I and III</strong> are high-pressure leaks that need treatment, because they re-pressurize the sac and carry a real rupture risk.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="bypass" data-title="Lower extremity bypass">
+        <h3>Lower extremity bypass</h3>
+        <p>Rerouting blood around an occluded segment with a graft, the embodiment of inflow, outflow, and conduit. You choose a healthy <strong>inflow</strong> source above the disease, a <strong>target (outflow)</strong> vessel with good runoff below it, and a <strong>conduit</strong> to bridge them. Common configurations are <strong>femoropopliteal</strong> (above or below the knee) and <strong>femoro-tibial or femoro-pedal (distal) bypass</strong> for more extensive disease.</p>
+        <div class="box pearl">
+          <div class="lab"><span class="dot"></span>Pearl &middot; conduit choice</div>
+          <p>The <strong>great saphenous vein</strong> is the best conduit and gives the best long-term patency, especially below the knee. Prosthetic grafts (PTFE or Dacron) work acceptably for above-knee femoropopliteal bypass but perform poorly for distal targets. This is why the team protects the saphenous vein and maps it before harvesting.</p>
+        </div>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">Reversed vs in-situ vs non-reversed saphenous vein bypass, what is the difference?</p>
+          <p class="a">All use the saphenous vein. <strong>Reversed</strong> vein is harvested and flipped so the valves do not obstruct flow. <strong>In-situ</strong> leaves the vein in its bed and the valves are cut with a valvulotome, which keeps the vein in its native size match (large proximally to the large inflow, small distally to the small target). <strong>Non-reversed translocated</strong> vein is removed and lysed of valves but reoriented. The in-situ technique's advantage is the favorable size match at each end.</p>
+        </div>
+        <div class="box flag">
+          <div class="lab"><span class="dot"></span>Red flag &middot; the early clotted graft</div>
+          <p>A bypass that loses its signal or pulse in the first hours to days has usually failed for a <strong>technical</strong> reason (a kink, a retained valve cusp, a clamp injury, or poor runoff). This is an emergency that warrants prompt return to the operating room or the angiography suite, not observation.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="access" data-title="Dialysis access">
+        <h3>Hemodialysis access</h3>
+        <p>Creating durable access for hemodialysis, almost always elective, and a large share of a vascular service's elective volume. The guiding principle is <strong>autogenous (fistula) before prosthetic (graft) before catheter</strong>, because a native arteriovenous fistula lasts longest and has the lowest infection rate.</p>
+        <div class="tbl-wrap">
+          <table>
+            <caption>Access in order of preference</caption>
+            <thead><tr><th>Option</th><th>What it is</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td><b>1. Radiocephalic AVF</b></td><td>Radial artery to cephalic vein at the wrist</td><td>Most distal, preferred first; preserves proximal sites</td></tr>
+              <tr><td><b>2. Brachiocephalic AVF</b></td><td>Brachial artery to cephalic vein at the elbow</td><td>High flow, reliable maturation</td></tr>
+              <tr><td><b>3. Brachiobasilic AVF</b></td><td>Brachial artery to a transposed basilic vein</td><td>Needs a transposition; deeper vein brought superficial</td></tr>
+              <tr><td><b>4. AV graft</b></td><td>Prosthetic bridge (PTFE) between artery and vein</td><td>When veins are inadequate; usable sooner but more thrombosis and infection</td></tr>
+              <tr><td><b>5. Tunneled catheter</b></td><td>Central venous catheter</td><td>Last resort; highest infection and central-stenosis risk</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="box mnem">
+          <div class="lab"><span class="dot"></span>Mnemonic &middot; the Rule of 6s</div>
+          <p>A fistula is generally mature and usable when it meets the <span class="word">rule of 6s</span>: a flow above <strong>600 mL/min</strong>, a diameter above <strong>6 mm</strong>, a depth less than <strong>6 mm</strong> below the skin, and at least <strong>6 cm</strong> of straight cannulation segment, by about <strong>6 weeks</strong>.</p>
+        </div>
+        <div class="box flag">
+          <div class="lab"><span class="dot"></span>Red flag &middot; steal &amp; ischemic monomelic neuropathy</div>
+          <p>An access can divert so much flow that the hand distal to it becomes ischemic, which is <strong>dialysis-associated steal syndrome</strong> (a cool, painful, pale hand, worse during dialysis). Severe cases need a flow-reducing procedure or ligation. A rarer, immediate post-operative <strong>ischemic monomelic neuropathy</strong> presents as sudden hand weakness and pain with preserved perfusion and is a surgical emergency.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="amputation" data-title="Amputations">
+        <h3>Amputations</h3>
+        <p>When tissue is nonviable or infection is uncontrollable, amputation is reconstructive, not a failure; it removes dead or septic tissue to save the patient and restore function. The level is chosen to balance <strong>healing potential</strong> (more proximal heals more reliably) against <strong>rehabilitation potential</strong> (more distal preserves function).</p>
+        <div class="tbl-wrap">
+          <table>
+            <caption>Amputation levels</caption>
+            <thead><tr><th>Level</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td><b>Toe / ray</b></td><td>For isolated digital gangrene with good perfusion proximally</td></tr>
+              <tr><td><b>Transmetatarsal (TMA)</b></td><td>Forefoot; preserves a functional weight-bearing stump</td></tr>
+              <tr><td><b>Below-knee (BKA)</b></td><td>Preferred when it will heal, because <b>preserving the knee</b> dramatically improves the odds and energy cost of walking with a prosthesis</td></tr>
+              <tr><td><b>Above-knee (AKA)</b></td><td>Heals most reliably but has the worst functional outcome; chosen when a BKA will not heal or the patient is non-ambulatory</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">Why try to preserve the knee with a below-knee amputation, and when is a guillotine amputation used?</p>
+          <p class="a">Keeping the knee joint sharply lowers the energy cost of prosthetic walking and improves the chance a patient walks again, so a BKA is favored whenever it will heal. A <strong>guillotine (open) amputation</strong> is a quick, open, two-stage approach used to control <em>active infection or wet gangrene</em>; the wound is left open to clear sepsis, then a formal closed amputation is done later.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="embolectomy" data-title="Embolectomy">
+        <h3>Embolectomy &amp; thrombectomy</h3>
+        <p>The classic operation for embolic acute limb ischemia. Through a cutdown on the common femoral artery (or the brachial artery for the arm), a <strong>Fogarty balloon catheter</strong> is passed beyond the clot, the balloon is inflated, and the catheter is withdrawn to drag the embolus out, repeated until inflow and backflow are brisk. A completion angiogram confirms the result.</p>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">What instrument is used for a surgical embolectomy, and who invented it?</p>
+          <p class="a">The <strong>Fogarty balloon catheter</strong>, developed by Thomas Fogarty. It transformed embolectomy from a major arteriotomy into a controlled extraction through a small cutdown.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="aortic-stent" data-title="TEVAR &amp; complex aortic">
+        <h3>TEVAR &amp; complex aortic repair</h3>
+        <p><strong>Thoracic endovascular aortic repair</strong> places a stent graft in the descending thoracic aorta, used for thoracic aneurysms and for complicated type B dissections. When the aneurysm involves the visceral or renal branches, <strong>fenestrated and branched grafts (FEVAR and BEVAR)</strong> preserve flow to those vessels; the device side of these is covered in the <a href="endovascular.html">endovascular chapter</a>.</p>
+        <div class="box flag">
+          <div class="lab"><span class="dot"></span>Red flag &middot; spinal cord ischemia</div>
+          <p>Covering a long segment of the thoracic aorta can interrupt the intercostal arteries that feed the spinal cord, risking <strong>paraplegia</strong>. The protective measures are a <strong>lumbar cerebrospinal fluid drain</strong> to lower the pressure around the cord and deliberate maintenance of a higher mean arterial pressure to keep spinal perfusion up. Coverage of the <strong>left subclavian artery</strong> may compromise the arm, the posterior circulation, or a prior coronary bypass that used the internal mammary, so it is often revascularized.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="fasciotomy" data-title="Fasciotomy">
+        <h3>Fasciotomy</h3>
+        <p>Releasing the fascia to relieve <strong>compartment syndrome</strong>, the limb-threatening rise in pressure within a closed muscle compartment, classically after reperfusion of an ischemic leg, after trauma, or after a fracture. The diagnosis is clinical, with <strong>pain out of proportion and pain on passive stretch</strong> as the earliest and most reliable signs.</p>
+        <div class="box q-box">
+          <div class="lab"><span class="dot"></span>Question</div>
+          <p class="q">Name the four compartments of the lower leg and the structures most at risk.</p>
+          <p class="a">The <strong>anterior</strong> (deep peroneal nerve, anterior tibial artery; injury causes foot drop), the <strong>lateral</strong> (superficial peroneal nerve), the <strong>superficial posterior</strong> (gastrocnemius and soleus), and the <strong>deep posterior</strong> (posterior tibial and peroneal vessels, tibial nerve). A standard leg fasciotomy uses <strong>two incisions</strong> to release all four.</p>
+        </div>
+        <div class="box flag">
+          <div class="lab"><span class="dot"></span>Red flag</div>
+          <p>Do not wait for pulselessness, which is a very late finding. If compartment syndrome is suspected after a revascularization or trauma, the threshold to perform a <strong>four-compartment fasciotomy</strong> is deliberately low, because the cost of a delayed release is dead muscle and a lost limb.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="other-ops" data-title="Other operations">
+        <h3>Other operations to recognize</h3>
+        <div class="cards stagger">
+          <div class="card"><span class="k">Aortobifemoral bypass</span><h5>Aortoiliac occlusive disease</h5><p>A bifurcated graft from the infrarenal aorta to both common femoral arteries, the durable open answer to Leriche-type aortoiliac disease with excellent long-term patency.</p></div>
+          <div class="card"><span class="k">Fem-fem &amp; axillofemoral</span><h5>Extra-anatomic bypass</h5><p>Routes that avoid a hostile abdomen. A <strong>femorofemoral</strong> crossover feeds one ischemic leg from the other side; an <strong>axillofemoral</strong> graft feeds the legs from the axillary artery in a patient unfit for an aortic operation.</p></div>
+          <div class="card ven"><span class="k">Open thrombectomy of a graft</span><h5>Salvaging a clotted bypass</h5><p>Reopening a thrombosed graft, often combined with fixing the underlying cause (a stenosis at the anastomosis or in the runoff) so it does not simply clot again.</p></div>
+          <div class="card ven"><span class="k">First-rib resection</span><h5>Thoracic outlet</h5><p>Decompression of the thoracic outlet for neurogenic or venous (Paget-Schroetter) syndromes, removing the first rib to free the neurovascular bundle.</p></div>
+        </div>
+      </section>
+
+      <div class="pagenav">
+        <a class="pagenav-a prev" href="presentations.html"><div class="dir">&larr; Previous</div><div class="nm">Presentations</div></a>
+        <a class="pagenav-a next" href="endovascular.html"><div class="dir">Next &rarr;</div><div class="nm">Endovascular</div></a>
+      </div>
+
+      <footer class="foot">
+        <p><b>Open operations</b></p>
+        <p>For every case, hold the same three questions: what is the indication, what are the steps in order, and what goes wrong afterward. Know the anatomy in the wound and you will answer most of what you are asked while you are scrubbed.</p>
+        <p class="mantra">Indication, steps, anatomy, complications.</p>
+      </footer>
+    </div>
+  </main>
+
+</div><!-- /.shell -->
+<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
+<script src="assets/app.js"></script>
+</body>
+</html>
