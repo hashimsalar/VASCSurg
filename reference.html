@@ -1,266 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- @head -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick reference · UNM Vascular Surgery Field Guide</title>
-<meta name="description" content="The tables, classifications, and numbers worth memorizing, pulled into one place.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick reference | Vascular Surgery Field Guide</title>
+<meta name="description" content="Every table, classification, and number worth memorizing, on one page.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.className+=' js';</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=1d2b40f6">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('vfg-theme');if(t==='dark'||t==='light')r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<!-- /@head -->
 </head>
 <body>
-<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
-<div class="scrim" id="scrim"></div>
-<div class="progress" id="progress"></div>
-<div class="shell">
-  <aside class="sidebar" id="sidebar">
-    <div class="sb-head">
-      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
-        <span>
-          <p class="sb-mark">Field Guide</p>
-          <p class="sb-title">Vascular <em>Surgery</em></p>
-        </span>
-      </a>
-      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+<!-- @nav -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-nav-open aria-controls="rail" aria-expanded="false" aria-label="Open contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#B01E2E"/><path d="M16 5v9.5c0 2.2-1.2 3.6-3 5L8.5 23.5V27M16 14.5c0 2.2 1.2 3.6 3 5l4.5 4V27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">Vascular Surgery <span>Field Guide</span></span></a>
+  <div class="topbar-actions">
+    <button class="icon-btn search-btn" type="button" data-search-open aria-label="Search the guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="lbl">Search the guide</span><kbd>/</kbd></button>
+    <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+  </div>
+</header>
+<div class="scrim" data-nav-close></div>
+<!-- /@nav -->
+<div class="frame">
+<!-- @rail -->
+<nav class="rail" id="rail" aria-label="Guide contents">
+  <div class="rail-close"><button class="icon-btn" type="button" data-nav-close aria-label="Close contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="rail-group">
+    <p class="rail-label">Start here</p>
+    <ol>
+      <li><a class="rail-link" href="index.html"><span class="rail-n">0</span>Home</a></li>
+      <li><a class="rail-link" href="first-day.html"><span class="rail-n">1</span>Your first day</a></li>
+      <li><a class="rail-link" href="rounds.html"><span class="rail-n">2</span>Rounds and presenting</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Running the service</p>
+    <ol>
+      <li><a class="rail-link" href="charting.html"><span class="rail-n">3</span>History, exam and charting</a></li>
+      <li><a class="rail-link" href="ctv-icu.html"><span class="rail-n">4</span>The CTV ICU</a></li>
+      <li><a class="rail-link" href="on-call.html"><span class="rail-n">5</span>On call and cross-cover</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">The knowledge</p>
+    <ol>
+      <li><a class="rail-link" href="foundations.html"><span class="rail-n">6</span>Foundations</a></li>
+      <li><a class="rail-link" href="presentations.html"><span class="rail-n">7</span>Presentations</a></li>
+      <li><a class="rail-link" href="operations.html"><span class="rail-n">8</span>Open operations</a></li>
+      <li><a class="rail-link" href="endovascular.html"><span class="rail-n">9</span>Endovascular</a></li>
+      <li><a class="rail-link" href="devices.html"><span class="rail-n">10</span>Wires, catheters and devices</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Sharpen up</p>
+    <ol>
+      <li><a class="rail-link" href="questions.html"><span class="rail-n">11</span>Questions you&#x27;ll be asked</a></li>
+      <li><a class="rail-link" href="reference.html" aria-current="page"><span class="rail-n">12</span>Quick reference</a></li>
+    </ol>
+  </div>
+  <p class="rail-note">Inflow, outflow, conduit. The vascular patient is always a cardiac patient.</p>
+</nav>
+<!-- /@rail -->
+<main id="main" class="page" tabindex="-1">
+  <header class="page-head">
+    <!-- @crumb -->
+<p class="crumb"><a href="index.html">Field Guide</a><span class="sep" aria-hidden="true">/</span>Sharpen up</p>
+<!-- /@crumb -->
+    <h1>Quick reference</h1>
+    <p class="summary">Every table, classification and number worth memorizing, on one page and built to be screenshotted on rounds. Each section points back to the chapter that explains it, because a number is easier to keep when you know where it comes from.</p>
+    <!-- @toc -->
+<details class="toc-inline">
+  <summary>On this page <span class="count">12 sections</span></summary>
+  <ol>
+    <li><a href="#staging">Perfusion and chronic staging</a></li>
+    <li><a href="#wifi-ref">WIfI at a glance</a></li>
+    <li><a href="#ali-ref">Acute limb ischemia</a></li>
+    <li><a href="#aorta-carotid">Aorta and carotid</a></li>
+    <li><a href="#aortic-ref">Aortic zones and endoleaks</a></li>
+    <li><a href="#duplex-ref">Duplex criteria</a></li>
+    <li><a href="#venous-ref">Venous and ulcers</a></li>
+    <li><a href="#scores-ref">Scores</a></li>
+    <li><a href="#anticoag-ref">Anticoagulant reversal</a></li>
+    <li><a href="#conduits-ref">Conduits and access</a></li>
+    <li><a href="#trials-ref">Landmark trials</a></li>
+    <li><a href="#numbers">Numbers to memorize</a></li>
+  </ol>
+</details>
+<!-- /@toc -->
+  </header>
+
+  <section class="sec" id="staging" data-title="Perfusion and chronic staging" data-bed="arterial">
+    <h2>Perfusion and chronic staging</h2>
+    <p class="sec-lede">How to grade a leg with chronic arterial disease. Explained in <a href="foundations.html#testing">Foundations</a> and <a href="presentations.html#claudication">Presentations</a>.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Ankle-brachial index</caption>
+      <thead><tr><th scope="col">ABI</th><th scope="col">Interpretation</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">&gt; 1.40</th><td>Non-compressible, calcified vessels (diabetes, kidney failure); use toe pressures</td></tr>
+        <tr><th scope="row">1.00–1.40</th><td>Normal</td></tr>
+        <tr><th scope="row">0.91–0.99</th><td>Borderline</td></tr>
+        <tr><th scope="row">0.41–0.90</th><td>Mild to moderate PAD (the usual claudication range)</td></tr>
+        <tr class="hot"><th scope="row">≤ 0.40</th><td>Severe PAD; rest pain and tissue loss are common</td></tr>
+        <tr><th scope="row">TBI &lt; 0.70</th><td>Abnormal toe-brachial index; use it when the ABI is unreliable</td></tr>
+      </tbody>
+    </table></div>
+    <p>A toe pressure (or TcPO2) under 30 mmHg predicts poor wound healing. When the resting ABI is normal but the story is claudication, an exercise ABI that falls by more than about 20 percent supports PAD.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Fontaine and Rutherford (chronic ischemia)</caption>
+      <thead><tr><th scope="col">Fontaine</th><th scope="col">Rutherford</th><th scope="col">Clinical</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">I</th><td>0</td><td>Asymptomatic</td></tr>
+        <tr><th scope="row">IIa</th><td>1</td><td>Mild claudication (walks more than about 200 m)</td></tr>
+        <tr><th scope="row">IIb</th><td>2–3</td><td>Moderate to severe claudication (under about 200 m)</td></tr>
+        <tr><th scope="row">III</th><td>4</td><td>Ischemic rest pain</td></tr>
+        <tr><th scope="row">IV</th><td>5–6</td><td>Tissue loss: minor (5, ulcer or focal gangrene) or major (6, beyond the transmetatarsal level)</td></tr>
+      </tbody>
+    </table></div>
+    <p>Rutherford 4 to 6 (Fontaine III and IV) is chronic limb-threatening ischemia, staged with WIfI below.</p>
+  </section>
+
+  <section class="sec" id="wifi-ref" data-title="WIfI at a glance" data-bed="arterial">
+    <h2>WIfI at a glance</h2>
+    <p class="sec-lede">The SVS threatened limb classification used by the Global Vascular Guidelines to stage CLTI. Grade wound, ischemia and foot infection 0 to 3 each; the combination maps to clinical stages 1 to 4, which estimate the one-year amputation risk and the likely benefit of revascularization. Use a WIfI chart or calculator for the stage. Explained in <a href="presentations.html#clti">Presentations</a>.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>W: wound</caption>
+      <thead><tr><th scope="col">Grade</th><th scope="col">Wound</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">0</th><td>No ulcer and no gangrene (ischemic rest pain only)</td></tr>
+        <tr><th scope="row">1</th><td>Small, shallow ulcer on the distal leg or foot; no exposed bone unless limited to the distal phalanx; no gangrene</td></tr>
+        <tr><th scope="row">2</th><td>Deeper ulcer with exposed bone, joint or tendon, not involving the heel, or a shallow heel ulcer without calcaneal involvement; gangrene limited to the digits</td></tr>
+        <tr><th scope="row">3</th><td>Extensive deep ulcer of the forefoot or midfoot, or a deep full-thickness heel ulcer with or without calcaneal involvement; extensive gangrene of the forefoot or midfoot, or full-thickness heel necrosis</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>I: ischemia</caption>
+      <thead><tr><th scope="col">Grade</th><th scope="col">ABI</th><th scope="col">Ankle pressure</th><th scope="col">Toe pressure or TcPO2</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">0</th><td>≥ 0.80</td><td>&gt; 100 mmHg</td><td>≥ 60 mmHg</td></tr>
+        <tr><th scope="row">1</th><td>0.60–0.79</td><td>70–100 mmHg</td><td>40–59 mmHg</td></tr>
+        <tr><th scope="row">2</th><td>0.40–0.59</td><td>50–70 mmHg</td><td>30–39 mmHg</td></tr>
+        <tr class="hot"><th scope="row">3</th><td>≤ 0.39</td><td>&lt; 50 mmHg</td><td>&lt; 30 mmHg</td></tr>
+      </tbody>
+    </table></div>
+    <p>When the vessels are calcified and the ABI or ankle pressure is unreliable, grade ischemia by toe pressure or TcPO2.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>fI: foot infection</caption>
+      <thead><tr><th scope="col">Grade</th><th scope="col">Foot infection</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">0</th><td>No signs of infection</td></tr>
+        <tr><th scope="row">1</th><td>Local infection of skin and subcutaneous tissue only; erythema 0.5 to 2 cm around the wound</td></tr>
+        <tr><th scope="row">2</th><td>Local infection with erythema over 2 cm, or involving deeper structures (abscess, osteomyelitis, septic arthritis, fasciitis); no systemic signs</td></tr>
+        <tr class="hot"><th scope="row">3</th><td>Local infection with systemic inflammatory signs: two or more of temperature over 38 or under 36 °C, heart rate over 90, respiratory rate over 20 (or PaCO2 under 32 mmHg), white count over 12,000 or under 4,000 (or 10 percent bands)</td></tr>
+      </tbody>
+    </table></div>
+    <p>Infection is present when there are at least two of: local swelling or induration, erythema, tenderness or pain, warmth, and purulent discharge. Arterial anatomy is staged separately with GLASS, which grades the femoropopliteal and infrapopliteal disease along the target path.</p>
+  </section>
+
+  <section class="sec" id="ali-ref" data-title="Acute limb ischemia" data-bed="arterial">
+    <h2>Acute limb ischemia <span class="tag urgent">Emergency</span></h2>
+    <p class="sec-lede">Grade the limb first, because the category decides how fast you move. Explained in <a href="presentations.html#ali">Presentations</a> and <a href="on-call.html#cold-leg">On call</a>.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Rutherford categories of acute limb ischemia</caption>
+      <thead><tr><th scope="col">Category</th><th scope="col">Sensory and motor loss</th><th scope="col">Doppler (artery / vein)</th><th scope="col">Implication</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">I, viable</th><td>None; none</td><td>Audible / audible</td><td>Not immediately threatened; time to image</td></tr>
+        <tr><th scope="row">IIa, marginally threatened</th><td>Minimal (toes) or none; none</td><td>Often inaudible / audible</td><td>Salvageable if treated promptly</td></tr>
+        <tr class="hot"><th scope="row">IIb, immediately threatened</th><td>More than toes, with rest pain; mild to moderate weakness</td><td>Usually inaudible / audible</td><td>Salvageable only with immediate revascularization</td></tr>
+        <tr><th scope="row">III, irreversible</th><td>Profound, anesthetic; paralysis, rigor</td><td>Inaudible / inaudible</td><td>Major tissue loss or permanent nerve damage; primary amputation</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Embolic versus thrombotic occlusion</caption>
+      <thead><tr><th scope="col">Feature</th><th scope="col">Embolic</th><th scope="col">Thrombotic</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Onset</th><td>Sudden, dramatic</td><td>More gradual, acute on chronic</td></tr>
+        <tr><th scope="row">Source and history</th><td>Heart (atrial fibrillation, mural thrombus after MI); no prior claudication</td><td>Plaque or graft; known claudication or PAD</td></tr>
+        <tr><th scope="row">Other leg</th><td>Normal pulses</td><td>Often diminished</td></tr>
+        <tr><th scope="row">Classic site</th><td>Common femoral bifurcation</td><td>Site of prior stenosis or graft</td></tr>
+        <tr><th scope="row">Collaterals</th><td>Few (no time to form)</td><td>Often well developed</td></tr>
+        <tr><th scope="row">Usual treatment</th><td>Fogarty embolectomy</td><td>Imaging, then lysis, endovascular therapy or bypass</td></tr>
+      </tbody>
+    </table></div>
+
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: the 6 Ps</p>
+      <p>Pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia. Paresthesia and paralysis are the late, ominous signs. Start heparin the moment acute limb ischemia is suspected, unless it is contraindicated.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="aorta-carotid" data-title="Aorta and carotid" data-bed="arterial">
+    <h2>Aorta and carotid</h2>
+    <p class="sec-lede">Repair thresholds, dissection and carotid revascularization. Explained in <a href="presentations.html#aaa">Presentations</a> (aneurysm, <a href="presentations.html#dissection">dissection</a> and <a href="presentations.html#carotid">carotid</a>).</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Aneurysm repair thresholds</caption>
+      <thead><tr><th scope="col">Trigger</th><th scope="col">Threshold</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Aneurysm definition (infrarenal)</th><td>≥ 3.0 cm, or 1.5 times the expected normal diameter</td></tr>
+        <tr><th scope="row">AAA, men</th><td>≥ 5.5 cm</td></tr>
+        <tr><th scope="row">AAA, women</th><td>≥ 5.0 cm (SVS: consider from 5.0 to 5.4 cm)</td></tr>
+        <tr><th scope="row">Rapid growth</th><td>≥ 1 cm in a year (some also use 0.5 cm in 6 months)</td></tr>
+        <tr class="hot"><th scope="row">Symptomatic or ruptured</th><td>Any size</td></tr>
+        <tr><th scope="row">Common iliac aneurysm</th><td>≥ 3.5 cm</td></tr>
+        <tr><th scope="row">Popliteal aneurysm</th><td>≥ 2.0 cm, or smaller with mural thrombus</td></tr>
+        <tr><th scope="row">Splenic artery aneurysm</th><td>≥ 3 cm, growing or symptomatic; any size in a woman of childbearing potential</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Aortic dissection</caption>
+      <thead><tr><th scope="col">Stanford</th><th scope="col">DeBakey</th><th scope="col">Involves</th><th scope="col">Default</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">A</th><td>I</td><td>Ascending, arch and descending</td><td>Emergency surgery</td></tr>
+        <tr class="hot"><th scope="row">A</th><td>II</td><td>Ascending only</td><td>Emergency surgery</td></tr>
+        <tr><th scope="row">B</th><td>III</td><td>Descending only, beyond the left subclavian</td><td>Anti-impulse therapy first; TEVAR if complicated</td></tr>
+      </tbody>
+    </table></div>
+    <p>Complicated type B means rupture or malperfusion; most definitions add refractory pain or hypertension and rapid expansion. Anti-impulse targets (2022 ACC/AHA) are a heart rate of 60 to 80 and a systolic pressure under 120 mmHg, beta-blocker first; older teaching used a heart rate under 60. The SVS/STS reporting standards time a dissection as hyperacute (under 24 hours), acute (1 to 14 days), subacute (15 to 90 days) or chronic, and describe its extent using the aortic zones below.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Carotid revascularization</caption>
+      <thead><tr><th scope="col">Group</th><th scope="col">Stenosis</th><th scope="col">Recommendation</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">Symptomatic</th><td>70–99%</td><td>Clear benefit; treat within about 2 weeks of the event</td></tr>
+        <tr><th scope="row">Symptomatic</th><td>50–69%</td><td>Moderate, individualized benefit</td></tr>
+        <tr><th scope="row">Symptomatic</th><td>&lt; 50%</td><td>Medical therapy</td></tr>
+        <tr><th scope="row">Asymptomatic</th><td>≥ 60–70%</td><td>Selective: low procedural risk and good life expectancy; intensive medical therapy for everyone</td></tr>
+      </tbody>
+    </table></div>
+    <p>Intervention assumes a perioperative stroke and death rate under about 6 percent for symptomatic and 3 percent for asymptomatic patients. Duplex grading is in <a href="#duplex-ref">Duplex criteria</a>; CREST-2 is in <a href="#trials-ref">Landmark trials</a>.</p>
+  </section>
+
+  <section class="sec" id="aortic-ref" data-title="Aortic zones and endoleaks" data-bed="arterial">
+    <h2>Aortic zones, surveillance and endoleaks</h2>
+    <p class="sec-lede">The vocabulary of TEVAR planning, aneurysm follow-up and the post-EVAR scan. Explained in <a href="endovascular.html#evar-tevar">Endovascular</a> and <a href="operations.html#evar">Open operations</a>.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Arch landing zones (Ishimaru)</caption>
+      <thead><tr><th scope="col">Zone</th><th scope="col">Location</th><th scope="col">Landing here means</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">0</th><td>Ascending aorta, up to and including the innominate origin</td><td>All arch branches covered; needs debranching or a branched or total arch repair</td></tr>
+        <tr><th scope="row">1</th><td>Between the innominate and left common carotid, covering the left carotid origin</td><td>Left carotid (and usually left subclavian) revascularization</td></tr>
+        <tr><th scope="row">2</th><td>Between the left common carotid and left subclavian, covering the left subclavian origin</td><td>Left subclavian covered; usually revascularized electively</td></tr>
+        <tr><th scope="row">3</th><td>Proximal descending thoracic aorta just beyond the left subclavian</td><td>No arch branch covered</td></tr>
+        <tr><th scope="row">4</th><td>Descending thoracic aorta beyond zone 3</td><td>No arch branch covered</td></tr>
+      </tbody>
+    </table></div>
+    <p>Left subclavian revascularization is essential when the left internal mammary feeds a coronary graft, the left vertebral is dominant, or there is a left arm dialysis access. The SVS/STS reporting standards continue the numbering down the aorta to the external iliac (zones 5 to 11).</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>AAA surveillance intervals (SVS 2018)</caption>
+      <thead><tr><th scope="col">Diameter</th><th scope="col">Repeat imaging</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">2.5–2.9 cm</th><td>Rescreen in about 10 years</td></tr>
+        <tr><th scope="row">3.0–3.9 cm</th><td>Every 3 years</td></tr>
+        <tr><th scope="row">4.0–4.9 cm</th><td>Every 12 months</td></tr>
+        <tr><th scope="row">5.0–5.4 cm</th><td>Every 6 months</td></tr>
+      </tbody>
+    </table></div>
+    <p>ESVS intervals differ slightly; follow the local protocol. After EVAR, the SVS suggests imaging in the first month and at 12 months, then yearly duplex if there is no endoleak and the sac is stable.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Endoleaks after EVAR</caption>
+      <thead><tr><th scope="col">Type</th><th scope="col">Source</th><th scope="col">Action</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">I</th><td>Seal failure at an attachment site: Ia proximal, Ib distal, Ic iliac occluder</td><td>Treat promptly; the sac is pressurized</td></tr>
+        <tr><th scope="row">II</th><td>Back-filling from lumbar arteries or the IMA; the most common</td><td>Observe; treat if the sac keeps growing</td></tr>
+        <tr class="hot"><th scope="row">III</th><td>Component separation or fabric defect</td><td>Treat promptly; the sac is pressurized</td></tr>
+        <tr><th scope="row">IV</th><td>Graft fabric porosity, seen at completion</td><td>Self-limited once anticoagulation wears off</td></tr>
+        <tr><th scope="row">V</th><td>Endotension: sac growth with no visible leak</td><td>Closer surveillance; reintervene if enlarging</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="sec" id="duplex-ref" data-title="Duplex criteria" data-bed="arterial">
+    <h2>Duplex criteria</h2>
+    <p class="sec-lede">Velocity thresholds for the two duplex reports you will read most. Criteria vary by lab and by machine, and accredited labs validate their own, so quote the category on the report and check your lab's criteria before quoting a number.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Internal carotid stenosis (SRU consensus, 2003)</caption>
+      <thead><tr><th scope="col">Stenosis</th><th scope="col">ICA peak systolic velocity</th><th scope="col">Supporting findings</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Normal</th><td>&lt; 125 cm/s</td><td>No visible plaque; ICA/CCA ratio &lt; 2.0; EDV &lt; 40 cm/s</td></tr>
+        <tr><th scope="row">&lt; 50%</th><td>&lt; 125 cm/s</td><td>Visible plaque; ratio &lt; 2.0; EDV &lt; 40 cm/s</td></tr>
+        <tr><th scope="row">50–69%</th><td>125–230 cm/s</td><td>Ratio 2.0–4.0; EDV 40–100 cm/s</td></tr>
+        <tr class="hot"><th scope="row">≥ 70%, short of near occlusion</th><td>&gt; 230 cm/s</td><td>Ratio &gt; 4.0; EDV &gt; 100 cm/s</td></tr>
+        <tr><th scope="row">Near occlusion</th><td>High, low or undetectable</td><td>Markedly narrowed lumen on color Doppler; ratio and EDV unreliable</td></tr>
+        <tr><th scope="row">Occlusion</th><td>Undetectable</td><td>No patent lumen</td></tr>
+      </tbody>
+    </table></div>
+    <p>Peak systolic velocity and visible plaque are the primary criteria; the ratio and end-diastolic velocity (EDV) support them. A contralateral occlusion raises velocities on the open side, and stented arteries need their own, higher thresholds.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Infrainguinal vein graft surveillance</caption>
+      <thead><tr><th scope="col">Category</th><th scope="col">Duplex findings</th><th scope="col">Action</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Normal</th><td>PSV &lt; 180 cm/s, velocity ratio &lt; 2.0, mid-graft velocity &gt; 45 cm/s</td><td>Routine surveillance</td></tr>
+        <tr><th scope="row">Moderate stenosis</th><td>PSV 180–300 cm/s, ratio &gt; 2.0</td><td>Repeat duplex in weeks; intervene if progressing</td></tr>
+        <tr class="hot"><th scope="row">High risk</th><td>PSV &gt; 300 cm/s, ratio &gt; 3.5, mid-graft velocity &lt; 45 cm/s, or ABI drop &gt; 0.15</td><td>Angiography and repair before the graft occludes</td></tr>
+      </tbody>
+    </table></div>
+    <p>The velocity ratio compares the peak systolic velocity at the lesion with the segment just upstream. Vein graft surveillance commonly runs at a baseline study soon after surgery, then about 3, 6 and 12 months, then yearly; a failing graft is far easier to save than a failed one. In a native artery, a ratio of 2.0 or more generally means a stenosis of 50 percent or more.</p>
+  </section>
+
+  <section class="sec" id="venous-ref" data-title="Venous and ulcers" data-bed="both">
+    <h2>Venous and ulcers</h2>
+    <p class="sec-lede">The venous classification and the ulcer comparison. Explained in <a href="presentations.html#cvi">Presentations</a> and <a href="foundations.html#venous">Foundations</a>.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>CEAP clinical class (2020 revision)</caption>
+      <thead><tr><th scope="col">Class</th><th scope="col">Finding</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">C0</th><td>No visible or palpable venous disease</td></tr>
+        <tr><th scope="row">C1</th><td>Telangiectasias or reticular veins</td></tr>
+        <tr><th scope="row">C2</th><td>Varicose veins (C2r if recurrent)</td></tr>
+        <tr><th scope="row">C3</th><td>Edema</td></tr>
+        <tr><th scope="row">C4</th><td>Skin changes: C4a pigmentation or eczema; C4b lipodermatosclerosis or atrophie blanche; C4c corona phlebectatica</td></tr>
+        <tr><th scope="row">C5</th><td>Healed venous ulcer</td></tr>
+        <tr><th scope="row">C6</th><td>Active venous ulcer (C6r if recurrent)</td></tr>
+      </tbody>
+    </table></div>
+    <p>E, A and P add etiology (primary, secondary, congenital), anatomy (superficial, deep, perforator) and pathophysiology (reflux, obstruction). A suffix of s or a marks the limb as symptomatic or asymptomatic.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Venous versus arterial ulcer</caption>
+      <thead><tr><th scope="col">Feature</th><th scope="col">Venous</th><th scope="col">Arterial</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Location</th><td>Medial malleolus (gaiter area)</td><td>Toes, heel, pressure points, lateral malleolus</td></tr>
+        <tr><th scope="row">Appearance</th><td>Shallow, irregular, exudative, granulating</td><td>Punched-out, dry, pale base</td></tr>
+        <tr><th scope="row">Pain</th><td>Mild; better with elevation</td><td>Severe; worse with elevation, better dependent</td></tr>
+        <tr><th scope="row">Surrounding skin</th><td>Hemosiderin staining, lipodermatosclerosis, warm</td><td>Shiny, hairless, cool</td></tr>
+        <tr><th scope="row">Pulses</th><td>Present</td><td>Diminished or absent</td></tr>
+        <tr><th scope="row">Cornerstone</th><td>Compression, after excluding arterial disease</td><td>Revascularization</td></tr>
+      </tbody>
+    </table></div>
+
+    <aside class="note flag">
+      <p class="note-label">Red flag</p>
+      <p>Confirm arterial inflow with an ABI before compressing any leg, because compressing an ischemic limb can cause tissue loss. Full compression is generally used when the ABI is above about 0.8; reduced compression may be used down to about 0.5 under specialist supervision, and compression is avoided below that. Thresholds vary between guidelines.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="scores-ref" data-title="Scores">
+    <h2>Scores</h2>
+    <p class="sec-lede">Three scores you will be asked to calculate on the spot: DVT probability, HIT probability and cardiac risk before surgery.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Wells score for DVT</caption>
+      <thead><tr><th scope="col">Criterion</th><th scope="col">Points</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Active cancer (treated within 6 months, or palliative)</th><td>+1</td></tr>
+        <tr><th scope="row">Paralysis, paresis or recent plaster cast of the leg</th><td>+1</td></tr>
+        <tr><th scope="row">Bedridden 3 days or more, or major surgery within 12 weeks</th><td>+1</td></tr>
+        <tr><th scope="row">Localized tenderness along the deep veins</th><td>+1</td></tr>
+        <tr><th scope="row">Entire leg swollen</th><td>+1</td></tr>
+        <tr><th scope="row">Calf 3 cm or more larger than the other side (10 cm below the tibial tuberosity)</th><td>+1</td></tr>
+        <tr><th scope="row">Pitting edema confined to the symptomatic leg</th><td>+1</td></tr>
+        <tr><th scope="row">Collateral superficial veins (not varicose)</th><td>+1</td></tr>
+        <tr><th scope="row">Previously documented DVT</th><td>+1</td></tr>
+        <tr><th scope="row">Alternative diagnosis at least as likely</th><td>−2</td></tr>
+      </tbody>
+    </table></div>
+    <p>A score of 2 or more means DVT is likely: get a duplex. Under 2 means unlikely: a negative high-sensitivity D-dimer rules it out without imaging.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>4T score for heparin-induced thrombocytopenia</caption>
+      <thead><tr><th scope="col">T</th><th scope="col">2 points</th><th scope="col">1 point</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Thrombocytopenia</th><td>Fall over 50% and nadir 20 or more (×10⁹/L)</td><td>Fall of 30–50%, or nadir 10–19</td></tr>
+        <tr><th scope="row">Timing</th><td>Clear onset on days 5–10, or within 1 day if heparin was given in the past 30 days</td><td>Probably days 5–10 but unclear, onset after day 10, or within 1 day with heparin 30–100 days ago</td></tr>
+        <tr><th scope="row">Thrombosis</th><td>New proven thrombosis, skin necrosis at injection sites, or a systemic reaction to an IV heparin bolus</td><td>Progressive or recurrent thrombosis, red skin lesions, or suspected but unproven thrombosis</td></tr>
+        <tr><th scope="row">Other cause</th><td>None apparent</td><td>Possible</td></tr>
+      </tbody>
+    </table></div>
+    <p>Score 0 for a T when neither column fits (for example a fall under 30%, a fall before day 4 with no recent heparin, or a definite other cause). Total 0 to 3 is low probability, 4 to 5 intermediate and 6 to 8 high. At intermediate or high probability, stop all heparin, start a non-heparin anticoagulant and send the PF4 immunoassay.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Revised Cardiac Risk Index (one point each)</caption>
+      <thead><tr><th scope="col">Factor</th><th scope="col">Counts when</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">High-risk surgery</th><td>Intraperitoneal, intrathoracic or suprainguinal vascular</td></tr>
+        <tr><th scope="row">Ischemic heart disease</th><td>Prior MI, positive stress test, angina, nitrate use or pathologic Q waves</td></tr>
+        <tr><th scope="row">Heart failure</th><td>History, or signs on exam or chest film</td></tr>
+        <tr><th scope="row">Cerebrovascular disease</th><td>Prior stroke or TIA</td></tr>
+        <tr><th scope="row">Diabetes</th><td>Treated with insulin</td></tr>
+        <tr><th scope="row">Kidney disease</th><td>Creatinine over 2.0 mg/dL</td></tr>
+      </tbody>
+    </table></div>
+    <p>Two or more points means elevated risk, which prompts an assessment of functional capacity, with further testing only if it would change management. The RCRI tends to underestimate risk in vascular surgery patients, and vascular-specific tools exist.</p>
+  </section>
+
+  <section class="sec" id="anticoag-ref" data-title="Anticoagulant reversal">
+    <h2>Anticoagulant reversal at a glance</h2>
+    <p class="sec-lede">What reverses what, for bleeding or an urgent operation. Doses are the commonly taught ranges; the hospital pharmacy protocol governs. Explained in <a href="foundations.html#anticoag">Foundations</a>.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Reversal by agent</caption>
+      <thead><tr><th scope="col">Agent</th><th scope="col">Reversal</th><th scope="col">Practical points</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Unfractionated heparin</th><td>Protamine about 1 mg per 100 units given in the last 2 to 3 hours; maximum about 50 mg per dose</td><td>Give slowly: hypotension, bradycardia and anaphylaxis, more likely with prior protamine, NPH insulin or fish allergy. Recheck ACT or aPTT.</td></tr>
+        <tr><th scope="row">Enoxaparin</th><td>Protamine 1 mg per 1 mg enoxaparin within 8 hours of the dose; 0.5 mg per 1 mg at 8 to 12 hours</td><td>Only partial reversal of anti-Xa activity</td></tr>
+        <tr class="hot"><th scope="row">Warfarin</th><td>Vitamin K 5 to 10 mg IV plus 4F-PCC (dosed by INR and weight, or a fixed dose, per protocol)</td><td>PCC works in minutes, vitamin K over hours; plasma only if PCC is unavailable</td></tr>
+        <tr class="hot"><th scope="row">Apixaban, rivaroxaban</th><td>Andexanet alfa or 4F-PCC (often about 50 units/kg), per local protocol</td><td>Choice and availability vary. Time of last dose and renal function decide whether reversal is needed.</td></tr>
+        <tr><th scope="row">Dabigatran</th><td>Idarucizumab 5 g IV</td><td>Also removed by hemodialysis</td></tr>
+        <tr><th scope="row">Argatroban, bivalirudin</th><td>None; stop the infusion</td><td>Short half-lives: argatroban about 45 minutes (liver), bivalirudin about 25 minutes (kidney)</td></tr>
+        <tr><th scope="row">Alteplase (catheter-directed lysis)</th><td>Stop the infusion; cryoprecipitate and an antifibrinolytic per protocol</td><td>Check fibrinogen; stop any heparin running with it</td></tr>
+        <tr><th scope="row">Aspirin, P2Y12 inhibitors</th><td>No specific reversal</td><td>Platelet transfusion only for life-threatening bleeding or urgent surgery, per protocol; it works poorly against ticagrelor</td></tr>
+      </tbody>
+    </table></div>
+    <p>4F-PCC is four-factor prothrombin complex concentrate.</p>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Which reversal agents are stocked, how PCC is dosed, and who must approve andexanet or idarucizumab vary by hospital. Check the pharmacy protocol in PowerChart before you need it at 2 a.m.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>Before you call about reversal, know five things: the drug, the dose, the time of the last dose, the creatinine clearance and where the bleeding is. Those decide whether reversal is needed at all, and they are the first questions the senior and the pharmacist will ask.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="conduits-ref" data-title="Conduits and access" data-bed="both">
+    <h2>Conduits and access</h2>
+    <p class="sec-lede">The defaults worth stating without hesitation. Explained in <a href="operations.html#bypass">Open operations</a> (bypass and <a href="operations.html#access">dialysis access</a>).</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Bypass conduit, in order of preference</caption>
+      <thead><tr><th scope="col">Conduit</th><th scope="col">When and why</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Ipsilateral great saphenous vein</th><td>First choice for infrainguinal bypass, especially below the knee; single segment, generally at least about 3 mm; reversed, non-reversed or in situ</td></tr>
+        <tr><th scope="row">Contralateral great saphenous vein</th><td>Next, unless the other leg is likely to need its own bypass</td></tr>
+        <tr><th scope="row">Arm vein, small saphenous or spliced vein</th><td>When the saphenous vein is absent or inadequate; spliced vein still beats prosthetic below the knee</td></tr>
+        <tr><th scope="row">Prosthetic (PTFE, Dacron)</th><td>Acceptable above the knee and for aortic and iliac reconstruction; poor patency to below-knee and tibial targets</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Dialysis access, in order of preference</caption>
+      <thead><tr><th scope="col">Access</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Radiocephalic fistula (Brescia-Cimino)</th><td>Wrist; non-dominant arm and most distal site first</td></tr>
+        <tr><th scope="row">Brachiocephalic fistula</th><td>Elbow; when the forearm vessels are unsuitable</td></tr>
+        <tr><th scope="row">Brachiobasilic fistula with transposition</th><td>The deep basilic vein is brought to the surface, in one or two stages</td></tr>
+        <tr><th scope="row">Arteriovenous graft</th><td>When no vein is suitable; usable sooner (about 2 to 3 weeks, or within days for early-cannulation grafts) but lower long-term patency and more infection</td></tr>
+        <tr class="hot"><th scope="row">Tunneled catheter</th><td>Last resort or bridge; highest infection and central venous stenosis risk</td></tr>
+      </tbody>
+    </table></div>
+    <p>Fistula first, with a nuance: an autogenous fistula has the best long-term patency and lowest infection rate, but the 2019 KDOQI guideline frames access as an individualized life plan (the right access for the right patient at the right time), so a graft can be the better choice for some. Typical mapping minimums are a vein of about 2.5 mm and an artery of about 2 mm, though thresholds vary. Save the veins: no IVs, blood draws or PICCs in the non-dominant arm of a patient with advanced kidney disease.</p>
+
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: the Rule of 6s</p>
+      <p>A fistula is ready by about 6 weeks: flow over 600 mL/min, diameter over 6 mm, depth under 6 mm, and about 6 cm of straight vein to cannulate.</p>
+    </aside>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Other defaults</caption>
+      <thead><tr><th scope="col">Decision</th><th scope="col">Default answer</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">CEA closure</th><td>Patch angioplasty over primary closure, to lower restenosis</td></tr>
+        <tr><th scope="row">Amputation level for walking</th><td>Below-knee over above-knee whenever it will heal</td></tr>
+        <tr><th scope="row">Acute embolic occlusion</th><td>Fogarty balloon embolectomy</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="sec" id="trials-ref" data-title="Landmark trials" data-bed="both">
+    <h2>Landmark trials in one line each</h2>
+    <p class="sec-lede">The headline result of each trial you will hear named on rounds. These are summaries for orientation; the details, subgroups and limitations matter when you apply them.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Carotid</caption>
+      <thead><tr><th scope="col">Trial</th><th scope="col">Headline</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">NASCET (1991, 1998)</th><td>Symptomatic stenosis: endarterectomy sharply reduced ipsilateral stroke at 70–99% (about 26% to 9% at 2 years), gave a modest benefit at 50–69%, and none below 50%.</td></tr>
+        <tr><th scope="row">ACAS (1995)</th><td>Asymptomatic stenosis of 60% or more: endarterectomy roughly halved the projected 5-year ipsilateral stroke risk (about 11% to 5%), with very low perioperative risk.</td></tr>
+        <tr><th scope="row">ACST-1 (2004, 2010)</th><td>Asymptomatic severe stenosis: immediate endarterectomy roughly halved 5-year stroke risk compared with deferral, and the benefit lasted to 10 years in patients under 75.</td></tr>
+        <tr><th scope="row">CREST (2010)</th><td>Stenting versus endarterectomy: similar overall composite outcome; more periprocedural strokes with stenting, more MIs with endarterectomy, and older patients did better with endarterectomy.</td></tr>
+        <tr><th scope="row">CREST-2 (2025)</th><td>Asymptomatic stenosis of 70% or more, against intensive medical therapy alone: adding stenting lowered the rate of stroke or death; adding endarterectomy did not show a statistically significant benefit. Event rates were low in every arm.</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Aneurysm</caption>
+      <thead><tr><th scope="col">Trial</th><th scope="col">Headline</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">EVAR-1 (2004 to 2016)</th><td>AAA of 5.5 cm or more, fit for open repair: EVAR had lower 30-day mortality, but the survival advantage was lost within a few years, with more reinterventions and higher late aneurysm-related mortality.</td></tr>
+        <tr><th scope="row">DREAM (2004, 2010)</th><td>AAA of 5 cm or more: EVAR had lower early mortality and complications, with similar long-term survival and more reinterventions.</td></tr>
+        <tr><th scope="row">OVER (2009 to 2019)</th><td>US veterans: EVAR had lower perioperative mortality, and long-term survival was similar to open repair.</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Peripheral arterial disease and antithrombotics</caption>
+      <thead><tr><th scope="col">Trial</th><th scope="col">Headline</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">BASIL (2005)</th><td>Severe limb ischemia: bypass-first and angioplasty-first had similar amputation-free survival; patients who lived beyond 2 years appeared to do better with bypass first.</td></tr>
+        <tr><th scope="row">BEST-CLI (2022)</th><td>CLTI suitable for either approach: with an adequate single-segment great saphenous vein, bypass reduced major adverse limb events or death compared with endovascular therapy; without it, outcomes were similar.</td></tr>
+        <tr><th scope="row">BASIL-2 (2023)</th><td>CLTI needing infrapopliteal revascularization: an endovascular-first strategy had better amputation-free survival than vein bypass first, driven mainly by fewer deaths.</td></tr>
+        <tr><th scope="row">COMPASS (2017)</th><td>Stable coronary or peripheral artery disease: low-dose rivaroxaban (2.5 mg twice daily) plus aspirin reduced cardiovascular death, stroke and MI, and major limb events in PAD, with more major bleeding.</td></tr>
+        <tr><th scope="row">VOYAGER PAD (2020)</th><td>After lower-extremity revascularization: rivaroxaban 2.5 mg twice daily plus aspirin reduced acute limb ischemia, major amputation, MI, ischemic stroke and cardiovascular death combined, with more bleeding.</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Venous</caption>
+      <thead><tr><th scope="col">Trial</th><th scope="col">Headline</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">EVRA (2018)</th><td>Venous leg ulcers with superficial reflux: early endovenous ablation plus compression healed ulcers faster than compression with deferred ablation.</td></tr>
+        <tr><th scope="row">ATTRACT (2017)</th><td>Acute proximal DVT: adding pharmacomechanical catheter-directed thrombolysis to anticoagulation did not prevent post-thrombotic syndrome and increased major bleeding, though it reduced its severity.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="sec" id="numbers" data-title="Numbers to memorize" data-bed="arterial">
+    <h2>Numbers worth memorizing</h2>
+    <p class="sec-lede">The figures that come up fast and are expected to be reflexive. Thresholds that already live in a table above (ABI, aneurysm repair, carotid, the Rule of 6s, protamine) are not repeated here.</p>
+    <ul class="facts">
+      <li><b>65 to 75</b><span>AAA screening age: one-time ultrasound in men who have ever smoked (the SVS adds women who have smoked)</span></li>
+      <li><b>50% / 75%</b><span>Critical stenosis: about 50 percent diameter equals about 75 percent cross-sectional area</span></li>
+      <li><b>Flow ∝ r⁴</b><span>Poiseuille: halve the radius and flow falls about sixteenfold</span></li>
+      <li><b>T ∝ P × r</b><span>Laplace: wall tension climbs as an aneurysm grows</span></li>
+      <li><b>80–100 U/kg</b><span>Intraoperative heparin before clamping, then an ACT above roughly 250 seconds</span></li>
+      <li><b>80 U/kg, 18 U/kg/h</b><span>Common weight-based heparin bolus and infusion for VTE, per local nomogram</span></li>
+      <li><b>4–6 hours</b><span>Warm ischemia skeletal muscle tolerates before irreversible injury</span></li>
+      <li><b>&lt; 30 mmHg</b><span>Compartment perfusion gradient (diastolic minus compartment pressure) that supports fasciotomy</span></li>
+      <li><b>&gt; 20 mmHg</b><span>Sustained bladder pressure that, with new organ dysfunction, defines abdominal compartment syndrome</span></li>
+      <li><b>Day 5–10</b><span>Typical onset of HIT after heparin starts; sooner with recent exposure</span></li>
+      <li><b>&lt; 90 minutes</b><span>SVS door-to-intervention target for a ruptured AAA</span></li>
+      <li><b>T12 to L4</b><span>Celiac T12, SMA L1, renals L1 to L2, IMA L3, bifurcation about L4</span></li>
+      <li><b>2 of 3</b><span>Chronic mesenteric ischemia usually needs significant disease in at least two of the celiac, SMA and IMA</span></li>
+      <li><b>1 Fr = 0.33 mm</b><span>So 3 French is about 1 mm. Catheters are sized by outer diameter, sheaths by inner</span></li>
+      <li><b>0.035 / 0.018 / 0.014</b><span>Wire platforms in inches: workhorse, small vessel, tibial</span></li>
+    </ul>
+  </section>
+
+  <!-- @pager -->
+<nav class="pager" aria-label="Chapters">
+  <a class="prev" href="questions.html" rel="prev"><span class="dir">Previous</span><span class="ttl">Questions you&#x27;ll be asked</span></a>
+</nav>
+<!-- /@pager -->
+</main>
+<!-- @aside -->
+<aside class="aside" aria-label="On this page">
+  <p class="aside-label">On this page</p>
+  <ol>
+    <li><a href="#staging" data-bed="arterial">Perfusion and chronic staging</a></li>
+    <li><a href="#wifi-ref" data-bed="arterial">WIfI at a glance</a></li>
+    <li><a href="#ali-ref" data-bed="arterial">Acute limb ischemia</a></li>
+    <li><a href="#aorta-carotid" data-bed="arterial">Aorta and carotid</a></li>
+    <li><a href="#aortic-ref" data-bed="arterial">Aortic zones and endoleaks</a></li>
+    <li><a href="#duplex-ref" data-bed="arterial">Duplex criteria</a></li>
+    <li><a href="#venous-ref" data-bed="both">Venous and ulcers</a></li>
+    <li><a href="#scores-ref">Scores</a></li>
+    <li><a href="#anticoag-ref">Anticoagulant reversal</a></li>
+    <li><a href="#conduits-ref" data-bed="both">Conduits and access</a></li>
+    <li><a href="#trials-ref" data-bed="both">Landmark trials</a></li>
+    <li><a href="#numbers" data-bed="arterial">Numbers to memorize</a></li>
+  </ol>
+</aside>
+<!-- /@aside -->
+</div>
+<!-- @footer -->
+<footer class="site-foot">
+  <div class="inner">
+    <div>
+      <p><b>An orientation and study aid, not a clinical protocol.</b> Thresholds, classifications and trial data change, and practice varies between hospitals. Check specifics against current SVS and ESVS guidance, your attendings, and local pathways before applying anything to a patient.</p>
     </div>
-    <nav class="sb-nav">
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">A</span> Start here</div>
-        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
-        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
-        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
-        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
-        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
-        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
-        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
-        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
-        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
-      </div>
-    </nav>
-    <div class="sb-foot">
-      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
+    <div>
+      <p>Compiled by <b>Hashim Salar</b>.</p>
+      <p>Content last reviewed October 2026.</p>
     </div>
-  </aside>
-  <main class="main">
-    <header class="hero">
-      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
-        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
-      </svg>
-      <div class="hero-inner wrap">
-        <p class="eyebrow seq d1">Chapter 08 &middot; Sharpen up</p>
-        <h1 class="title seq d2">Quick <em>reference</em></h1>
-        <p class="lede seq d3">Every table, classification, and high-yield number pulled into one place for the ten minutes before rounds. This is the chapter to screenshot and keep on your phone. Everything here is explained in full in the earlier chapters.</p>
-        <div class="hero-meta seq d4">
-          <span class="chip"><b>Staging</b></span>
-          <span class="chip"><b>Classifications</b></span>
-          <span class="chip ven"><b>Thresholds</b></span>
-          <span class="chip"><b>Numbers</b></span>
-        </div>
-      </div>
-    </header>
-
-    <div class="wrap">
-
-      <section class="section first reveal" id="staging" data-title="Perfusion &amp; staging">
-        <h3>Perfusion &amp; chronic staging</h3>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Ankle-brachial index</caption>
-            <thead><tr><th>ABI</th><th>Interpretation</th></tr></thead>
-            <tbody>
-              <tr><td class="mono nowrap">&gt; 1.40</td><td>Non-compressible (calcified); use toe pressures</td></tr>
-              <tr><td class="mono nowrap">1.00 to 1.40</td><td>Normal</td></tr>
-              <tr><td class="mono nowrap">0.91 to 0.99</td><td>Borderline</td></tr>
-              <tr><td class="mono nowrap">0.40 to 0.90</td><td>Mild to moderate PAD (claudication range)</td></tr>
-              <tr><td class="mono nowrap">&lt; 0.40</td><td>Severe PAD (rest pain, tissue loss)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Fontaine vs Rutherford (chronic ischemia)</caption>
-            <thead><tr><th>Fontaine</th><th>Rutherford</th><th>Clinical</th></tr></thead>
-            <tbody>
-              <tr><td>I</td><td>0</td><td>Asymptomatic</td></tr>
-              <tr><td>IIa</td><td>1</td><td>Mild claudication</td></tr>
-              <tr><td>IIb</td><td>2-3</td><td>Moderate to severe claudication</td></tr>
-              <tr><td>III</td><td>4</td><td>Ischemic rest pain</td></tr>
-              <tr><td>IV</td><td>5-6</td><td>Tissue loss (minor, then major or gangrene)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note">Toe-brachial index below 0.70 is abnormal; a toe pressure under 30 mmHg predicts poor wound healing.</p>
-      </section>
-
-      <section class="section reveal" id="ali-ref" data-title="Acute limb ischemia">
-        <h3>Acute limb ischemia</h3>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Rutherford classification of acute limb ischemia</caption>
-            <thead><tr><th>Class</th><th>Status</th><th>Sensory</th><th>Motor</th><th>Implication</th></tr></thead>
-            <tbody>
-              <tr><td>I</td><td>Viable</td><td>None</td><td>None</td><td>Not immediately threatened</td></tr>
-              <tr><td>IIa</td><td>Marginally threatened</td><td>Minimal (toes)</td><td>None</td><td>Salvageable if treated promptly</td></tr>
-              <tr><td>IIb</td><td>Immediately threatened</td><td>Beyond toes, rest pain</td><td>Mild to moderate</td><td>Salvageable only with immediate revascularization</td></tr>
-              <tr><td>III</td><td>Irreversible</td><td>Profound, anesthetic</td><td>Paralysis, rigor</td><td>Primary amputation</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Embolic vs thrombotic</caption>
-            <thead><tr><th>Feature</th><th>Embolic</th><th>Thrombotic</th></tr></thead>
-            <tbody>
-              <tr><td>Onset</td><td>Sudden, dramatic</td><td>More gradual, acute-on-chronic</td></tr>
-              <tr><td>Source</td><td>Heart (AFib, mural thrombus)</td><td>Plaque or graft</td></tr>
-              <tr><td>Prior symptoms</td><td>None</td><td>Known claudication or PAD</td></tr>
-              <tr><td>Other leg</td><td>Normal pulses</td><td>Also diseased</td></tr>
-              <tr><td>Classic site</td><td>Common femoral bifurcation</td><td>Site of prior stenosis or graft</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>The 6 Ps</div>
-          <p class="word">Pain &middot; Pallor &middot; Pulselessness &middot; Paresthesia &middot; Paralysis &middot; Poikilothermia</p>
-          <p style="margin-top:6px">Paresthesia and paralysis are the late, ominous signs. Anticoagulate the moment ALI is suspected.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="aorta-carotid" data-title="Aorta &amp; carotid">
-        <h3>Aorta &amp; carotid</h3>
-        <div class="tbl-wrap">
-          <table>
-            <caption>AAA repair thresholds</caption>
-            <thead><tr><th>Trigger</th><th>Threshold</th></tr></thead>
-            <tbody>
-              <tr><td>Diameter, men</td><td class="nowrap">at or above 5.5 cm</td></tr>
-              <tr><td>Diameter, women</td><td class="nowrap">at or above 5.0 cm</td></tr>
-              <tr><td>Rapid growth</td><td>&gt; 0.5 cm in 6 months, or 1 cm per year</td></tr>
-              <tr><td>Symptomatic</td><td>Any size</td></tr>
-              <tr><td>Definition of aneurysm</td><td>at or above 3.0 cm (infrarenal)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Aortic dissection</caption>
-            <thead><tr><th>Stanford</th><th>DeBakey</th><th>Involves</th><th>Default</th></tr></thead>
-            <tbody>
-              <tr><td>A</td><td>I, II</td><td>Ascending (with or without arch and descending)</td><td>Surgical emergency</td></tr>
-              <tr><td>B</td><td>III</td><td>Descending only</td><td>Medical first; TEVAR if complicated</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Endoleaks after EVAR</caption>
-            <thead><tr><th>Type</th><th>Source</th><th>Action</th></tr></thead>
-            <tbody>
-              <tr><td>I</td><td>Attachment-site seal failure (Ia proximal, Ib distal)</td><td>Treat</td></tr>
-              <tr><td>II</td><td>Branch backfilling (lumbar, IMA). Most common</td><td>Often observe</td></tr>
-              <tr><td>III</td><td>Fabric defect or component separation</td><td>Treat</td></tr>
-              <tr><td>IV</td><td>Graft porosity</td><td>Observe</td></tr>
-              <tr><td>V</td><td>Endotension (growth, no leak seen)</td><td>Surveil</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Carotid revascularization</caption>
-            <thead><tr><th>Group</th><th>Stenosis</th><th>Recommendation</th></tr></thead>
-            <tbody>
-              <tr><td>Symptomatic</td><td>70-99%</td><td>Clear benefit; treat within about 2 weeks</td></tr>
-              <tr><td>Symptomatic</td><td>50-69%</td><td>Moderate, individualized</td></tr>
-              <tr><td>Symptomatic</td><td>&lt; 50%</td><td>Medical therapy</td></tr>
-              <tr><td>Asymptomatic</td><td>at or above 60-70%</td><td>Selective, if low risk</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section reveal" id="venous-ref" data-title="Venous &amp; ulcers">
-        <h3>Venous &amp; ulcers</h3>
-        <div class="tbl-wrap">
-          <table>
-            <caption>CEAP clinical class</caption>
-            <thead><tr><th>Class</th><th>Finding</th></tr></thead>
-            <tbody>
-              <tr><td>C0</td><td>No visible venous disease</td></tr>
-              <tr><td>C1</td><td>Telangiectasias or reticular veins</td></tr>
-              <tr><td>C2</td><td>Varicose veins</td></tr>
-              <tr><td>C3</td><td>Edema</td></tr>
-              <tr><td>C4</td><td>Skin changes (pigmentation, lipodermatosclerosis)</td></tr>
-              <tr><td>C5</td><td>Healed ulcer</td></tr>
-              <tr><td>C6</td><td>Active venous ulcer</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Arterial vs venous ulcer</caption>
-            <thead><tr><th>Feature</th><th>Venous</th><th>Arterial</th></tr></thead>
-            <tbody>
-              <tr><td>Location</td><td>Medial malleolus</td><td>Toes, heel, pressure points</td></tr>
-              <tr><td>Appearance</td><td>Shallow, irregular, exudative</td><td>Punched-out, dry, pale base</td></tr>
-              <tr><td>Pain</td><td>Mild, better elevated</td><td>Severe, better dependent</td></tr>
-              <tr><td>Pulses</td><td>Present</td><td>Diminished or absent</td></tr>
-              <tr><td>Treatment</td><td>Compression</td><td>Revascularization</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag</div>
-          <p>Confirm arterial inflow with an ABI before compressing any leg. Compression of an ischemic limb can cause tissue loss.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="numbers" data-title="Numbers to memorize">
-        <h3>Numbers worth memorizing</h3>
-        <p>The figures that come up fast and are expected to be reflexive.</p>
-        <div class="cards stagger">
-          <div class="card"><span class="k">AAA</span><h5>at or above 3 cm</h5><p>Infrarenal aorta defined as aneurysmal at 3 cm and above.</p></div>
-          <div class="card"><span class="k">AAA repair</span><h5>5.5 / 5.0 cm</h5><p>Elective threshold: 5.5 cm in men, 5.0 cm in women, or rapid growth or symptoms.</p></div>
-          <div class="card"><span class="k">AAA screening</span><h5>65 to 75, ever smoked</h5><p>One-time screening ultrasound for men in this band with a smoking history.</p></div>
-          <div class="card ven"><span class="k">Carotid</span><h5>at or above 70%</h5><p>Symptomatic stenosis of 70 to 99 percent has clear benefit from revascularization, ideally within about 2 weeks.</p></div>
-          <div class="card"><span class="k">Critical stenosis</span><h5>50% / 75%</h5><p>Hemodynamically significant at roughly 50 percent diameter, equal to about 75 percent of cross-sectional area.</p></div>
-          <div class="card"><span class="k">Intraop heparin</span><h5>80 to 100 U/kg</h5><p>Before arterial clamping, then confirm an activated clotting time above roughly 250 seconds.</p></div>
-          <div class="card ven"><span class="k">Protamine</span><h5>1 mg / 100 U</h5><p>Approximate dose to reverse unfractionated heparin; give slowly.</p></div>
-          <div class="card"><span class="k">Muscle ischemia</span><h5>4 to 6 hours</h5><p>Window before irreversible muscle injury in acute limb ischemia.</p></div>
-          <div class="card ven"><span class="k">Fistula maturity</span><h5>Rule of 6s</h5><p>Flow over 600 mL/min, diameter over 6 mm, depth under 6 mm, 6 cm of vein, by 6 weeks.</p></div>
-          <div class="card"><span class="k">Aortic branches</span><h5>T12 to L4</h5><p>Celiac T12, SMA L1, renals L1 to L2, IMA L3, bifurcation about L4.</p></div>
-          <div class="card"><span class="k">Chronic mesenteric</span><h5>2 of 3 vessels</h5><p>Symptoms usually need significant disease in at least two of the three mesenteric arteries.</p></div>
-          <div class="card ven"><span class="k">French</span><h5>1 Fr = 0.33 mm</h5><p>So 3 French is about 1 mm. Catheter French is outer diameter; sheath French is inner.</p></div>
-          <div class="card"><span class="k">Poiseuille</span><h5>flow &prop; r&#8308;</h5><p>Flow varies with the fourth power of the radius, which is why small caliber changes matter so much.</p></div>
-        </div>
-      </section>
-
-      <div class="pagenav">
-        <a class="pagenav-a prev" href="questions.html"><div class="dir">&larr; Previous</div><div class="nm">Questions you'll be asked</div></a>
-        <a class="pagenav-a next" href="index.html"><div class="dir">Back to &rarr;</div><div class="nm">Home &amp; orientation</div></a>
-      </div>
-
-      <footer class="foot">
-        <p><b>Quick reference</b></p>
-        <p>Screenshot the tables you reach for most and keep them on your phone. Every figure here is reasoned through in the earlier chapters, so when you forget the number, go back for the why.</p>
-        <p class="mantra">Know the numbers, and know where they come from.</p>
-      </footer>
-    </div>
-  </main>
-
-</div><!-- /.shell -->
-<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
-<script src="assets/app.js"></script>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/app.js?v=52dc44bc" data-index="ec206659" defer></script>
+<!-- /@footer -->
 </body>
 </html>

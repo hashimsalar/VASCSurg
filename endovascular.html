@@ -1,287 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- @head -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Endovascular · UNM Vascular Surgery Field Guide</title>
-<meta name="description" content="Access, wires and catheters, angiography, radiation and contrast, and the full endovascular toolkit from EVAR to thrombectomy.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endovascular | Vascular Surgery Field Guide</title>
+<meta name="description" content="Access, angiography, radiation and contrast, stenting, EVAR and TEVAR, and clot management.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.className+=' js';</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=1d2b40f6">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('vfg-theme');if(t==='dark'||t==='light')r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<!-- /@head -->
 </head>
 <body>
-<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
-<div class="scrim" id="scrim"></div>
-<div class="progress" id="progress"></div>
-<div class="shell">
-  <aside class="sidebar" id="sidebar">
-    <div class="sb-head">
-      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
-        <span>
-          <p class="sb-mark">Field Guide</p>
-          <p class="sb-title">Vascular <em>Surgery</em></p>
-        </span>
-      </a>
-      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+<!-- @nav -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-nav-open aria-controls="rail" aria-expanded="false" aria-label="Open contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#B01E2E"/><path d="M16 5v9.5c0 2.2-1.2 3.6-3 5L8.5 23.5V27M16 14.5c0 2.2 1.2 3.6 3 5l4.5 4V27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">Vascular Surgery <span>Field Guide</span></span></a>
+  <div class="topbar-actions">
+    <button class="icon-btn search-btn" type="button" data-search-open aria-label="Search the guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="lbl">Search the guide</span><kbd>/</kbd></button>
+    <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+  </div>
+</header>
+<div class="scrim" data-nav-close></div>
+<!-- /@nav -->
+<div class="frame">
+<!-- @rail -->
+<nav class="rail" id="rail" aria-label="Guide contents">
+  <div class="rail-close"><button class="icon-btn" type="button" data-nav-close aria-label="Close contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="rail-group">
+    <p class="rail-label">Start here</p>
+    <ol>
+      <li><a class="rail-link" href="index.html"><span class="rail-n">0</span>Home</a></li>
+      <li><a class="rail-link" href="first-day.html"><span class="rail-n">1</span>Your first day</a></li>
+      <li><a class="rail-link" href="rounds.html"><span class="rail-n">2</span>Rounds and presenting</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Running the service</p>
+    <ol>
+      <li><a class="rail-link" href="charting.html"><span class="rail-n">3</span>History, exam and charting</a></li>
+      <li><a class="rail-link" href="ctv-icu.html"><span class="rail-n">4</span>The CTV ICU</a></li>
+      <li><a class="rail-link" href="on-call.html"><span class="rail-n">5</span>On call and cross-cover</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">The knowledge</p>
+    <ol>
+      <li><a class="rail-link" href="foundations.html"><span class="rail-n">6</span>Foundations</a></li>
+      <li><a class="rail-link" href="presentations.html"><span class="rail-n">7</span>Presentations</a></li>
+      <li><a class="rail-link" href="operations.html"><span class="rail-n">8</span>Open operations</a></li>
+      <li><a class="rail-link" href="endovascular.html" aria-current="page"><span class="rail-n">9</span>Endovascular</a></li>
+      <li><a class="rail-link" href="devices.html"><span class="rail-n">10</span>Wires, catheters and devices</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Sharpen up</p>
+    <ol>
+      <li><a class="rail-link" href="questions.html"><span class="rail-n">11</span>Questions you&#x27;ll be asked</a></li>
+      <li><a class="rail-link" href="reference.html"><span class="rail-n">12</span>Quick reference</a></li>
+    </ol>
+  </div>
+  <p class="rail-note">Inflow, outflow, conduit. The vascular patient is always a cardiac patient.</p>
+</nav>
+<!-- /@rail -->
+<main id="main" class="page" tabindex="-1">
+  <header class="page-head">
+    <!-- @crumb -->
+<p class="crumb"><a href="index.html">Field Guide</a><span class="sep" aria-hidden="true">/</span>The knowledge</p>
+<!-- /@crumb -->
+    <h1>The endovascular playbook</h1>
+    <p class="summary">How an endovascular case works from the needle to the closure: access, wires and catheters, imaging, radiation and contrast, how a peripheral intervention is planned, the treatment toolkit, aortic stent grafts, clot and embolization work, and the care of the patient before and after an angiogram. Read it before your first day in the angiography suite. The named devices are catalogued separately on Wires, catheters and devices.</p>
+    <!-- @toc -->
+<details class="toc-inline">
+  <summary>On this page <span class="count">14 sections</span></summary>
+  <ol>
+    <li><a href="#access">Vascular access</a></li>
+    <li><a href="#wires-catheters">Wires, catheters, sheaths</a></li>
+    <li><a href="#angiography">Angiography and DSA</a></li>
+    <li><a href="#ivus">IVUS and adjunct imaging</a></li>
+    <li><a href="#radiation-contrast">Radiation and contrast</a></li>
+    <li><a href="#planning">Planning an intervention</a></li>
+    <li><a href="#toolkit">The toolkit</a></li>
+    <li><a href="#evar-tevar">EVAR and TEVAR</a></li>
+    <li><a href="#aortic-zones">Aortic landing zones</a></li>
+    <li><a href="#complex">Fenestrated and branched</a></li>
+    <li><a href="#thrombolysis">Thrombolysis and thrombectomy</a></li>
+    <li><a href="#embolization">Embolization and filters</a></li>
+    <li><a href="#closure-complications">Closure and complications</a></li>
+    <li><a href="#peri-procedure">Before and after an angiogram</a></li>
+  </ol>
+</details>
+<!-- /@toc -->
+  </header>
+
+  <section class="sec" id="access" data-title="Vascular access" data-bed="arterial">
+    <h2>Getting in: vascular access</h2>
+    <p class="sec-lede">Every endovascular case starts with a needle in a vessel, and almost all of it rests on one idea, the Seldinger technique. Where and how the artery is entered decides much of what can go wrong afterward.</p>
+    <aside class="note plain">
+      <p class="note-label">Note: orientation, not technique</p>
+      <p>This page explains the concepts and vocabulary of endovascular surgery so you can follow a case, look after the patient on either side of it, and answer questions intelligently. It is not a procedural manual. Device selection, sizing, dosing and technique are the operator's decisions, governed by the patient and the device's current instructions for use.</p>
+    </aside>
+    <p>You puncture the artery with a needle, pass a guidewire through the needle into the lumen, remove the needle while leaving the wire in place, and then slide a sheath or catheter over the wire. The wire is the rail that everything else rides on. The cardinal rules are that you never let go of the wire and never advance anything against resistance.</p>
+    <p>Most operators start with a micropuncture set: a 21-gauge needle that takes a 0.018 inch wire, then a small coaxial dilator that converts the access to a standard 0.035 inch wire. A misplaced stick with a small needle does far less harm than one with a large needle.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: needle, wire, catheter, treat, close</p>
+      <p>The throughline of every case: access by Seldinger, a wire across the lesion, the right catheter to the right place, a balloon, stent or graft to treat it, and a clean closure. If you can say where in that sequence the case is, you can follow it.</p>
+    </aside>
+
+    <h3>The common femoral artery, the default door</h3>
+    <p>The common femoral artery is the workhorse access site because it is large and, crucially, it lies over the femoral head, so it can be compressed against bone afterward to stop bleeding. The safe puncture is below the inguinal ligament and above the femoral bifurcation, aiming for the artery as it crosses the middle of the femoral head on fluoroscopy. The skin crease is a poor guide; in obese patients it often lies below the bifurcation.</p>
+    <ul>
+      <li><span class="lead-in">Retrograde access.</span> The puncture points against the direction of flow, with the wire heading up toward the aorta. This is the setup for aortography, for treating the aorta and iliacs, and for crossing over to the other leg.</li>
+      <li><span class="lead-in">Antegrade access.</span> The puncture points with the direction of flow, with the wire heading down the same leg. It is used to treat disease in the thigh and below on the same side.</li>
+      <li><span class="lead-in">Contralateral “up and over.”</span> One common femoral is punctured retrograde, a catheter is walked up and over the aortic bifurcation, and the wire comes down the opposite leg to treat it.</li>
+    </ul>
+    <aside class="note flag">
+      <p class="note-label">Red flag: a stick too high or too low</p>
+      <p>Where you puncture determines how you bleed. A high stick, above the inguinal ligament, cannot be compressed against the femoral head and can bleed into the retroperitoneum, which is occult and dangerous. A low stick, into the superficial femoral or profunda below the bifurcation, predisposes to a pseudoaneurysm, an arteriovenous fistula, or thrombosis of the smaller vessel. A puncture in the common femoral over the femoral head prevents both.</p>
+    </aside>
+
+    <h3>Radial and brachial access</h3>
+    <p>The radial artery is increasingly used for visceral and some peripheral work because it has a much lower bleeding and access-site complication rate and lets the patient sit up and walk right away. The left radial is usually preferred for work below the diaphragm: it is a shorter route to the legs, and the catheter enters the arch at the left subclavian without crossing the origins of the innominate and left carotid arteries. Its limits are a small artery, which caps the sheath size, and reach, because many devices are too short to get from the wrist to below the knee.</p>
+    <p>Before radial access, many operators confirm a dual blood supply to the hand with an Allen or Barbeau test, so that the ulnar artery and palmar arch can perfuse the hand if the radial occludes, although how well these tests predict hand ischemia is debated. Heparin and an antispasmodic “cocktail” are given to prevent spasm and radial artery occlusion, and at the end a compression band is weaned off over a couple of hours while keeping the artery open.</p>
+    <p>The brachial artery is an alternative but carries a higher risk of median nerve injury and of a hematoma that compresses the nerve within the tight brachial sheath, so it is used more selectively. Large-bore upper-limb access for complex aortic work usually goes through the axillary or brachial artery, by cutdown or a carefully closed puncture.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: ultrasound guidance</p>
+      <p>Real-time ultrasound to find the common femoral artery, see its bifurcation, and watch the needle enter has become standard, because it reduces high and low sticks, inadvertent venous puncture and access complications. If you are asked how to lower access complications, “an ultrasound-guided, single-wall puncture of the common femoral artery over the femoral head” is the answer. A quick fluoroscopic look at the femoral head before the stick confirms the level.</p>
+    </aside>
+    <details class="qa">
+      <summary>How do you know, on the angiogram, that a femoral puncture is too high?</summary>
+      <div class="qa-a"><p>The inferior epigastric artery curves off the distal external iliac at about the level of the inguinal ligament. An arteriotomy at or above the lowest point of that curve is above the ligament, and therefore not compressible. A puncture over the middle of the femoral head and above the femoral bifurcation is the target.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="wires-catheters" data-title="Wires, catheters, sheaths" data-bed="arterial">
+    <h2>Wires, catheters and sheaths</h2>
+    <p class="sec-lede">These are the hand tools of the field, and understanding what each does makes a case legible. Two ideas organize everything: French sizing, and the difference between a wire, a catheter and a sheath. This section is the primer; the named products are catalogued on <a href="devices.html">Wires, catheters and devices</a>.</p>
+    <dl class="terms">
+      <div><dt>Guidewire</dt><dd>The rail. It goes first, crosses the lesion, and everything else travels over it. Its diameter is measured in inches (0.035, 0.018, 0.014).</dd></div>
+      <div><dt>Catheter</dt><dd>A long hollow tube that rides over the wire to steer it, support it, inject contrast or reach a branch. Sized in French by its outer diameter.</dd></div>
+      <div><dt>Sheath</dt><dd>A tube with a hemostatic valve that sits in the puncture, holds it open, and lets catheters and devices go in and out without bleeding or losing access. Sized in French by its inner diameter.</dd></div>
+      <div><dt>Guide catheter</dt><dd>A larger, stiffer catheter that reaches further than a short sheath and gives backup for pushing a device across a tough lesion. Like other catheters, it is sized by its outer diameter.</dd></div>
+    </dl>
+    <ul class="facts">
+      <li><b>1 Fr</b><span>about 0.33 mm, so 3 French is about 1 mm</span></li>
+      <li><b>0.035 in</b><span>the everyday workhorse wire platform</span></li>
+      <li><b>0.018 / 0.014 in</b><span>small-vessel platforms for tibial and pedal work and low-profile devices</span></li>
+    </ul>
+    <details class="qa">
+      <summary>What does “French” mean, and how does it differ for a sheath versus a catheter?</summary>
+      <div class="qa-a"><p>One French is about 0.33 mm of diameter, so 3 French is roughly 1 mm. A catheter's French is its outer diameter. A sheath's French is its inner diameter, the size of device it will accept, so a sheath always has a larger outer diameter than its stated French (typically by about 1.5 to 2 French) and makes a correspondingly larger hole in the artery.</p></div>
+    </details>
+
+    <h3>Guidewires</h3>
+    <p>Wires differ in diameter, length, stiffness, tip shape and coating. The everyday workhorse is the 0.035 inch system, while smaller 0.018 and 0.014 inch wires are used for the small tibial and pedal vessels and for low-profile devices. Length matters too: an exchange-length wire is long enough to hold onto while a whole catheter is withdrawn over it, roughly twice the length of the catheter.</p>
+    <ul>
+      <li><span class="lead-in">Hydrophilic wires.</span> Called “glide” wires in the room, they have a slippery coating and an angled or steerable tip, ideal for crossing tight or tortuous lesions. The same slipperiness lets them back out, dissect or perforate, so they are usually exchanged for a more supportive wire before bulky devices are delivered, and they are never pulled back through a metal access needle, which can shear off the coating.</li>
+      <li><span class="lead-in">Stiff and super-stiff wires.</span> Wires such as the Amplatz, and the Lunderquist for aortic work, provide the rigid rail needed to track a bulky stent graft through a tortuous iliac system. Exchanging a soft crossing wire for a stiff delivery wire, through a catheter so the wire position is never lost, is a recurring step.</li>
+      <li><span class="lead-in">Soft, atraumatic wires.</span> Wires such as a Bentson, with a long floppy tip, are used where you want to avoid injuring the vessel, for example on the first pass up a diseased iliac.</li>
+    </ul>
+    <p>Every balloon and stent is built for one wire platform, and its label lists the wire it rides on, the smallest sheath it fits through, and its shaft length. An over-the-wire device carries the wire through its whole length, which gives better push. A rapid-exchange (monorail) device lets the wire exit a short distance from the tip, so a shorter wire can be used and one person can swap devices.</p>
+
+    <h3>Catheters</h3>
+    <p>Catheters either inject contrast or select a branch. Flush catheters with a coiled pigtail tip and many side holes sit in a large vessel and deliver a big power-injected bolus for an aortogram without whipping around. Selective catheters have an end hole and preformed shapes designed to hook into specific branches: an angled or Berenstein tip for gentle selection, a Cobra shape for downgoing visceral vessels, and reverse-curve shapes such as the Simmons (Sidewinder) or SOS Omni for sharply angled or upgoing origins. Recurved shapes are also how the opposite iliac is hooked when going up and over. Low-profile support (crossing) catheters follow the wire into an occlusion to give it push.</p>
+    <p>Selective injections are made at lower rates and volumes than flush runs. A high-rate power injection through an end-hole catheter sitting in a small branch can dissect it.</p>
+
+    <h3>Sheaths and guides</h3>
+    <p>A sheath holds the puncture open and lets you exchange catheters and devices without losing access or bleeding. A guide catheter is a longer support tube that reaches further and gives backup to push a device across a tough lesion. Long sheaths do the same job from the groin: a crossover sheath parked over the aortic bifurcation supports work in the opposite leg. Most cases progress from a small diagnostic sheath to a larger one once the plan and the device size are settled.</p>
+    <p>Because sheaths are named by their inner diameter and guides by their outer diameter, a guide usually needs to be about one French size larger than the sheath the same device would need. Check the device label rather than relying on the rule.</p>
+    <details class="qa">
+      <summary>Why is a hydrophilic crossing wire usually swapped for a stiff wire before a stent graft is delivered?</summary>
+      <div class="qa-a"><p>A stent graft delivery system is large and stiff. It needs a rail that straightens a tortuous iliac and will not back out or buckle as the device is pushed. A slippery, floppy hydrophilic wire gives little support, can be pulled back as the device advances, and its tip can perforate a branch. The swap is done through a catheter so wire position across the lesion or into the aorta is never lost.</p></div>
+    </details>
+    <aside class="note plain">
+      <p class="note-label">Note: the named list</p>
+      <p>For the specific wires, catheters and sheaths you will hear called for in the room, with their sizes and uses, see <a href="devices.html#wires">wires</a>, <a href="devices.html#catheters">catheters</a> and <a href="devices.html#sheaths">sheaths</a> on the devices page.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="angiography" data-title="Angiography and DSA" data-bed="arterial">
+    <h2>Making the pictures: angiography and DSA</h2>
+    <p class="sec-lede">An angiogram is a real-time X-ray movie of contrast moving through vessels. The refinement that makes it so clear is digital subtraction angiography (DSA), which takes a plain “mask” image of the field and subtracts it from the contrast images, erasing bone and soft tissue so only the contrast-filled vessels remain.</p>
+    <details class="qa">
+      <summary>Why does a patient have to hold still for DSA, and what fixes motion on the image?</summary>
+      <div class="qa-a"><p>Subtraction assumes the mask and the contrast frames line up exactly, so any movement (including breathing or bowel gas shifting) leaves a blurred “misregistration” artifact. The operator asks for a breath-hold, and can re-mask or apply pixel shifting to realign the images.</p></div>
+    </details>
+
+    <h3>Techniques you will hear named</h3>
+    <ul>
+      <li><span class="lead-in">Road-mapping.</span> A stored contrast image is overlaid on the live fluoroscopy so the operator can steer a wire along a faint map of the vessel without continuous contrast.</li>
+      <li><span class="lead-in">Angled projections.</span> A bifurcation or an aneurysm neck often hides on a straight-on view and opens up only when the C-arm is angled. The common iliac bifurcation is usually best seen in a contralateral oblique and the common femoral bifurcation in an ipsilateral oblique. The celiac and superior mesenteric origins, which arise from the front of the aorta, are seen best on a lateral view.</li>
+      <li><span class="lead-in">Bolus chase and stepping runoff.</span> A single injection is followed down the legs as the table moves, or a series of stations is imaged from pelvis to foot.</li>
+      <li><span class="lead-in">Pressure gradients.</span> Measuring pressure above and below a borderline lesion, sometimes after a vasodilator, helps decide whether an iliac stenosis matters hemodynamically. Thresholds vary between operators.</li>
+    </ul>
+
+    <h3>A diagnostic aortogram with runoff</h3>
+    <ol class="steps">
+      <li><strong>Access and sheath.</strong> Usually a retrograde common femoral puncture on the less affected side, so the same access can go up and over to treat the worse leg.</li>
+      <li><strong>Aortogram.</strong> A flush catheter at about the level of the renal arteries (around L1) shows the renal arteries, the infrarenal aorta and the iliacs.</li>
+      <li><strong>Pelvis.</strong> The catheter is pulled down to just above the aortic bifurcation for the iliac and femoral bifurcations, with obliques as needed.</li>
+      <li><strong>Runoff.</strong> Images down both legs to the feet, including the tibial vessels and the pedal arch, comparing the two sides.</li>
+      <li><strong>Selective views.</strong> If treatment is planned, a selective catheter goes up and over for closer, lower-contrast pictures of the target leg.</li>
+    </ol>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: read it the way you present it</p>
+      <p>Describe a runoff as inflow (aorta and iliacs), outflow (common femoral, profunda, superficial femoral and popliteal) and runoff (how many tibial vessels reach the foot, and whether there is a pedal arch). A team that hears “two-vessel runoff via the anterior tibial and peroneal” knows exactly what the target options are. Arterial anatomy is reviewed in <a href="foundations.html#anatomy">Foundations</a>.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="ivus" data-title="IVUS and adjunct imaging" data-bed="both">
+    <h2>IVUS and adjunct imaging</h2>
+    <p class="sec-lede">An angiogram is a silhouette of the lumen in one plane. Intravascular ultrasound and three-dimensional imaging in the room fill in what the silhouette misses: the true size of the vessel, what the wall is made of, and where the branches are.</p>
+
+    <h3>Intravascular ultrasound (IVUS)</h3>
+    <p>IVUS is a catheter with an ultrasound transducer at its tip, run over a wire to give cross-sectional images from inside the vessel. Small catheters ride 0.014 or 0.018 inch wires for leg arteries; larger ones on 0.035 inch wires image the aorta, the iliacs and the large veins.</p>
+    <ul>
+      <li><span class="lead-in">Sizing.</span> IVUS measures the true diameter and cross-sectional area of the lumen and of the healthy reference segment. Angiography sees only the lumen in one plane and tends to under-size, so balloons and stents chosen by IVUS are often larger.</li>
+      <li><span class="lead-in">Plaque and calcium.</span> It shows how much of the circumference is calcified and how deep, which guides whether vessel preparation such as atherectomy or lithotripsy is needed.</li>
+      <li><span class="lead-in">Wire position.</span> It confirms whether a wire is in the true lumen or subintimal, which matters after crossing an occlusion and when treating aortic dissection, where the stent graft must go into the true lumen.</li>
+      <li><span class="lead-in">Checking the result.</span> After treatment it shows residual narrowing, dissection, and whether a stent is fully expanded and against the wall.</li>
+      <li><span class="lead-in">Less contrast.</span> It can replace some contrast runs, which helps patients with kidney disease.</li>
+    </ul>
+
+    <h3>Why IVUS dominates venous stenting</h3>
+    <p>Iliac vein compression (May-Thurner and other non-thrombotic iliac vein lesions) and post-thrombotic scarring are poorly seen on venography. A compressed iliac vein is flattened between the artery and the spine and spreads sideways, so a front-on venogram can make it look wide and normal; collaterals may be the only clue. IVUS shows the true cross-section, so it is used to diagnose the lesion, choose the stent diameter, and pick landing zones that cover the whole diseased segment. In the VIDIO study, venography missed a meaningful share of lesions that IVUS found. A cross-sectional area reduction of about 50 percent or more is commonly treated as significant, though thresholds vary.</p>
+
+    <h3>Cone-beam CT and fusion imaging</h3>
+    <ul>
+      <li><span class="lead-in">Cone-beam CT.</span> The C-arm spins around the patient to build a CT-like three-dimensional image on the table. It is used to check stent graft and bridging stent position and look for endoleak at the end of complex aortic repairs, and to map feeding vessels before embolization. It adds radiation dose, so it is used deliberately.</li>
+      <li><span class="lead-in">Fusion imaging.</span> The preoperative CTA is turned into a 3D model and overlaid on live fluoroscopy, registered to the bones or to a cone-beam CT. It marks the renal and visceral origins for fenestrated and branched repair and reduces contrast and radiation. Stiff wires and devices straighten and shift the aorta, so the overlay drifts and has to be checked and corrected.</li>
+    </ul>
+    <details class="qa">
+      <summary>Why can an iliac vein look normal on a venogram but be severely narrowed on IVUS?</summary>
+      <div class="qa-a"><p>The compression flattens the vein from front to back, so viewed straight on it spreads sideways and the contrast column can look wide, or just faint. A single-plane venogram is a silhouette and cannot show cross-sectional area. IVUS measures the area directly and shows the compression point, which is why it is the reference test for sizing and placing iliac vein stents.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="radiation-contrast" data-title="Radiation and contrast">
+    <h2>Respecting radiation and contrast</h2>
+    <p class="sec-lede">The two hazards unique to this room are ionizing radiation and iodinated contrast. Both are asked about constantly, partly because they are safety issues you are expected to take seriously from day one.</p>
+
+    <h3>Radiation safety and ALARA</h3>
+    <p>The governing principle is ALARA, keeping dose “as low as reasonably achievable” for both the patient and the team. Dose is controlled along three classic levers and a few practical habits.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: time, distance, shielding</p>
+      <p>Cut time (less fluoroscopy, pulsed low frame rates, last-image-hold), increase distance (scattered dose falls with the square of the distance, so a step back helps a lot), and use shielding (a lead apron, thyroid collar, leaded glasses, and table-mounted and ceiling-suspended shields). Wear your dosimeter.</p>
+    </aside>
+    <ul>
+      <li><span class="lead-in">Inverse-square law.</span> Doubling your distance from the source quarters your exposure, which is why simply stepping back during an injection is one of the most effective things you can do.</li>
+      <li><span class="lead-in">Geometry.</span> Keep the X-ray tube under the table and the detector close to the patient, and collimate the beam to the area of interest, which lowers dose and improves the image. Magnification and steep angles raise dose.</li>
+      <li><span class="lead-in">Scatter.</span> Most of the radiation reaching the team is scattered off the patient, and it is highest on the side where the beam enters, the tube side. On a steep oblique or lateral view, stand on the detector side.</li>
+      <li><span class="lead-in">Hands out of the beam.</span> Hands near the field during fluoroscopy can be in the primary beam, not just scatter.</li>
+    </ul>
+    <ul class="facts">
+      <li><b>50 mSv</b><span>US annual occupational whole-body dose limit</span></li>
+      <li><b>5 mSv</b><span>US limit to the embryo or fetus over a declared pregnancy</span></li>
+      <li><b>About 2 Gy</b><span>peak skin dose at which transient skin reddening can begin</span></li>
+      <li><b>About 5 Gy</b><span>reference air kerma often used to trigger patient skin follow-up (local thresholds vary)</span></li>
+    </ul>
+    <aside class="note flag">
+      <p class="note-label">Red flag: the pregnant or junior team member</p>
+      <p>Radiation injury is cumulative and the lens of the eye and the thyroid are particularly sensitive, which is the reason for leaded glasses and a thyroid shield; international guidance has lowered the recommended lens dose limit to 20 mSv a year averaged over five years. If you are pregnant, disclose it so additional monitoring and shielding can be arranged. Treating the dose casually because you “were only in for a minute” is exactly the attitude the badges exist to correct.</p>
+    </aside>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Where to wear the dosimeter (commonly at the collar outside the apron, sometimes with a second badge under it), how a rotating trainee gets one, the patient dose level that triggers skin follow-up, and how a pregnancy is declared to radiation safety all vary by hospital.</p>
+    </aside>
+
+    <h3>Iodinated contrast</h3>
+    <p>Iodinated contrast makes vessels visible but carries two main risks, plus one medication interaction you will be asked about.</p>
+    <dl class="terms wide">
+      <div><dt>Contrast-associated kidney injury</dt><dd>A rise in creatinine, usually within 48 to 72 hours. Risk is highest with chronic kidney disease (particularly an eGFR below 30; European guidance uses about 45 when intra-arterial contrast reaches the kidneys first, as in an aortogram), diabetes with kidney disease, dehydration, hypotension, and large or repeated contrast loads. The mitigations are to identify at-risk patients, give isotonic IV fluid when indicated, minimize the contrast volume, and avoid other nephrotoxins. In the PRESERVE trial, bicarbonate and N-acetylcysteine were no better than saline and placebo, so they are no longer recommended.</dd></div>
+      <div><dt>Allergic-like reaction</dt><dd>From hives to anaphylaxis. A patient with a prior allergic-like reaction to iodinated contrast is generally premedicated with a corticosteroid and an antihistamine, and breakthrough reactions still happen, so the team stays ready. A shellfish or “iodine” allergy is not a contrast allergy and is not by itself a reason to premedicate.</dd></div>
+      <div><dt>Metformin</dt><dd>Contrast does not interact with metformin directly, but kidney injury can lead to metformin accumulation and lactic acidosis. Under ACR guidance, patients with an eGFR of 30 or more and no acute kidney injury can continue it; those with acute kidney injury or an eGFR under 30 hold it from the time of contrast for 48 hours and restart once kidney function is confirmed stable.</dd></div>
+    </dl>
+    <details class="qa">
+      <summary>How do you image a patient with severe renal impairment or a serious contrast allergy?</summary>
+      <div class="qa-a"><p>Carbon dioxide angiography is the classic answer below the diaphragm. CO2 is injected as a contrast agent, it is not nephrotoxic and causes no allergic reaction, and it is well suited to the aorta and the legs. The critical caveat is that CO2 is not used above the diaphragm, in the arm arteries, or in the cerebral or coronary circulation, because gas can embolize to the brain or heart. IVUS, duplex guidance and small targeted doses of iodinated contrast reduce the load further. Gadolinium is no longer a recommended substitute: at angiographic doses it is itself nephrotoxic and carries a risk of nephrogenic systemic fibrosis.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="planning" data-title="Planning an intervention" data-bed="arterial">
+    <h2>Planning a peripheral intervention</h2>
+    <p class="sec-lede">Most of a peripheral intervention is decided before the needle goes in: what is being treated, from which access, how the lesion will be crossed, and what will be done once it is. Knowing the plan lets you follow the case and anticipate its problems.</p>
+
+    <h3>Read the imaging as inflow, outflow and target</h3>
+    <p>Whether the source is a duplex, a CTA or an old angiogram, describe it in the same three parts.</p>
+    <dl class="terms">
+      <div><dt>Inflow</dt><dd>The aorta, iliacs and common femoral artery. Inflow disease is fixed first, because a distal repair fed by a stenotic iliac will fail. Common femoral disease is classically treated with open endarterectomy rather than a stent, often combined with iliac stenting or distal work as a hybrid procedure.</dd></div>
+      <div><dt>Outflow</dt><dd>The profunda, superficial femoral and popliteal arteries. Note stenosis versus occlusion, length, calcium, and where the vessel reconstitutes below an occlusion.</dd></div>
+      <div><dt>Target and runoff</dt><dd>The tibial vessels and pedal arch. In chronic limb-threatening ischemia the question is which tibial artery can carry straight-line flow to the foot, ideally to the region of the wound.</dd></div>
+    </dl>
+    <ul>
+      <li><span class="lead-in">Duplex.</span> Cheap and safe, and it maps the vein for a possible bypass at the same visit. A peak systolic velocity ratio of about 2 or more across a segment suggests a stenosis of at least 50 percent. It is operator-dependent and difficult in the obese abdomen.</li>
+      <li><span class="lead-in">CTA.</span> Shows the whole tree, the calcium and the access vessels, and is the planning study for the aorta. Heavy calcium blooms in small tibial vessels and can make them look worse than they are.</li>
+      <li><span class="lead-in">Catheter angiography.</span> Still the reference standard for tibial and pedal anatomy, and usually done in the same sitting as treatment.</li>
+    </ul>
+    <p>For chronic limb-threatening ischemia, the Global Vascular Guidelines frame the decision as PLAN: patient risk, limb severity (the WIfI stage) and anatomic pattern (the GLASS stage, which grades femoropopliteal and infrapopliteal disease along the target artery path). The older TASC II A to D classes still come up for aortoiliac and femoropopliteal lesions. For patients with a usable great saphenous vein, the BEST-CLI trial favored bypass, so “endovascular first” is no longer automatic. See <a href="presentations.html#clti">CLTI</a>, <a href="operations.html#bypass">bypass</a> and the <a href="reference.html#staging">staging systems</a>.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: intervening for the wrong indication</p>
+      <p>Claudication is treated first with supervised exercise, smoking cessation and medical therapy; intervention is for lifestyle-limiting symptoms despite that. SVS guidance recommends against treating isolated below-the-knee disease for claudication alone, because it adds risk without durable benefit. See <a href="presentations.html#claudication">claudication</a>.</p>
+    </aside>
+
+    <h3>Choosing access</h3>
+    <div class="table-wrap"><table class="data">
+      <caption>Access options for a peripheral intervention</caption>
+      <thead><tr><th scope="col">Access</th><th scope="col">Best for</th><th scope="col">Limits</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Retrograde contralateral femoral (up and over)</th><td>The default. A diagnostic aortogram and runoff, then treatment of the opposite iliac, common femoral, superficial femoral and popliteal arteries, all from one puncture.</td><td>A hostile aortic bifurcation (narrow or steep, a prior aortobifemoral graft, kissing iliac stents, or an aortic stent graft) blocks or complicates the route. The long distance to the tibials costs push and reach.</td></tr>
+        <tr><th scope="row">Antegrade ipsilateral femoral</th><td>Superficial femoral, popliteal and tibial work on the same side. A shorter, straighter route with better push and torque, and reach to the foot.</td><td>Harder with a pannus or a high bifurcation; needs a healthy proximal superficial femoral to seat the sheath; cannot treat the iliac or common femoral; hemostasis can be harder.</td></tr>
+        <tr><th scope="row">Radial (usually left)</th><td>Hostile groins, obesity, patients who cannot lie flat; iliac, renal and mesenteric work; early walking.</td><td>The small artery limits sheath size, and many devices are too short to reach below the knee.</td></tr>
+        <tr><th scope="row">Brachial or axillary</th><td>Downgoing visceral branches, for example during fenestrated or branched aortic repair, and large-bore upper-limb access.</td><td>Nerve injury and hematoma in a tight sheath; arch manipulation carries a stroke risk.</td></tr>
+        <tr><th scope="row">Retrograde pedal or tibial</th><td>A rescue when antegrade crossing fails, or a primary route when the groin is hostile. Usually a small sheath, or no sheath, in the dorsalis pedis, posterior tibial or distal anterior tibial artery under ultrasound or road-map guidance. Retrograde popliteal access, with the patient prone, is a related option.</td><td>Spasm or injury of the access vessel, which may be the foot's best remaining runoff, can cost the limb.</td></tr>
+      </tbody>
+    </table></div>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>When you see a patient booked for an angiogram, look at both groins and write down what you find: scars, a pannus, intertrigo or infection, a prior graft, and the femoral pulses. A hostile groin changes the access plan, and it is far better found the evening before than on the table.</p>
+    </aside>
+
+    <h3>Crossing the lesion</h3>
+    <p>Stenoses are usually crossed easily. Chronic total occlusions are the challenge, and the strategy escalates.</p>
+    <ol class="steps">
+      <li><strong>Intraluminal.</strong> A wire, supported by a catheter, is worked through the occlusion while staying in the true lumen. This is preferred where possible because it keeps the vessel's structure and the options for later.</li>
+      <li><strong>Subintimal.</strong> When that fails, the wire is deliberately passed into the plane within the vessel wall, often as a loop of hydrophilic wire, tracked along the occlusion and brought back into the true lumen beyond it (subintimal angioplasty). The danger is failing to re-enter and extending the dissection past the point of reconstitution.</li>
+      <li><strong>Re-entry device.</strong> If the wire will not come back into the true lumen, a re-entry catheter fires a small needle, aimed under fluoroscopy or IVUS, from the subintimal plane into the true lumen just below the occlusion.</li>
+      <li><strong>Retrograde (SAFARI-type) approach.</strong> A second access below the occlusion (pedal, tibial or popliteal) lets a wire cross from below. The two channels are connected, or the retrograde wire is snared and pulled out through the femoral sheath to make a through-and-through “flossing” wire, and treatment is delivered from the femoral side so the small distal access stays small. SAFARI stands for subintimal arterial flossing with antegrade-retrograde intervention.</li>
+    </ol>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: do not burn a bridge</p>
+      <p>Every endovascular plan in a bypass candidate should protect the future bypass. A subintimal channel or a stent that extends into the below-knee popliteal or the distal target can remove the landing zone a surgeon would need, turning a failed angioplasty into a lost limb. That is why vascular surgeons talk about the target before they talk about the device.</p>
+    </aside>
+
+    <h3>Vessel preparation, then definitive therapy</h3>
+    <ol class="steps">
+      <li><strong>Confirm the true lumen beyond the lesion.</strong> A small contrast injection through the catheter past the lesion, or IVUS.</li>
+      <li><strong>Anticoagulate.</strong> Systemic heparin, weight-based, once the decision to intervene is made and before treatment, with the dose and ACT target set by the operator and local protocol.</li>
+      <li><strong>Prepare the vessel.</strong> Predilation with an undersized plain balloon, a scoring or cutting balloon, atherectomy, or intravascular lithotripsy for heavy calcium, so the lesion expands evenly and dissection is limited.</li>
+      <li><strong>Definitive therapy.</strong> A drug-coated balloon, a stent (bare, drug-eluting or covered), or both. Many operators stent provisionally, only for a flow-limiting dissection or a significant residual stenosis (often defined as more than 30 percent) after balloon angioplasty.</li>
+      <li><strong>Completion imaging.</strong> Angiography of the treated segment and of the runoff to the foot, compared with the baseline, to catch dissection, residual narrowing and distal embolization.</li>
+      <li><strong>Antithrombotic plan.</strong> Commonly dual antiplatelet therapy for a period after stenting, or low-dose rivaroxaban (2.5 mg twice daily) with aspirin after lower-extremity revascularization, based on VOYAGER PAD. The regimen and its duration are the attending's call and belong in the post-procedure note.</li>
+    </ol>
+    <details class="qa">
+      <summary>Why is inflow treated before outflow?</summary>
+      <div class="qa-a"><p>A repair downstream is only as good as the pressure and flow delivered to it. A superficial femoral stent or a bypass fed by an untreated iliac stenosis will have low flow and will fail early. Inflow is assessed and corrected first, sometimes in the same sitting, then outflow and the target.</p></div>
+    </details>
+    <details class="qa">
+      <summary>A patient with tissue loss, a good great saphenous vein and a long superficial femoral to popliteal occlusion is booked for angioplasty. What should you be thinking about?</summary>
+      <div class="qa-a"><p>Whether bypass is the better first operation. In BEST-CLI, patients with adequate single-segment saphenous vein did better with surgical bypass than with an endovascular-first strategy. If an endovascular attempt is made, it should not extend into the below-knee popliteal or the tibial target that a later bypass would need.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="toolkit" data-title="The toolkit" data-bed="arterial">
+    <h2>The toolkit: balloons, stents and atherectomy <span class="tag">High yield</span></h2>
+    <p class="sec-lede">Once you are across a lesion with a wire, a small family of devices does the actual treating. This section covers what each family does and when it is chosen; the named products are on <a href="devices.html#balloons">balloons</a>, <a href="devices.html#stents">stents</a> and <a href="devices.html#stent-grafts">stent grafts</a>.</p>
+
+    <h3>Balloon angioplasty</h3>
+    <p>A balloon is tracked over the wire to the lesion and inflated to crack and stretch the plaque, often called plain balloon angioplasty (PTA, for percutaneous transluminal angioplasty). Balloons are sized to the healthy reference vessel, roughly one to one, and inflated with dilute contrast using a pressure syringe (an inflation device) read in atmospheres. Each balloon has a nominal pressure, at which it reaches its labeled diameter, and a rated burst pressure, which should not be exceeded. Non-compliant balloons hold their size at high pressure; compliant balloons keep growing as they fill and are used for gentle molding, such as of a stent graft's seal zones.</p>
+    <ul>
+      <li><span class="lead-in">Drug-coated balloons.</span> These transfer an antiproliferative drug, most often paclitaxel, to the vessel wall to reduce restenosis, especially in the femoropopliteal segment. A 2018 meta-analysis raised a late mortality signal for paclitaxel devices; after reviewing further data, the FDA concluded in 2023 that the evidence does not support an excess mortality risk. Sirolimus-coated balloons are a newer alternative whose place alongside paclitaxel is still being defined.</li>
+      <li><span class="lead-in">Cutting and scoring balloons.</span> Small blades or wires on the balloon score resistant, calcified or recurrent lesions so they open at lower pressure.</li>
+      <li><span class="lead-in">Intravascular lithotripsy.</span> A balloon that emits pressure waves to fracture calcium in the vessel wall before definitive therapy.</li>
+    </ul>
+
+    <h3>Stents</h3>
+    <p>The single most asked endovascular concept is the difference between the two stent families and where each belongs.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Self-expanding versus balloon-expandable stents</caption>
+      <thead><tr><th scope="col">Feature</th><th scope="col">Self-expanding (nitinol)</th><th scope="col">Balloon-expandable</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Material</th><td>Nitinol (nickel-titanium), a shape-memory alloy</td><td>Stainless steel or cobalt-chromium</td></tr>
+        <tr><th scope="row">How it deploys</th><td>Springs open as the constraining sheath is withdrawn</td><td>Expanded by inflating the balloon it is mounted on</td></tr>
+        <tr><th scope="row">Best where</th><td>Areas of flexion or external compression (superficial femoral, popliteal, carotid) and long or tapering segments</td><td>Where precise placement and high radial force matter (ostial renal, common iliac origin)</td></tr>
+        <tr><th scope="row">Key property</th><td>Recovers its shape after being squashed; does not stay crushed</td><td>Precise and strong, but a deforming force can crush it permanently</td></tr>
+        <tr><th scope="row">Placement accuracy</th><td>Can foreshorten or jump on release</td><td>Very accurate, good for ostia</td></tr>
+      </tbody>
+    </table></div>
+    <p>A covered stent (stent graft) is a stent lined with fabric. It is used to exclude an aneurysm or a pseudoaneurysm, to seal a perforation or rupture, in complex aortoiliac occlusive disease, and sometimes to treat recurrent in-stent restenosis. Drug-eluting stents release an antiproliferative drug over time and are used in the femoropopliteal segment and, borrowed from coronary practice, in short tibial lesions.</p>
+    <details class="qa">
+      <summary>Why use a self-expanding nitinol stent in the superficial femoral artery rather than a balloon-expandable one?</summary>
+      <div class="qa-a"><p>The superficial femoral artery bends, twists, shortens and is compressed by the surrounding muscle with every step. A balloon-expandable stent there could be permanently crushed, whereas a nitinol self-expanding stent springs back to shape after deformation, so it tolerates the mechanical stress of that segment.</p></div>
+    </details>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: the no-stent zones</p>
+      <p>The common femoral artery and the popliteal artery behind the knee have traditionally been avoided for stenting. Both bend with the hip and knee, and both are where future access punctures and bypass anastomoses go. Common femoral disease is usually treated with open endarterectomy, and a stented popliteal is a hard place to sew a bypass.</p>
+    </aside>
+
+    <h3>Atherectomy</h3>
+    <p>Atherectomy physically removes or debulks plaque rather than just displacing it, using directional, rotational, orbital or laser devices. It is used mainly for heavily calcified lesions and in-stent restenosis, and to prepare a vessel before angioplasty. The chief hazard to know is distal embolization of the liberated debris, sometimes managed with an embolic protection filter. The evidence that atherectomy improves outcomes over angioplasty alone is limited, and high-volume use of it has drawn scrutiny.</p>
+  </section>
+
+  <section class="sec" id="evar-tevar" data-title="EVAR and TEVAR" data-bed="arterial">
+    <h2>Aortic stent grafts: EVAR and TEVAR</h2>
+    <p class="sec-lede">The largest endovascular operations are the aortic ones. EVAR (endovascular aneurysm repair) treats the abdominal aorta and TEVAR treats the thoracic aorta, in both cases by deploying a fabric-covered stent graft that creates a new internal channel and excludes the aneurysm sac from the circulation.</p>
+
+    <h3>What makes an aneurysm suitable</h3>
+    <p>A stent graft needs healthy vessel to seal against at each end, the landing (sealing) zones. For EVAR the key constraints are an adequate infrarenal neck (enough length below the renal arteries, an acceptable diameter, limited angulation, and not too much thrombus or calcium) and iliac arteries large and straight enough to deliver the device. Typical instructions for use ask for roughly 10 to 15 mm of neck length, a neck diameter up to about 32 mm and angulation under about 60 degrees, but each device has its own limits. When the neck is hostile, standard EVAR will not seal, which is the reason fenestrated and branched devices exist. Repair thresholds are on <a href="presentations.html#aaa">abdominal aortic aneurysm</a>.</p>
+
+    <h3>How EVAR goes, in brief</h3>
+    <ol class="steps">
+      <li><strong>Access both groins.</strong> Surgical cutdown, or a percutaneous “pre-close” technique in which suture-mediated closure devices are deployed before the puncture is enlarged. Large sheaths go in over stiff wires and systemic heparin is given.</li>
+      <li><strong>Deploy the main body.</strong> Position the graft under fluoroscopy just below the lowest renal artery, confirming the level with an aortogram, and deploy so the fabric seals against the neck.</li>
+      <li><strong>Cannulate the contralateral gate and complete the seal.</strong> Catheterize the short stump of the bifurcated graft from the other groin, extend a limb into each iliac, preserving at least one internal iliac artery where possible, and balloon the seal zones and junctions.</li>
+      <li><strong>Completion angiogram.</strong> Confirm exclusion of the sac, and look specifically for an endoleak and for kinked or narrowed limbs.</li>
+      <li><strong>Close and check.</strong> Close the arteriotomies and check pulses or Doppler signals in both legs before the patient leaves the room.</li>
+    </ol>
+    <p>Afterward, watch the groins, both legs (a kinked or occluded graft limb presents as a cold leg or new claudication), the kidneys after contrast, and for post-implantation syndrome, an expected, self-limited fever and leukocytosis in the first days that still requires infection to be considered. Endoleaks are the late failure mode: types I and III are high-pressure leaks that are repaired, and type II, the most common, is usually watched unless the sac grows. The full classification is on <a href="operations.html#evar">EVAR and endoleaks</a>.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: surveillance is forever</p>
+      <p>The trade for EVAR's lower early mortality is lifelong imaging surveillance with CT angiography or duplex, because the repair can fail late through an endoleak (persistent sac flow), graft migration or limb occlusion, and a re-pressurized sac can still rupture. SVS guidance suggests imaging about a month after repair, then at about a year and yearly after that if there is no endoleak or growth, with duplex replacing CT in many patients. A patient lost to follow-up is a patient at risk.</p>
+    </aside>
+
+    <h3>TEVAR</h3>
+    <p>TEVAR treats descending thoracic aneurysms, complicated type B dissection (rupture, malperfusion, refractory pain or hypertension, or rapid expansion) and increasingly selected uncomplicated type B dissections with high-risk features, and blunt traumatic aortic injury, classically at the isthmus just distal to the left subclavian, where it has largely replaced open repair. In dissection the graft must go into the true lumen to cover the entry tear and re-expand it. Which arch branches the graft covers depends on its landing zone; see <a href="#aortic-zones">aortic landing zones</a>.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: spinal cord ischemia</p>
+      <p>Covering a long length of thoracic aorta can occlude the intercostal arteries that feed the spinal cord, risking paraplegia. Risk rises with the extent of coverage, prior abdominal aortic repair, left subclavian coverage, internal iliac occlusion and hypotension. Prevention includes keeping the mean arterial pressure up (targets per protocol), cerebrospinal fluid drainage in high-risk patients, revascularizing the left subclavian, and staging extensive repairs. Any new leg weakness or numbness after TEVAR is an emergency: raise the blood pressure and call at once. See the <a href="ctv-icu.html#spinal-drain">spinal drain</a> section and <a href="operations.html#aortic-stent">TEVAR and complex aortic</a>.</p>
+    </aside>
+    <details class="qa">
+      <summary>EVAR has lower early mortality than open repair. Why is that not the end of the argument?</summary>
+      <div class="qa-a"><p>In the randomized trials (EVAR-1, DREAM, OVER) the early survival advantage of EVAR faded within a few years, and long-term follow-up showed more late reinterventions and, in EVAR-1, more late aneurysm-related deaths after EVAR. The repair can fail silently, so it commits the patient to lifelong surveillance. The choice weighs operative risk and anatomy against durability and the patient's ability to keep up with imaging.</p></div>
+    </details>
+    <details class="qa">
+      <summary>Other than spinal cord ischemia, what complications are specific to TEVAR?</summary>
+      <div class="qa-a"><p>Stroke, from manipulating wires and devices in the arch or from covering the left subclavian; retrograde type A dissection, particularly when treating dissection; arm ischemia after left subclavian coverage; access injury from the large sheaths; and endoleak or graft migration on surveillance.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="aortic-zones" data-title="Aortic landing zones" data-bed="arterial">
+    <h2>Aortic landing zones</h2>
+    <p class="sec-lede">Stent grafts are described by where they land. The zone tells you which branches the fabric covers, and therefore what has to be done to keep those branches perfused.</p>
+
+    <h3>The Ishimaru arch zones, 0 to 4</h3>
+    <p>The Ishimaru map divides the arch and proximal descending aorta at the branch origins. The zone where the proximal end of the graft lands is its proximal seal zone, and every branch that arises from the aorta the fabric crosses is covered. Most thoracic devices need about 2 cm of healthy, parallel-walled aorta to seal, which is why lesions near the left subclavian so often push the landing zone up into the arch.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Ishimaru zones and what landing there covers</caption>
+      <thead><tr><th scope="col">Zone</th><th scope="col">Segment</th><th scope="col">Covered by a graft landing here</th><th scope="col">What it takes</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">0</th><td>Ascending aorta, up to and including the innominate artery origin</td><td>Innominate, left common carotid and left subclavian</td><td>Total arch debranching, a branched or fenestrated arch device, or open arch repair such as a frozen elephant trunk</td></tr>
+        <tr><th scope="row">1</th><td>Between the innominate and the left common carotid, including the left common carotid origin</td><td>Left common carotid and left subclavian</td><td>Carotid-carotid bypass (or similar), plus left subclavian revascularization</td></tr>
+        <tr><th scope="row">2</th><td>Between the left common carotid and the left subclavian, including the left subclavian origin</td><td>Left subclavian</td><td>Left subclavian revascularization when indicated (below)</td></tr>
+        <tr><th scope="row">3</th><td>Proximal descending thoracic aorta, about the first 2 cm beyond the left subclavian</td><td>No arch branch</td><td>Nothing for the arch branches; a short margin from the subclavian</td></tr>
+        <tr><th scope="row">4</th><td>Descending thoracic aorta beyond zone 3</td><td>No arch branch; intercostal arteries</td><td>Spinal cord protection planning as coverage lengthens</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Covering the left subclavian</h3>
+    <p>Zone 2 landing is common, because many descending thoracic lesions start close to the left subclavian. Covering it without revascularization risks:</p>
+    <ul>
+      <li>arm ischemia, usually mild because of collaterals but sometimes disabling;</li>
+      <li>posterior circulation stroke, especially with a dominant left vertebral artery;</li>
+      <li>spinal cord ischemia, because the left vertebral and internal thoracic arteries feed the cord's collateral network;</li>
+      <li>myocardial ischemia when a left internal mammary artery graft supplies the heart.</li>
+    </ul>
+    <p>SVS guidance suggests routine left subclavian revascularization before elective TEVAR that covers it, and considers it essential with a left internal mammary coronary graft, a dominant left or absent right vertebral artery, a functioning left arm dialysis access, or extensive coverage with high spinal cord risk; European guidance also favors revascularization in elective cases. In an emergency (rupture or trauma) the subclavian is often covered and revascularized later only if symptoms develop. The options are a carotid-subclavian bypass or subclavian-to-carotid transposition, or a branched stent graft with a side branch into the subclavian. When a bypass is done, the subclavian origin is plugged or covered so the sac cannot refill backward through it.</p>
+    <details class="qa">
+      <summary>A patient with a left internal mammary to LAD bypass graft needs a zone 2 TEVAR. What has to happen first?</summary>
+      <div class="qa-a"><p>The left subclavian must be revascularized before it is covered, by carotid-subclavian bypass or transposition, or the repair done with a branched device. Covering it without revascularization would reverse or stop flow in the mammary graft and cause myocardial ischemia.</p></div>
+    </details>
+
+    <h3>The SVS/STS zones, 0 to 11</h3>
+    <p>The 2020 SVS/STS reporting standards for aortic dissection extended the map down the whole aorta, so that a dissection's extent or a repair's seal zones can be stated in one shorthand. Zones 0 to 3 match the arch zones above. In this system a type A dissection has its entry tear in zone 0 and a type B dissection has its entry tear in zone 1 or beyond, written with the proximal and distal extent (for example, B3,10 for a type B dissection from zone 3 to the common iliacs). Fenestrated and branched repairs are described the same way: “sealing in zone 6” means above the superior mesenteric artery.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>SVS/STS aortic zones</caption>
+      <thead><tr><th scope="col">Zone</th><th scope="col">Segment</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">0</th><td>Ascending aorta, to the innominate origin</td></tr>
+        <tr><th scope="row">1</th><td>Innominate to left common carotid</td></tr>
+        <tr><th scope="row">2</th><td>Left common carotid to left subclavian</td></tr>
+        <tr><th scope="row">3</th><td>First 2 cm of the descending thoracic aorta beyond the left subclavian</td></tr>
+        <tr><th scope="row">4</th><td>End of zone 3 to the mid-descending thoracic aorta (about T6)</td></tr>
+        <tr><th scope="row">5</th><td>Mid-descending thoracic aorta to the celiac artery</td></tr>
+        <tr><th scope="row">6</th><td>Celiac artery to the superior mesenteric artery</td></tr>
+        <tr><th scope="row">7</th><td>Superior mesenteric artery to the renal arteries</td></tr>
+        <tr><th scope="row">8</th><td>The renal artery segment</td></tr>
+        <tr><th scope="row">9</th><td>Infrarenal aorta to the bifurcation</td></tr>
+        <tr><th scope="row">10</th><td>Common iliac arteries</td></tr>
+        <tr><th scope="row">11</th><td>External iliac arteries</td></tr>
+      </tbody>
+    </table></div>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: zones are a checklist on rounds</p>
+      <p>The zone answers the practical question “what did the graft cover?” A zone 2 repair means check the left arm pulse and blood pressure and ask about posterior circulation symptoms. A long repair from zone 2 to zone 5 means think about the spinal cord. A seal in zone 6 or 7 means bridging stents into the visceral and renal arteries, so watch the kidneys, the lactate and the abdomen. Dissection itself is covered on <a href="presentations.html#dissection">aortic dissection</a>.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="complex" data-title="Fenestrated and branched" data-bed="arterial">
+    <h2>Complex aortic repair: FEVAR and BEVAR</h2>
+    <p class="sec-lede">When the aneurysm reaches the visceral and renal arteries, a plain tube would cover their origins and infarct the kidneys and gut. Complex endovascular repair moves the seal zone up the aorta while keeping those branches open.</p>
+    <p>Fenestrated grafts (FEVAR) have reinforced holes aligned to each branch origin, through which small covered bridging stents are placed into the renal and mesenteric arteries. They suit juxtarenal and pararenal aneurysms, where the graft body sits close to the aortic wall. Branched grafts (BEVAR) carry actual side branches that bridge across a wider aorta to each vessel, for more extensive thoracoabdominal disease. Many devices are custom-made from the patient's CTA, which takes weeks; off-the-shelf branched designs and, at some centers under institutional protocols, surgeon-modified grafts made on the back table fill the gap for urgent cases.</p>
+    <p>These are long cases, done at experienced centers, often with fusion imaging and cone-beam CT. They cover more aorta, so the spinal cord risk rises with the extent of repair, and the bridging stents add their own failure modes: branch stenosis or occlusion, and leaks at the connections between the branch stents and the main graft. Surveillance is at least as demanding as after standard EVAR.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: chimney and snorkel</p>
+      <p>Because custom fenestrated devices take weeks to manufacture, an off-the-shelf workaround for urgent cases is the chimney (snorkel) technique, running parallel stents alongside the main aortic graft to keep a branch vessel perfused. It is ingenious but leaves potential channels (“gutters”) between the stents and the aortic wall through which a type I endoleak can occur, so it is a compromise rather than a first choice.</p>
+    </aside>
+    <details class="qa">
+      <summary>Why can't standard EVAR treat a juxtarenal aneurysm?</summary>
+      <div class="qa-a"><p>There is no adequate healthy infrarenal neck below the renal arteries for the graft to seal against, so a standard device either leaks at the top (type Ia endoleak) or would have to cover the renal arteries. The options are open repair, a fenestrated graft that moves the seal above the renals while keeping them perfused, or in selected urgent cases a parallel-graft (chimney) technique. See <a href="operations.html#open-aaa">open AAA repair</a>.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="thrombolysis" data-title="Thrombolysis and thrombectomy" data-bed="both">
+    <h2>Clot management: thrombolysis and thrombectomy</h2>
+    <p class="sec-lede">For acute clot, whether a clotted bypass, an acutely ischemic limb, an iliofemoral DVT or a pulmonary embolism, two endovascular strategies exist, and they are often combined.</p>
+    <ul>
+      <li><span class="lead-in">Catheter-directed thrombolysis.</span> A multi-sidehole catheter is threaded into the clot and a fibrinolytic drug (such as tissue plasminogen activator) is infused directly into it over hours, dissolving the thrombus while sparing the patient a full systemic dose. It also tends to reveal the underlying lesion that caused the clot, which can then be treated. The patient is monitored in an ICU or step-down bed, with serial hemoglobin and fibrinogen checks, and comes back for a repeat angiogram (a “lysis check”) after several hours or the next morning.</li>
+      <li><span class="lead-in">Mechanical and pharmacomechanical thrombectomy.</span> Devices aspirate or macerate clot, either alone for speed or combined with a lytic. Aspiration thrombectomy is increasingly used for acute limb ischemia and for selected pulmonary emboli. The named devices are on <a href="devices.html#thrombectomy">thrombectomy devices</a>.</li>
+    </ul>
+
+    <h3>Where each fits</h3>
+    <dl class="terms wide">
+      <div><dt>Acute limb ischemia</dt><dd>Rutherford category I and IIa limbs have time for catheter-directed lysis, which suits thrombosis of a native artery or a bypass graft and unmasks the culprit lesion. Category IIb limbs need revascularization now, by open embolectomy or rapid mechanical thrombectomy. Category III limbs are not salvageable, and restoring flow can be dangerous. See <a href="presentations.html#ali">acute limb ischemia</a> and <a href="operations.html#embolectomy">embolectomy</a>.</dd></div>
+      <div><dt>Iliofemoral DVT</dt><dd>Early thrombus removal is considered for selected patients with acute iliofemoral DVT (recent onset, low bleeding risk, good functional status) and urgently for phlegmasia. ATTRACT found no reduction in post-thrombotic syndrome overall, though iliofemoral patients had less moderate-to-severe disease; CAVA found no benefit, so selection matters. An underlying iliac vein compression is usually stented after clearance, sized by IVUS. See <a href="presentations.html#vte">venous thromboembolism</a>.</dd></div>
+      <div><dt>Pulmonary embolism</dt><dd>Catheter-directed lysis or aspiration is used for high-risk (massive) PE when systemic lysis is contraindicated or has failed, and for selected intermediate-high-risk PE that is deteriorating, usually through a multidisciplinary PE response team.</dd></div>
+    </dl>
+    <aside class="note flag">
+      <p class="note-label">Red flag: lytic contraindications</p>
+      <p>Fibrinolytics carry a real bleeding risk, so catheter-directed lysis is avoided or used cautiously after recent surgery or trauma, with active or recent bleeding, and with a recent stroke or an intracranial process. A category IIb (immediately threatened) limb usually does not have time for a slow lytic infusion and goes for prompt mechanical clearance or surgery instead. After any revascularization of an ischemic limb, watch for reperfusion injury and compartment syndrome; see <a href="operations.html#fasciotomy">fasciotomy</a>.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>For every patient on a lytic infusion, know the drug and rate, the time of the next fibrinogen and lysis check, and the neuro and access-site check schedule. Ask nursing to avoid new arterial punctures and intramuscular injections. Any change in neurologic status means stop the infusion, call the senior, and get a head CT; bleeding at the access site means hold pressure and call.</p>
+    </aside>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Lytic dosing, whether heparin runs alongside it, the fibrinogen level that prompts a dose reduction or stop, and whether lysis patients go to the CTV ICU or a step-down unit are set by local protocol.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="embolization" data-title="Embolization and filters" data-bed="both">
+    <h2>Embolization and IVC filters</h2>
+    <p class="sec-lede">Sometimes the goal is to stop flow rather than restore it, either by deliberately occluding a vessel or by catching clot before it reaches the lungs.</p>
+
+    <h3>Embolization</h3>
+    <p>Embolization deliberately occludes a vessel using coils, vascular plugs, particles or liquid agents. Vascular surgeons use it to treat a type II endoleak, to control bleeding (trauma, gastrointestinal bleeding or a pseudoaneurysm), to occlude an internal iliac artery before some aortic work, and to treat arteriovenous malformations and pelvic venous reflux.</p>
+    <dl class="terms">
+      <div><dt>Coils</dt><dd>Metal spirals, often with thrombogenic fibers, pushed or detached at a precise spot for permanent occlusion of a named vessel.</dd></div>
+      <div><dt>Vascular plugs</dt><dd>Self-expanding nitinol mesh plugs that occlude a larger vessel with a single device, such as an internal iliac artery or the left subclavian origin.</dd></div>
+      <div><dt>Particles</dt><dd>Microspheres or polyvinyl alcohol particles that lodge in small distal vessels; used for tumors and diffuse small-vessel bleeding rather than named arteries.</dd></div>
+      <div><dt>Gelatin sponge</dt><dd>A temporary agent that recanalizes over weeks, useful in trauma.</dd></div>
+      <div><dt>Liquid agents</dt><dd>Glue (cyanoacrylate) and other liquid embolics that cast the vessel or the nidus of a malformation; used for some endoleaks, malformations and bleeding in difficult anatomy. Thrombin injected under ultrasound into a femoral pseudoaneurysm works on the same principle.</dd></div>
+    </dl>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: front door and back door</p>
+      <p>Embolizing only the near side of a pseudoaneurysm, an aneurysmal branch or a bleeding vessel lets it refill from the far side through collaterals. Occlude beyond and before the defect, or cover it with a stent graft, so there is no back door. The same logic applies to an internal iliac artery before EVAR: it is occluded at its main trunk, proximal to its branches, so it cannot backfill the sac while the pelvic collaterals stay open. Occluding both internal iliacs risks buttock claudication, erectile dysfunction and colonic or spinal cord ischemia, which is why iliac branch devices are preferred when feasible.</p>
+    </aside>
+
+    <h3>Inferior vena cava filters</h3>
+    <p>An IVC filter is a device placed in the inferior vena cava to catch emboli from the legs and pelvis. Its clear indication is acute proximal DVT or PE in a patient who cannot be anticoagulated, because of active bleeding or a complication that forces anticoagulation to stop. Recurrent PE despite truly therapeutic anticoagulation is a traditional but more debated indication; adherence, dosing and a change of agent are checked first. A filter does not treat the clot and does not replace anticoagulation once it becomes safe. Trials have not shown benefit from adding a filter to anticoagulation (PREPIC2) or from prophylactic filters in patients without VTE, such as after major trauma.</p>
+    <p>Filters are placed from the femoral or jugular vein, usually infrarenally with the top just below the lowest renal vein; a suprarenal position is reserved for special situations such as thrombus reaching the renal veins.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: retrieve the filter</p>
+      <p>Most filters today are retrievable and are meant to come out once the patient can be anticoagulated, because a filter left indefinitely can migrate, perforate the cava, fracture, or thrombose. The FDA advises removal as soon as protection from PE is no longer needed. “Place it for a clear indication and plan its removal” is the expected attitude.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>When a retrievable filter goes in, put the retrieval plan in the discharge summary and make sure a follow-up visit or tracking entry exists before the patient leaves. Filters are lost to follow-up constantly because everyone assumes someone else arranged it.</p>
+    </aside>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Who places and retrieves filters, and whether the hospital keeps a filter registry or retrieval clinic, varies by institution.</p>
+    </aside>
+    <details class="qa">
+      <summary>A patient on a heparin drip for a new proximal DVT and PE develops a major GI bleed. What happens next?</summary>
+      <div class="qa-a"><p>Stop the heparin, resuscitate and treat the bleeding source. With acute proximal DVT and PE and anticoagulation now contraindicated, this is the clear indication for a retrievable IVC filter. Anticoagulation is restarted as soon as the bleeding risk allows, and the filter is removed once full anticoagulation is established and tolerated.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="closure-complications" data-title="Closure and complications" data-bed="arterial">
+    <h2>Getting out: closure and access complications <span class="tag">High yield</span></h2>
+    <p class="sec-lede">At the end of the case the arteriotomy has to be sealed, and most endovascular complications happen right here. Recognizing them quickly is squarely a trainee's job on rounds and overnight.</p>
+
+    <h3>Closing the hole</h3>
+    <ul>
+      <li><span class="lead-in">Manual compression.</span> Firm pressure over the arteriotomy, which in a retrograde puncture lies a centimeter or two above the skin nick, typically for 15 to 20 minutes for a small sheath once the heparin effect has fallen to the protocol threshold, and longer for larger sheaths. Still the standard for small sheaths and whenever a closure device is unsuitable.</li>
+      <li><span class="lead-in">Closure devices.</span> Suture-mediated systems, extravascular plugs (collagen or a sealant) and clips. They let the patient sit up and walk sooner, but they have not clearly reduced complications. They need a common femoral puncture above the bifurcation in a vessel large enough and not too calcified, which is why a sheath angiogram in an ipsilateral oblique view is taken before deployment.</li>
+      <li><span class="lead-in">Large-bore closure.</span> For EVAR and TEVAR sheaths, two suture devices are placed before the hole is enlarged (“pre-close”) and tied at the end; dedicated large-bore plug devices also exist. A failed pre-close becomes a cutdown and open repair.</li>
+      <li><span class="lead-in">Radial.</span> A compression band, inflated just enough to stop bleeding while keeping flow through the artery (patent hemostasis), then gradually deflated.</li>
+    </ul>
+    <p>The named closure devices are on <a href="devices.html#closure">closure devices</a>.</p>
+
+    <h3>Access-site complications</h3>
+    <div class="table-wrap"><table class="data">
+      <caption>The access-site complications to know</caption>
+      <thead><tr><th scope="col">Complication</th><th scope="col">How it shows up</th><th scope="col">Typical management</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Hematoma</th><td>Local swelling, firmness and bruising at the groin</td><td>Pressure, mark the edges and observe if stable; check hemoglobin, and get a duplex if it grows or is pulsatile</td></tr>
+        <tr class="hot"><th scope="row">Retroperitoneal bleed</th><td>Flank, back or lower abdominal pain, hypotension, tachycardia and a falling hemoglobin without an obvious groin hematoma; follows a high stick</td><td>Resuscitate, hold and reverse anticoagulation, CT; most settle with resuscitation, but ongoing bleeding needs a covered stent or surgery</td></tr>
+        <tr><th scope="row">Pseudoaneurysm</th><td>Pulsatile, tender mass with a bruit; “to-and-fro” flow in the neck on duplex; follows a low stick</td><td>Small ones often thrombose and can be watched with duplex; ultrasound-guided thrombin injection for most others (compression is an older alternative); surgery for rapid expansion, infection, skin compromise, nerve compression or failure</td></tr>
+        <tr><th scope="row">Arteriovenous fistula</th><td>Continuous bruit and thrill at the puncture (artery and vein both hit)</td><td>Observation, since many close; repair if it persists, grows or causes symptoms</td></tr>
+        <tr><th scope="row">Dissection or thrombosis</th><td>A new cold, pulseless limb, or lost Doppler signals, after the case</td><td>Urgent imaging and revascularization</td></tr>
+        <tr><th scope="row">Distal embolization</th><td>Acutely ischemic toes or foot (“trash foot”)</td><td>Anticoagulation, with aspiration or lysis as needed</td></tr>
+        <tr><th scope="row">Infection</th><td>Redness, drainage or fever days to weeks later, especially after a closure device</td><td>Antibiotics and imaging; an infected closure device or infected pseudoaneurysm usually needs surgical excision</td></tr>
+        <tr><th scope="row">Radial artery occlusion</th><td>Loss of the radial pulse, usually painless because the ulnar artery supplies the hand</td><td>Prevented by heparin and patent hemostasis; usually observed</td></tr>
+      </tbody>
+    </table></div>
+    <details class="qa">
+      <summary>A patient becomes hypotensive with back pain after a femoral procedure, but the groin looks unremarkable. What are you worried about?</summary>
+      <div class="qa-a"><p>A retroperitoneal hemorrhage from a high arterial puncture above the inguinal ligament, where bleeding tracks into the retroperitoneum and is not visible externally. Resuscitate, send a hemoglobin, reverse anticoagulation, and get a CT, because this can be life-threatening and is easy to miss if you only inspect the skin.</p></div>
+    </details>
+    <details class="qa">
+      <summary>How do you tell a pseudoaneurysm from a simple hematoma at the bedside?</summary>
+      <div class="qa-a"><p>A hematoma is a firm, non-pulsatile collection, although it can transmit the pulse of the artery beneath it. A pseudoaneurysm is expansile (it pushes your fingers apart, not just up), is often tender, and usually has a bruit. Duplex settles it: a pseudoaneurysm shows swirling flow in the sac and a to-and-fro signal in the neck connecting it to the artery.</p></div>
+    </details>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>For a bleeding or expanding groin, press firmly with your fingertips a little above the skin nick, where the arteriotomy actually is, rather than on the hole or with a sandbag, and call for help without letting go. Mark the edges of any hematoma with a pen so the next person can tell whether it is growing. The overnight approach is on <a href="on-call.html#groin">the groin call</a>.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="peri-procedure" data-title="Before and after an angiogram" data-bed="arterial">
+    <h2>Before and after an angiogram</h2>
+    <p class="sec-lede">Most of what a resident does for an endovascular patient happens outside the suite: getting them ready safely, then catching complications afterward. What follows is the common academic-center pattern; the specifics are set by local protocol and the operator.</p>
+
+    <h3>Before</h3>
+    <ul class="checklist">
+      <li><strong>Indication and plan.</strong> <span class="who">Team</span> Document the indication, the planned access and the intended treatment in the history and physical or pre-procedure note.</li>
+      <li><strong>Consent.</strong> <span class="who">Operator or delegate, per policy</span> The procedure, its risks (bleeding and access-site injury, contrast reaction and kidney injury, vessel injury or embolization, radiation, and the possibility of further or open surgery), benefits and alternatives, plus the sedation or anesthesia plan.</li>
+      <li><strong>Baseline exam.</strong> <span class="who">You</span> Both groins, and pulses or Doppler signals at every level in both legs, with the ABI if available. Mark the pedal signals with a pen so later checks compare the same spot.</li>
+      <li><strong>Labs.</strong> <span class="who">You</span> Basic metabolic panel (creatinine, eGFR and potassium), CBC (hemoglobin and platelets), and PT/INR, with aPTT or anti-Xa if the patient is on heparin. Type and screen for larger cases such as EVAR and TEVAR, a pregnancy test when relevant, and glucose in diabetics.</li>
+      <li><strong>Antithrombotics.</strong> <span class="who">Per protocol and operator</span> Aspirin and usually the P2Y12 inhibitor are continued for peripheral intervention. Warfarin, DOACs, low-molecular-weight heparin and heparin drips are held or continued according to the procedure's bleeding risk, the access size and the reason for anticoagulation. As a common pattern, apixaban or rivaroxaban is stopped one day before a low-bleeding-risk procedure and two days before a high-risk one, with longer holds for dabigatran when kidney function is reduced, and the acceptable INR is lower for large-bore access than for a small sheath.</li>
+      <li><strong>Contrast allergy.</strong> <span class="who">Per protocol</span> For a prior allergic-like reaction, premedicate. The commonly taught elective regimen is prednisone 50 mg by mouth 13, 7 and 1 hour before, plus diphenhydramine 50 mg 1 hour before, with accelerated IV regimens for urgent cases.</li>
+      <li><strong>Kidneys.</strong> <span class="who">You</span> Identify at-risk patients, hold nephrotoxins such as NSAIDs where possible, order IV isotonic fluid per protocol, and handle metformin per the contrast guidance above.</li>
+      <li><strong>Fasting and medications.</strong> <span class="who">Per sedation policy</span> NPO follows the sedation or anesthesia policy. ASA guidance allows clear liquids until about 2 hours before and a light meal until 6 hours before, but many units still use NPO after midnight. Morning medications go with a sip of water, and insulin doses are reduced to avoid hypoglycemia while fasting.</li>
+      <li><strong>Lines and site.</strong> <span class="who">Nursing</span> A working IV, the planned access site clean and intact, and no IV or blood pressure cuff on an arm planned for radial access or carrying a dialysis fistula.</li>
+    </ul>
+
+    <h3>After</h3>
+    <ul>
+      <li><span class="lead-in">Know the access details.</span> Site and side, sheath size, closure method (manual, device or pre-close), whether a sheath was left in, the heparin given and last ACT, and the antithrombotic plan. These come from the procedure note or the operator.</li>
+      <li><span class="lead-in">Access-site and distal checks.</span> Vitals, the access site and the distal pulses or Doppler signals, commonly every 15 minutes for the first hour, every 30 minutes for the next, then hourly for several hours, per protocol.</li>
+      <li><span class="lead-in">Bedrest.</span> Its length depends on sheath size and closure method. As typical patterns: a few hours flat with the leg straight and the head of the bed low after manual compression of a small femoral sheath; often less after a closure device; longer, sometimes overnight, after large-bore access or if anticoagulation continues; and none after radial access, where the wrist band is weaned instead. The operator's order sets the time.</li>
+      <li><span class="lead-in">Sheaths left in.</span> A sheath left in place, for example during lysis, is pulled when the ACT or aPTT has fallen to the protocol threshold, followed by manual compression and a fresh bedrest clock.</li>
+      <li><span class="lead-in">Hydration and kidneys.</span> IV or oral fluids for at-risk patients as planned, and a repeat creatinine at 48 to 72 hours when the risk is high, which may mean after discharge.</li>
+      <li><span class="lead-in">Medications.</span> Restart home medications, start the post-procedure antiplatelet regimen, restart anticoagulation at the time the operator specifies, and restart metformin per the contrast plan.</li>
+      <li><span class="lead-in">Before discharge.</span> Walk the patient, then recheck the access site and pulses. Teach them to call for bleeding, new swelling, or a cold, numb or painful leg or hand.</li>
+    </ul>
+    <div class="script">
+      <p class="script-label">Handing a post-angiogram patient to nursing</p>
+      <p>This is <span class="ph">[name]</span>, back from a <span class="ph">[right SFA angioplasty and stent]</span> through a <span class="ph">[left common femoral, 6 French]</span> sheath, closed with <span class="ph">[a closure device / manual pressure]</span>. Flat with the <span class="ph">[left]</span> leg straight until <span class="ph">[time]</span>. Please check the groin and the <span class="ph">[right DP and PT Doppler signals, marked on the foot]</span> per the post-procedure protocol. Call me for bleeding or a growing lump at the groin; new back, flank or belly pain; a drop in blood pressure or a rising heart rate; any change in the foot's signals, color, warmth, feeling or movement; low urine output; chest pain, shortness of breath or a rash; and, after any thoracic aortic repair, any new leg weakness or numbness. Call me for anything else that worries you.</p>
     </div>
-    <nav class="sb-nav">
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">A</span> Start here</div>
-        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
-        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
-        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
-        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
-        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
-        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
-        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
-        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
-        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
-      </div>
-    </nav>
-    <div class="sb-foot">
-      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>Put the access side, sheath size, closure method and bedrest end time on your sign-out for every post-angiogram patient. When the night nurse calls about a groin, those four facts tell you how worried to be before you walk over. The post-procedure check and procedure note formats are on <a href="charting.html#post-op-check">History, exam and charting</a>.</p>
+    </aside>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Who obtains consent, pre-procedure lab and INR thresholds, the anticoagulant holding schedule, the contrast premedication regimen, the NPO policy, post-procedure check frequency, bedrest times by sheath size and closure method, and whether patients recover in a procedural unit, on the floor or in the CTV ICU are all set locally.</p>
+    </aside>
+  </section>
+
+  <!-- @pager -->
+<nav class="pager" aria-label="Chapters">
+  <a class="prev" href="operations.html" rel="prev"><span class="dir">Previous</span><span class="ttl">Open operations</span></a>
+  <a class="next" href="devices.html" rel="next"><span class="dir">Next</span><span class="ttl">Wires, catheters and devices</span></a>
+</nav>
+<!-- /@pager -->
+</main>
+<!-- @aside -->
+<aside class="aside" aria-label="On this page">
+  <p class="aside-label">On this page</p>
+  <ol>
+    <li><a href="#access" data-bed="arterial">Vascular access</a></li>
+    <li><a href="#wires-catheters" data-bed="arterial">Wires, catheters, sheaths</a></li>
+    <li><a href="#angiography" data-bed="arterial">Angiography and DSA</a></li>
+    <li><a href="#ivus" data-bed="both">IVUS and adjunct imaging</a></li>
+    <li><a href="#radiation-contrast">Radiation and contrast</a></li>
+    <li><a href="#planning" data-bed="arterial">Planning an intervention</a></li>
+    <li><a href="#toolkit" data-bed="arterial">The toolkit</a></li>
+    <li><a href="#evar-tevar" data-bed="arterial">EVAR and TEVAR</a></li>
+    <li><a href="#aortic-zones" data-bed="arterial">Aortic landing zones</a></li>
+    <li><a href="#complex" data-bed="arterial">Fenestrated and branched</a></li>
+    <li><a href="#thrombolysis" data-bed="both">Thrombolysis and thrombectomy</a></li>
+    <li><a href="#embolization" data-bed="both">Embolization and filters</a></li>
+    <li><a href="#closure-complications" data-bed="arterial">Closure and complications</a></li>
+    <li><a href="#peri-procedure" data-bed="arterial">Before and after an angiogram</a></li>
+  </ol>
+</aside>
+<!-- /@aside -->
+</div>
+<!-- @footer -->
+<footer class="site-foot">
+  <div class="inner">
+    <div>
+      <p><b>An orientation and study aid, not a clinical protocol.</b> Thresholds, classifications and trial data change, and practice varies between hospitals. Check specifics against current SVS and ESVS guidance, your attendings, and local pathways before applying anything to a patient.</p>
     </div>
-  </aside>
-  <main class="main">
-    <header class="hero">
-      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
-        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
-      </svg>
-      <div class="hero-inner wrap">
-        <p class="eyebrow seq d1">Chapter 06 &middot; The knowledge</p>
-        <h1 class="title seq d2">The <em>endovascular</em> playbook</h1>
-        <p class="lede seq d3">Modern vascular surgery is increasingly done from inside the vessel, through a needle in the groin or wrist. This chapter is the parallel world to the open operations: how you get access, what the wires and catheters do, how the pictures are made, the radiation and contrast you have to respect, and the full toolkit from a plain balloon to a branched aortic graft.</p>
-        <div class="hero-meta seq d4">
-          <span class="chip"><b>Access</b></span>
-          <span class="chip"><b>Wires &amp; catheters</b></span>
-          <span class="chip"><b>Angiography</b></span>
-          <span class="chip ven"><b>Radiation &amp; contrast</b></span>
-          <span class="chip"><b>EVAR</b></span>
-        </div>
-      </div>
-    </header>
-
-    <div class="disclaimer">
-      <div class="box reveal">
-        <b>Orientation, not technique</b>
-        This chapter explains the concepts and vocabulary of endovascular surgery so you can follow a case and answer questions intelligently. It is not a procedural manual, and device selection, sizing, dosing, and technique are the operator's decisions, governed by the specific patient and the current instructions for use.
-      </div>
+    <div>
+      <p>Compiled by <b>Hashim Salar</b>.</p>
+      <p>Content last reviewed October 2026.</p>
     </div>
-
-    <div class="wrap">
-
-      <section class="section first reveal" id="access" data-title="Vascular access">
-        <h3>Getting in: vascular access</h3>
-        <p>Every endovascular case starts with access to the lumen, and almost all of it rests on one idea, the <strong>Seldinger technique</strong>. You puncture the artery with a needle, pass a <strong>guidewire</strong> through the needle into the vessel, remove the needle while leaving the wire in place, and then slide a <strong>sheath or catheter over the wire</strong>. The wire is the rail that everything else rides on, and the cardinal rule is that you never let go of the wire and never advance anything against resistance.</p>
-        <h4><span class="pin">&raquo;</span> The common femoral artery, the default door</h4>
-        <p>The <strong>common femoral artery</strong> is the workhorse access site because it is large and, crucially, it lies <em>over the femoral head</em>, so it can be compressed against bone afterward to stop bleeding. The safe puncture is below the inguinal ligament and above the femoral bifurcation, aiming for the artery as it crosses the middle of the femoral head.</p>
-        <ul class="clean">
-          <li><strong>Retrograde access</strong> punctures against the direction of flow, with the wire heading up toward the aorta. This is the setup for aortography, for treating the aorta and iliacs, and for crossing over to the other leg.</li>
-          <li><strong>Antegrade access</strong> punctures in the direction of flow, with the wire heading down the same leg. This is used to treat disease in the thigh and below on the ipsilateral side.</li>
-          <li><strong>The contralateral "up and over"</strong> approach punctures one common femoral retrograde, walks a catheter up and over the aortic bifurcation, and comes down the opposite leg to treat it.</li>
-        </ul>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; stick too high or too low</div>
-          <p>Where you puncture determines how you bleed. A <strong>high stick</strong>, above the inguinal ligament, cannot be compressed against the femoral head and can bleed into the <strong>retroperitoneum</strong>, which is occult and dangerous. A <strong>low stick</strong>, into the superficial femoral or profunda below the bifurcation, predisposes to a <strong>pseudoaneurysm or an arteriovenous fistula</strong>. Getting the puncture in the common femoral over the femoral head is what prevents both.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Radial and brachial access</h4>
-        <p>The <strong>radial artery</strong> is increasingly used, particularly for visceral and some peripheral work, because it has a much lower bleeding and access-site complication rate and lets the patient sit up and walk sooner. Before radial access, the operator confirms a dual blood supply to the hand (an Allen or Barbeau test) so that the ulnar artery and palmar arch can perfuse the hand if the radial occludes. The <strong>brachial artery</strong> is an alternative but carries a higher risk of nerve injury and limb-threatening hematoma in its tight sheath, so it is used more selectively.</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl &middot; ultrasound guidance</div>
-          <p>Real-time ultrasound to find the common femoral artery, see its bifurcation, and watch the needle enter has become standard, because it reduces high and low sticks and inadvertent venous puncture. If you are asked how to lower access complications, "an ultrasound-guided single-wall puncture of the common femoral over the femoral head" is the answer.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="wires-catheters" data-title="Wires, catheters, sheaths">
-        <h3>Wires, catheters, and sheaths</h3>
-        <p>These are the hand tools of the field, and understanding what each does makes a case legible. Two ideas organize everything: <strong>French sizing</strong> and the difference between a <strong>wire, a catheter, and a sheath</strong>.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">What does "French" mean, and how does it differ for a sheath versus a catheter?</p>
-          <p class="a">One French is about <strong>0.33 mm</strong> of diameter, so 3 French is roughly 1 mm. A <strong>catheter's</strong> French is its <em>outer</em> diameter. A <strong>sheath's</strong> French is its <em>inner</em> diameter, the size of device it will accept, so a sheath always has a larger outer diameter than its stated French and makes a correspondingly larger hole in the artery.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Guidewires</h4>
-        <p>Wires differ in <strong>diameter</strong>, <strong>stiffness</strong>, <strong>tip shape</strong>, and <strong>coating</strong>. The everyday workhorse is the <strong>0.035 inch</strong> system, while smaller <strong>0.018 and 0.014 inch</strong> wires are used for the small tibial and pedal vessels and for low-profile devices.</p>
-        <ul class="tight">
-          <li><strong>Hydrophilic ("glide") wires</strong> have a slippery coating and an angled or steerable tip, ideal for crossing tight or tortuous lesions, but they are slippery enough to back out, so they are not used for delivering devices.</li>
-          <li><strong>Stiff and super-stiff wires</strong> (for example Amplatz, and the Lunderquist for aortic work) provide the rigid rail needed to track a bulky stent graft through a tortuous iliac system. The exchange from a soft crossing wire to a stiff delivery wire is a recurring step.</li>
-          <li><strong>Soft, atraumatic wires</strong> (such as a Bentson) are used where you want to avoid injuring the vessel.</li>
-        </ul>
-        <h4><span class="pin">&raquo;</span> Catheters</h4>
-        <p>Catheters either inject contrast or select a branch. <strong>Flush catheters</strong> with a coiled "pigtail" tip sit in a large vessel and deliver a big bolus of contrast for an aortogram without whipping around. <strong>Selective catheters</strong> have preformed shapes designed to hook into specific branches: an angled or Berenstein tip for gentle selection, a Cobra shape for downgoing visceral vessels, and reverse-curve shapes such as the Simmons (Sidewinder) or SOS Omni for sharply angled or upgoing origins.</p>
-        <h4><span class="pin">&raquo;</span> Sheaths and guides</h4>
-        <p>A <strong>sheath</strong> is a short tube with a hemostatic valve that holds the puncture open and lets you exchange catheters and devices without losing access or bleeding. A <strong>guide catheter</strong> is a longer support tube that reaches further and gives backup to push a device across a tough lesion. Most cases progress from a small diagnostic sheath to a larger sheath once the plan and the device size are settled.</p>
-      </section>
-
-      <section class="section reveal" id="angiography" data-title="Angiography &amp; DSA">
-        <h3>Making the pictures: angiography and DSA</h3>
-        <p>An angiogram is a real-time X-ray movie of contrast moving through vessels. The refinement that makes it so clear is <strong>digital subtraction angiography</strong>, which takes a plain "mask" image of the field and subtracts it from the contrast images, erasing the bone and soft tissue so only the contrast-filled vessels remain.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">Why does a patient have to hold still for DSA, and what fixes motion on the image?</p>
-          <p class="a">Subtraction assumes the mask and the contrast frames line up exactly, so any movement (including breathing or bowel gas shifting) leaves a blurred "misregistration" artifact. The operator asks for a breath-hold, and can <strong>re-mask</strong> or apply <strong>pixel shifting</strong> to realign the images.</p>
-        </div>
-        <p>Two techniques you will hear named are <strong>road-mapping</strong>, which overlays a stored contrast image on the live fluoroscopy so the operator can steer a wire along a faint map of the vessel without continuous contrast, and angled <strong>projections</strong>, since a bifurcation or an aneurysm neck often hides on a straight-on view and "opens up" only when the image intensifier is angled.</p>
-      </section>
-
-      <section class="section reveal" id="radiation-contrast" data-title="Radiation &amp; contrast">
-        <h3>Respecting radiation and contrast</h3>
-        <p>The two occupational and patient hazards unique to this room are <strong>ionizing radiation</strong> and <strong>iodinated contrast</strong>. Both are asked about constantly, partly because they are safety issues you are expected to take seriously from day one.</p>
-        <h4><span class="pin">&raquo;</span> Radiation safety and ALARA</h4>
-        <p>The governing principle is <strong>ALARA</strong>, keeping dose "as low as reasonably achievable," to both the patient and the team. Dose is controlled along three classic levers and a few practical habits.</p>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>Mnemonic &middot; time, distance, shielding</div>
-          <p>Cut <span class="word">time</span> (less fluoroscopy, low frame rates, last-image-hold), increase <span class="word">distance</span> (scattered dose falls with the square of the distance, so a step back helps a lot), and use <span class="word">shielding</span> (a lead apron, thyroid collar, leaded glasses, and table-mounted and ceiling-suspended shields). Wear your dosimeter.</p>
-        </div>
-        <ul class="tight">
-          <li><strong>Inverse-square law:</strong> doubling your distance from the source quarters your exposure, which is why simply stepping back during an injection is one of the most effective things you can do.</li>
-          <li><strong>Geometry:</strong> keep the X-ray tube under the table and the detector close to the patient, and use <strong>collimation</strong> to narrow the beam to the area of interest, which lowers dose and improves image quality.</li>
-          <li><strong>Scatter:</strong> most of the radiation reaching the team is scattered off the patient, and it is highest on the side where the beam enters, so where you stand matters.</li>
-        </ul>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; the pregnant or junior team member</div>
-          <p>Radiation injury is cumulative and the lens of the eye and the thyroid are particularly sensitive, which is the reason for leaded glasses and a thyroid shield. If you are pregnant, disclose it so additional monitoring and shielding can be arranged. Treating the dose casually because you "were only in for a minute" is exactly the attitude the badges exist to correct.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Iodinated contrast</h4>
-        <p>Iodinated contrast makes vessels visible but carries two main risks. The first is <strong>contrast-associated kidney injury</strong>, more likely in patients with chronic kidney disease, diabetes, dehydration, or a large contrast volume. The mitigations are to identify at-risk patients, ensure they are <strong>well hydrated</strong>, and <strong>minimize the contrast volume</strong>. The second is an <strong>allergic-type reaction</strong>; a patient with a prior reaction is generally <strong>premedicated with corticosteroids and an antihistamine</strong>.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">How do you image a patient with severe renal impairment or a serious contrast allergy?</p>
-          <p class="a"><strong>Carbon dioxide angiography</strong> is the classic answer below the diaphragm. CO2 is injected as a contrast agent, it is not nephrotoxic and causes no allergic reaction, and it is well suited to the aorta and the legs. The critical caveat is that CO2 is <em>not</em> used above the diaphragm or in the cerebral or coronary circulation, because gas can embolize to the brain or heart.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="toolkit" data-title="The toolkit">
-        <h3>The toolkit: balloons, stents, and atherectomy</h3>
-        <p>Once you are across a lesion with a wire, a small family of devices does the actual treating.</p>
-        <h4><span class="pin">&raquo;</span> Balloon angioplasty</h4>
-        <p>A balloon is tracked over the wire to the lesion and inflated to crack and stretch the plaque, the technique often called <strong>plain balloon angioplasty</strong>. A <strong>drug-coated balloon</strong> additionally transfers an antiproliferative drug (paclitaxel) to the vessel wall to reduce restenosis, used especially in the femoropopliteal segment. <strong>Cutting and scoring balloons</strong> have small blades or wires to score resistant, calcified, or recurrent lesions.</p>
-        <h4><span class="pin">&raquo;</span> Stents</h4>
-        <p>The single most asked endovascular concept is the difference between the two stent families and where each belongs.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Self-expanding vs balloon-expandable stents</caption>
-            <thead><tr><th>Feature</th><th>Self-expanding (nitinol)</th><th>Balloon-expandable</th></tr></thead>
-            <tbody>
-              <tr><td><b>How it deploys</b></td><td>Springs open as the sheath is withdrawn</td><td>Expanded by inflating a balloon</td></tr>
-              <tr><td><b>Best where</b></td><td>Areas of flexion or external compression (SFA, popliteal, carotid)</td><td>Where precise placement and high radial force matter (ostial renal, iliac)</td></tr>
-              <tr><td><b>Key property</b></td><td>Recovers its shape after being squashed (does not stay crushed)</td><td>Precise, strong, but a deforming force can crush it permanently</td></tr>
-              <tr><td><b>Placement accuracy</b></td><td>Can foreshorten or jump on release</td><td>Very accurate, good for ostia</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>A <strong>covered stent (stent graft)</strong> is a stent lined with fabric. It is used to exclude an aneurysm or a pseudoaneurysm, to seal a perforation, and sometimes to treat recurrent in-stent restenosis.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">Why use a self-expanding nitinol stent in the superficial femoral artery rather than a balloon-expandable one?</p>
-          <p class="a">The SFA bends, twists, and is compressed by the surrounding muscle with every step. A balloon-expandable stent there could be permanently crushed, whereas a <strong>nitinol self-expanding stent springs back to shape</strong> after deformation, so it tolerates the mechanical stress of that segment.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Atherectomy</h4>
-        <p><strong>Atherectomy</strong> physically removes or debulks plaque rather than just displacing it, using directional, rotational, orbital, or laser devices. It is used mainly for heavily calcified lesions and to prepare a vessel before angioplasty. The chief hazard to know is <strong>distal embolization</strong> of the liberated debris, sometimes managed with an embolic protection filter.</p>
-      </section>
-
-      <section class="section reveal" id="evar-tevar" data-title="EVAR &amp; TEVAR">
-        <h3>Aortic stent grafts: EVAR and TEVAR</h3>
-        <p>The largest endovascular operations are the aortic ones. <strong>EVAR</strong> (endovascular aneurysm repair) treats the abdominal aorta, and <strong>TEVAR</strong> treats the thoracic aorta, in both cases by deploying a fabric-covered stent graft that creates a new internal channel and excludes the aneurysm sac from the circulation.</p>
-        <h4><span class="pin">&raquo;</span> What makes an aneurysm suitable</h4>
-        <p>A stent graft needs healthy vessel to seal against at each end, the <strong>landing (sealing) zones</strong>. For EVAR the key constraints are an adequate <strong>infrarenal neck</strong> (enough length below the renal arteries, an acceptable diameter, limited angulation, and not too much thrombus or calcium) and iliac arteries large and straight enough to deliver the device. When the neck is hostile, standard EVAR will not seal, which is the reason fenestrated and branched devices exist.</p>
-        <h4><span class="pin">&raquo;</span> How it goes, in brief</h4>
-        <ol class="steps">
-          <li><span class="st">Access both groins.</span> Surgical cutdown or a percutaneous "pre-close" technique on the common femoral arteries, then place large sheaths over stiff wires.</li>
-          <li><span class="st">Deploy the main body.</span> Position the graft under fluoroscopy just below the renal arteries, confirming the level with an aortogram, and deploy so the fabric seals against the neck.</li>
-          <li><span class="st">Cannulate the contralateral limb and complete the seal.</span> Catheterize the short stump of the bifurcated graft from the other groin, extend a limb into each iliac, and balloon the seal zones and junctions.</li>
-          <li><span class="st">Completion angiogram.</span> Confirm exclusion of the sac and look specifically for an <strong>endoleak</strong> and for patency of the limbs.</li>
-        </ol>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; surveillance is forever</div>
-          <p>The trade for EVAR's lower early mortality is <strong>lifelong imaging surveillance</strong> with CT angiography or duplex, because the repair can fail late through an <strong>endoleak</strong> (persistent sac flow), graft migration, or limb occlusion, and a re-pressurized sac can still rupture. The endoleak classification is in the <a href="operations.html#evar">operations chapter</a>, and it is worth knowing cold. For TEVAR, the additional feared complication is <strong>spinal cord ischemia</strong> from covering the intercostal arteries, also covered there.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="complex" data-title="Fenestrated &amp; branched">
-        <h3>Complex aortic repair: FEVAR and BEVAR</h3>
-        <p>When the aneurysm reaches the visceral and renal arteries, a plain tube would cover their origins and infarct the kidneys and gut. <strong>Fenestrated grafts (FEVAR)</strong> are custom-made with reinforced holes aligned to each branch ostium, through which small bridging stents are placed into the renal and mesenteric arteries. <strong>Branched grafts (BEVAR)</strong> carry actual side branches for the same purpose in more extensive thoracoabdominal disease.</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl &middot; chimney and snorkel</div>
-          <p>Because custom fenestrated devices take weeks to manufacture, an off-the-shelf workaround for urgent cases is the <strong>chimney (snorkel) technique</strong>, running parallel stents alongside the main aortic graft to keep a branch vessel perfused. It is ingenious but leaves potential channels ("gutters") for leak, so it is a compromise rather than a first choice.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="thrombolysis" data-title="Thrombolysis &amp; thrombectomy">
-        <h3>Clot management: thrombolysis and thrombectomy</h3>
-        <p>For acute clot, whether a clotted bypass, an acutely ischemic limb, an iliofemoral DVT, or a pulmonary embolism, two endovascular strategies exist, often combined.</p>
-        <ul class="clean">
-          <li><strong>Catheter-directed thrombolysis</strong> threads a multi-sidehole catheter into the clot and infuses a fibrinolytic drug (such as tissue plasminogen activator) directly into it over hours, dissolving the thrombus while sparing the patient a full systemic dose. It also tends to reveal the underlying lesion that caused the clot, which can then be treated.</li>
-          <li><strong>Mechanical and pharmacomechanical thrombectomy</strong> uses devices to aspirate or macerate clot, either alone for speed or combined with a lytic. Aspiration thrombectomy is increasingly used for acute limb ischemia and for selected pulmonary emboli.</li>
-        </ul>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; lytic contraindications</div>
-          <p>Fibrinolytics carry a real bleeding risk, so catheter-directed lysis is avoided or used cautiously after recent surgery or trauma, with active bleeding, and with a recent stroke or intracranial process. A category IIb (immediately threatened) limb usually does not have time for a slow lytic infusion and goes for prompt mechanical clearance or surgery instead.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="embolization" data-title="Embolization &amp; filters">
-        <h3>Embolization and IVC filters</h3>
-        <p>Sometimes the goal is to <em>stop</em> flow rather than restore it. <strong>Embolization</strong> deliberately occludes a vessel using <strong>coils</strong>, <strong>vascular plugs</strong>, <strong>particles</strong>, or liquid agents. Vascular surgeons use it to treat a <strong>type II endoleak</strong>, to control bleeding (trauma or a gastrointestinal bleed), to occlude an internal iliac artery before some aortic work, and to treat arteriovenous malformations.</p>
-        <p>The <strong>inferior vena cava filter</strong> is a device placed in the IVC to catch emboli and prevent pulmonary embolism. Its main indication is a patient with venous thromboembolism who <strong>cannot be anticoagulated</strong>, or who has recurrent PE despite adequate anticoagulation.</p>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; retrieve the filter</div>
-          <p>Most filters today are <strong>retrievable</strong> and are meant to come out once the patient can be anticoagulated, because a filter left indefinitely can <strong>migrate, perforate the cava, fracture, or thrombose</strong>. "Place it for a clear indication and plan its removal" is the expected attitude.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="closure-complications" data-title="Closure &amp; complications">
-        <h3>Getting out: closure and access complications</h3>
-        <p>At the end of the case the arteriotomy has to be sealed. The two routes are <strong>manual compression</strong>, holding firm pressure over the puncture (still the standard for small sheaths), and a <strong>vascular closure device</strong>, either a suture-mediated system or a collagen plug, which lets the patient sit up and mobilize sooner.</p>
-        <h4><span class="pin">&raquo;</span> Access-site complications</h4>
-        <p>Most endovascular complications happen at the puncture, and recognizing them quickly is squarely a trainee's job on rounds.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>The access-site complications to know</caption>
-            <thead><tr><th>Complication</th><th>How it shows up</th><th>Typical management</th></tr></thead>
-            <tbody>
-              <tr><td><b>Hematoma</b></td><td>Local swelling and bruising at the groin</td><td>Pressure and observation if stable</td></tr>
-              <tr><td><b>Retroperitoneal bleed</b></td><td>Flank or back pain, hypotension, falling hemoglobin <em>without</em> an obvious groin hematoma; follows a <b>high stick</b></td><td>Resuscitate, reverse anticoagulation, CT; may need a covered stent or surgery</td></tr>
-              <tr><td><b>Pseudoaneurysm</b></td><td>Pulsatile, tender mass with a bruit; "to-and-fro" signal on duplex; follows a <b>low stick</b></td><td>Ultrasound-guided thrombin injection or compression; surgery if large</td></tr>
-              <tr><td><b>Arteriovenous fistula</b></td><td>Continuous bruit and thrill at the puncture (artery and vein both hit)</td><td>Observation, then repair if it persists or grows</td></tr>
-              <tr><td><b>Dissection or thrombosis</b></td><td>A new cold, pulseless limb after the case</td><td>Urgent imaging and revascularization</td></tr>
-              <tr><td><b>Distal embolization</b></td><td>Acutely ischemic toes or foot ("trash foot")</td><td>Anticoagulation, aspiration or lysis as needed</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">A patient becomes hypotensive with back pain after a femoral procedure, but the groin looks unremarkable. What are you worried about?</p>
-          <p class="a">A <strong>retroperitoneal hemorrhage</strong> from a high arterial puncture above the inguinal ligament, where bleeding tracks into the retroperitoneum and is not visible externally. Resuscitate, send a hemoglobin, reverse anticoagulation, and get a CT, because this can be life-threatening and is easy to miss if you only inspect the skin.</p>
-        </div>
-      </section>
-
-      <div class="pagenav">
-        <a class="pagenav-a prev" href="operations.html"><div class="dir">&larr; Previous</div><div class="nm">Open operations</div></a>
-        <a class="pagenav-a next" href="questions.html"><div class="dir">Next &rarr;</div><div class="nm">Questions you'll be asked</div></a>
-      </div>
-
-      <footer class="foot">
-        <p><b>Endovascular</b></p>
-        <p>Hold the throughline of a case in your head: access by Seldinger, a wire across the lesion, the right catheter to the right place, a balloon or stent or graft to treat it, and a clean closure. Respect the radiation and the contrast, and know the access-site complications, because spotting them early is your job.</p>
-        <p class="mantra">Needle, wire, catheter, treat, close.</p>
-      </footer>
-    </div>
-  </main>
-
-</div><!-- /.shell -->
-<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
-<script src="assets/app.js"></script>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/app.js?v=52dc44bc" data-index="ec206659" defer></script>
+<!-- /@footer -->
 </body>
 </html>

@@ -1,283 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- @head -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foundations · UNM Vascular Surgery Field Guide</title>
-<meta name="description" content="Arterial and venous anatomy, hemodynamics, the vascular exam, noninvasive testing, imaging, and anticoagulation.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foundations | Vascular Surgery Field Guide</title>
+<meta name="description" content="Anatomy, hemodynamics, the exam, noninvasive testing, imaging, and anticoagulation.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.className+=' js';</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=1d2b40f6">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('vfg-theme');if(t==='dark'||t==='light')r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<!-- /@head -->
 </head>
 <body>
-<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
-<div class="scrim" id="scrim"></div>
-<div class="progress" id="progress"></div>
-<div class="shell">
-  <aside class="sidebar" id="sidebar">
-    <div class="sb-head">
-      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
-        <span>
-          <p class="sb-mark">Field Guide</p>
-          <p class="sb-title">Vascular <em>Surgery</em></p>
-        </span>
-      </a>
-      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+<!-- @nav -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-nav-open aria-controls="rail" aria-expanded="false" aria-label="Open contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#B01E2E"/><path d="M16 5v9.5c0 2.2-1.2 3.6-3 5L8.5 23.5V27M16 14.5c0 2.2 1.2 3.6 3 5l4.5 4V27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">Vascular Surgery <span>Field Guide</span></span></a>
+  <div class="topbar-actions">
+    <button class="icon-btn search-btn" type="button" data-search-open aria-label="Search the guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="lbl">Search the guide</span><kbd>/</kbd></button>
+    <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+  </div>
+</header>
+<div class="scrim" data-nav-close></div>
+<!-- /@nav -->
+<div class="frame">
+<!-- @rail -->
+<nav class="rail" id="rail" aria-label="Guide contents">
+  <div class="rail-close"><button class="icon-btn" type="button" data-nav-close aria-label="Close contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="rail-group">
+    <p class="rail-label">Start here</p>
+    <ol>
+      <li><a class="rail-link" href="index.html"><span class="rail-n">0</span>Home</a></li>
+      <li><a class="rail-link" href="first-day.html"><span class="rail-n">1</span>Your first day</a></li>
+      <li><a class="rail-link" href="rounds.html"><span class="rail-n">2</span>Rounds and presenting</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Running the service</p>
+    <ol>
+      <li><a class="rail-link" href="charting.html"><span class="rail-n">3</span>History, exam and charting</a></li>
+      <li><a class="rail-link" href="ctv-icu.html"><span class="rail-n">4</span>The CTV ICU</a></li>
+      <li><a class="rail-link" href="on-call.html"><span class="rail-n">5</span>On call and cross-cover</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">The knowledge</p>
+    <ol>
+      <li><a class="rail-link" href="foundations.html" aria-current="page"><span class="rail-n">6</span>Foundations</a></li>
+      <li><a class="rail-link" href="presentations.html"><span class="rail-n">7</span>Presentations</a></li>
+      <li><a class="rail-link" href="operations.html"><span class="rail-n">8</span>Open operations</a></li>
+      <li><a class="rail-link" href="endovascular.html"><span class="rail-n">9</span>Endovascular</a></li>
+      <li><a class="rail-link" href="devices.html"><span class="rail-n">10</span>Wires, catheters and devices</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Sharpen up</p>
+    <ol>
+      <li><a class="rail-link" href="questions.html"><span class="rail-n">11</span>Questions you&#x27;ll be asked</a></li>
+      <li><a class="rail-link" href="reference.html"><span class="rail-n">12</span>Quick reference</a></li>
+    </ol>
+  </div>
+  <p class="rail-note">Inflow, outflow, conduit. The vascular patient is always a cardiac patient.</p>
+</nav>
+<!-- /@rail -->
+<main id="main" class="page" tabindex="-1">
+  <header class="page-head">
+    <!-- @crumb -->
+<p class="crumb"><a href="index.html">Field Guide</a><span class="sep" aria-hidden="true">/</span>The knowledge</p>
+<!-- /@crumb -->
+    <h1>Foundations</h1>
+    <p class="summary">The anatomy, hemodynamics, exam, testing, pharmacology and cardiac risk assessment that sit underneath every case on the service. Everyone will assume you already speak this language, so read it in your first week and come back to it before cases and consults.</p>
+    <!-- @toc -->
+<details class="toc-inline">
+  <summary>On this page <span class="count">10 sections</span></summary>
+  <ol>
+    <li><a href="#anatomy">Arterial anatomy</a></li>
+    <li><a href="#venous">Venous anatomy</a></li>
+    <li><a href="#collaterals">Collateral pathways</a></li>
+    <li><a href="#hemodynamics">Hemodynamics</a></li>
+    <li><a href="#exam">History and exam</a></li>
+    <li><a href="#testing">Testing and the ABI</a></li>
+    <li><a href="#imaging">Imaging</a></li>
+    <li><a href="#anticoag">Anticoagulation</a></li>
+    <li><a href="#medical">Medical therapy</a></li>
+    <li><a href="#cardiac-risk">Perioperative cardiac risk</a></li>
+  </ol>
+</details>
+<!-- /@toc -->
+  </header>
+
+  <section class="sec" id="anatomy" data-title="Arterial anatomy" data-bed="both">
+    <h2>Arterial anatomy, head to toe <span class="tag">Memorize</span></h2>
+    <p class="sec-lede">You will be asked to name vessels in order, in the operating room, while holding a retractor. Learn the path of blood from the aorta to the toes and from the arch to the fingertips, then the neck and the gut, because those are the beds the service operates on.</p>
+
+    <h3>The aorta and the arch</h3>
+    <p>The aortic root gives the coronary arteries, and the ascending aorta then becomes the arch, which gives three branches before it descends. The classic arch order, right to left, is the brachiocephalic (innominate) trunk, the left common carotid, and the left subclavian. The brachiocephalic then splits into the right common carotid and right subclavian. Each subclavian gives a vertebral artery, which climbs through the cervical transverse foramina (usually entering at C6) and joins its partner to form the basilar artery.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic</p>
+      <p>Arch order, right to left, is the "ABCs of the arch": Arteria innominata (brachiocephalic), left common Carotid, left Subclavian. And the celiac trunk's three branches are the left gastric, splenic, and common hepatic.</p>
+    </aside>
+
+    <h4>Arch variants worth knowing</h4>
+    <dl class="terms">
+      <div><dt>Bovine arch <span class="aka">common origin</span></dt><dd>The brachiocephalic trunk and left common carotid share a single origin, or the left common carotid arises from the brachiocephalic trunk itself. It is the most common variant, seen in roughly 10 to 25 percent of people depending on the series. The name is a misnomer (cattle have a different arrangement) but everyone uses it. It changes how the left carotid is catheterized for angiography or stenting.</dd></div>
+      <div><dt>Left vertebral from the arch</dt><dd>The left vertebral arises directly from the arch between the left common carotid and left subclavian in about 5 percent of people. It matters for catheter selection and for thoracic stent-graft planning near the left subclavian.</dd></div>
+      <div><dt>Aberrant right subclavian <span class="aka">arteria lusoria</span></dt><dd>Arises as the last arch branch, beyond the left subclavian, and usually crosses behind the esophagus (about 1 percent of people). It can cause dysphagia, may arise from an aneurysmal Kommerell diverticulum, and comes with a non-recurrent right laryngeal nerve that is at risk in neck surgery.</dd></div>
+      <div><dt>Arch type I to III</dt><dd>Describes how far below the top of the arch the great vessels arise. In a type I arch they come off the top; in a type III arch the innominate origin sits well below it. Steeper, elongated arches are more common with age and hypertension and make transfemoral carotid work harder.</dd></div>
+    </dl>
+
+    <h3>The carotid bifurcation</h3>
+    <p>The common carotid normally gives no branches in the neck. It divides, usually at about the upper border of the thyroid cartilage (roughly C3 to C4), into the internal and external carotid arteries. The level varies, and a high bifurcation near the angle of the mandible makes distal exposure harder, so look for it on the preoperative imaging. The origin of the internal carotid is dilated as the carotid bulb, home of the carotid sinus baroreceptors and the carotid body. That is why handling the bifurcation can drop the heart rate and blood pressure.</p>
+    <p>The internal carotid (ICA) has no branches in the neck; its first branch, the ophthalmic artery, arises inside the skull. At its origin the ICA usually lies posterolateral to the external carotid. The external carotid (ECA) supplies the face, scalp and neck through eight branches, and it becomes an important collateral to the brain when the ICA is occluded.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: external carotid branches</p>
+      <p>"Some Anatomists Like Freaking Out Poor Medical Students": superior thyroid, ascending pharyngeal, lingual, facial, occipital, posterior auricular, maxillary, superficial temporal. The superior thyroid is usually the first branch and is the one you will see controlled during an endarterectomy.</p>
+    </aside>
+
+    <h4>Structures met during carotid endarterectomy</h4>
+    <p>Through an incision along the anterior border of the sternocleidomastoid, roughly in the order you meet them:</p>
+    <dl class="terms wide">
+      <div><dt>Great auricular nerve</dt><dd>Crosses the top of the incision toward the earlobe. Injury leaves a numb earlobe.</dd></div>
+      <div><dt>Facial vein <span class="aka">common facial vein</span></dt><dd>Crosses the field to drain into the internal jugular vein and reliably overlies the carotid bifurcation, so it is the landmark. It is ligated and divided, and the internal jugular is retracted laterally.</dd></div>
+      <div><dt>Carotid sheath</dt><dd>Common carotid medially, internal jugular vein laterally, vagus nerve posteriorly between them.</dd></div>
+      <div><dt>Ansa cervicalis</dt><dd>A nerve loop on the front of the sheath, descending from the hypoglossal to the strap muscles. It can be divided to free the hypoglossal with little consequence.</dd></div>
+      <div><dt>Vagus nerve (X)</dt><dd>Usually posterior in the sheath but occasionally anterior, so it must be seen before clamps go on. Injury, including clamp injury, paralyzes the ipsilateral vocal cord (hoarseness, weak cough) because the recurrent laryngeal fibers travel within it.</dd></div>
+      <div><dt>Hypoglossal nerve (XII)</dt><dd>Crosses superficial to the ICA and ECA a short distance above the bifurcation, beneath the posterior belly of the digastric, tethered by the sternocleidomastoid branch of the occipital artery. Injury makes the tongue deviate toward the injured side. This is the classic carotid nerve injury.</dd></div>
+      <div><dt>Superior laryngeal nerve</dt><dd>Runs deep (medial) to the ICA and ECA near the bifurcation; its external branch travels with the superior thyroid artery. Injury causes voice fatigue and loss of high pitch, which matters a great deal to a singer.</dd></div>
+      <div><dt>Marginal mandibular nerve <span class="aka">branch of VII</span></dt><dd>Runs just below the angle of the mandible and is stretched by retraction at the top of the incision. Injury droops the lower lip on that side. Curving the upper incision back toward the mastoid helps protect it.</dd></div>
+      <div><dt>Glossopharyngeal nerve (IX)</dt><dd>Met only with very high exposure toward the skull base. Injury causes dysphagia and aspiration risk.</dd></div>
+    </dl>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>Most cranial nerve injuries after carotid endarterectomy are traction or clamp injuries that recover over weeks to months. Still, new facial or tongue asymmetry after a carotid operation is a stroke until a full neurologic exam says otherwise. A drooping lower lip with an otherwise normal exam points to the marginal mandibular nerve. The operation itself is on <a href="operations.html#cea">Open operations</a>.</p>
+    </aside>
+    <details class="qa">
+      <summary>How do you tell the internal carotid from the external carotid in the neck?</summary>
+      <div class="qa-a"><p>The ICA has no branches in the neck, while the ECA gives branches starting with the superior thyroid. At the origin the ICA is usually posterolateral and larger. On duplex the ICA has a low-resistance waveform with continuous diastolic flow and the ECA a higher-resistance one, and tapping the superficial temporal artery transmits oscillations into the ECA signal.</p></div>
+    </details>
+    <details class="qa">
+      <summary>After a right carotid endarterectomy the tongue deviates to the right on protrusion. Which nerve?</summary>
+      <div class="qa-a"><p>The right hypoglossal (XII). The intact left genioglossus pushes the tongue toward the weak side, so it deviates toward the injury.</p></div>
+    </details>
+
+    <h3>The visceral aorta</h3>
+    <p>Below the diaphragm the abdominal aorta gives, in descending order, the celiac trunk (roughly T12), the superior mesenteric artery (L1), the paired renal arteries (L1 to L2), the inferior mesenteric artery (L3), and finally bifurcates into the common iliac arteries at about L4, near the level of the umbilicus. Paired lumbar arteries leave its back wall along the way.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Visceral branches of the abdominal aorta</caption>
+      <thead><tr><th scope="col">Branch</th><th scope="col">Level</th><th scope="col">Key branches and why it matters</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Celiac trunk</th><td class="num">T12</td><td>Left gastric, splenic, common hepatic (which gives the gastroduodenal and proper hepatic). Can be compressed by the median arcuate ligament.</td></tr>
+        <tr><th scope="row">Superior mesenteric artery</th><td class="num">L1</td><td>Inferior pancreaticoduodenal, jejunal and ileal, middle colic, right colic and ileocolic; supplies the midgut. It leaves the aorta at an acute angle, which is why emboli lodge in it. A replaced right hepatic artery arises from it in roughly 1 in 10 people.</td></tr>
+        <tr><th scope="row">Renal arteries</th><td class="num">L1 to L2</td><td>The right passes behind the inferior vena cava. They define the infrarenal neck for aneurysm repair.</td></tr>
+        <tr><th scope="row">Accessory renal arteries</th><td class="num">Variable</td><td>Present in roughly a quarter to a third of people, above or below the main renal artery. They are end arteries, so covering or ligating one infarcts that part of the kidney. Common with a horseshoe kidney.</td></tr>
+        <tr><th scope="row">Inferior mesenteric artery</th><td class="num">L3</td><td>Left colic, sigmoid and superior rectal; supplies the hindgut. Usually covered by an endovascular aneurysm repair and ligated or reimplanted in open repair. With the lumbars, a common source of type II endoleak.</td></tr>
+        <tr><th scope="row">Aortic bifurcation</th><td class="num">L4</td><td>Into the common iliac arteries, near the umbilicus.</td></tr>
+      </tbody>
+    </table></div>
+    <p>One venous relationship matters in every open aortic exposure. The left renal vein crosses in front of the aorta just below the origin of the superior mesenteric artery. In a few percent of people it runs behind the aorta (retroaortic) or splits around it (circumaortic), where an unsuspecting clamp can tear it. Look for it on the CTA before the operation.</p>
+    <details class="qa">
+      <summary>Why does a superior mesenteric embolus classically spare the proximal jejunum, while a thrombosis does not?</summary>
+      <div class="qa-a"><p>Emboli usually lodge a few centimeters beyond the origin, near the middle colic branch, so the first jejunal branches still fill. Thrombosis occurs on an atherosclerotic plaque at the origin itself and takes the whole territory. The clinical picture is on <a href="presentations.html#mesenteric">Presentations</a>.</p></div>
+    </details>
+
+    <h3>The lower extremity, in order</h3>
+    <p>This is the single most asked sequence in the field. Trace it until it is automatic.</p>
+    <ul>
+      <li>The common iliac splits into the internal iliac (hypogastric), supplying the pelvis, and the external iliac.</li>
+      <li>The external iliac passes under the inguinal ligament and becomes the common femoral artery.</li>
+      <li>The common femoral bifurcates into the profunda femoris (deep femoral), the key collateral vessel of the thigh, and the superficial femoral artery.</li>
+      <li>The superficial femoral travels down the thigh through the adductor (Hunter's) canal and, at the adductor hiatus, becomes the popliteal artery.</li>
+      <li>Below the knee the popliteal gives the anterior tibial artery (which becomes the dorsalis pedis on the foot) and then the tibioperoneal trunk, which splits into the posterior tibial (passing behind the medial malleolus) and the peroneal (fibular) artery.</li>
+    </ul>
+    <details class="qa">
+      <summary>What are the three tibial ("trifurcation") vessels, and which two feed the pedal arch?</summary>
+      <div class="qa-a"><p>Anterior tibial, posterior tibial, and peroneal. The dorsalis pedis (continuation of the anterior tibial) and the posterior tibial form the pedal arch. The peroneal ends above the ankle and communicates with both through its branches, but does not normally reach the foot directly.</p></div>
+    </details>
+    <details class="qa">
+      <summary>What runs with the artery in the adductor canal?</summary>
+      <div class="qa-a"><p>The femoral artery and vein, the saphenous nerve, and the nerve to vastus medialis. The saphenous nerve is the named structure they are fishing for.</p></div>
+    </details>
+
+    <h3>The upper extremity, in order</h3>
+    <p>The subclavian passes over the first rib, behind the clavicle, and becomes the axillary at the lateral border of the first rib. Past the lower border of teres major it becomes the brachial, which bifurcates just below the elbow into the radial and ulnar arteries. These join in the hand as the superficial and deep palmar arches. This dual supply is what makes the Allen test meaningful and what lets a radiocephalic fistula work.</p>
+  </section>
+
+  <section class="sec" id="venous" data-title="Venous anatomy" data-bed="venous">
+    <h2>Venous anatomy</h2>
+    <p class="sec-lede">Veins are divided into a deep system (paired with the named arteries, carrying roughly 85 to 90 percent of return), a superficial system, and the perforators that connect them. Naming them correctly is not pedantry: whether a clot is in a deep or a superficial vein decides whether the patient is anticoagulated.</p>
+
+    <h3>Deep veins by name</h3>
+    <p>Below the knee the deep veins are paired companions (venae comitantes) of the anterior tibial, posterior tibial and peroneal arteries, plus the muscular gastrocnemius and soleal veins, where many calf DVTs begin. They join to form the popliteal vein, which becomes the femoral vein at the adductor hiatus. The femoral vein joins the deep femoral (profunda) vein to form the common femoral vein, which receives the great saphenous vein at the saphenofemoral junction and becomes the external iliac vein under the inguinal ligament. The external and internal iliac veins form the common iliac veins, which join at about L5, to the right of the aorta, to form the inferior vena cava.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: the "superficial femoral vein"</p>
+      <p>The vein running with the superficial femoral artery was long called the superficial femoral vein. It is a deep vein, and current nomenclature calls it the femoral vein. Thrombus there is a proximal DVT that needs anticoagulation, not a superficial phlebitis. If a report or a colleague says "superficial femoral vein," read it as femoral vein, and write it that way yourself.</p>
+    </aside>
+    <p>In the arm, paired radial, ulnar and brachial veins drain to the axillary vein, which becomes the subclavian vein at the first rib and joins the internal jugular to form the brachiocephalic vein. The superficial cephalic vein (lateral, ending in the axillary vein through the deltopectoral groove) and basilic vein (medial, diving deep in the mid-arm to join the brachial veins) are the dialysis access veins; see <a href="operations.html#access">Open operations</a>.</p>
+
+    <h3>Superficial veins and their nerves</h3>
+    <p>The great saphenous vein begins in front of the medial malleolus and runs up the medial leg and thigh to join the common femoral vein at the saphenofemoral junction, just below and lateral to the pubic tubercle. The small saphenous vein begins behind the lateral malleolus and runs up the posterior calf to join the popliteal vein in the popliteal fossa, at a level that varies. Each runs with a sensory nerve that is at risk during vein harvest, stripping or thermal ablation.</p>
+    <div class="compare">
+      <div class="venous"><h4>Great saphenous vein</h4><ul><li>Runs with the saphenous nerve below the knee, where the two lie close together.</li><li>Injury numbs the medial leg and foot.</li><li>One reason thermal ablation usually treats the above-knee segment and works carefully below the knee.</li></ul></div>
+      <div class="venous"><h4>Small saphenous vein</h4><ul><li>Runs with the sural nerve in the posterior calf.</li><li>Injury numbs the lateral foot and heel.</li><li>The sural nerve is also the nerve harvested for nerve grafts, so its course gets asked.</li></ul></div>
     </div>
-    <nav class="sb-nav">
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">A</span> Start here</div>
-        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
-        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
-        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
-        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
-        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
-        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
-        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
-        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
-        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
-      </div>
-    </nav>
-    <div class="sb-foot">
-      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>The great saphenous vein is the workhorse conduit of vascular and cardiac surgery, the preferred graft for infrainguinal bypass and for coronary bypass. Before you ablate or harvest it, someone always asks whether the patient might need it as a conduit later. A vein mapped and spared today can be a limb saved tomorrow. On mapping, a vein of at least about 3 mm is generally wanted for a bypass.</p>
+    </aside>
+    <p>Superficial vein thrombosis is usually treated less aggressively than DVT, with one exception worth remembering: thrombus in the great saphenous vein within about 3 cm of the saphenofemoral junction is generally managed like a DVT, because it is a step away from the common femoral vein.</p>
+
+    <h3>Perforators</h3>
+    <p>Perforating veins pierce the deep fascia and connect the superficial and deep systems. Their valves normally direct flow from superficial to deep, so the calf muscle pump can empty the leg. When they fail, high pressure from the deep system is transmitted to the skin. The medial lower-leg perforators (historically called Cockett perforators, now posterior tibial perforators) drain the gaiter area above the medial malleolus, which is exactly where venous ulcers cluster. Others sit just below the knee (Boyd) and in the thigh (Dodd). A perforator is usually considered pathologic, and worth treating, when it shows outward flow of 500 milliseconds or more, a diameter of about 3.5 mm or more, and lies beneath a healed or open ulcer.</p>
+
+    <h3>May-Thurner anatomy</h3>
+    <p>The right common iliac artery crosses in front of the left common iliac vein and compresses it against the fifth lumbar vertebra. Chronic pulsatile compression can leave webs and spurs inside the vein. The result is a predisposition to left iliofemoral DVT, classically in younger women. Some degree of this compression is common on imaging in people with no symptoms, so the anatomy alone is not the diagnosis; intravascular ultrasound at venography is the usual way to judge it. An extensive, symptomatic left iliofemoral DVT may be treated with thrombus removal and stenting of the compressed segment in selected patients. See <a href="presentations.html#vte">Presentations</a>.</p>
+    <details class="qa">
+      <summary>Why is it the left leg in May-Thurner syndrome?</summary>
+      <div class="qa-a"><p>Because the inferior vena cava lies to the right of the aorta, the left common iliac vein must cross the midline, passing behind the right common iliac artery and in front of the spine. That is where it gets pinched.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="collaterals" data-title="Collateral pathways" data-bed="arterial">
+    <h2>Collateral pathways <span class="tag">High yield</span></h2>
+    <p class="sec-lede">Collaterals explain why a patient can occlude a major vessel and still keep a viable limb, brain or gut. Named collateral routes are favorite teaching material.</p>
+    <dl class="terms wide">
+      <div><dt>Circle of Willis</dt><dd>Anastomotic ring at the base of the brain linking the anterior (carotid) and posterior (vertebrobasilar) circulations. It explains why some patients tolerate carotid occlusion or clamping and others stroke. It is complete in only a minority of people.</dd></div>
+      <div><dt>External to internal carotid</dt><dd>When the ICA is occluded, ECA branches around the face and orbit can fill the ophthalmic artery backward and supply the intracranial ICA. One reason the ECA is worth preserving.</dd></div>
+      <div><dt>Vertebral reversal <span class="aka">subclavian steal</span></dt><dd>With a proximal subclavian occlusion, blood flows up one vertebral artery and down the other into the arm. Arm exercise can then steal from the brainstem. Suspect it when the arm pressures differ by more than about 15 to 20 mmHg.</dd></div>
+      <div><dt>Pancreaticoduodenal arcades</dt><dd>Link the celiac (through the gastroduodenal artery) to the superior mesenteric artery. They keep the liver and foregut alive when the celiac origin is stenosed, and can become aneurysmal under the extra flow.</dd></div>
+      <div><dt>Marginal artery of Drummond</dt><dd>Continuous arcade along the mesenteric border of the colon connecting the SMA and IMA territories.</dd></div>
+      <div><dt>Arc of Riolan <span class="aka">meandering mesenteric artery</span></dt><dd>A shorter, more central SMA to IMA connection that enlarges dramatically when one mesenteric vessel occludes chronically.</dd></div>
+      <div><dt>Aortoiliac collaterals</dt><dd>In Leriche-type occlusion, flow reaches the legs through lumbar to iliolumbar routes and through the IMA to superior rectal to middle and inferior rectal (internal iliac) routes.</dd></div>
+      <div><dt>Internal thoracic to epigastric <span class="aka">Winslow pathway</span></dt><dd>Internal thoracic (mammary) to superior epigastric to inferior epigastric to external iliac. In aortoiliac occlusion it can carry much of the leg's flow, so it should not be divided carelessly.</dd></div>
+      <div><dt>Profunda femoris and the geniculates</dt><dd>The main collateral around an occluded superficial femoral artery; geniculate branches reconstitute the popliteal. A good profunda can carry a limb despite a dead SFA.</dd></div>
+    </dl>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>Before any vessel is covered, ligated or embolized, someone asks what supplies its territory afterward. Covering both internal iliacs risks buttock claudication and colon ischemia; covering the left subclavian matters more if the patient has a left internal mammary coronary graft or a dominant left vertebral; ligating the IMA depends on an intact marginal artery. Answering that question is how you show you understand collaterals.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="hemodynamics" data-title="Hemodynamics" data-bed="arterial">
+    <h2>Hemodynamics and physiology</h2>
+    <p class="sec-lede">A handful of physical principles get asked again and again because they explain disease. See also the teaching questions on <a href="questions.html#physiology-q">physiology</a>.</p>
+
+    <h3>Poiseuille's law</h3>
+    <p>Flow is proportional to the fourth power of the radius and inversely proportional to length and viscosity. The punchline is that small changes in lumen diameter cause large changes in flow, which is why a focal stenosis can be so hemodynamically costly, and why a slightly larger conduit dramatically improves flow.</p>
+
+    <h3>Critical stenosis</h3>
+    <p>A stenosis generally becomes hemodynamically significant once it narrows the diameter by about 50 percent (roughly 75 percent of cross-sectional area), at which point a measurable pressure and flow gradient appears across it. This is the threshold that duplex velocity criteria are designed to detect.</p>
+    <p>Because the same volume of blood must pass through a smaller opening, velocity rises within a stenosis (flow equals area times velocity). That jump in velocity is what duplex ultrasound measures, which is why reports grade stenoses by peak systolic velocity and by the ratio of velocity in the stenosis to velocity just upstream.</p>
+
+    <h3>Why disease shows up with exercise</h3>
+    <p>At rest, collaterals around a stenosis or occlusion may carry enough flow for resting muscle. Exercise dilates the muscle bed and multiplies demand, but the collaterals have a fixed, high resistance, so pressure beyond them falls and the muscle becomes ischemic. That is claudication, and it is why an exercise ABI can reveal disease that a resting ABI misses.</p>
+
+    <h3>Laplace's law and aneurysms</h3>
+    <p>Wall tension rises with both pressure and radius. As an aneurysm enlarges, wall tension climbs, which raises rupture risk and accelerates further dilation, a self-reinforcing loop that is the entire rationale for size-based repair thresholds.</p>
+    <details class="qa">
+      <summary>Why does aneurysm rupture risk rise so steeply with diameter?</summary>
+      <div class="qa-a"><p>By Laplace's law, tension in the wall is proportional to pressure times radius, so a larger radius means higher wall stress at the same blood pressure. That both predisposes to rupture and drives continued expansion.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="exam" data-title="History and exam" data-bed="arterial">
+    <h2>The vascular history and physical exam</h2>
+    <p class="sec-lede">The exam is where you earn credibility. Do it the same way every time. Documentation templates for the exam are on <a href="charting.html">History, exam and charting</a>.</p>
+
+    <h3>History: localizing claudication</h3>
+    <p>The level of arterial disease predicts where the patient hurts when walking, because the pain occurs one level below the occlusion. Buttock and hip claudication points to aortoiliac disease, thigh claudication to the common femoral or iliac level, and the most common pattern, calf claudication, to the superficial femoral and popliteal segment. The full presentations are on <a href="presentations.html#claudication">Presentations</a>.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: Leriche syndrome</p>
+      <p>Aortoiliac occlusive disease gives the triad of buttock and thigh claudication, erectile dysfunction, and absent or diminished femoral pulses. Picture the blockage sitting at the aortic bifurcation, starving everything downstream.</p>
+    </aside>
+
+    <h3>The pulse exam</h3>
+    <p>Palpate and grade every pulse, comparing sides. A common scale is 0 absent, 1+ diminished, 2+ normal, 3+ bounding (some services add a fourth grade, so use the one your team uses). Document the sites: radial, brachial, carotid, femoral, popliteal, dorsalis pedis, and posterior tibial. If you cannot feel a distal pulse, reach for the handheld Doppler and describe the signal.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Handheld Doppler waveforms</caption>
+      <thead><tr><th scope="col">Signal</th><th scope="col">What you hear</th><th scope="col">What it usually means</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Triphasic</th><td>A sharp forward systolic sound, a brief reversal in early diastole, then a small forward sound</td><td>Normal peripheral artery at rest: a compliant vessel feeding a high-resistance bed.</td></tr>
+        <tr><th scope="row">Biphasic</th><td>Forward systolic flow and early diastolic reversal, without the late forward component</td><td>Often normal, especially in older patients with stiffer arteries; can accompany mild proximal disease. Interpret alongside the other leg and the ABI.</td></tr>
+        <tr><th scope="row">Monophasic</th><td>A single forward sound with no reversal, often soft and drawn out (dampened)</td><td>Usually distal to a significant stenosis or occlusion, with flow arriving through collaterals. Also normal in low-resistance beds (the ICA, the kidney) and in a hyperemic limb after exercise, with infection, or just after revascularization.</td></tr>
+        <tr class="hot"><th scope="row">Absent</th><td>No arterial signal at that site</td><td>Occlusion or severe ischemia. In an acutely cold leg, no arterial signal with a preserved venous signal suggests a threatened limb (Rutherford category II); no venous signal either suggests an irreversible one (category III). See <a href="presentations.html#ali">acute limb ischemia</a>.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">A 2020 consensus from the Society for Vascular Medicine and the Society for Vascular Ultrasound recommends describing waveforms as multiphasic or monophasic, with descriptors such as high or low resistance, rather than counting phases. You will still hear triphasic, biphasic and monophasic at the bedside every day.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>"Doppler signals" and "palpable pulses" are not the same thing, and saying so precisely matters. A monophasic Doppler signal in a foot that has no palpable pulse still tells you the foot is perfused, which can be the difference between watchful waiting and an emergent trip to the angiography suite. Always state both what you felt and what you heard.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>When you find a faint pedal signal, mark the spot on the skin with a pen and write the vessel and waveform ("DP monophasic, PT biphasic, marked"). The next examiner, often you at 3 a.m., then compares like with like, and a lost signal means a real change rather than a different spot on the foot.</p>
+    </aside>
+
+    <h3>Provocative and inspection findings</h3>
+    <ul>
+      <li><span class="lead-in">Buerger's test.</span> Elevation causes pallor in an ischemic limb, and dependency causes a dusky dependent rubor. The angle at which pallor appears tracks severity.</li>
+      <li><span class="lead-in">Signs of chronic ischemia.</span> Capillary refill beyond 2 to 3 seconds, along with loss of hair, shiny atrophic skin, and thickened nails.</li>
+      <li><span class="lead-in">Allen test.</span> Before radial access or radial-artery harvest, confirms that the ulnar artery and palmar arch can supply the hand alone. A Doppler or pulse-oximetry version is more objective than watching the palm color.</li>
+      <li><span class="lead-in">Bruits.</span> Auscultate over the carotids, abdomen, and femorals; a bruit signals turbulent flow across a stenosis.</li>
+    </ul>
+  </section>
+
+  <section class="sec" id="testing" data-title="Testing and the ABI" data-bed="both">
+    <h2>Noninvasive testing and the ABI <span class="tag">Core skill</span></h2>
+    <p class="sec-lede">The ankle-brachial index is the bedside number that quantifies perfusion. Measure the higher of the two ankle systolic pressures (dorsalis pedis or posterior tibial) in each leg and divide by the higher of the two brachial pressures.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>ABI interpretation</caption>
+      <thead><tr><th scope="col">ABI value</th><th scope="col">Interpretation</th><th scope="col">Typical correlate</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">&gt; 1.40</th><td>Noncompressible</td><td>Calcified, incompressible vessels (diabetes, kidney failure); ABI unreliable, so use toe pressures</td></tr>
+        <tr><th scope="row">1.00 to 1.40</th><td>Normal</td><td>No significant occlusive disease</td></tr>
+        <tr><th scope="row">0.91 to 0.99</th><td>Borderline</td><td>Equivocal; consider exercise ABI</td></tr>
+        <tr><th scope="row">0.40 to 0.90</th><td>Mild to moderate PAD</td><td>Typical claudication range</td></tr>
+        <tr class="hot"><th scope="row">&lt; 0.40</th><td>Severe PAD</td><td>Rest pain and tissue loss range (chronic limb-threatening ischemia)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>How to measure an ABI</h3>
+    <ol class="steps">
+      <li><strong>Rest the patient.</strong> Supine and still for 5 to 10 minutes, legs at heart level. Measurements taken right after a walk from the waiting room run low.</li>
+      <li><strong>Choose the right cuff.</strong> Cuff width should be at least 40 percent of the limb circumference. The ankle cuff goes just above the malleoli, with the lower edge about 2 to 3 cm above them.</li>
+      <li><strong>Measure both brachial pressures.</strong> Cuff on the upper arm, Doppler probe over the brachial artery. A difference of more than about 15 mmHg suggests subclavian stenosis on the lower side.</li>
+      <li><strong>Measure both ankle pressures in each leg.</strong> Probe at about 45 to 60 degrees over the dorsalis pedis, then the posterior tibial. Inflate about 20 mmHg past the point where the signal disappears, deflate slowly, and record the pressure at which the signal returns.</li>
+      <li><strong>Calculate each leg separately.</strong> The higher of that leg's two ankle pressures divided by the higher brachial pressure. Some labs also report the lower ankle pressure, which is more sensitive for disease.</li>
+      <li><strong>Document the raw pressures as well as the ratio.</strong> If an ABI is above 1.40 or does not fit the foot in front of you, move on to toe pressures.</li>
+    </ol>
+    <aside class="note flag">
+      <p class="note-label">Red flag: the falsely reassuring ABI</p>
+      <p>A normal or high ABI in a diabetic or dialysis patient may be an artifact of medial calcinosis making the vessels incompressible. If the ABI is above 1.40 or does not match a clearly ischemic foot, get a toe-brachial index, since the small digital arteries are usually spared from calcification. A toe-brachial index below 0.70 is abnormal, and a toe pressure below 30 mmHg predicts poor wound healing.</p>
+    </aside>
+    <details class="qa">
+      <summary>Why divide by the higher of the two brachial pressures?</summary>
+      <div class="qa-a"><p>The brachial pressure stands in for central aortic pressure. If one subclavian is stenosed, that arm reads falsely low and would inflate the ABI, so the higher arm is the better estimate.</p></div>
+    </details>
+
+    <h3>The rest of the noninvasive toolbox</h3>
+    <ul>
+      <li><span class="lead-in">Segmental limb pressures and pulse-volume recordings.</span> Cuffs at the thigh, calf, and ankle localize the level of disease by where the pressure drops or the waveform flattens.</li>
+      <li><span class="lead-in">Exercise ABI.</span> A normal resting ABI that falls after treadmill walking reveals significant disease and confirms that leg symptoms are vascular. A fall in ankle pressure of more than 30 mmHg, or in the ABI of more than 20 percent, is generally considered diagnostic.</li>
+      <li><span class="lead-in">Arterial duplex ultrasound.</span> Combines B-mode imaging with Doppler velocities, and a rise in peak systolic velocity across a segment grades the stenosis. This is the first-line tool for surveillance.</li>
+      <li><span class="lead-in">Venous duplex.</span> DVT is diagnosed mainly by a vein that will not compress under the probe. Reflux is generally defined as reversed flow lasting more than 0.5 seconds in superficial veins and more than 1 second in the femoral and popliteal veins; thresholds vary slightly between guidelines.</li>
+    </ul>
+
+    <h3>Duplex criteria you will hear quoted</h3>
+    <aside class="note plain">
+      <p class="note-label">Note</p>
+      <p>Velocity criteria differ between vascular labs, which validate their own. The tables below are widely used starting points, not your lab's official criteria. When the report and these numbers disagree, the report's criteria are the ones the team acts on.</p>
+    </aside>
+    <div class="table-wrap"><table class="data">
+      <caption>Carotid duplex: Society of Radiologists in Ultrasound consensus criteria (2003)</caption>
+      <thead><tr><th scope="col">ICA stenosis</th><th scope="col">ICA peak systolic velocity</th><th scope="col">Plaque</th><th scope="col">ICA/CCA PSV ratio</th><th scope="col">ICA end-diastolic velocity</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Normal</th><td class="num">&lt; 125 cm/s</td><td>None visible</td><td class="num">&lt; 2.0</td><td class="num">&lt; 40 cm/s</td></tr>
+        <tr><th scope="row">&lt; 50%</th><td class="num">&lt; 125 cm/s</td><td>Under 50% diameter reduction</td><td class="num">&lt; 2.0</td><td class="num">&lt; 40 cm/s</td></tr>
+        <tr><th scope="row">50 to 69%</th><td class="num">125 to 230 cm/s</td><td>50% or more</td><td class="num">2.0 to 4.0</td><td class="num">40 to 100 cm/s</td></tr>
+        <tr class="hot"><th scope="row">70% or more, short of near occlusion</th><td class="num">&gt; 230 cm/s</td><td>50% or more</td><td class="num">&gt; 4.0</td><td class="num">&gt; 100 cm/s</td></tr>
+        <tr><th scope="row">Near occlusion</th><td>High, low or undetectable</td><td>Significant</td><td>Variable</td><td>Variable</td></tr>
+        <tr><th scope="row">Total occlusion</th><td>No flow</td><td>No detectable lumen</td><td>Not applicable</td><td>Not applicable</td></tr>
+      </tbody>
+    </table></div>
+    <p>Peak systolic velocity and the visible plaque are the primary criteria; the ratio and end-diastolic velocity help when the picture is mixed. A tight stenosis or occlusion on the other side can raise velocities on this side and overcall it. Percentages refer to the NASCET method of measurement, which is what the trials and repair thresholds use. The clinical side is on <a href="presentations.html#carotid">Presentations</a>.</p>
+
+    <h4>Native arteries and bypass grafts</h4>
+    <p>In native leg arteries, a peak systolic velocity ratio of about 2 or more (velocity in the stenosis divided by velocity in the normal segment just upstream) suggests a stenosis of 50 percent or more. Vein grafts are surveilled with duplex because a stenosis found and fixed before the graft clots has far better results than a graft that has already failed.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Vein graft duplex surveillance (commonly used thresholds)</caption>
+      <thead><tr><th scope="col">Risk</th><th scope="col">Duplex findings</th><th scope="col">Usual response</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">Highest</th><td>PSV over about 300 cm/s or ratio over about 3.5 at a stenosis, plus low velocities (under about 45 cm/s) elsewhere in the graft</td><td>Prompt angiography and repair; the graft is close to thrombosing</td></tr>
+        <tr><th scope="row">High</th><td>PSV over about 300 cm/s or ratio over about 3.5, graft velocities preserved</td><td>Plan repair soon</td></tr>
+        <tr><th scope="row">Moderate</th><td>PSV about 180 to 300 cm/s, ratio over about 2</td><td>Repeat duplex in about 4 to 6 weeks</td></tr>
+        <tr><th scope="row">Low</th><td>PSV under about 180 cm/s, ratio under 2, normal graft velocities</td><td>Routine surveillance</td></tr>
+      </tbody>
+    </table></div>
+    <p>Uniformly low velocities throughout a graft (under about 45 cm/s) with no focal stenosis also mark a graft at risk, usually from inflow or outflow disease. A drop in ABI of more than about 0.15 between visits should prompt a duplex. Many labs require both the velocity and the ratio criterion; surveillance intervals follow SVS follow-up guidance and local protocol, most intensively in the first year.</p>
+    <details class="qa">
+      <summary>Surveillance duplex of a fem-pop vein graft shows a PSV of 350 cm/s at a mid-graft stenosis with a ratio of 4. What happens next?</summary>
+      <div class="qa-a"><p>This is a high-risk, failing graft. It needs angiography and repair (balloon angioplasty, patch angioplasty or a short interposition graft) before it thromboses, because a failing graft is much easier to save than a failed one. If velocities elsewhere in the graft are also low, it is urgent.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="imaging" data-title="Imaging" data-bed="both">
+    <h2>Imaging modalities</h2>
+    <p class="sec-lede">Each test answers a different question. Pick the one that answers yours with the least contrast, radiation and risk.</p>
+    <dl class="terms wide">
+      <div><dt>Duplex ultrasound <span class="aka">first-line, no contrast</span></dt><dd>Cheap, repeatable, operator-dependent. The workhorse for carotid disease, graft surveillance, aneurysm screening and follow-up, DVT, venous reflux and vein mapping.</dd></div>
+      <div><dt>CT angiography <span class="aka">the anatomy roadmap</span></dt><dd>Fast and detailed, the go-to for aneurysm sizing, dissection, trauma, and operative planning. The costs are iodinated contrast and radiation, and heavy calcium in small tibial vessels can bloom and hide the lumen.</dd></div>
+      <div><dt>MR angiography <span class="aka">contrast-sparing option</span></dt><dd>Good soft-tissue detail without iodinated contrast or radiation. Slower, tends to overestimate stenosis, and degraded by stents and some implants. The gadolinium concern in kidney failure (nephrogenic systemic fibrosis) is now very small with the newer agents, but follow radiology's policy for advanced kidney disease.</dd></div>
+      <div><dt>Digital subtraction angiography <span class="aka">the gold standard</span></dt><dd>Catheter angiography has the highest spatial resolution and is the only modality that is also therapeutic. Invasive, so it is reserved for when intervention is likely or other imaging is equivocal. Carbon dioxide angiography can spare iodinated contrast below the diaphragm, never in the cerebral or coronary circulation.</dd></div>
+    </dl>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Contrast precautions (kidney-function cutoffs, hydration, holding metformin, premedication for contrast allergy) follow radiology and hospital protocols. Confirm locally before you order or promise anything to a patient.</p>
+    </aside>
+    <details class="qa">
+      <summary>What is the gold-standard imaging test for the arterial tree, and why is it not first-line?</summary>
+      <div class="qa-a"><p>Catheter-based digital subtraction angiography. It is invasive and carries access-site, contrast, and radiation risk, so noninvasive duplex and CTA come first; angiography is chosen when you intend to treat in the same setting. More on <a href="endovascular.html#angiography">Endovascular</a>.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="anticoag" data-title="Anticoagulation">
+    <h2>Anticoagulation and antiplatelets <span class="tag">Asked often</span></h2>
+    <p class="sec-lede">The pharmacology of clotting is asked constantly, both on the wards and in the operating room, and it changes the plan on most vascular patients most mornings.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Agents at a glance</caption>
+      <thead><tr><th scope="col">Drug</th><th scope="col">Mechanism</th><th scope="col">Monitor</th><th scope="col">Reversal</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Unfractionated heparin</th><td>Activates antithrombin, inhibiting IIa and Xa</td><td>aPTT or anti-Xa (ward), ACT (OR)</td><td>Protamine, about 1 mg per 100 units of heparin still circulating (maximum 50 mg per dose)</td></tr>
+        <tr><th scope="row">LMWH (enoxaparin)</th><td>Antithrombin, preferentially inhibiting Xa</td><td>Anti-Xa (only if needed: kidney failure, obesity, pregnancy)</td><td>Protamine (partial)</td></tr>
+        <tr><th scope="row">Warfarin</th><td>Inhibits vitamin K epoxide reductase (lowers II, VII, IX, X and proteins C and S)</td><td>INR</td><td>Vitamin K; 4-factor PCC for urgent reversal (plasma if PCC is unavailable)</td></tr>
+        <tr><th scope="row">Apixaban, rivaroxaban</th><td>Direct factor Xa inhibitor</td><td>None routine</td><td>Andexanet alfa or 4-factor PCC, per local protocol</td></tr>
+        <tr><th scope="row">Dabigatran</th><td>Direct thrombin (IIa) inhibitor</td><td>None routine</td><td>Idarucizumab; dialyzable</td></tr>
+        <tr><th scope="row">Argatroban, bivalirudin</th><td>IV direct thrombin inhibitors (used for HIT)</td><td>aPTT (bivalirudin also ACT in procedures)</td><td>No specific antidote; short half-lives. Argatroban raises the INR, which complicates the switch to warfarin</td></tr>
+        <tr><th scope="row">Aspirin</th><td>Irreversible COX-1 inhibition, lowering thromboxane A2</td><td>None</td><td>Platelet transfusion for serious bleeding</td></tr>
+        <tr><th scope="row">Clopidogrel</th><td>Irreversible P2Y12 (ADP) receptor blocker</td><td>None</td><td>Platelet transfusion for serious bleeding</td></tr>
+      </tbody>
+    </table></div>
+    <p>For VTE, a weight-based heparin infusion classically starts with an 80 units per kg bolus, then is adjusted to an aPTT or anti-Xa nomogram per local protocol. The overnight version of managing a drip is on <a href="on-call.html#heparin">On call</a>.</p>
+
+    <h3>Intraoperative heparin</h3>
+    <p>Before clamping any artery, the surgeon asks anesthesia to give systemic heparin, classically about 80 to 100 units per kg, and the team confirms an activated clotting time of roughly 250 seconds or more before the clamp goes on (targets vary by surgeon and procedure). At the end, heparin may be reversed with protamine.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: protamine reaction and HIT</p>
+      <p>Protamine, derived from fish sperm, can cause hypotension, bradycardia, and anaphylaxis, especially in patients with prior protamine exposure, fish allergy, or NPH-insulin use, so give it slowly. And never forget heparin-induced thrombocytopenia, an immune reaction (antibodies to the PF4 and heparin complex) appearing about 5 to 10 days after exposure (sooner if the patient had heparin in the past 100 days), causing a falling platelet count and paradoxical thrombosis. Stop all heparin, do not transfuse platelets unless the patient is bleeding, and anticoagulate with a non-heparin agent: argatroban or bivalirudin in the acutely ill or peri-procedural patient, with fondaparinux or a DOAC as options in stable patients. Use the 4T score to gauge probability.</p>
+    </aside>
+
+    <h3>The 4T score</h3>
+    <div class="table-wrap"><table class="data">
+      <caption>4T score for heparin-induced thrombocytopenia</caption>
+      <thead><tr><th scope="col">Component</th><th scope="col">2 points</th><th scope="col">1 point</th><th scope="col">0 points</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Thrombocytopenia</th><td>Fall over 50% and nadir 20 or more (x10<sup>9</sup>/L)</td><td>Fall 30 to 50%, or nadir 10 to 19</td><td>Fall under 30%, or nadir under 10</td></tr>
+        <tr><th scope="row">Timing</th><td>Clear onset day 5 to 10, or within 1 day if heparin in the past 30 days</td><td>Probably day 5 to 10 but unclear, after day 10, or within 1 day with heparin 30 to 100 days ago</td><td>Fall within 4 days with no recent heparin</td></tr>
+        <tr><th scope="row">Thrombosis or other sequelae</th><td>New proven thrombosis, skin necrosis at injection sites, or acute systemic reaction after an IV bolus</td><td>Progressive or recurrent thrombosis, red skin lesions, or suspected but unproven thrombosis</td><td>None</td></tr>
+        <tr><th scope="row">Other causes</th><td>None apparent</td><td>Possible</td><td>Definite</td></tr>
+      </tbody>
+    </table></div>
+    <p>A total of 0 to 3 is low probability, 4 to 5 intermediate, and 6 to 8 high. A low score makes HIT very unlikely; an intermediate or high score means stopping heparin and sending a PF4 immunoassay, with a functional test (serotonin-release assay) to confirm.</p>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>When the platelets fall in a heparinized patient, write the 4T score in your note before you send the antibody test, with a line for each component. If it is intermediate or high, stop heparin everywhere at the same time: the drip, the subcutaneous doses, the line flushes and any heparin-coated catheter. A missed heparin flush is the usual reason "we stopped heparin" turns out not to be true.</p>
+    </aside>
+    <details class="qa">
+      <summary>A heparinized patient's platelets drop on day 7 and they clot a graft. Diagnosis and next step?</summary>
+      <div class="qa-a"><p>HIT. Stop every source of heparin (including flushes and coated catheters), start a non-heparin anticoagulant such as argatroban, send the HIT antibody and serotonin-release assay, and do not give platelet transfusions, which can worsen thrombosis. Do not start warfarin until the platelet count has recovered.</p></div>
+    </details>
+
+    <h3>Around procedures</h3>
+    <p>Whether and when to hold an anticoagulant depends on the drug, kidney function, the bleeding risk of the procedure and the patient's clotting risk. As a common pattern, warfarin is stopped about 5 days before surgery with an INR check the day before, and bridging with heparin is reserved for the highest clotting risk (for example a mechanical mitral valve or a VTE in the past 3 months). Apixaban and rivaroxaban are commonly held about 1 day before a low-bleeding-risk procedure and 2 days before a high-risk one, longer with poor kidney function or neuraxial anesthesia; dabigatran depends heavily on kidney function. Aspirin is usually continued through vascular operations.</p>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Periprocedural holds and restarts, bridging, and the intervals before spinal or epidural anesthesia are protocol-driven and differ between hospitals, anesthesia teams and attendings. Confirm locally, and write the plan explicitly in the note: what is held, when the last dose was, and when it restarts.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="medical" data-title="Medical therapy" data-bed="arterial">
+    <h2>Medical and risk-factor therapy</h2>
+    <p class="sec-lede">Revascularization treats the plumbing; medical therapy treats the disease. Every patient with PAD should be on best medical therapy regardless of whether they get an operation, and it is a fair question on rounds for any vascular patient.</p>
+    <ul>
+      <li><span class="lead-in">Smoking cessation.</span> The single highest-impact intervention, slowing progression and improving graft patency more than any drug. Offer counseling and pharmacotherapy (nicotine replacement, varenicline) at every encounter.</li>
+      <li><span class="lead-in">High-intensity statin.</span> For every atherosclerotic patient, for plaque stabilization and cardiovascular and limb event reduction, not just lipids.</li>
+      <li><span class="lead-in">Antiplatelet therapy.</span> A single agent, aspirin or clopidogrel, for symptomatic PAD. Dual antiplatelet therapy after endovascular intervention is common for a period, with practice varying.</li>
+      <li><span class="lead-in">Low-dose rivaroxaban plus aspirin.</span> In selected patients, to reduce limb and cardiovascular events (below).</li>
+      <li><span class="lead-in">Blood pressure and diabetes control.</span> Plus an SGLT2 inhibitor or GLP-1 agonist where indicated for cardiovascular benefit, and daily foot inspection and podiatry care for diabetic patients.</li>
+      <li><span class="lead-in">Supervised exercise therapy.</span> First-line for claudication; it rivals revascularization for walking distance (below).</li>
+      <li><span class="lead-in">Cilostazol.</span> A phosphodiesterase-3 inhibitor that improves claudication distance, but is contraindicated in heart failure of any severity.</li>
+    </ul>
+
+    <h3>Rivaroxaban 2.5 mg twice daily plus aspirin</h3>
+    <p>This "vascular dose" of rivaroxaban, a quarter of the usual VTE dose and given with low-dose aspirin, is a different strategy from full anticoagulation. In COMPASS, patients with stable coronary disease or PAD had fewer major cardiovascular events and fewer major adverse limb events, including major amputation, at the cost of more major bleeding. In VOYAGER PAD, patients who had just undergone lower-extremity revascularization (open or endovascular) had fewer events in a composite of acute limb ischemia, major amputation, heart attack, stroke and cardiovascular death, driven largely by less acute limb ischemia, again with more bleeding. The 2024 ACC/AHA PAD guideline recommends it for symptomatic PAD and after revascularization in patients who are not at high bleeding risk.</p>
+    <details class="qa">
+      <summary>What is the VOYAGER PAD regimen, and who is it for?</summary>
+      <div class="qa-a"><p>Rivaroxaban 2.5 mg twice daily plus aspirin, started after lower-extremity revascularization, in patients without high bleeding risk and without another indication for full-dose anticoagulation. Short-term clopidogrel (up to 6 months) was permitted in the trial at the investigator's discretion.</p></div>
+    </details>
+
+    <h3>Statin intensity and LDL goals</h3>
+    <div class="table-wrap"><table class="data">
+      <caption>Statin intensity</caption>
+      <thead><tr><th scope="col">Intensity</th><th scope="col">Expected LDL reduction</th><th scope="col">Examples</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">High</th><td>50% or more</td><td>Atorvastatin 40 to 80 mg; rosuvastatin 20 to 40 mg</td></tr>
+        <tr><th scope="row">Moderate</th><td>30 to 49%</td><td>Atorvastatin 10 to 20 mg; rosuvastatin 5 to 10 mg; simvastatin 20 to 40 mg; pravastatin 40 to 80 mg</td></tr>
+      </tbody>
+    </table></div>
+    <p>Every patient with PAD should be on a high-intensity statin, or the highest dose they tolerate. The 2026 ACC/AHA dyslipidemia guideline restored LDL goals: for patients at very high risk, which includes many with symptomatic PAD and other atherosclerotic disease, the target is an LDL below 55 mg/dL (non-HDL below 85 mg/dL), adding ezetimibe or a PCSK9 inhibitor when a maximally tolerated statin does not get there. European guidance uses the same 55 mg/dL (1.4 mmol/L) target with at least a 50 percent reduction. The 2024 ACC/AHA PAD guideline's older trigger for add-on therapy was an LDL of 70 mg/dL or more.</p>
+
+    <h3>Supervised exercise therapy</h3>
+    <p>Supervised exercise is a class 1 recommendation for claudication and the first treatment to offer. A typical program is 30 to 60 minutes of treadmill walking at least three times a week for at least 12 weeks: walk to moderate or near-maximal claudication pain, rest until it settles, and repeat. Medicare covers up to 36 sessions over 12 weeks for symptomatic PAD with a referral. When a supervised program is not available, a structured home- or community-based walking program is the alternative.</p>
+    <details class="qa">
+      <summary>What is the most important intervention for a smoker with claudication?</summary>
+      <div class="qa-a"><p>Smoking cessation, paired with a statin, antiplatelet therapy, and a supervised exercise program. For pure claudication, medical therapy and exercise come before any consideration of intervention.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="cardiac-risk" data-title="Perioperative cardiac risk">
+    <h2>Perioperative cardiac risk</h2>
+    <p class="sec-lede">The vascular patient is a cardiac patient. Atherosclerosis rarely confines itself to one bed, and myocardial infarction is the leading cause of death both around vascular operations and in the years after. Assessing and managing cardiac risk is part of every preoperative workup on this service.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>When patients scheduled for vascular surgery underwent routine coronary angiography in a classic Cleveland Clinic series (Hertzer, 1984), only about 8 percent had normal coronary arteries. Yet in the CARP trial (2004), revascularizing stable coronary disease before elective vascular surgery did not improve long-term survival. The lesson: assume coronary disease, optimize medically, and revascularize only when the heart needs it on its own merits.</p>
+    </aside>
+
+    <h3>The stepwise approach</h3>
+    <p>The 2024 ACC/AHA perioperative guideline follows a sequence you can apply to any elective vascular patient.</p>
+    <ol class="steps">
+      <li><strong>Is it an emergency?</strong> A ruptured aneurysm or an immediately threatened limb goes to the operating room; cardiac risk is managed around the operation, not before it.</li>
+      <li><strong>Is there an active cardiac condition?</strong> Acute coronary syndrome, decompensated heart failure, a significant arrhythmia or severe valve disease needs evaluation and treatment first unless the surgery is an emergency.</li>
+      <li><strong>Estimate the risk.</strong> Use a validated tool such as the RCRI or the NSQIP calculator. Two or more RCRI points, or a predicted risk of major cardiac events of 1 percent or more, is elevated risk.</li>
+      <li><strong>Assess functional capacity.</strong> A patient who can do 4 METs or more (climb two flights of stairs, walk up a hill, do heavy housework) without symptoms can proceed without further testing. The guideline also accepts a Duke Activity Status Index score above 34.</li>
+      <li><strong>Test only if it changes management.</strong> In an elevated-risk patient with poor or unknown functional capacity, pharmacologic stress testing is reasonable only if the result would change care: coronary revascularization indicated regardless of the operation, a different operation (endovascular rather than open), or not operating. Routine screening stress tests are not recommended.</li>
+    </ol>
+    <p>The guideline also supports measuring BNP or NT-proBNP before surgery in selected higher-risk patients for added prognostic information, and troponin surveillance after surgery in elevated-risk patients, because myocardial injury after noncardiac surgery is common, usually painless, and carries real mortality.</p>
+
+    <div class="table-wrap"><table class="data">
+      <caption>Revised Cardiac Risk Index (one point each)</caption>
+      <thead><tr><th scope="col">Factor</th><th scope="col">What counts</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">High-risk surgery</th><td>Intraperitoneal, intrathoracic, or suprainguinal vascular. Open aortic repair counts; an infrainguinal bypass does not.</td></tr>
+        <tr><th scope="row">Ischemic heart disease</th><td>Prior MI, positive stress test, current angina, nitrate use, or pathologic Q waves</td></tr>
+        <tr><th scope="row">Heart failure</th><td>History of heart failure, pulmonary edema, paroxysmal nocturnal dyspnea, S3, bilateral rales, or vascular redistribution on chest film</td></tr>
+        <tr><th scope="row">Cerebrovascular disease</th><td>Prior stroke or TIA</td></tr>
+        <tr><th scope="row">Diabetes on insulin</th><td>Insulin-treated diabetes</td></tr>
+        <tr><th scope="row">Kidney dysfunction</th><td>Preoperative creatinine above 2.0 mg/dL</td></tr>
+      </tbody>
+    </table></div>
+    <p>The RCRI is known to underestimate risk in vascular surgery patients, which is why vascular-specific tools such as the Vascular Quality Initiative cardiac risk index exist. It remains the score you will be asked to recite.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>Functional capacity is often unknowable in vascular patients. Someone who stops at half a block because of calf pain, or who has rest pain or an amputation, cannot tell you whether their heart would let them climb two flights of stairs. That is why vascular patients reach the "test only if it changes management" step more often than most surgical patients.</p>
+    </aside>
+
+    <h3>Medications around surgery</h3>
+    <dl class="terms wide">
+      <div><dt>Beta-blockers</dt><dd>Continue them in patients already taking them; abrupt withdrawal causes rebound tachycardia and ischemia. Do not start a beta-blocker on the day of surgery: in POISE, starting metoprolol just before surgery reduced heart attacks but increased strokes and deaths, largely through hypotension and bradycardia. If a patient needs one for another reason, it is started well ahead of surgery and titrated.</dd></div>
+      <div><dt>Statins</dt><dd>Continue them. Vascular patients who are not on a statin almost always have an indication, and guidelines support starting one before vascular surgery.</dd></div>
+      <div><dt>Antiplatelets</dt><dd>Aspirin is usually continued through vascular operations. Never stop a P2Y12 inhibitor in a patient with a recent coronary stent without talking to cardiology; elective surgery is usually deferred after a recent stent.</dd></div>
+      <div><dt>Anticoagulants</dt><dd>Held and restarted according to a written plan; see <a href="#anticoag">Anticoagulation</a>.</dd></div>
+      <div><dt>SGLT2 inhibitors</dt><dd>Held for 3 days before surgery (4 days for ertugliflozin) because of the risk of euglycemic ketoacidosis.</dd></div>
+      <div><dt>ACE inhibitors and ARBs</dt><dd>Practice varies; some teams hold them the morning of surgery to reduce hypotension after induction, while continuing them in heart failure is reasonable.</dd></div>
+    </dl>
+    <aside class="note local">
+      <p class="note-label">Confirm locally</p>
+      <p>Which patients go through a preoperative anesthesia clinic, who orders an echocardiogram or stress test, and the medication-hold rules (DOACs, SGLT2 inhibitors, GLP-1 agonists, ACE inhibitors) follow anesthesia and hospital protocols. Confirm locally before telling a patient what to take on the morning of surgery.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>Put four things in every preoperative note: the RCRI points by name, functional capacity in METs (or why it cannot be assessed, such as "limited by claudication at one block"), the cardiac medications with the time of the last beta-blocker dose, and any coronary stents with the date and the antiplatelet agent. Those are the questions anesthesia and your attending will ask, and having them written saves a phone call on the morning of surgery.</p>
+    </aside>
+    <details class="qa">
+      <summary>A claudicant with two RCRI points cannot climb a flight of stairs because of calf pain. Does she need a stress test before a fem-pop bypass?</summary>
+      <div class="qa-a"><p>Only if the result would change management. She is elevated risk with unknown functional capacity, so pharmacologic stress testing is reasonable if a positive result would lead to coronary revascularization she needs anyway, to an endovascular rather than open plan, or to not operating. Testing to "clear" her, with no plan to act on the result, is not recommended; prophylactic coronary revascularization before vascular surgery did not improve survival in CARP.</p></div>
+    </details>
+    <details class="qa">
+      <summary>The team suggests starting metoprolol the morning of surgery "for cardiac protection." What do you say?</summary>
+      <div class="qa-a"><p>Do not start a beta-blocker on the day of surgery. POISE showed fewer myocardial infarctions but more strokes and deaths. Continue a beta-blocker the patient already takes, and if one is indicated for another reason, start it well in advance and titrate it.</p></div>
+    </details>
+  </section>
+
+  <!-- @pager -->
+<nav class="pager" aria-label="Chapters">
+  <a class="prev" href="on-call.html" rel="prev"><span class="dir">Previous</span><span class="ttl">On call and cross-cover</span></a>
+  <a class="next" href="presentations.html" rel="next"><span class="dir">Next</span><span class="ttl">Presentations</span></a>
+</nav>
+<!-- /@pager -->
+</main>
+<!-- @aside -->
+<aside class="aside" aria-label="On this page">
+  <p class="aside-label">On this page</p>
+  <ol>
+    <li><a href="#anatomy" data-bed="both">Arterial anatomy</a></li>
+    <li><a href="#venous" data-bed="venous">Venous anatomy</a></li>
+    <li><a href="#collaterals" data-bed="arterial">Collateral pathways</a></li>
+    <li><a href="#hemodynamics" data-bed="arterial">Hemodynamics</a></li>
+    <li><a href="#exam" data-bed="arterial">History and exam</a></li>
+    <li><a href="#testing" data-bed="both">Testing and the ABI</a></li>
+    <li><a href="#imaging" data-bed="both">Imaging</a></li>
+    <li><a href="#anticoag">Anticoagulation</a></li>
+    <li><a href="#medical" data-bed="arterial">Medical therapy</a></li>
+    <li><a href="#cardiac-risk">Perioperative cardiac risk</a></li>
+  </ol>
+</aside>
+<!-- /@aside -->
+</div>
+<!-- @footer -->
+<footer class="site-foot">
+  <div class="inner">
+    <div>
+      <p><b>An orientation and study aid, not a clinical protocol.</b> Thresholds, classifications and trial data change, and practice varies between hospitals. Check specifics against current SVS and ESVS guidance, your attendings, and local pathways before applying anything to a patient.</p>
     </div>
-  </aside>
-  <main class="main">
-    <header class="hero">
-      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
-        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
-      </svg>
-      <div class="hero-inner wrap">
-        <p class="eyebrow seq d1">Chapter 03 &middot; The knowledge</p>
-        <h1 class="title seq d2"><span class="l1">Foundations</span></h1>
-        <p class="lede seq d3">The anatomy, hemodynamics, exam, and pharmacology that underpin every case on the service. This is the language and reasoning everyone will assume you already have, so read it in your first week and keep coming back to it.</p>
-        <div class="hero-meta seq d4">
-          <span class="chip"><b>Anatomy</b></span>
-          <span class="chip"><b>Hemodynamics</b></span>
-          <span class="chip"><b>The exam</b></span>
-          <span class="chip ven"><b>Imaging</b></span>
-          <span class="chip"><b>Anticoagulation</b></span>
-        </div>
-      </div>
-    </header>
-
-    <div class="wrap">
-
-      <section class="section first reveal" id="anatomy" data-title="Arterial anatomy">
-        <h3>Arterial anatomy, head to toe <span class="tag">Memorize</span></h3>
-        <p>You will be asked to name vessels in order, in the operating room, while holding a retractor. Learn the path of blood from the aorta to the toes and from the arch to the fingertips.</p>
-
-        <h4><span class="pin">&raquo;</span> The aorta and its branches</h4>
-        <p>The thoracic aorta gives the coronary arteries, then the three arch vessels, then descends. The classic arch order, right to left, is the <strong>brachiocephalic (innominate) trunk</strong>, the <strong>left common carotid</strong>, and the <strong>left subclavian</strong>. The brachiocephalic then splits into the right common carotid and right subclavian.</p>
-        <p>Below the diaphragm the abdominal aorta gives, in descending order, the <strong>celiac trunk</strong> (roughly T12), the <strong>superior mesenteric artery</strong> (L1), the paired <strong>renal arteries</strong> (L1 to L2), the <strong>inferior mesenteric artery</strong> (L3), and finally bifurcates into the <strong>common iliac arteries</strong> at about <strong>L4</strong>.</p>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>Mnemonic</div>
-          <p>Arch order, right to left, is the <span class="word">"ABCs of the arch"</span>: <b>A</b>rteria innominata (brachiocephalic), left common <b>C</b>arotid, left <b>S</b>ubclavian. And the celiac trunk's three branches are the <span class="word">left gastric, splenic, and common hepatic</span>.</p>
-        </div>
-
-        <h4><span class="pin">&raquo;</span> The lower extremity, in order</h4>
-        <p>This is the single most asked sequence in the field. Trace it until it is automatic.</p>
-        <ul class="clean">
-          <li>The <strong>common iliac</strong> splits into the <strong>internal iliac (hypogastric)</strong>, supplying the pelvis, and the <strong>external iliac</strong>.</li>
-          <li>The external iliac passes under the inguinal ligament and becomes the <strong>common femoral artery</strong>.</li>
-          <li>The common femoral bifurcates into the <strong>profunda femoris (deep femoral)</strong>, the key collateral vessel of the thigh, and the <strong>superficial femoral artery</strong>.</li>
-          <li>The superficial femoral travels down the thigh through the <strong>adductor (Hunter's) canal</strong> and, at the adductor hiatus, becomes the <strong>popliteal artery</strong>.</li>
-          <li>Below the knee the popliteal gives the <strong>anterior tibial artery</strong> (which becomes the <strong>dorsalis pedis</strong> on the foot) and then the <strong>tibioperoneal trunk</strong>, which splits into the <strong>posterior tibial</strong> (passing behind the medial malleolus) and the <strong>peroneal (fibular) artery</strong>.</li>
-        </ul>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">What are the three tibial ("trifurcation") vessels, and which two feed the pedal arch?</p>
-          <p class="a">Anterior tibial, posterior tibial, and peroneal. The <strong>dorsalis pedis</strong> (continuation of the anterior tibial) and the <strong>posterior tibial</strong> form the pedal arch. The peroneal ends above the ankle and communicates with both but does not normally reach the foot directly.</p>
-        </div>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">What runs with the artery in the adductor canal?</p>
-          <p class="a">The femoral artery and vein, the <strong>saphenous nerve</strong>, and the nerve to vastus medialis. The saphenous nerve is the named structure they are fishing for.</p>
-        </div>
-
-        <h4><span class="pin">&raquo;</span> The upper extremity, in order</h4>
-        <p>The subclavian passes under the clavicle and over the first rib to become the <strong>axillary</strong>, then past teres major becomes the <strong>brachial</strong>, which bifurcates at the elbow into the <strong>radial</strong> and <strong>ulnar</strong> arteries. These join in the hand as the <strong>superficial and deep palmar arches</strong>. This dual supply is what makes the <strong>Allen test</strong> meaningful and what lets a radiocephalic fistula work.</p>
-      </section>
-
-      <section class="section reveal" id="venous" data-title="Venous anatomy">
-        <h3>Venous anatomy</h3>
-        <p>Veins are divided into a <strong>deep system</strong> (paired with the named arteries, carrying roughly 85 to 90 percent of return), a <strong>superficial system</strong>, and the <strong>perforators</strong> that connect them. The two superficial veins you must know are the <strong>great saphenous vein</strong>, running up the medial leg and thigh to join the common femoral vein at the saphenofemoral junction, and the <strong>small saphenous vein</strong>, running up the posterior calf to the popliteal vein.</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl</div>
-          <p>The great saphenous vein is the workhorse conduit of vascular and cardiac surgery, the preferred graft for infrainguinal bypass and for coronary bypass. Before you ablate or harvest it, someone always asks whether the patient might need it as a conduit later. A vein mapped and spared today can be a limb saved tomorrow.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="collaterals" data-title="Collateral pathways">
-        <h3>Collateral pathways <span class="tag">High yield</span></h3>
-        <p>Collaterals explain why a patient can occlude a major vessel and still keep a viable limb or gut. Named collateral routes are favorite teaching material.</p>
-        <div class="kv">
-          <div class="row"><div class="k">Circle of Willis</div><div class="v">Anastomotic ring at the base of the brain linking the anterior (carotid) and posterior (vertebrobasilar) circulations. It explains why some patients tolerate carotid occlusion and others stroke.</div></div>
-          <div class="row"><div class="k">Marginal artery of Drummond</div><div class="v">Continuous arcade along the mesenteric border of the colon connecting the SMA and IMA territories.</div></div>
-          <div class="row"><div class="k">Arc of Riolan</div><div class="v">A shorter, more central SMA to IMA connection (the "meandering mesenteric artery") that enlarges dramatically when one mesenteric vessel occludes chronically.</div></div>
-          <div class="row"><div class="k">Profunda femoris</div><div class="v">The main collateral around an occluded superficial femoral artery; geniculate branches reconstitute the popliteal. A good profunda can carry a limb despite a dead SFA.</div></div>
-          <div class="row"><div class="k">Aortoiliac collaterals</div><div class="v">In Leriche-type occlusion, flow reaches the legs via lumbar to iliolumbar routes and via the IMA to superior rectal to middle and inferior rectal (internal iliac) routes.</div></div>
-        </div>
-      </section>
-
-      <section class="section reveal" id="hemodynamics" data-title="Hemodynamics">
-        <h3>Hemodynamics &amp; physiology</h3>
-        <p>A handful of physical principles get asked again and again because they explain disease.</p>
-        <h4><span class="pin">&raquo;</span> Poiseuille's law</h4>
-        <p>Flow is proportional to the <strong>fourth power of the radius</strong> and inversely proportional to length and viscosity. The punchline is that small changes in lumen diameter cause large changes in flow, which is why a focal stenosis can be so hemodynamically costly, and why a slightly larger conduit dramatically improves flow.</p>
-        <h4><span class="pin">&raquo;</span> Critical stenosis</h4>
-        <p>A stenosis generally becomes <strong>hemodynamically significant</strong> once it narrows the diameter by about <strong>50 percent</strong> (roughly 75 percent cross-sectional area), at which point a measurable pressure and flow gradient appears across it. This is the threshold that duplex velocity criteria are designed to detect.</p>
-        <h4><span class="pin">&raquo;</span> Laplace's law and aneurysms</h4>
-        <p>Wall tension rises with both pressure and radius. As an aneurysm enlarges, wall tension climbs, which raises rupture risk and accelerates further dilation, a self-reinforcing loop that is the entire rationale for size-based repair thresholds.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">Why does aneurysm rupture risk rise so steeply with diameter?</p>
-          <p class="a">By Laplace's law, tension in the wall is proportional to pressure times radius, so a larger radius means higher wall stress at the same blood pressure, which both predisposes to rupture and drives continued expansion.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="exam" data-title="History &amp; exam">
-        <h3>The vascular history &amp; physical exam</h3>
-        <p>The exam is where you earn credibility. Do it the same way every time.</p>
-        <h4><span class="pin">&raquo;</span> History: localizing claudication</h4>
-        <p>The level of arterial disease predicts where the patient hurts when walking, because the pain occurs <em>one level below</em> the occlusion. Buttock and hip claudication points to <strong>aortoiliac</strong> disease, thigh claudication to the <strong>common femoral or iliac</strong> level, and the most common pattern, <strong>calf claudication</strong>, to the <strong>superficial femoral and popliteal</strong> segment.</p>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>Mnemonic &middot; Leriche syndrome</div>
-          <p>Aortoiliac occlusive disease gives the triad of <span class="word">buttock and thigh claudication, erectile dysfunction, and absent femoral pulses</span>. Picture the blockage sitting at the aortic bifurcation, starving everything downstream.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> The pulse exam</h4>
-        <p>Palpate and grade every pulse, comparing sides. A common scale is <strong>0 absent, 1+ diminished, 2+ normal, 3+ bounding</strong> (some services add a fourth grade). Document the sites: radial, brachial, carotid, femoral, popliteal, dorsalis pedis, and posterior tibial. If you cannot feel a distal pulse, reach for the <strong>handheld Doppler</strong> and describe the signal as triphasic, biphasic, or monophasic.</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl</div>
-          <p>"Doppler signals" and "palpable pulses" are not the same thing, and saying so precisely matters. A monophasic Doppler signal in a foot that has no palpable pulse still tells you the foot is perfused, which can be the difference between watchful waiting and an emergent trip to the angiography suite. Always state both what you felt and what you heard.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Provocative and inspection findings</h4>
-        <ul class="tight">
-          <li><strong>Buerger's test:</strong> elevation causes pallor in an ischemic limb, and dependency causes a dusky <em>dependent rubor</em>. The angle at which pallor appears tracks severity.</li>
-          <li><strong>Capillary refill</strong> beyond 2 to 3 seconds, along with loss of hair, shiny atrophic skin, and thickened nails, suggests chronic ischemia.</li>
-          <li><strong>Allen test</strong> before radial access or radial-artery harvest confirms that the ulnar artery and palmar arch can supply the hand alone.</li>
-          <li><strong>Auscultate for bruits</strong> over the carotids, abdomen, and femorals; a bruit signals turbulent flow across a stenosis.</li>
-        </ul>
-      </section>
-
-      <section class="section reveal" id="testing" data-title="Testing &amp; the ABI">
-        <h3>Noninvasive testing &amp; the ABI <span class="tag">Core skill</span></h3>
-        <p>The <strong>ankle-brachial index</strong> is the bedside number that quantifies perfusion. Measure the higher of the two ankle systolic pressures (dorsalis pedis or posterior tibial) in each leg and divide by the higher of the two brachial pressures.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>ABI interpretation</caption>
-            <thead><tr><th>ABI value</th><th>Interpretation</th><th>Typical correlate</th></tr></thead>
-            <tbody>
-              <tr><td class="mono nowrap">&gt; 1.40</td><td><b>Non-compressible</b></td><td>Calcified, incompressible vessels (diabetes, ESRD); ABI unreliable, so use toe pressures</td></tr>
-              <tr><td class="mono nowrap">1.00 to 1.40</td><td><b>Normal</b></td><td>No significant occlusive disease</td></tr>
-              <tr><td class="mono nowrap">0.91 to 0.99</td><td><b>Borderline</b></td><td>Equivocal; consider exercise ABI</td></tr>
-              <tr><td class="mono nowrap">0.40 to 0.90</td><td><b>Mild to moderate PAD</b></td><td>Typical claudication range</td></tr>
-              <tr><td class="mono nowrap">&lt; 0.40</td><td><b>Severe PAD</b></td><td>Rest pain and tissue loss range (critical ischemia)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; the falsely reassuring ABI</div>
-          <p>A normal or high ABI in a diabetic or dialysis patient may be an artifact of <strong>medial calcinosis</strong> making the vessels incompressible. If the ABI is above 1.40 or does not match a clearly ischemic foot, get a <strong>toe-brachial index</strong>, since the small digital arteries are usually spared from calcification. A toe-brachial index below 0.70 is abnormal, and a toe pressure below 30 mmHg predicts poor wound healing.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> The rest of the noninvasive toolbox</h4>
-        <ul class="tight">
-          <li><strong>Segmental limb pressures and pulse-volume recordings:</strong> cuffs at the thigh, calf, and ankle localize the level of disease by where the pressure drops or the waveform flattens.</li>
-          <li><strong>Exercise ABI:</strong> a normal resting ABI that falls after treadmill walking unmasks significant disease and confirms that leg symptoms are vascular.</li>
-          <li><strong>Arterial duplex ultrasound:</strong> combines B-mode imaging with Doppler velocities, and a rise in <strong>peak systolic velocity</strong> across a segment grades the stenosis. This is the first-line tool for surveillance.</li>
-        </ul>
-      </section>
-
-      <section class="section reveal" id="imaging" data-title="Imaging">
-        <h3>Imaging modalities</h3>
-        <div class="cards stagger">
-          <div class="card"><span class="k">Duplex US</span><h5>First-line, no contrast</h5><p>Cheap, repeatable, operator-dependent. The workhorse for carotid disease, graft surveillance, aneurysm screening and follow-up, and vein mapping.</p></div>
-          <div class="card"><span class="k">CTA</span><h5>The anatomy roadmap</h5><p>Fast and detailed, the go-to for aneurysm sizing, dissection, trauma, and operative planning. The costs are iodinated contrast and radiation.</p></div>
-          <div class="card"><span class="k">MRA</span><h5>Contrast-sparing option</h5><p>Good soft-tissue detail without iodinated contrast or radiation. Slower, tends to overestimate stenosis, and raises gadolinium concerns in renal failure.</p></div>
-          <div class="card ven"><span class="k">DSA</span><h5>The gold standard</h5><p>Catheter angiography has the highest spatial resolution and is the only modality that is also therapeutic. Invasive, so it is reserved for when intervention is likely or other imaging is equivocal.</p></div>
-        </div>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">What is the gold-standard imaging test for the arterial tree, and why is it not first-line?</p>
-          <p class="a">Catheter-based <strong>digital subtraction angiography</strong>. It is invasive and carries access-site, contrast, and radiation risk, so noninvasive duplex and CTA come first; angiography is chosen when you intend to treat in the same setting.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="anticoag" data-title="Anticoagulation">
-        <h3>Anticoagulation &amp; antiplatelets <span class="tag">Asked often</span></h3>
-        <p>The pharmacology of clotting is asked constantly, both on the wards and in the operating room.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Agents at a glance</caption>
-            <thead><tr><th>Drug</th><th>Mechanism</th><th>Monitor</th><th>Reversal</th></tr></thead>
-            <tbody>
-              <tr><td><b>Unfractionated heparin</b></td><td>Activates antithrombin III, inhibiting IIa and Xa</td><td>aPTT (ward) or ACT (OR)</td><td><b>Protamine</b> (about 1 mg per 100 U)</td></tr>
-              <tr><td><b>LMWH</b> (enoxaparin)</td><td>Antithrombin, preferentially inhibiting Xa</td><td>Anti-Xa (only if needed)</td><td>Protamine (partial)</td></tr>
-              <tr><td><b>Warfarin</b></td><td>Inhibits vitamin-K epoxide reductase (lowers II, VII, IX, X)</td><td>INR</td><td>Vitamin K, FFP, <b>4-factor PCC</b></td></tr>
-              <tr><td><b>Apixaban, rivaroxaban</b></td><td>Direct factor Xa inhibitor</td><td>None routine</td><td>Andexanet alfa; PCC</td></tr>
-              <tr><td><b>Dabigatran</b></td><td>Direct thrombin (IIa) inhibitor</td><td>None routine</td><td><b>Idarucizumab</b></td></tr>
-              <tr><td><b>Aspirin</b></td><td>Irreversible COX-1 inhibition, lowering thromboxane A2</td><td>None</td><td>Platelet transfusion</td></tr>
-              <tr><td><b>Clopidogrel</b></td><td>Irreversible P2Y12 (ADP) receptor blocker</td><td>None</td><td>Platelet transfusion</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <h4><span class="pin">&raquo;</span> Intraoperative heparin</h4>
-        <p>Before clamping any artery, the surgeon gives systemic heparin, classically about <strong>80 to 100 units per kg</strong>, then confirms an <strong>activated clotting time above roughly 250 seconds</strong> before applying the clamp. At the end, heparin may be reversed with <strong>protamine</strong>.</p>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; protamine reaction and HIT</div>
-          <p>Protamine, derived from fish sperm, can cause <strong>hypotension, bradycardia, and anaphylaxis</strong>, especially in patients with prior protamine exposure, fish allergy, or NPH-insulin use, so give it slowly. And never forget <strong>heparin-induced thrombocytopenia</strong>, an immune reaction (antibodies to the PF4 and heparin complex) appearing about 5 to 10 days after exposure, causing a falling platelet count <em>and paradoxical thrombosis</em>. Stop all heparin, do not transfuse platelets, and anticoagulate with a <strong>direct thrombin inhibitor</strong> (argatroban or bivalirudin). Use the <strong>4T score</strong> to gauge probability.</p>
-        </div>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">A heparinized patient's platelets drop on day 7 and they clot a graft. Diagnosis and next step?</p>
-          <p class="a"><strong>HIT.</strong> Stop every source of heparin (including flushes and coated catheters), start a non-heparin anticoagulant such as <strong>argatroban</strong>, send the HIT antibody and serotonin-release assay, and <em>do not</em> give platelet transfusions, which can worsen thrombosis.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="medical" data-title="Medical therapy">
-        <h3>Medical &amp; risk-factor therapy</h3>
-        <p>Revascularization treats the plumbing; medical therapy treats the disease. Every PAD patient should be on best medical therapy regardless of whether they get an operation.</p>
-        <ul class="clean">
-          <li><strong>Smoking cessation</strong> is the single highest-impact intervention, slowing progression and improving graft patency more than any drug.</li>
-          <li><strong>High-intensity statin</strong> for every atherosclerotic patient, for plaque stabilization and cardiovascular risk reduction, not just lipids.</li>
-          <li><strong>Antiplatelet therapy</strong> (aspirin or clopidogrel); low-dose rivaroxaban plus aspirin is now used in selected PAD patients to reduce limb and cardiovascular events.</li>
-          <li><strong>Blood pressure and diabetes control</strong>, and an SGLT2 inhibitor or GLP-1 agent where indicated for cardiovascular benefit.</li>
-          <li><strong>Supervised exercise therapy</strong> is first-line for claudication and rivals revascularization for walking distance.</li>
-          <li><strong>Cilostazol</strong>, a phosphodiesterase-3 inhibitor, improves claudication distance but is <em>contraindicated in heart failure</em>.</li>
-        </ul>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">What is the most important intervention for a smoker with claudication?</p>
-          <p class="a"><strong>Smoking cessation</strong>, paired with a statin, antiplatelet therapy, and a supervised exercise program. For pure claudication, medical therapy and exercise come <em>before</em> any consideration of intervention.</p>
-        </div>
-      </section>
-
-      <div class="pagenav">
-        <a class="pagenav-a prev" href="rounds.html"><div class="dir">&larr; Previous</div><div class="nm">Rounds &amp; presenting</div></a>
-        <a class="pagenav-a next" href="presentations.html"><div class="dir">Next &rarr;</div><div class="nm">Presentations</div></a>
-      </div>
-
-      <footer class="foot">
-        <p><b>Foundations</b></p>
-        <p>Anatomy, hemodynamics, the exam, and the pharmacology of clotting are the scaffolding everything else hangs on. Learn the lower-extremity arterial sequence cold, understand why a tight stenosis matters, and know how the anticoagulants work and reverse.</p>
-        <p class="mantra">Name the vessels, grade the perfusion, know the drugs.</p>
-      </footer>
+    <div>
+      <p>Compiled by <b>Hashim Salar</b>.</p>
+      <p>Content last reviewed October 2026.</p>
     </div>
-  </main>
-
-</div><!-- /.shell -->
-<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
-<script src="assets/app.js"></script>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/app.js?v=52dc44bc" data-index="ec206659" defer></script>
+<!-- /@footer -->
 </body>
 </html>
