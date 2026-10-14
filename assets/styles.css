@@ -1015,6 +1015,34 @@ table.data tr.hot > :first-child { box-shadow: inset 3px 0 0 var(--artery); }
 .hero .summary { font-size: 1.2em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.75rem; }
 
+/* author byline, right under the title */
+.byline {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  margin: 0 0 1.5rem;
+  padding: .7rem 1rem .7rem .7rem;
+  max-width: 34rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px 1rem 1rem 999px;
+  background: var(--film);
+}
+.byline img {
+  flex: none;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px var(--sheet), 0 0 0 4px var(--artery);
+}
+.byline p { margin: 0; line-height: 1.35; }
+.byline .by-k { display: block; font-size: .82rem; color: var(--ink-3); }
+.byline .by-name { display: block; font-family: var(--f-head); font-weight: 700; font-size: 1.2rem; color: var(--ink); }
+.byline .by-bio { display: block; margin-top: .15rem; font-size: .88rem; color: var(--ink-2); }
+@media (max-width: 26em) {
+  .byline { border-radius: 1rem; align-items: flex-start; }
+  .byline img { width: 48px; height: 48px; }
+}
+
 /* the runoff angiogram */
 .angio {
   margin: 0;
