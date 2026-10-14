@@ -1,232 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- @head -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home · UNM Vascular Surgery Field Guide</title>
-<meta name="description" content="A field guide to the vascular surgery service at the University of New Mexico, for students, sub-interns, and new residents.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vascular Surgery Field Guide</title>
+<meta name="description" content="Where to start for your role, the vascular mindset, and how the guide is organized.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.className+=' js';</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=449f4c7a">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('vfg-theme');if(t==='dark'||t==='light')r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<!-- /@head -->
 </head>
-<body>
-<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
-<div class="scrim" id="scrim"></div>
-<div class="progress" id="progress"></div>
-<div class="shell">
-  <aside class="sidebar" id="sidebar">
-    <div class="sb-head">
-      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
-        <span>
-          <p class="sb-mark">Field Guide</p>
-          <p class="sb-title">Vascular <em>Surgery</em></p>
-        </span>
-      </a>
-      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
+<body class="home">
+<!-- @nav -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-nav-open aria-controls="rail" aria-expanded="false" aria-label="Open contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#B01E2E"/><path d="M16 5v9.5c0 2.2-1.2 3.6-3 5L8.5 23.5V27M16 14.5c0 2.2 1.2 3.6 3 5l4.5 4V27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">Vascular Surgery <span>Field Guide</span></span></a>
+  <div class="topbar-actions">
+    <button class="icon-btn search-btn" type="button" data-search-open aria-label="Search the guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="lbl">Search the guide</span><kbd>/</kbd></button>
+    <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+  </div>
+</header>
+<div class="scrim" data-nav-close></div>
+<!-- /@nav -->
+<div class="frame">
+<!-- @rail -->
+<nav class="rail" id="rail" aria-label="Guide contents">
+  <div class="rail-close"><button class="icon-btn" type="button" data-nav-close aria-label="Close contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="rail-group">
+    <p class="rail-label">Start here</p>
+    <ol>
+      <li><a class="rail-link" href="index.html" aria-current="page"><span class="rail-n">0</span>Home</a></li>
+      <li><a class="rail-link" href="first-day.html"><span class="rail-n">1</span>Your first day</a></li>
+      <li><a class="rail-link" href="rounds.html"><span class="rail-n">2</span>Rounds and presenting</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Running the service</p>
+    <ol>
+      <li><a class="rail-link" href="charting.html"><span class="rail-n">3</span>History, exam and charting</a></li>
+      <li><a class="rail-link" href="ctv-icu.html"><span class="rail-n">4</span>The CTV ICU</a></li>
+      <li><a class="rail-link" href="on-call.html"><span class="rail-n">5</span>On call and cross-cover</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">The knowledge</p>
+    <ol>
+      <li><a class="rail-link" href="foundations.html"><span class="rail-n">6</span>Foundations</a></li>
+      <li><a class="rail-link" href="presentations.html"><span class="rail-n">7</span>Presentations</a></li>
+      <li><a class="rail-link" href="operations.html"><span class="rail-n">8</span>Open operations</a></li>
+      <li><a class="rail-link" href="endovascular.html"><span class="rail-n">9</span>Endovascular</a></li>
+      <li><a class="rail-link" href="devices.html"><span class="rail-n">10</span>Wires, catheters and devices</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Sharpen up</p>
+    <ol>
+      <li><a class="rail-link" href="questions.html"><span class="rail-n">11</span>Questions you&#x27;ll be asked</a></li>
+      <li><a class="rail-link" href="reference.html"><span class="rail-n">12</span>Quick reference</a></li>
+    </ol>
+  </div>
+  <p class="rail-note">Inflow, outflow, conduit. The vascular patient is always a cardiac patient.</p>
+</nav>
+<!-- /@rail -->
+<main id="main" class="page" tabindex="-1">
+
+  <header class="hero">
+    <div>
+      <h1>Vascular Surgery Field Guide</h1>
+      <div class="byline">
+        <img src="assets/portrait.jpg" alt="Portrait of Hashim Salar" width="56" height="56">
+        <p><span class="by-k">Compiled by</span> <span class="by-name">Hashim Salar</span> <span class="by-bio">Medical trainee at the Aga Khan University with an interest in vascular surgery, who put this guide together to make the first weeks on the service easier for whoever comes next.</span></p>
+      </div>
+      <p class="summary">What you need to be useful on the vascular service: the list and the pager, the operating room and the CTV ICU, the anatomy you will be asked and the notes you will write. Written for residents first, and for every sub-intern and student who joins them.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#start">Find your starting point</a>
+        <a class="btn" href="reference.html">Open the quick reference</a>
+      </div>
     </div>
-    <nav class="sb-nav">
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">A</span> Start here</div>
-        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
-        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
-        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
-        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
-        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
-        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
-        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
-        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
-        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
-      </div>
-    </nav>
-    <div class="sb-foot">
-      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
-    </div>
-  </aside>
-  <main class="main">
-    <header class="hero cover">
-      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
-        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
+
+    <figure class="angio">
+      <svg viewBox="20 0 210 900" role="img" aria-labelledby="angio-title">
+        <title id="angio-title">The arterial tree from the abdominal aorta to the foot, with thirteen numbered vessels</title>
+        <!-- ghost leg (patient's other side) -->
+        <g class="ghost-leg" opacity=".38">
+          <path class="v run" pathLength="1" style="--d:.25s" stroke-width="6.1" d="M120 50 Q100 53 80 57"/>
+          <path class="v run" pathLength="1" style="--d:.35s" stroke-width="12.2" d="M120 190 Q102 222 86 258"/>
+          <path class="v run" pathLength="1" style="--d:.6s" stroke-width="7.4" d="M86 258 Q92 288 104 312"/>
+          <path class="v run" pathLength="1" style="--d:.6s" stroke-width="10.1" d="M86 258 Q74 296 70 336 L68 370"/>
+          <path class="v run" pathLength="1" style="--d:1s" stroke-width="6.1" d="M68 370 Q52 405 48 450 Q45 495 50 525"/>
+          <path class="v run" pathLength="1" style="--d:1s" stroke-width="7.4" d="M68 370 Q64 450 65 510 Q66 550 72 575 Q77 615 77 650"/>
+          <path class="v run" pathLength="1" style="--d:1.7s" stroke-width="4.1" d="M77 650 Q67 655 63 668 Q57 740 56 820 Q55 845 54 855"/>
+          <path class="v run" pathLength="1" style="--d:1.7s" stroke-width="4.7" d="M77 650 L80 684 Q86 760 88 830 Q88 850 82 862"/>
+          <path class="v run" pathLength="1" style="--d:1.9s" stroke-width="3.8" d="M80 684 Q71 750 70 815"/>
+        </g>
+        <!-- labelled leg -->
+        <g>
+          <path class="v run" pathLength="1" style="--d:0s" stroke-width="17.6" d="M120 8 V190"/>
+          <path class="v run" pathLength="1" style="--d:.25s" stroke-width="6.1" d="M120 50 Q140 53 160 57"/>
+          <path class="v run" pathLength="1" style="--d:.35s" stroke-width="12.2" d="M120 190 Q138 222 154 258"/>
+          <path class="v run" pathLength="1" style="--d:.6s" stroke-width="7.4" d="M154 258 Q148 288 136 312"/>
+          <path class="v run" pathLength="1" style="--d:.75s" stroke-width="3.5" d="M142 300 Q130 304 124 318"/>
+          <path class="v run" pathLength="1" style="--d:.6s" stroke-width="10.1" d="M154 258 Q166 296 170 336"/>
+          <path class="v run" pathLength="1" style="--d:.85s" stroke-width="10.1" d="M170 336 L172 370"/>
+          <path class="v run" pathLength="1" style="--d:1s" stroke-width="6.1" d="M172 370 Q188 405 192 450 Q195 495 190 525"/>
+          <path class="v run" pathLength="1" style="--d:1.15s" stroke-width="3.2" d="M187 418 Q200 430 206 448"/>
+          <path class="v run" pathLength="1" style="--d:1s" stroke-width="7.4" d="M172 370 Q176 450 175 510 Q174 550 168 575"/>
+          <path class="v run" pathLength="1" style="--d:1.45s" stroke-width="6.8" d="M168 575 Q163 615 163 650"/>
+          <path class="v run" pathLength="1" style="--d:1.7s" stroke-width="4.1" d="M163 650 Q173 655 177 668 Q183 740 184 820 Q185 845 186 855"/>
+          <path class="v run" pathLength="1" style="--d:1.7s" stroke-width="5.4" d="M163 650 L160 684"/>
+          <path class="v run" pathLength="1" style="--d:1.9s" stroke-width="4.7" d="M160 684 Q154 760 152 830 Q152 850 158 862"/>
+          <path class="v run" pathLength="1" style="--d:1.9s" stroke-width="3.8" d="M160 684 Q169 750 170 815"/>
+          <path class="v run" pathLength="1" style="--d:2.2s" stroke-width="3.4" d="M186 855 Q190 872 197 886"/>
+          <path class="v run" pathLength="1" style="--d:2.3s" stroke-width="2.7" d="M158 862 Q172 882 194 882"/>
+        </g>
+        <!-- numbered pins, in runoff order -->
+        <g class="pin" data-v="1" style="--d:0s"><circle cx="120" cy="120" r="13"/><text x="120" y="120.5">1</text></g>
+        <g class="pin" data-v="2" style="--d:.35s"><circle cx="139" cy="226" r="13"/><text x="139" y="226.5">2</text></g>
+        <g class="pin" data-v="3" style="--d:.6s"><circle cx="137" cy="307" r="13"/><text x="137" y="307.5">3</text></g>
+        <g class="pin" data-v="4" style="--d:.6s"><circle cx="168" cy="312" r="13"/><text x="168" y="312.5">4</text></g>
+        <g class="pin" data-v="5" style="--d:.85s"><circle cx="171" cy="353" r="13"/><text x="171" y="353.5">5</text></g>
+        <g class="pin" data-v="6" style="--d:1s"><circle cx="192" cy="465" r="13"/><text x="192" y="465.5">6</text></g>
+        <g class="pin" data-v="7" style="--d:1s"><circle cx="175" cy="505" r="13"/><text x="175" y="505.5">7</text></g>
+        <g class="pin" data-v="8" style="--d:1.45s"><circle cx="164" cy="612" r="13"/><text x="164" y="612.5">8</text></g>
+        <g class="pin" data-v="9" style="--d:1.7s"><circle cx="182" cy="728" r="13"/><text x="182" y="728.5">9</text></g>
+        <g class="pin" data-v="10" style="--d:1.7s"><circle cx="146" cy="676" r="13"/><text x="146" y="676.5">10</text></g>
+        <g class="pin" data-v="11" style="--d:1.9s"><circle cx="153" cy="770" r="13"/><text x="153" y="770.5">11</text></g>
+        <g class="pin" data-v="12" style="--d:1.9s"><circle cx="171" cy="800" r="13"/><text x="171" y="800.5">12</text></g>
+        <g class="pin" data-v="13" style="--d:2.2s"><circle cx="204" cy="872" r="13"/><text x="204" y="872.5">13</text></g>
       </svg>
-      <div class="hero-inner wrap">
-        <p class="eyebrow seq d1">University of New Mexico &middot; Surgery</p>
-        <h1 class="title seq d2"><span class="l1">The Vascular</span> <em>Field Guide</em></h1>
-        <p class="lede seq d3">Everything a medical student, sub-intern, or new resident needs when joining the vascular surgery service at UNM. The anatomy and physiology you will be asked about, the presentations that fill the consult pager, the open and endovascular cases you will scrub, and how to actually function on rounds and in the operating room.</p>
-        <div class="hero-meta seq d4">
-          <span class="chip"><b data-count="9">0</b> chapters</span>
-          <span class="chip"><b data-count="12">0</b> presentations</span>
-          <span class="chip"><b data-count="11">0</b> operations</span>
-          <span class="chip"><b data-count="60" data-suffix="+">0</b> teaching questions</span>
-          <span class="chip ven"><b>Inflow &middot; Outflow &middot; Conduit</b></span>
-        </div>
-      </div>
-    </header>
+      <figcaption>
+        <p class="cap-title">The runoff, aorta to foot</p>
+        <p class="cap-sub">The sequence you will be asked for most often, usually while holding a retractor.</p>
+        <ol>
+          <li data-v="1">Abdominal aorta</li>
+          <li data-v="2">Common iliac</li>
+          <li data-v="3">Internal iliac</li>
+          <li data-v="4">External iliac</li>
+          <li data-v="5">Common femoral</li>
+          <li data-v="6">Profunda femoris</li>
+          <li data-v="7">Superficial femoral</li>
+          <li data-v="8">Popliteal</li>
+          <li data-v="9">Anterior tibial</li>
+          <li data-v="10">Tibioperoneal trunk</li>
+          <li data-v="11">Posterior tibial</li>
+          <li data-v="12">Peroneal</li>
+          <li data-v="13">Dorsalis pedis</li>
+        </ol>
+      </figcaption>
+    </figure>
+  </header>
 
-    <div class="disclaimer">
-      <div class="box reveal">
-        <b>Read me first</b>
-        This is an educational orientation and study aid for trainees rotating on vascular surgery at UNM. It is not a clinical protocol and it is not official hospital policy. Thresholds, classifications, and trial data drift over time and vary by institution, so verify specifics against current society guidelines (SVS, ESVS), your attendings, and local UNM pathways before applying anything to a real patient. Logistics such as access and onboarding change often, so confirm the day-one details with your clerkship or program coordinator.
-      </div>
+  <section class="sec tracks" id="start" data-title="Start where you are">
+    <h2>Start where you are</h2>
+    <p class="muted prose">Pick your role for a reading order that fits it. Everything else can wait until a case or a page makes it relevant.</p>
+    <div class="track-tabs" role="tablist" aria-label="Your role">
+      <button class="track-tab" role="tab" id="tab-resident" aria-controls="track-resident" aria-selected="true">Intern or resident</button>
+      <button class="track-tab" role="tab" id="tab-subi" aria-controls="track-subi" aria-selected="false" tabindex="-1">Sub-intern</button>
+      <button class="track-tab" role="tab" id="tab-ms3" aria-controls="track-ms3" aria-selected="false" tabindex="-1">Third-year student</button>
     </div>
 
-    <div class="wrap">
-      <div class="credit reveal">
-        <img class="avatar" src="assets/portrait.jpg" alt="Portrait of the author" width="70" height="70">
-        <div class="who">
-          <p class="ck">Compiled by</p>
-          <p class="cname">Hashim Salar</p>
-          <p class="cbio">A medical trainee with an interest in vascular surgery and interventional radiology, who put this together to make the first weeks on the service less disorienting for whoever comes next.</p>
-        </div>
-      </div>
-
-      <!-- WHO THIS IS FOR -->
-      <section class="section first" id="who" data-title="Who this is for">
-        <div class="sec-head reveal">
-          <span class="sec-num">START HERE</span>
-          <h2 class="sec-title">Who this is <em>for</em></h2>
-          <div class="rule"></div>
-          <p class="sec-intro">Written for whoever walks onto the vascular service and needs to be useful quickly. Read what fits your role, and ignore the rest until it becomes relevant.</p>
-        </div>
-        <div class="aud stagger">
-          <div class="a-card">
-            <p class="who">MS3s</p>
-            <p>On your core surgery clerkship and new to the wards. Start with the first-day and rounds chapters, then read foundations before your first case.</p>
-          </div>
-          <div class="a-card">
-            <p class="who">Sub-interns</p>
-            <p>Acting interns expected to carry patients and present. Lean on rounds, presentations, and operations, and answer the teaching questions out loud.</p>
-          </div>
-          <div class="a-card">
-            <p class="who">New residents</p>
-            <p>Interns and off-service residents rotating through. The reference and endovascular chapters are the fastest on-ramp to sounding fluent.</p>
-          </div>
-          <div class="a-card">
-            <p class="who">Anyone joining</p>
-            <p>Visiting students, advanced practice providers, and rotators of every kind. The whole guide is built to get you oriented and contributing fast.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CHAPTER INDEX -->
-      <section class="section" id="chapters" data-title="The chapters">
-        <div class="sec-head reveal">
-          <span class="sec-num">CONTENTS</span>
-          <h2 class="sec-title">The <em>chapters</em></h2>
-          <div class="rule"></div>
-          <p class="sec-intro">Nine chapters, in roughly the order you will need them. The first three get you onto the service; the middle four are the knowledge; the last two are for the night before and the ten minutes before rounds.</p>
-        </div>
-        <div class="idx stagger">
-          <a class="idx-card ven" href="first-day.html">
-            <span class="num">01</span>
-            <h3>Your first day</h3>
-            <p>Badge and ID, scrubs, PowerChart access, parking, pagers, and who to find before rounds start.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card ven" href="rounds.html">
-            <span class="num">02</span>
-            <h3>Rounds &amp; presenting</h3>
-            <p>How to pre-round, gather the numbers a vascular team wants, write the note, and present like you belong.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card" href="foundations.html">
-            <span class="num">03</span>
-            <h3>Foundations</h3>
-            <p>Arterial and venous anatomy, hemodynamics, the exam, noninvasive testing, imaging, and anticoagulation.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card" href="presentations.html">
-            <span class="num">04</span>
-            <h3>Presentations</h3>
-            <p>PAD, CLTI, acute limb ischemia, aneurysms, carotid disease, dissection, mesenteric ischemia, and venous disease.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card" href="operations.html">
-            <span class="num">05</span>
-            <h3>Open operations</h3>
-            <p>Carotid endarterectomy, open aneurysm repair, bypass, dialysis access, amputation, and fasciotomy.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card" href="endovascular.html">
-            <span class="num">06</span>
-            <h3>Endovascular</h3>
-            <p>Access, wires and catheters, angiography, radiation and contrast, EVAR and TEVAR, stenting, and thrombectomy.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card" href="questions.html">
-            <span class="num">07</span>
-            <h3>Questions you'll be asked</h3>
-            <p>The classic teaching questions, grouped by angle, each with the answer an attending wants to hear.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-          <a class="idx-card ven" href="reference.html">
-            <span class="num">08</span>
-            <h3>Quick reference</h3>
-            <p>Every table, classification, and high-yield number in one place for the pre-round cram.</p>
-            <span class="go">Open chapter <span class="arr">&rarr;</span></span>
-          </a>
-        </div>
-      </section>
-
-      <!-- MINDSET -->
-      <section class="section" id="mindset" data-title="The vascular mindset">
-        <div class="sec-head reveal">
-          <span class="sec-num">ORIENTATION</span>
-          <h2 class="sec-title">The vascular <em>mindset</em></h2>
-          <div class="rule"></div>
-          <p class="sec-intro">Before the facts, the frame. Vascular is a small, intense service with a logic of its own. Get the logic and the facts hang on it.</p>
-        </div>
-        <p>Three habits of thought will make you sound like you belong on the service.</p>
-        <p><span class="lead-in">First, everything reduces to inflow, outflow, and conduit.</span> A leg, a graft, a bypass, a fistula, all of it. Is there enough blood arriving (inflow), a healthy bed for it to drain into (outflow, or runoff), and an intact channel between the two (conduit)? When a graft clots or a wound will not heal, the question is always which of those three failed.</p>
-        <p><span class="lead-in">Second, the vascular patient is a cardiac patient who happens to have a leg or carotid problem.</span> Atherosclerosis is systemic. The person with claudication almost certainly has coronary disease too, which is why the leading cause of death after nearly every vascular operation is myocardial infarction rather than the operated territory itself. Optimize the heart, and treat the limb in that context.</p>
-        <p><span class="lead-in">Third, time is tissue.</span> Acute limb ischemia, ruptured aneurysm, acute mesenteric ischemia, a cold mottled foot after a catheterization, these are clocks running against muscle, bowel, and brain. The reflex is to anticoagulate early, image fast, and call for help before the window closes.</p>
-        <div class="box pearl reveal">
-          <div class="lab"><span class="dot"></span>Pearl</div>
-          <p>When you present a patient on this service, lead with the vascular bed, the symptom severity, the pulse exam, and the hemodynamics (ABI or duplex). An attending wants the limb characterized before the social history. Structure your thinking the way the service thinks and you will rarely be lost. The next chapter turns this into an actual presentation script.</p>
-        </div>
-
-        <h3 id="how-to-use">How to use this guide</h3>
-        <p>Read <a href="first-day.html">Your first day</a> and <a href="rounds.html">Rounds and presenting</a> before you show up, because they are the difference between a smooth first morning and a lost one. Read <a href="foundations.html">Foundations</a> and <a href="presentations.html">Presentations</a> in the first week, since they cover the language and reasoning everyone will assume you have. Skim the relevant entry in <a href="operations.html">Operations</a> or <a href="endovascular.html">Endovascular</a> the night before you scrub a given case, then re-read it after while it is fresh. <a href="questions.html">Questions you'll be asked</a> is for the ten minutes before rounds, and <a href="reference.html">Quick reference</a> is what you screenshot and keep on your phone.</p>
-        <p>The colored boxes recur throughout, and each one means something specific.</p>
-        <div class="box q-box reveal">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p>A question you will actually be asked, with the answer an attending wants to hear. If you can answer these cold, you are ahead of most rotators.</p>
-        </div>
-        <div class="box pearl reveal">
-          <div class="lab"><span class="dot"></span>Pearl</div>
-          <p>A clinical or operative point that separates someone who memorized a list from someone who understands the disease.</p>
-        </div>
-        <div class="box flag reveal">
-          <div class="lab"><span class="dot"></span>Red flag</div>
-          <p>A do-not-miss finding, an emergency, or a classic trap. These are the things that hurt patients and end rotations badly.</p>
-        </div>
-        <div class="box mnem reveal">
-          <div class="lab"><span class="dot"></span>Mnemonic</div>
-          <p>A memory hook. Use the ones that stick and ignore the rest.</p>
-        </div>
-      </section>
-
-      <div class="divider"><svg viewBox="0 0 120 24" aria-hidden="true"><path d="M0,12 L46,12 L52,3 L60,21 L66,12 L120,12" fill="none" stroke="#9b1d20" stroke-width="2"></path></svg></div>
-
-      <footer class="foot">
-        <p><b>How to use this</b></p>
-        <p>This guide distills the orientation, anatomy, presentations, operations, and questions that a trainee rotating on vascular surgery is most likely to need. It is deliberately concise and is <strong>not a clinical protocol</strong>. Read it the night before, skim it on the way in, and let the cases turn the lists into knowledge.</p>
-        <p class="mantra">Inflow, outflow, conduit, and the vascular patient is always a cardiac patient.</p>
-      </footer>
+    <div class="track-panel" id="track-resident" role="tabpanel" aria-labelledby="tab-resident">
+      <h3 class="visually-hidden">Intern or resident</h3>
+      <p class="track-why">You will carry the list, answer the pager and write most of the notes. Read the first four before your first call night, then keep the rest open on your phone.</p>
+      <ol class="path">
+        <li><a href="first-day.html"><span class="p-t">Your first day</span><span class="p-d">PowerChart access, the pager, sign-out times and who to call for what. <span class="p-when">The week before.</span></span></a></li>
+        <li><a href="charting.html"><span class="p-t">History, exam and charting</span><span class="p-d">Copy-ready consult, brief op, post-op check, progress and discharge notes, ready to save as PowerChart Auto Text.</span></a></li>
+        <li><a href="on-call.html"><span class="p-t">On call and cross-cover</span><span class="p-d">The overnight calls that come up again and again, the first moves for each, and when to wake your senior. <span class="p-when">Before your first night.</span></span></a></li>
+        <li><a href="ctv-icu.html"><span class="p-t">The CTV ICU</span><span class="p-d">Who goes there, the OR-to-ICU handoff, admission orders, CSF drains, and what to watch after each operation.</span></a></li>
+        <li><a href="rounds.html"><span class="p-t">Rounds and presenting</span><span class="p-d">The numbers the team wants every morning and how they want them presented.</span></a></li>
+        <li><a href="devices.html"><span class="p-t">Wires, catheters and devices</span><span class="p-d">So that “give me a Bentson” or “go up and over with an Omni” means something the first time you hear it. <span class="p-when">Before your first angio day.</span></span></a></li>
+        <li><a href="reference.html"><span class="p-t">Quick reference</span><span class="p-d">Classifications, thresholds and reversal agents on one screen. <span class="p-when">Keep it open.</span></span></a></li>
+      </ol>
     </div>
-  </main>
 
-</div><!-- /.shell -->
-<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
-<script src="assets/app.js"></script>
+    <div class="track-panel" id="track-subi" role="tabpanel" aria-labelledby="tab-subi" hidden>
+      <h3 class="visually-hidden">Sub-intern</h3>
+      <p class="track-why">You will carry patients, present them like an intern and take some first calls with backup. Everything you practice here is what intern year asks of you in July.</p>
+      <ol class="path">
+        <li><a href="first-day.html"><span class="p-t">Your first day</span><span class="p-d">Badge, scrubs, PowerChart and where the team meets. <span class="p-when">The week before.</span></span></a></li>
+        <li><a href="rounds.html"><span class="p-t">Rounds and presenting</span><span class="p-d">Pre-rounding, the vascular numbers, and a presentation that ends on a plan.</span></a></li>
+        <li><a href="charting.html"><span class="p-t">History, exam and charting</span><span class="p-d">The focused vascular exam and the notes you will be writing, with templates.</span></a></li>
+        <li><a href="presentations.html"><span class="p-t">Presentations</span><span class="p-d">PAD, CLTI, acute limb ischemia, aneurysm, carotid, dissection, mesenteric and venous disease. <span class="p-when">First week.</span></span></a></li>
+        <li><a href="operations.html"><span class="p-t">Open operations</span><span class="p-d">Steps, consent risks and what to watch after each case. <span class="p-when">The night before you scrub.</span></span></a></li>
+        <li><a href="on-call.html"><span class="p-t">On call and cross-cover</span><span class="p-d">How residents triage the pager overnight. Learn it now and your first call night as an intern is far less frightening.</span></a></li>
+        <li><a href="questions.html"><span class="p-t">Questions you'll be asked</span><span class="p-d">Answer out loud, then reveal. <span class="p-when">Ten minutes before rounds.</span></span></a></li>
+      </ol>
+    </div>
+
+    <div class="track-panel" id="track-ms3" role="tabpanel" aria-labelledby="tab-ms3" hidden>
+      <h3 class="visually-hidden">Third-year student</h3>
+      <p class="track-why">You will follow a few patients closely, pre-round, present and scrub. Aim to be useful and to learn the logic of the service; the habits you build here (a specific pulse exam, a note that is true today, a plan you commit to) carry straight into residency.</p>
+      <ol class="path">
+        <li><a href="first-day.html"><span class="p-t">Your first day</span><span class="p-d">The logistics that decide whether your first morning goes smoothly. <span class="p-when">The week before.</span></span></a></li>
+        <li><a href="rounds.html"><span class="p-t">Rounds and presenting</span><span class="p-d">How to pre-round, what to gather, and how to present a vascular patient.</span></a></li>
+        <li><a href="foundations.html"><span class="p-t">Foundations</span><span class="p-d">Anatomy, the pulse exam, the ABI and the anticoagulants. <span class="p-when">First week.</span></span></a></li>
+        <li><a href="presentations.html"><span class="p-t">Presentations</span><span class="p-d">The diseases behind the consult pager.</span></a></li>
+        <li><a href="operations.html"><span class="p-t">Open operations</span><span class="p-d">Read the case the night before and name the structures in the wound. <span class="p-when">Before each case.</span></span></a></li>
+        <li><a href="endovascular.html"><span class="p-t">Endovascular</span><span class="p-d">Access, angiography and radiation safety, so the angio suite makes sense.</span></a></li>
+        <li><a href="questions.html"><span class="p-t">Questions you'll be asked</span><span class="p-d">The classic teaching questions with the answers attendings want.</span></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="why" data-title="What the guide saves you">
+    <h2>Built to make the service easier to run</h2>
+    <p class="muted prose">Most of what goes wrong for a new resident on vascular is predictable: a stale pulse exam, a groin bleed nobody expected, an ICU handoff missing the clamp time. These pages are organized around those moments.</p>
+    <div class="gains">
+      <div><h3>Fewer 2 a.m. guesses</h3><p>First moves for the lost pulse, the groin hematoma, the swollen neck and the low urine output, and a clear list of when to call. <a href="on-call.html">On call and cross-cover</a></p></div>
+      <div><h3>Notes in minutes</h3><p>Consult, brief op, post-op check, progress and discharge templates you can paste into PowerChart Auto Text once and reuse all rotation. <a href="charting.html">Charting</a></p></div>
+      <div><h3>Clean ICU handoffs</h3><p>The items the CTV ICU team will ask for, in the order they ask, plus targets for blood pressure, MAP and CSF drains. <a href="ctv-icu.html#handoff">The handoff</a></p></div>
+      <div><h3>Devices by name</h3><p>What a Rosen, a KMP, an Omni Flush or a ProGlide is, so you can hand the right thing over and follow the case. <a href="devices.html">Devices</a></p></div>
+      <div><h3>Answers on rounds</h3><p>Classifications, thresholds and reversal agents on one page, and the teaching questions as self-tests. <a href="reference.html">Quick reference</a></p></div>
+      <div><h3>Search every page</h3><p>Press <kbd>/</kbd> anywhere, or tap the search icon, and type HIT, Rutherford, endoleak or Bentson.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="contents" data-title="Contents">
+    <h2>Contents</h2>
+    <div class="contents">
+      <div class="contents-group">
+        <p>Start here</p>
+        <ol>
+          <li><a href="first-day.html"><span class="c-n">1</span><span class="c-t">Your first day</span><span class="c-d">Badge, scrubs, PowerChart, parking, the team, and what to carry.</span></a></li>
+          <li><a href="rounds.html"><span class="c-n">2</span><span class="c-t">Rounds and presenting</span><span class="c-d">Pre-rounding, the numbers a vascular team wants, presenting, and the operating room.</span></a></li>
+        </ol>
+      </div>
+      <div class="contents-group">
+        <p>Running the service</p>
+        <ol>
+          <li><a href="charting.html"><span class="c-n">3</span><span class="c-t">History, exam and charting<span class="new">New</span></span><span class="c-d">The vascular history by complaint, the focused exam, and copy-ready notes.</span></a></li>
+          <li><a href="ctv-icu.html"><span class="c-n">4</span><span class="c-t">The CTV ICU<span class="new">New</span></span><span class="c-d">Admission, the OR-to-ICU handoff, orders, CSF drains, and what to watch after each operation.</span></a></li>
+          <li><a href="on-call.html"><span class="c-n">5</span><span class="c-t">On call and cross-cover<span class="new">New</span></span><span class="c-d">Pager triage, sign-out, and first moves for the calls that come up again and again.</span></a></li>
+        </ol>
+      </div>
+      <div class="contents-group">
+        <p>The knowledge</p>
+        <ol>
+          <li><a href="foundations.html"><span class="c-n">6</span><span class="c-t">Foundations</span><span class="c-d">Anatomy, hemodynamics, the exam, noninvasive testing, imaging, anticoagulation, and cardiac risk.</span></a></li>
+          <li><a href="presentations.html"><span class="c-n">7</span><span class="c-t">Presentations</span><span class="c-d">PAD, CLTI, acute limb ischemia, aneurysm, carotid, dissection, mesenteric, and venous disease.</span></a></li>
+          <li><a href="operations.html"><span class="c-n">8</span><span class="c-t">Open operations</span><span class="c-d">Steps, consent risks, and what to watch afterwards for every major open case.</span></a></li>
+          <li><a href="endovascular.html"><span class="c-n">9</span><span class="c-t">Endovascular</span><span class="c-d">Access, angiography, radiation and contrast, stenting, EVAR and TEVAR, and clot management.</span></a></li>
+          <li><a href="devices.html"><span class="c-n">10</span><span class="c-t">Wires, catheters and devices<span class="new">New</span></span><span class="c-d">Sheaths, wires, catheters, balloons, stents, grafts and closure devices, by name.</span></a></li>
+        </ol>
+      </div>
+      <div class="contents-group">
+        <p>Sharpen up</p>
+        <ol>
+          <li><a href="questions.html"><span class="c-n">11</span><span class="c-t">Questions you'll be asked</span><span class="c-d">The classic teaching questions, as self-tests.</span></a></li>
+          <li><a href="reference.html"><span class="c-n">12</span><span class="c-t">Quick reference</span><span class="c-d">Every table, classification, and number worth memorizing.</span></a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec prose" id="mindset" data-title="The vascular mindset" data-bed="both">
+    <h2>The vascular mindset</h2>
+    <p class="sec-lede">Before the facts, the frame. Vascular is a small, intense service with a logic of its own. Get the logic and the facts hang on it.</p>
+    <p><span class="lead-in">Everything reduces to inflow, outflow and conduit.</span> A leg, a graft, a bypass, a fistula, all of it. Is enough blood arriving (inflow), is there a healthy bed for it to drain into (outflow, or runoff), and is the channel between the two intact (conduit)? When a graft clots or a wound will not heal, the question is always which of the three failed.</p>
+    <p><span class="lead-in">The vascular patient is a cardiac patient who happens to have a leg or carotid problem.</span> Atherosclerosis is systemic. The person with claudication almost certainly has coronary disease too, which is why the leading cause of death after nearly every vascular operation is myocardial infarction rather than anything in the operated territory. Optimize the heart, and treat the limb in that context.</p>
+    <p><span class="lead-in">Time is tissue.</span> Acute limb ischemia, a ruptured aneurysm, acute mesenteric ischemia, a cold mottled foot after a catheterization: these are clocks running against muscle, bowel and brain. The reflex is to anticoagulate early, image fast, and call for help before the window closes.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>When you present a patient on this service, lead with the vascular bed, the symptom severity, the pulse exam and the hemodynamics (ABI or duplex). An attending wants the limb characterized before the social history. <a href="rounds.html#present">Rounds and presenting</a> turns this into a script.</p>
+    </aside>
+  </section>
+
+  <section class="sec prose" id="reading" data-title="How to read the guide">
+    <h2>How to read the guide</h2>
+    <p>Each section heading carries a short colored bar that tells you which vascular bed it is about.</p>
+    <ul class="legend">
+      <li><i class="a"></i>Arterial</li>
+      <li><i class="v"></i>Venous</li>
+      <li><i class="b"></i>Both</li>
+      <li><i></i>General or logistics</li>
+    </ul>
+    <p style="margin-top:1.25rem">The boxes recur on every page, and each one means something specific.</p>
+    <aside class="note flag"><p class="note-label">Red flag</p><p>A do-not-miss finding, an emergency, or a classic trap. These are the things that hurt patients.</p></aside>
+    <aside class="note pearl"><p class="note-label">Pearl</p><p>A clinical or operative point that separates understanding the disease from memorizing a list.</p></aside>
+    <aside class="note tip"><p class="note-label">Resident tip</p><p>A specific habit that saves time or prevents an error when you are the one carrying the pager.</p></aside>
+    <aside class="note local"><p class="note-label">Confirm locally</p><p>Practice that varies between hospitals and services, such as order sets, drain protocols or who writes which orders. Ask your senior or the unit.</p></aside>
+    <aside class="note mnem"><p class="note-label">Mnemonic</p><p>A memory hook. Keep the ones that stick.</p></aside>
+    <details class="qa">
+      <summary>Questions look like this. Try to answer before you open one.</summary>
+      <div class="qa-a"><p>The answer is the one an attending wants to hear, usually followed by the reason. If you can answer these cold, you are ahead of most rotators.</p></div>
+    </details>
+  </section>
+
+  <section class="sec prose" id="about" data-title="About this guide">
+    <h2>About this guide</h2>
+    <aside class="note plain">
+      <p class="note-label">Read me first</p>
+      <p>This is an educational orientation and study aid for trainees rotating on vascular surgery. It is not a clinical protocol and it is not hospital policy. Thresholds, classifications and trial data drift over time and vary by institution, so check specifics against current society guidelines (SVS, ESVS), your attendings, and local pathways before applying anything to a patient. Logistics such as access and onboarding change often, so confirm day-one details with your clerkship or program coordinator.</p>
+    </aside>
+  </section>
+
+  <!-- @pager -->
+<nav class="pager" aria-label="Chapters">
+  <a class="next" href="first-day.html" rel="next"><span class="dir">Next</span><span class="ttl">Your first day</span></a>
+</nav>
+<!-- /@pager -->
+</main>
+</div>
+<!-- @footer -->
+<footer class="site-foot">
+  <div class="inner">
+    <div>
+      <p><b>An orientation and study aid, not a clinical protocol.</b> Thresholds, classifications and trial data change, and practice varies between hospitals. Check specifics against current SVS and ESVS guidance, your attendings, and local pathways before applying anything to a patient.</p>
+    </div>
+    <div>
+      <p>Compiled by <b>Hashim Salar</b>.</p>
+      <p>Content last reviewed October 2026.</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/app.js?v=52dc44bc" data-index="ab6d8be0" defer></script>
+<!-- /@footer -->
 </body>
 </html>

@@ -1,377 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- @head -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Presentations · UNM Vascular Surgery Field Guide</title>
-<meta name="description" content="The diseases that fill the vascular consult list, how they present, how they are classified, and what is done about them.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presentations | Vascular Surgery Field Guide</title>
+<meta name="description" content="PAD, CLTI, acute limb ischemia, aneurysm, carotid, dissection, mesenteric, and venous disease.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.className+=' js';</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=449f4c7a">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('vfg-theme');if(t==='dark'||t==='light')r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<!-- /@head -->
 </head>
 <body>
-<button class="navtoggle" id="navToggle" aria-label="Open contents">&#9776; Contents</button>
-<div class="scrim" id="scrim"></div>
-<div class="progress" id="progress"></div>
-<div class="shell">
-  <aside class="sidebar" id="sidebar">
-    <div class="sb-head">
-      <a class="sb-brand" href="index.html"><svg class="sb-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#e0a78f" stroke-width="1.4" opacity=".5"></circle><circle cx="20" cy="20" r="12.5" stroke="#e8b69b" stroke-width="2"></circle><circle cx="20" cy="20" r="7" fill="#c33127"></circle><circle cx="20" cy="20" r="7" fill="none" stroke="#f6ead4" stroke-width="1" opacity=".45"></circle></svg>
-        <span>
-          <p class="sb-mark">Field Guide</p>
-          <p class="sb-title">Vascular <em>Surgery</em></p>
-        </span>
-      </a>
-      <p class="sb-inst"><span class="pip"></span> University of New Mexico</p>
-    </div>
-    <nav class="sb-nav">
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">A</span> Start here</div>
-        <a class="sb-link" href="index.html"><span class="sx">00</span> Home &amp; orientation</a>
-        <a class="sb-link" href="first-day.html"><span class="sx">01</span> Your first day</a>
-        <a class="sb-link" href="rounds.html"><span class="sx">02</span> Rounds &amp; presenting</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">B</span> The knowledge</div>
-        <a class="sb-link" href="foundations.html"><span class="sx">03</span> Foundations</a>
-        <a class="sb-link" href="presentations.html"><span class="sx">04</span> Presentations</a>
-        <a class="sb-link" href="operations.html"><span class="sx">05</span> Open operations</a>
-        <a class="sb-link" href="endovascular.html"><span class="sx">06</span> Endovascular</a>
-      </div>
-      <div class="sb-group">
-        <div class="sb-glabel"><span class="n">C</span> Sharpen up</div>
-        <a class="sb-link" href="questions.html"><span class="sx">07</span> Questions you&rsquo;ll be asked</a>
-        <a class="sb-link" href="reference.html"><span class="sx">08</span> Quick reference</a>
-      </div>
-    </nav>
-    <div class="sb-foot">
-      <p>Inflow &middot; Outflow &middot; Conduit. The vascular patient is always a cardiac patient.</p>
-    </div>
-  </aside>
-  <main class="main">
-    <header class="hero">
-      <svg class="hero-wave" viewBox="0 0 1400 130" preserveAspectRatio="none" aria-hidden="true">
-        <path class="wave-faint" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path id="dopPath" class="wave-trace wave-draw" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <path class="wave-comet" d="M0,70 L40,70 L50,70 L62,18 C70,40 74,92 84,92 C92,92 96,66 106,58 C114,52 122,70 136,70 L272,70 L282,70 L294,18 C302,40 306,92 316,92 C324,92 328,66 338,58 C346,52 354,70 368,70 L504,70 L514,70 L526,18 C534,40 538,92 548,92 C556,92 560,66 570,58 C578,52 586,70 600,70 L736,70 L746,70 L758,18 C766,40 770,92 780,92 C788,92 792,66 802,58 C810,52 818,70 832,70 L968,70 L978,70 L990,18 C998,40 1002,92 1012,92 C1020,92 1024,66 1034,58 C1042,52 1050,70 1064,70 L1200,70 L1400,70"></path>
-        <circle class="pulse-dot" r="4.5"><animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1" keyTimes="0;1"><mpath href="#dopPath"></mpath></animateMotion></circle>
-      </svg>
-      <div class="hero-inner wrap">
-        <p class="eyebrow seq d1">Chapter 04 &middot; The knowledge</p>
-        <h1 class="title seq d2">Major <em>presentations</em></h1>
-        <p class="lede seq d3">The diseases that fill the consult list. For each one: what it is, how it shows up, how it is classified, and what is done about it. Read these in your first week, because they are most of what the service does and most of what you will be asked.</p>
-        <div class="hero-meta seq d4">
-          <span class="chip"><b>PAD &amp; CLTI</b></span>
-          <span class="chip"><b>Acute limb ischemia</b></span>
-          <span class="chip"><b>Aneurysm</b></span>
-          <span class="chip"><b>Carotid</b></span>
-          <span class="chip ven"><b>Venous</b></span>
-        </div>
-      </div>
-    </header>
+<!-- @nav -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-nav-open aria-controls="rail" aria-expanded="false" aria-label="Open contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#B01E2E"/><path d="M16 5v9.5c0 2.2-1.2 3.6-3 5L8.5 23.5V27M16 14.5c0 2.2 1.2 3.6 3 5l4.5 4V27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">Vascular Surgery <span>Field Guide</span></span></a>
+  <div class="topbar-actions">
+    <button class="icon-btn search-btn" type="button" data-search-open aria-label="Search the guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="lbl">Search the guide</span><kbd>/</kbd></button>
+    <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+  </div>
+</header>
+<div class="scrim" data-nav-close></div>
+<!-- /@nav -->
+<div class="frame">
+<!-- @rail -->
+<nav class="rail" id="rail" aria-label="Guide contents">
+  <div class="rail-close"><button class="icon-btn" type="button" data-nav-close aria-label="Close contents"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="rail-group">
+    <p class="rail-label">Start here</p>
+    <ol>
+      <li><a class="rail-link" href="index.html"><span class="rail-n">0</span>Home</a></li>
+      <li><a class="rail-link" href="first-day.html"><span class="rail-n">1</span>Your first day</a></li>
+      <li><a class="rail-link" href="rounds.html"><span class="rail-n">2</span>Rounds and presenting</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Running the service</p>
+    <ol>
+      <li><a class="rail-link" href="charting.html"><span class="rail-n">3</span>History, exam and charting</a></li>
+      <li><a class="rail-link" href="ctv-icu.html"><span class="rail-n">4</span>The CTV ICU</a></li>
+      <li><a class="rail-link" href="on-call.html"><span class="rail-n">5</span>On call and cross-cover</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">The knowledge</p>
+    <ol>
+      <li><a class="rail-link" href="foundations.html"><span class="rail-n">6</span>Foundations</a></li>
+      <li><a class="rail-link" href="presentations.html" aria-current="page"><span class="rail-n">7</span>Presentations</a></li>
+      <li><a class="rail-link" href="operations.html"><span class="rail-n">8</span>Open operations</a></li>
+      <li><a class="rail-link" href="endovascular.html"><span class="rail-n">9</span>Endovascular</a></li>
+      <li><a class="rail-link" href="devices.html"><span class="rail-n">10</span>Wires, catheters and devices</a></li>
+    </ol>
+  </div>
+  <div class="rail-group">
+    <p class="rail-label">Sharpen up</p>
+    <ol>
+      <li><a class="rail-link" href="questions.html"><span class="rail-n">11</span>Questions you&#x27;ll be asked</a></li>
+      <li><a class="rail-link" href="reference.html"><span class="rail-n">12</span>Quick reference</a></li>
+    </ol>
+  </div>
+  <p class="rail-note">Inflow, outflow, conduit. The vascular patient is always a cardiac patient.</p>
+</nav>
+<!-- /@rail -->
+<main id="main" class="page" tabindex="-1">
+  <header class="page-head">
+    <!-- @crumb -->
+<p class="crumb"><a href="index.html">Field Guide</a><span class="sep" aria-hidden="true">/</span>The knowledge</p>
+<!-- /@crumb -->
+    <h1>Major presentations</h1>
+    <p class="summary">The diseases that fill the consult list. For each one: what it is, how it shows up, how it is classified, and what is done about it. Read these in your first week, because they are most of what the service does and most of what you will be asked.</p>
+    <!-- @toc -->
+<details class="toc-inline">
+  <summary>On this page <span class="count">11 sections</span></summary>
+  <ol>
+    <li><a href="#claudication">PAD and claudication</a></li>
+    <li><a href="#clti">CLTI</a></li>
+    <li><a href="#ali">Acute limb ischemia</a></li>
+    <li><a href="#aaa">Abdominal aortic aneurysm</a></li>
+    <li><a href="#carotid">Carotid disease</a></li>
+    <li><a href="#mesenteric">Mesenteric ischemia</a></li>
+    <li><a href="#dissection">Aortic dissection</a></li>
+    <li><a href="#vte">DVT and VTE</a></li>
+    <li><a href="#cvi">Chronic venous insufficiency</a></li>
+    <li><a href="#diabetic-foot">The diabetic foot</a></li>
+    <li><a href="#other-pres">Other presentations</a></li>
+  </ol>
+</details>
+<!-- /@toc -->
+  </header>
 
-    <div class="wrap">
+  <section class="sec" id="claudication" data-title="PAD and claudication" data-bed="arterial">
+    <h2>Peripheral arterial disease and claudication</h2>
+    <p class="sec-lede">PAD is atherosclerotic narrowing of the limb arteries. It runs on a spectrum from asymptomatic, through intermittent claudication, to chronic limb-threatening ischemia at the severe end.</p>
+    <p>Intermittent claudication is reproducible exertional muscle pain, cramping or fatigue that is relieved by a few minutes of standing still. It is a quality-of-life problem with a low rate of limb loss (on the order of 1 to 2 percent a year). The real danger to these patients is their coexisting coronary and cerebrovascular disease, which is why every claudicant is a cardiovascular risk-reduction patient first.</p>
+    <p>The two historical staging systems are worth knowing because attendings switch between them freely.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Fontaine stages and Rutherford categories (chronic ischemia)</caption>
+      <thead><tr><th scope="col">Fontaine</th><th scope="col">Rutherford</th><th scope="col">Clinical picture</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">I</th><td>0</td><td>Asymptomatic</td></tr>
+        <tr><th scope="row">IIa</th><td>1</td><td>Mild claudication</td></tr>
+        <tr><th scope="row">IIb</th><td>2 to 3</td><td>Moderate to severe claudication</td></tr>
+        <tr><th scope="row">III</th><td>4</td><td>Ischemic rest pain</td></tr>
+        <tr><th scope="row">IV</th><td>5 to 6</td><td>Tissue loss: minor ulcer (5), then major tissue loss or gangrene (6)</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Management is medical first</h3>
+    <ul>
+      <li><span class="lead-in">Risk-factor therapy for everyone.</span> Smoking cessation, a high-intensity statin, an antiplatelet, and control of blood pressure and diabetes. Low-dose rivaroxaban (2.5 mg twice daily) with aspirin is an option in selected patients to cut limb and cardiovascular events. Details are in <a href="foundations.html#medical">Foundations</a>.</li>
+      <li><span class="lead-in">Supervised exercise therapy.</span> First-line for walking distance, and it rivals revascularization for claudication. Cilostazol adds a modest benefit if there is no heart failure.</li>
+      <li><span class="lead-in">Revascularization only for lifestyle-limiting symptoms</span> that persist despite medical therapy and exercise, in a patient who understands the trade-off. The choice between endovascular and open repair depends on the location and length of the disease. Interventions below the knee for claudication alone are generally discouraged, because durability is poor and failure can make the limb worse.</li>
+    </ul>
+    <details class="qa">
+      <summary>A 64-year-old smoker can walk two blocks before calf pain stops him. What do you offer first?</summary>
+      <div class="qa-a"><p>Smoking cessation, a high-intensity statin, an antiplatelet, and a supervised exercise program, with cilostazol if there is no heart failure. Claudication is treated medically first; intervention is reserved for lifestyle-limiting symptoms that persist after a fair trial.</p></div>
+    </details>
+  </section>
 
-      <section class="section first reveal" id="claudication" data-title="PAD &amp; claudication">
-        <h3>Peripheral arterial disease &amp; intermittent claudication</h3>
-        <p>PAD is atherosclerotic narrowing of the limb arteries, sitting on a spectrum from asymptomatic, through <strong>intermittent claudication</strong> (reproducible exertional muscle pain relieved by rest), to <strong>chronic limb-threatening ischemia</strong> at the severe end. Claudication is a quality-of-life problem with a low limb-loss rate; the real danger to these patients is their coexisting coronary and cerebrovascular disease.</p>
-        <p>The two historical staging systems are worth knowing because attendings switch between them freely.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Fontaine stages vs Rutherford categories (chronic ischemia)</caption>
-            <thead><tr><th>Fontaine</th><th>Rutherford</th><th>Clinical picture</th></tr></thead>
-            <tbody>
-              <tr><td><b>I</b></td><td><b>0</b></td><td>Asymptomatic</td></tr>
-              <tr><td><b>IIa</b></td><td><b>1</b></td><td>Mild claudication</td></tr>
-              <tr><td><b>IIb</b></td><td><b>2-3</b></td><td>Moderate to severe claudication</td></tr>
-              <tr><td><b>III</b></td><td><b>4</b></td><td>Ischemic <b>rest pain</b></td></tr>
-              <tr><td><b>IV</b></td><td><b>5-6</b></td><td>Tissue loss: minor ulcer (5), then major or gangrene (6)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p><strong>Management of claudication is medical first.</strong> Risk-factor therapy, a statin, an antiplatelet, and supervised exercise are the foundation. Revascularization is reserved for lifestyle-limiting symptoms that fail medical therapy, and even then the choice between endovascular and open repair depends on the lesion's location and length.</p>
-      </section>
+  <section class="sec" id="clti" data-title="CLTI" data-bed="arterial">
+    <h2>Chronic limb-threatening ischemia</h2>
+    <p class="sec-lede">CLTI, the modern term for "critical limb ischemia," is the severe end of PAD: ischemic rest pain for more than two weeks, a non-healing ulcer, or gangrene, together with objectively reduced perfusion.</p>
+    <p>Rest pain is classically in the forefoot and toes, worse lying flat at night, and relieved by hanging the foot off the bed, because gravity restores a trickle of perfusion. Many patients sleep in a chair. Ask about it specifically, because they rarely volunteer it.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: WIfI</p>
+      <p>The WIfI classification stages limb threat along three axes: Wound, Ischemia (ABI, ankle pressure or toe pressure) and foot Infection, each graded 0 to 3. It reframes the decision from "is there a pulse" to "what is this limb's risk of amputation and how much would revascularization help," which is how vascular surgeons now think. Grades are in <a href="reference.html">Quick reference</a> and how to document them is in <a href="charting.html#exam">charting</a>.</p>
+    </aside>
+    <p><strong>GLASS</strong> (the Global Limb Anatomic Staging System) is the anatomic partner to WIfI. It grades the femoropopliteal and infrapopliteal disease along a chosen target artery path, to estimate how likely an endovascular approach is to succeed. Together, WIfI and GLASS frame the patient, the limb and the anatomy, the structure used by the Global Vascular Guidelines.</p>
+    <h3>What the trials changed</h3>
+    <ul>
+      <li><span class="lead-in">BEST-CLI (2022).</span> In patients with an adequate single-segment great saphenous vein, a surgical bypass-first strategy led to fewer major adverse limb events or deaths than an endovascular-first strategy. Without good vein, the two strategies performed similarly. This revived vein bypass in the right patient and made vein mapping a routine part of the workup.</li>
+      <li><span class="lead-in">BASIL-2 (2023).</span> For CLTI needing an infrapopliteal revascularization, a best-endovascular-first strategy gave better amputation-free survival than vein bypass first, driven mainly by fewer deaths. It applies to a different, more distal population than BEST-CLI.</li>
+    </ul>
+    <p>The practical upshot is individual: the patient's risk, the limb's WIfI stage, the anatomy, and the availability of good vein all shape the choice. CLTI demands revascularization wherever feasible, plus aggressive wound care, offloading and infection control.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag</p>
+      <p>Untreated CLTI carries a high one-year risk of major amputation and death. Rest pain, a non-healing wound, or any gangrene is not something to watch; it needs a revascularization plan.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip</p>
+      <p>On every CLTI consult, ask whether the great saphenous veins are still present and order vein mapping early if bypass is possible. "Has the vein been used for a CABG or a prior bypass?" is the question that most often changes the plan.</p>
+    </aside>
+  </section>
 
-      <section class="section reveal" id="clti" data-title="CLTI">
-        <h3>Chronic limb-threatening ischemia (CLTI)</h3>
-        <p>CLTI, the modern term for "critical limb ischemia," is the severe end of PAD, defined by <strong>ischemic rest pain lasting more than two weeks, non-healing ulceration, or gangrene</strong>, together with objectively reduced perfusion. Rest pain is classically in the <em>forefoot and toes</em>, worse lying flat at night, and relieved by hanging the foot off the bed, because gravity restores a trickle of perfusion.</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl &middot; WIfI</div>
-          <p>The <strong>WIfI</strong> classification stages limb-threat risk along three axes: <strong>W</strong>ound, <strong>I</strong>schemia (ABI or toe pressure), and <strong>f</strong>oot <strong>I</strong>nfection. It reframes the decision from "is there a pulse" to "what is this specific limb's risk of amputation and likely benefit from revascularization," which is how modern vascular surgeons actually think.</p>
-        </div>
-        <p>CLTI is limb-threatening and demands <strong>revascularization</strong> wherever feasible, by bypass or endovascular means, plus aggressive wound care and infection control. The landmark <strong>BEST-CLI</strong> trial showed that for patients with suitable great saphenous vein, <em>open bypass</em> gave better outcomes than an endovascular-first strategy, reviving the role of surgical bypass in the right patient.</p>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag</div>
-          <p>Untreated CLTI carries a high one-year risk of major amputation and death. Rest pain, a non-healing wound, or any gangrene is <em>not</em> something to observe; it is a referral for revascularization.</p>
-        </div>
-      </section>
+  <section class="sec" id="ali" data-title="Acute limb ischemia" data-bed="arterial">
+    <h2>Acute limb ischemia <span class="tag urgent">Emergency</span></h2>
+    <p class="sec-lede">ALI is a sudden loss of arterial perfusion that threatens limb viability, presenting within two weeks of onset. Muscle tolerates roughly 4 to 6 hours of severe ischemia before irreversible injury begins.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: the six Ps</p>
+      <p>Pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia (the perishingly cold limb). The order matters clinically, because paresthesia and paralysis are the late, ominous signs. A limb with sensory or motor loss is on the clock; pain and pallor alone are earlier and more recoverable.</p>
+    </aside>
+    <h3>Embolic or thrombotic: the central distinction</h3>
+    <p>The mechanism changes the operation, so this comparison is asked relentlessly.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Embolic versus in situ thrombotic ALI</caption>
+      <thead><tr><th scope="col">Feature</th><th scope="col">Embolic</th><th scope="col">Thrombotic</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Onset</th><td>Sudden and dramatic, an acute event in a previously normal limb</td><td>More gradual; often acute on chronic</td></tr>
+        <tr><th scope="row">Source or setting</th><td>The heart: atrial fibrillation, mural thrombus after MI, valve disease</td><td>Pre-existing atherosclerotic plaque or a bypass graft</td></tr>
+        <tr><th scope="row">Prior symptoms</th><td>Usually none; no claudication history</td><td>Pre-existing claudication or known PAD</td></tr>
+        <tr><th scope="row">Other leg</th><td>Normal pulses</td><td>Also diseased, with diminished pulses</td></tr>
+        <tr><th scope="row">Collaterals</th><td>Few, so ischemia is severe</td><td>Well developed, so sometimes better tolerated</td></tr>
+        <tr><th scope="row">Classic site</th><td>Common femoral bifurcation, also the popliteal trifurcation</td><td>A prior stenosis or graft</td></tr>
+      </tbody>
+    </table></div>
+    <details class="qa">
+      <summary>What is the most common source of an arterial embolus, and where does it lodge in the leg?</summary>
+      <div class="qa-a"><p>The heart, most often from atrial fibrillation. Emboli lodge at branch points where the vessel narrows; in the leg the common femoral bifurcation is the classic site.</p></div>
+    </details>
+    <h3>Rutherford classification of ALI</h3>
+    <p>This is the table that decides what happens next.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Rutherford acute limb ischemia categories</caption>
+      <thead><tr><th scope="col">Class</th><th scope="col">Status</th><th scope="col">Sensory loss</th><th scope="col">Motor loss</th><th scope="col">Doppler, arterial and venous</th><th scope="col">What it means</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">I</th><td>Viable</td><td>None</td><td>None</td><td>Audible, audible</td><td>Not immediately threatened; time to image and plan</td></tr>
+        <tr><th scope="row">IIa</th><td>Marginally threatened</td><td>Minimal (toes) or none</td><td>None</td><td>Often inaudible, audible</td><td>Salvageable if treated promptly</td></tr>
+        <tr class="hot"><th scope="row">IIb</th><td>Immediately threatened</td><td>More than toes, with rest pain</td><td>Mild to moderate</td><td>Inaudible, audible</td><td>Salvageable only with immediate revascularization</td></tr>
+        <tr><th scope="row">III</th><td>Irreversible</td><td>Profound, anesthetic</td><td>Paralysis, rigor</td><td>Inaudible, inaudible</td><td>Not salvageable; primary amputation</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Management</h3>
+    <ol class="steps">
+      <li><strong>Anticoagulate immediately.</strong> A systemic heparin bolus and infusion the moment ALI is suspected, unless contraindicated, to stop clot propagation. Do not wait for imaging.</li>
+      <li><strong>Grade the limb.</strong> The Rutherford class decides the path: I and IIa allow time for CTA and possibly catheter-directed therapy; IIb needs revascularization now, usually in the OR; III is not salvageable.</li>
+      <li><strong>Revascularize.</strong> Balloon embolectomy with a Fogarty catheter (classic for embolic disease), catheter-directed thrombolysis or mechanical thrombectomy (often suited to thrombotic disease and category I to IIa limbs), surgical bypass, or a hybrid of these.</li>
+      <li><strong>Anticipate reperfusion.</strong> Restoring flow to ischemic muscle releases potassium, myoglobin and acid. Watch for hyperkalemia, rhabdomyolysis, acute kidney injury and compartment syndrome, and keep a low threshold for fasciotomy.</li>
+      <li><strong>Find the source.</strong> After an embolus: ECG and telemetry for atrial fibrillation, an echocardiogram, and a plan for long-term anticoagulation.</li>
+    </ol>
+    <aside class="note flag">
+      <p class="note-label">Red flag: reperfusion injury</p>
+      <p>After revascularizing a limb that was ischemic for several hours, a tense, painful compartment with pain on passive stretch is compartment syndrome until proven otherwise. Pulses may still be present, so do not wait for them to disappear. The treatment is urgent four-compartment fasciotomy. Watch the potassium and the kidneys at the same time.</p>
+    </aside>
+    <aside class="note tip">
+      <p class="note-label">Resident tip: the first ten minutes</p>
+      <p>Examine and Doppler both legs and write down exactly what you find, including sensation and toe movement. Establish the time of onset and whether there is atrial fibrillation. Start heparin unless there is a clear contraindication, send a CBC, BMP, coags, CK, lactate and type and screen, and call your senior with the Rutherford class. Overnight versions of this call are on <a href="on-call.html#cold-leg">On call</a>.</p>
+    </aside>
+  </section>
 
-      <section class="section reveal" id="ali" data-title="Acute limb ischemia">
-        <h3>Acute limb ischemia (ALI) <span class="tag">Emergency</span></h3>
-        <p>ALI is the <strong>sudden</strong> loss of arterial perfusion threatening limb viability, classically within two weeks of onset. It is a true emergency, since muscle tolerates roughly <strong>4 to 6 hours</strong> of ischemia before irreversible injury begins.</p>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>Mnemonic &middot; the 6 Ps</div>
-          <p class="word">Pain &middot; Pallor &middot; Pulselessness &middot; Paresthesia &middot; Paralysis &middot; Poikilothermia (perishingly cold)</p>
-          <p style="margin-top:8px">The order matters clinically, because <strong>paresthesia and paralysis are the ominous late signs</strong>. A limb with sensory or motor loss is on the clock; pain and pallor alone are earlier and more recoverable.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Embolic vs thrombotic, the central distinction</h4>
-        <p>Determining the mechanism changes the operation, so this comparison is asked relentlessly.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Embolic vs in-situ thrombotic ALI</caption>
-            <thead><tr><th>Feature</th><th>Embolic</th><th>Thrombotic</th></tr></thead>
-            <tbody>
-              <tr><td><b>Onset</b></td><td>Sudden, dramatic ("acute on normal")</td><td>More gradual; often acute-on-chronic</td></tr>
-              <tr><td><b>Source / setting</b></td><td>Heart (<b>atrial fibrillation</b>, post-MI mural thrombus, valve)</td><td>Pre-existing atherosclerotic plaque or bypass graft</td></tr>
-              <tr><td><b>Prior symptoms</b></td><td>None, often no claudication history</td><td>Pre-existing claudication or PAD</td></tr>
-              <tr><td><b>Contralateral leg</b></td><td>Normal pulses</td><td>Also diseased (diminished pulses)</td></tr>
-              <tr><td><b>Collaterals</b></td><td>Few (no time to develop), so severe ischemia</td><td>Well developed, so sometimes better tolerated</td></tr>
-              <tr><td><b>Classic site</b></td><td><b>Common femoral bifurcation</b> (also popliteal)</td><td>Site of prior stenosis or graft</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">Most common source of an arterial embolus, and most common site it lodges?</p>
-          <p class="a">The <strong>heart</strong> is the usual source (most often atrial fibrillation). Emboli lodge at branch points where the vessel narrows; in the leg the <strong>common femoral bifurcation</strong> is the classic site.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Rutherford classification of ALI (drives management)</h4>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Rutherford ALI categories</caption>
-            <thead><tr><th>Class</th><th>Status</th><th>Sensory loss</th><th>Motor loss</th><th>Doppler (art / ven)</th><th>Implication</th></tr></thead>
-            <tbody>
-              <tr><td><b>I</b></td><td>Viable</td><td>None</td><td>None</td><td>Audible / audible</td><td>Not immediately threatened; time to image and plan</td></tr>
-              <tr><td><b>IIa</b></td><td>Marginally threatened</td><td>Minimal (toes)</td><td>None</td><td>Often inaudible / audible</td><td>Salvageable if treated promptly</td></tr>
-              <tr><td><b>IIb</b></td><td>Immediately threatened</td><td>More than toes, rest pain</td><td>Mild to moderate</td><td>Inaudible / audible</td><td><b>Salvageable only with immediate revascularization</b></td></tr>
-              <tr><td><b>III</b></td><td>Irreversible</td><td>Profound, anesthetic</td><td>Paralysis, rigor</td><td>Inaudible / inaudible</td><td>Non-salvageable, so <b>primary amputation</b></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <h4><span class="pin">&raquo;</span> Management</h4>
-        <ol class="steps">
-          <li><span class="st">Anticoagulate immediately.</span> Give a systemic <strong>heparin bolus and infusion</strong> the moment ALI is suspected, to prevent clot propagation, before any imaging.</li>
-          <li><span class="st">Assess viability (Rutherford class).</span> The class decides the path: I and IIa allow time for imaging and possibly thrombolysis, IIb needs the operating room now, and III is non-salvageable.</li>
-          <li><span class="st">Revascularize.</span> Options include <strong>catheter embolectomy</strong> with a Fogarty balloon (classic for embolic IIb), <strong>catheter-directed thrombolysis</strong> (often suited to thrombotic disease or category I to IIa), surgical <strong>bypass</strong>, or endovascular thrombectomy.</li>
-          <li><span class="st">Anticipate reperfusion.</span> Restoring flow to ischemic muscle releases potassium, myoglobin, and acid. Watch for <strong>hyperkalemia, rhabdomyolysis, and compartment syndrome</strong>, and have a low threshold for <strong>fasciotomy</strong>.</li>
-        </ol>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; reperfusion injury</div>
-          <p>After revascularizing a limb ischemic for several hours, a tense, painful compartment with pain on passive stretch is <strong>compartment syndrome</strong> until proven otherwise. Pulses may still be present, so do not wait for them to disappear. The treatment is urgent <strong>four-compartment fasciotomy</strong>. Concurrently watch the potassium and the kidneys for rhabdomyolysis.</p>
-        </div>
-      </section>
+  <section class="sec" id="aaa" data-title="Abdominal aortic aneurysm" data-bed="arterial">
+    <h2>Abdominal aortic aneurysm</h2>
+    <p class="sec-lede">An aneurysm is a focal dilation more than 1.5 times the normal vessel diameter. For the infrarenal aorta that means 3.0 cm or more. Most are infrarenal and degenerative.</p>
+    <p>Risk factors are smoking (the strongest modifiable one), male sex, older age, a family history in a first-degree relative, and other atherosclerotic disease. Diabetes is, curiously, protective.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: true and false aneurysms</p>
+      <p>A true aneurysm involves all three layers of the wall: intima, media and adventitia. A pseudoaneurysm, or false aneurysm, is a contained rupture held in only by the outer layer or the surrounding tissue, classically at an anastomosis or a femoral puncture site. The distinction is a frequent question.</p>
+    </aside>
+    <h3>Screening and surveillance</h3>
+    <p>The USPSTF recommends a one-time screening ultrasound for men aged 65 to 75 who have ever smoked, with selective screening for men who never smoked. The SVS recommends a broader net: men and women aged 65 to 75 with a smoking history, and people with a first-degree relative with an AAA. Small aneurysms are followed by ultrasound at intervals that shorten as they grow.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Surveillance intervals by diameter (SVS 2018)</caption>
+      <thead><tr><th scope="col">Diameter</th><th scope="col">Repeat imaging</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">2.5 to 2.9 cm</th><td>Rescreen in about 10 years (an ectatic aorta; European guidance suggests about 5)</td></tr>
+        <tr><th scope="row">3.0 to 3.9 cm</th><td>Every 3 years</td></tr>
+        <tr><th scope="row">4.0 to 4.9 cm</th><td>Every 12 months</td></tr>
+        <tr><th scope="row">5.0 to 5.4 cm</th><td>Every 6 months</td></tr>
+      </tbody>
+    </table></div>
+    <h3>When to repair electively</h3>
+    <ul>
+      <li>Diameter of 5.5 cm or more in men.</li>
+      <li>Diameter of 5.0 cm or more in women (European guidance; the SVS suggests considering repair from 5.0 to 5.4 cm in women).</li>
+      <li>Rapid growth: more than 1 cm in a year, or more than 0.5 cm in six months.</li>
+      <li>Symptoms at any size: tenderness, back or abdominal pain attributable to the aneurysm, or distal embolization.</li>
+    </ul>
+    <p>Repair is by EVAR when the anatomy suits it, or open repair. EVAR has lower early mortality, the long-term survival of the two converges, and EVAR needs lifelong imaging surveillance because of endoleak and late failure. Both are covered in <a href="operations.html#open-aaa">Open operations</a> and <a href="endovascular.html#evar-tevar">Endovascular</a>.</p>
+    <details class="qa">
+      <summary>At what size do you repair an asymptomatic infrarenal AAA in a man?</summary>
+      <div class="qa-a"><p>5.5 cm (5.0 cm in women), or sooner for rapid growth or symptoms. Below threshold the rupture risk is lower than the operative risk, so you survey the aneurysm and optimize medical therapy.</p></div>
+    </details>
+    <aside class="note flag">
+      <p class="note-label">Red flag: ruptured AAA</p>
+      <p>The classic triad is sudden abdominal, back or flank pain, hypotension, and a pulsatile mass. An older patient with hypotension and back pain is a ruptured AAA until proven otherwise. Call the attending, the OR and the blood bank (massive transfusion) at once. Practice permissive hypotension, keeping systolic pressure only high enough to keep the patient awake and perfusing (around 70 to 90 mmHg), because aggressive fluid and a higher pressure can blow out a contained rupture. A stable patient may get a CTA to plan EVAR, which is preferred when the anatomy allows; an unstable one goes straight to the OR, where an aortic occlusion balloon can buy control.</p>
+    </aside>
+    <h3>Variants to recognize</h3>
+    <dl class="terms">
+      <div><dt>Inflammatory AAA</dt><dd>A thick, inflamed wall with a peri-aortic rind, raised inflammatory markers, often pain, and classically ureteral entrapment. The inflammation often settles after repair.</dd></div>
+      <div><dt>Mycotic (infected) AAA</dt><dd>Saccular, often in an unusual location, rapidly expanding, in a febrile patient. Salmonella and Staphylococcus are classic organisms. Needs prolonged antibiotics and repair, with attention to infected-field reconstruction.</dd></div>
+    </dl>
+  </section>
 
-      <section class="section reveal" id="aaa" data-title="Abdominal aortic aneurysm">
-        <h3>Abdominal aortic aneurysm (AAA)</h3>
-        <p>An aneurysm is a <strong>focal dilation greater than 1.5 times the normal vessel diameter</strong>, and for the infrarenal aorta that means a diameter <strong>at or above 3 cm</strong>. The overwhelming majority are <strong>infrarenal</strong> and degenerative. Risk factors are <strong>smoking</strong> (the strongest modifiable one), male sex, older age, family history, and other connective-tissue contributors.</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl &middot; true vs false aneurysm</div>
-          <p>A <strong>true aneurysm</strong> involves all three layers of the wall (intima, media, adventitia). A <strong>pseudoaneurysm (false aneurysm)</strong> is a contained rupture, blood held in by only the outer layers or surrounding tissue, classically at an anastomosis or a femoral puncture site. The distinction is a frequent question.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Screening &amp; surveillance</h4>
-        <p>The USPSTF recommends a <strong>one-time screening ultrasound for men aged 65 to 75 who have ever smoked</strong>. Small aneurysms are followed by serial ultrasound at intervals that shorten as the aneurysm grows.</p>
-        <h4><span class="pin">&raquo;</span> When to repair (elective)</h4>
-        <ul class="clean">
-          <li>Diameter <strong>at or above 5.5 cm in men</strong></li>
-          <li>Diameter <strong>at or above 5.0 cm in women</strong></li>
-          <li><strong>Rapid expansion</strong> beyond 0.5 cm in 6 months or 1 cm in a year</li>
-          <li><strong>Symptomatic</strong> (tender aneurysm, distal embolization) at any size</li>
+  <section class="sec" id="carotid" data-title="Carotid disease" data-bed="arterial">
+    <h2>Carotid disease and stroke prevention</h2>
+    <p class="sec-lede">Plaque at the carotid bifurcation causes stroke mainly by embolization of plaque or thrombus to the brain, and less often by flow limitation from a tight stenosis. The whole point of carotid intervention is stroke prevention, not symptom relief.</p>
+    <h3>Symptomatic or asymptomatic</h3>
+    <p>Symptomatic disease means an ipsilateral neurologic event in the previous six months: a TIA, a stroke, or amaurosis fugax (transient monocular blindness, "a curtain coming down," from a retinal artery embolus). Asymptomatic disease is found on screening or because of a bruit.</p>
+    <details class="qa">
+      <summary>What is amaurosis fugax and what does it signify?</summary>
+      <div class="qa-a"><p>Transient, painless loss of vision in one eye from an embolus to the ophthalmic or retinal artery, a branch of the internal carotid. It is a form of TIA and makes that carotid symptomatic, lowering the threshold to intervene.</p></div>
+    </details>
+    <h3>Indications, and what the trials showed</h3>
+    <p>NASCET and ECST established the benefit of endarterectomy for symptomatic stenosis. ACAS and ACST-1 showed a smaller benefit in asymptomatic patients, in an era before modern medical therapy.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Carotid revascularization thresholds</caption>
+      <thead><tr><th scope="col">Group</th><th scope="col">Stenosis</th><th scope="col">Recommendation</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">Symptomatic</th><td>70 to 99%</td><td>Clear benefit from revascularization, ideally within about 2 weeks of the event</td></tr>
+        <tr><th scope="row">Symptomatic</th><td>50 to 69%</td><td>Moderate benefit; individualize (greater in men and with recent hemispheric events)</td></tr>
+        <tr><th scope="row">Symptomatic</th><td>Under 50%</td><td>Best medical therapy; do not operate</td></tr>
+        <tr><th scope="row">Asymptomatic</th><td>70 to 99%</td><td>Selective: consider in low-risk patients with a reasonable life expectancy, alongside intensive medical therapy</td></tr>
+        <tr><th scope="row">Occlusion</th><td>100%</td><td>Generally not revascularized</td></tr>
+      </tbody>
+    </table></div>
+    <p><strong>CREST-2</strong> (reported in 2025) compared intensive medical management alone with revascularization plus intensive medical management in asymptomatic patients with severe stenosis. In the stenting comparison, adding stenting lowered the rate of stroke; in the endarterectomy comparison, the benefit did not reach statistical significance. How this changes practice for asymptomatic disease is still being worked out, so expect your attendings to discuss it and guidelines to move.</p>
+    <h3>Endarterectomy, transfemoral stenting or TCAR</h3>
+    <p>Carotid endarterectomy remains the reference standard. Transfemoral carotid stenting is an alternative, particularly for a hostile neck (prior radiation or neck surgery, a high lesion) or high surgical risk, but CREST showed stenting carried more periprocedural strokes and surgery more myocardial infarctions, with stenting faring worse in older patients. Transcarotid artery revascularization (TCAR) uses a small incision at the base of the neck, direct carotid access and flow reversal for embolic protection, avoiding the aortic arch, and has become a widely used middle path. The operations are described in <a href="operations.html#cea">Open operations</a>.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: timing after a stroke</p>
+      <p>After a stroke or TIA, revascularization is generally done within about two weeks in stable patients, because recurrence risk is front-loaded. It is deferred in the hyperacute setting of a large infarct or hemorrhagic transformation, where restored flow can cause bleeding. Coordinate the timing with neurology.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="mesenteric" data-title="Mesenteric ischemia" data-bed="arterial">
+    <h2>Mesenteric ischemia</h2>
+    <p class="sec-lede">Reduced blood flow to the gut, split into an acute emergency and a chronic, indolent form. The vessels at stake are the celiac trunk, the SMA and the IMA.</p>
+    <h3>Acute mesenteric ischemia <span class="tag urgent">Emergency</span></h3>
+    <p>The hallmark is pain out of proportion to the exam: a patient in severe abdominal pain with a soft, relatively benign-feeling abdomen early on. Peritonitis, bloody stool and shock are late signs that usually mean dead bowel.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Causes of acute mesenteric ischemia</caption>
+      <thead><tr><th scope="col">Mechanism</th><th scope="col">Setting</th><th scope="col">Note</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Arterial embolism (most common)</th><td>Atrial fibrillation, after MI</td><td>Lodges in the SMA, classically sparing the proximal jejunum</td></tr>
+        <tr><th scope="row">Arterial thrombosis</th><td>Pre-existing mesenteric atherosclerosis</td><td>Often a prior history of chronic mesenteric ischemia; the occlusion is at the origin</td></tr>
+        <tr><th scope="row">Non-occlusive (NOMI)</th><td>Low flow or shock, vasopressors, dialysis, cardiac surgery</td><td>Splanchnic vasoconstriction with no clot to remove; treat the hemodynamics</td></tr>
+        <tr><th scope="row">Mesenteric venous thrombosis</th><td>Hypercoagulable states, portal hypertension, malignancy</td><td>More subacute; anticoagulation is the mainstay</td></tr>
+      </tbody>
+    </table></div>
+    <p>The workup shows leukocytosis, a rising lactate and a metabolic acidosis, although a normal lactate early does not exclude it. CTA is the imaging test of choice. Management is to resuscitate, start heparin, give broad-spectrum antibiotics, revascularize urgently (embolectomy, bypass, or endovascular stenting, sometimes retrograde through an open SMA), and resect frankly necrotic bowel, with a planned second-look operation at 24 to 48 hours for marginal segments.</p>
+    <details class="qa">
+      <summary>Why does an SMA embolus spare the proximal jejunum?</summary>
+      <div class="qa-a"><p>The embolus typically lodges a few centimeters into the SMA, distal to the first jejunal branches and the middle colic origin, so the proximal jejunum (and sometimes the proximal colon) keeps its perfusion while the rest of the small bowel infarcts. A thrombosis at the origin, by contrast, takes the whole SMA territory.</p></div>
+    </details>
+    <h3>Chronic mesenteric ischemia</h3>
+    <p>"Intestinal angina." The triad is postprandial abdominal pain, food fear (sitophobia) and weight loss, in an older patient with vascular disease. Because the collateral network is rich, symptoms usually need significant disease in at least two of the three vessels. Treatment is revascularization, now mostly endovascular stenting of the SMA, with open bypass for selected patients.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: median arcuate ligament syndrome</p>
+      <p>Extrinsic compression of the celiac artery by the median arcuate ligament of the diaphragm, classically in younger, thinner patients with postprandial pain and an epigastric bruit that changes with respiration. It is a diagnosis of exclusion, and treatment is surgical release of the ligament, not stenting, because a stent is crushed by the ligament.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="dissection" data-title="Aortic dissection" data-bed="arterial">
+    <h2>Aortic dissection <span class="tag urgent">Emergency</span></h2>
+    <p class="sec-lede">A tear in the intima lets blood track into the media, creating a false lumen that can propagate, occlude branch vessels (malperfusion), or rupture.</p>
+    <p>The presentation is sudden, severe, tearing chest or back pain, sometimes with a pulse or blood pressure difference between the arms, or signs of organ malperfusion: a cold leg, abdominal pain with a rising lactate, falling urine output, or a neurologic deficit.</p>
+    <div class="table-wrap"><table class="data">
+      <caption>Dissection classifications</caption>
+      <thead><tr><th scope="col">Stanford</th><th scope="col">DeBakey</th><th scope="col">Involves</th><th scope="col">Default management</th></tr></thead>
+      <tbody>
+        <tr class="hot"><th scope="row">Type A</th><td>I and II</td><td>The ascending aorta (I: ascending plus arch and beyond; II: ascending only)</td><td>Emergency open repair by cardiac surgery; risk of tamponade, aortic insufficiency and coronary involvement</td></tr>
+        <tr><th scope="row">Type B</th><td>III</td><td>The descending aorta, distal to the left subclavian</td><td>Medical first; TEVAR if complicated</td></tr>
+      </tbody>
+    </table></div>
+    <p>The 2020 SVS/STS reporting system classifies by the location of the <strong>entry tear</strong>: type A if it is in zone 0 (the ascending aorta), type B if it is beyond zone 0, with subscripts for the proximal and distal extent by aortic zone (for example B<sub>3,10</sub>). A type B tear whose dissection extends back into the arch is written B<sub>0</sub> or B<sub>1</sub> or B<sub>2</sub>, the group older papers called "non-A non-B." Chronicity is hyperacute (under 24 hours), acute (1 to 14 days), subacute (15 to 90 days) and chronic (over 90 days). Zones are explained in <a href="endovascular.html">Endovascular</a>.</p>
+    <h3>Initial medical management</h3>
+    <p>The goal is to reduce the force of each heartbeat on the aortic wall (the rate of rise of pressure) and the pressure itself. Start an IV beta-blocker first (esmolol or labetalol), then add a vasodilator such as nicardipine, clevidipine or nitroprusside if the pressure is still high. The 2022 ACC/AHA targets are a heart rate of 60 to 80 and a systolic under 120 mmHg, or the lowest pressure that keeps the brain, kidneys and gut perfused. Older teaching used a heart rate under 60, so confirm the target your attending wants. Treat the pain, place an arterial line, and admit to the <a href="ctv-icu.html#by-operation">CTV ICU</a>.</p>
+    <aside class="note flag">
+      <p class="note-label">Red flag: sequence matters</p>
+      <p>Never give a vasodilator before beta-blockade. A vasodilator alone triggers reflex tachycardia, which increases the shear on the wall and can extend the dissection. Beta-blocker first, always. If a beta-blocker is contraindicated, a non-dihydropyridine calcium-channel blocker (diltiazem or verapamil) controls the rate.</p>
+    </aside>
+    <p>Type A dissections go to cardiac surgery emergently. Type B dissections are managed medically unless <strong>complicated</strong> by malperfusion, rupture, rapid expansion, or pain or hypertension that will not settle, in which case TEVAR to cover the entry tear is the usual intervention. Uncomplicated type B dissections with high-risk features (such as a total aortic diameter of 40 mm or more, or a large entry tear) are increasingly considered for TEVAR in the subacute window.</p>
+    <details class="qa">
+      <summary>A patient with a type B dissection on an esmolol drip develops a cold, pulseless left leg. What has happened, and what changes?</summary>
+      <div class="qa-a"><p>Limb malperfusion: the false lumen is compressing or the flap is obstructing the iliac flow. The dissection is now complicated, which moves it from medical management toward urgent intervention, usually TEVAR to cover the entry tear and re-expand the true lumen, with or without a direct limb procedure. Call the attending now.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="vte" data-title="DVT and VTE" data-bed="venous">
+    <h2>Deep vein thrombosis and venous thromboembolism</h2>
+    <p class="sec-lede">Venous thromboembolism spans DVT and pulmonary embolism. Its pathophysiology is captured by Virchow's triad.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: Virchow's triad</p>
+      <p>Stasis, endothelial injury, hypercoagulability. Every DVT risk factor (immobility, surgery, malignancy, estrogen, pregnancy, inherited thrombophilia) maps onto one of the three.</p>
+    </aside>
+    <p>Diagnosis combines pretest probability (the Wells score), D-dimer (useful to rule out disease when probability is low) and compression duplex ultrasound, the confirmatory test, which shows a non-compressible vein.</p>
+    <h3>Treatment</h3>
+    <ul>
+      <li><span class="lead-in">Anticoagulation is the treatment.</span> A direct oral anticoagulant is first-line for most patients, including many with cancer. Low-molecular-weight heparin or warfarin suits others (pregnancy, severe renal failure, antiphospholipid syndrome).</li>
+      <li><span class="lead-in">Duration.</span> About three months for a DVT provoked by a transient risk factor such as surgery. For an unprovoked DVT or a persistent risk factor, extended anticoagulation is considered, balanced against bleeding risk.</li>
+      <li><span class="lead-in">Isolated calf DVT.</span> Either anticoagulate or repeat the ultrasound in one to two weeks to look for extension, depending on symptoms and risk.</li>
+      <li><span class="lead-in">Thrombus removal.</span> Catheter-directed lysis or mechanical thrombectomy for selected patients with acute iliofemoral DVT, severe symptoms and low bleeding risk. ATTRACT (2017) did not reduce post-thrombotic syndrome overall but did reduce its severity, with the best signal in iliofemoral disease; CAVA (2020) found no reduction. So it is a selective, not a routine, therapy.</li>
+      <li><span class="lead-in">IVC filters.</span> The clear indication is acute proximal DVT or PE in a patient who cannot be anticoagulated. Placing a filter for recurrent PE despite anticoagulation is debated, and PREPIC2 found no benefit from adding a filter to anticoagulation. Plan the retrieval when the filter goes in.</li>
+    </ul>
+    <aside class="note flag">
+      <p class="note-label">Red flag: phlegmasia</p>
+      <p>Massive iliofemoral DVT can cause phlegmasia cerulea dolens: a swollen, blue, painful leg from near-total venous outflow obstruction that can progress to venous gangrene and compartment syndrome. It is a limb-threatening emergency that needs urgent thrombus removal (lysis or thrombectomy), not anticoagulation alone. Its milder, pale precursor is phlegmasia alba dolens.</p>
+    </aside>
+    <aside class="note pearl">
+      <p class="note-label">Pearl: May-Thurner</p>
+      <p>May-Thurner syndrome is compression of the left common iliac vein by the overlying right common iliac artery against the spine, predisposing to left-leg DVT, classically in younger women. It is why an "unprovoked" left iliofemoral DVT deserves a look at the iliac vein, often treated with thrombus removal and venous stenting under IVUS guidance.</p>
+    </aside>
+    <details class="qa">
+      <summary>Superficial thrombophlebitis of the great saphenous vein extends to within 2 cm of the saphenofemoral junction. How do you treat it?</summary>
+      <div class="qa-a"><p>As a DVT: therapeutic anticoagulation, because thrombus within about 3 cm of the junction can propagate into the common femoral vein. Longer superficial thromboses farther from the junction (5 cm or more in length) are commonly treated with prophylactic-dose fondaparinux for about 45 days.</p></div>
+    </details>
+  </section>
+
+  <section class="sec" id="cvi" data-title="Chronic venous insufficiency" data-bed="venous">
+    <h2>Chronic venous insufficiency and varicose veins</h2>
+    <p class="sec-lede">When venous valves fail, blood refluxes and venous pressure stays high (venous hypertension), producing varicose veins, heaviness, edema, skin changes and ultimately ulceration.</p>
+    <aside class="note mnem">
+      <p class="note-label">Mnemonic: CEAP</p>
+      <p>Clinical, etiologic, anatomic, pathophysiologic. In practice the clinical class is the part everyone quotes.</p>
+    </aside>
+    <div class="table-wrap"><table class="data">
+      <caption>CEAP clinical classes (2020 revision)</caption>
+      <thead><tr><th scope="col">Class</th><th scope="col">Findings</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">C0</th><td>No visible or palpable signs</td></tr>
+        <tr><th scope="row">C1</th><td>Telangiectasias or reticular veins</td></tr>
+        <tr><th scope="row">C2</th><td>Varicose veins (C2r if recurrent)</td></tr>
+        <tr><th scope="row">C3</th><td>Edema</td></tr>
+        <tr><th scope="row">C4a</th><td>Pigmentation or eczema</td></tr>
+        <tr><th scope="row">C4b</th><td>Lipodermatosclerosis or atrophie blanche</td></tr>
+        <tr><th scope="row">C4c</th><td>Corona phlebectatica (a fan of small veins at the ankle)</td></tr>
+        <tr><th scope="row">C5</th><td>Healed venous ulcer</td></tr>
+        <tr><th scope="row">C6</th><td>Active venous ulcer (C6r if recurrent)</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Venous or arterial ulcer?</h3>
+    <div class="compare">
+      <div class="venous">
+        <h4>Venous ulcer</h4>
+        <ul>
+          <li>Medial malleolus, the gaiter area</li>
+          <li>Irregular, shallow, granulating and exudative</li>
+          <li>Mild pain, better with elevation</li>
+          <li>Pigmentation, edema, lipodermatosclerosis around it</li>
+          <li>Pulses present</li>
+          <li>Cornerstone: compression</li>
         </ul>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; ruptured AAA</div>
-          <p>The classic triad is <strong>sudden abdominal or back and flank pain, hypotension, and a pulsatile abdominal mass</strong>. A hypotensive older patient with back pain is a ruptured AAA until proven otherwise. If unstable, the patient goes <em>straight to repair</em>, with no CT. Practice <strong>permissive (hypotensive) resuscitation</strong>, keeping the systolic pressure only high enough to perfuse the brain (around 70 to 90 mmHg while awake), because aggressive fluids and a higher pressure can blow out the contained rupture.</p>
-        </div>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">At what size do you repair an asymptomatic infrarenal AAA in a man?</p>
-          <p class="a"><strong>5.5 cm</strong> (5.0 cm in women), or sooner for rapid growth or symptoms. Below threshold, the rupture risk is lower than the operative risk, so you survey and optimize medical therapy.</p>
-        </div>
-        <p>Other variants to recognize are the <strong>inflammatory AAA</strong> (thickened, inflamed wall, often younger patients, elevated inflammatory markers, classic ureteral entrapment), and the <strong>mycotic (infected) aneurysm</strong> (saccular, rapidly expanding, febrile, often Salmonella or Staph).</p>
-      </section>
-
-      <section class="section reveal" id="carotid" data-title="Carotid disease">
-        <h3>Carotid disease &amp; stroke prevention</h3>
-        <p>Atherosclerotic plaque at the <strong>carotid bifurcation</strong> causes stroke by two mechanisms: <strong>embolization</strong> of plaque or thrombus to the brain (the more common mechanism) and, less often, flow limitation from a tight stenosis. The whole point of carotid intervention is <em>stroke prevention</em>, not symptom relief.</p>
-        <h4><span class="pin">&raquo;</span> Symptomatic vs asymptomatic</h4>
-        <p>Symptomatic disease means an ipsilateral neurologic event in the prior 6 months: a <strong>TIA</strong>, a <strong>stroke</strong>, or <strong>amaurosis fugax</strong> (transient monocular blindness, "a curtain coming down," from a retinal-artery embolus). Asymptomatic disease is found on screening or a bruit.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">What is amaurosis fugax and what does it signify?</p>
-          <p class="a">Transient, painless monocular vision loss from an embolus to the <strong>ophthalmic or retinal artery</strong> (a branch of the internal carotid). It is a form of TIA and marks the carotid as symptomatic, lowering the threshold to intervene.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Indications, what the trials showed</h4>
-        <p>Two landmark trial families set the thresholds. <strong>NASCET</strong> established the benefit of carotid endarterectomy in <em>symptomatic</em> patients, and <strong>ACAS and ACST</strong> did so for <em>asymptomatic</em> patients.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Carotid revascularization thresholds</caption>
-            <thead><tr><th>Group</th><th>Stenosis</th><th>Recommendation</th></tr></thead>
-            <tbody>
-              <tr><td><b>Symptomatic</b></td><td>70-99%</td><td>Clear benefit from CEA (revascularize, ideally within about 2 weeks)</td></tr>
-              <tr><td><b>Symptomatic</b></td><td>50-69%</td><td>Moderate benefit; individualize (greater in men)</td></tr>
-              <tr><td><b>Symptomatic</b></td><td>&lt; 50%</td><td>Medical therapy; do <b>not</b> operate</td></tr>
-              <tr><td><b>Asymptomatic</b></td><td>at or above 60-70%</td><td>Consider CEA if low surgical risk and good life expectancy</td></tr>
-              <tr><td colspan="3"><span class="sub">A near-total occlusion or a fully occluded (string-sign) carotid is generally <b>not</b> revascularized, because the risk outweighs the benefit.</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <h4><span class="pin">&raquo;</span> CEA vs CAS vs TCAR</h4>
-        <p><strong>Carotid endarterectomy</strong> remains the standard. <strong>Transfemoral carotid artery stenting</strong> is an option, particularly for high surgical risk or hostile necks, but the <strong>CREST</strong> trial showed stenting carried a higher periprocedural <em>stroke</em> risk while surgery carried a higher <em>MI</em> risk, with stroke risk rising in older patients undergoing stenting. <strong>Transcarotid artery revascularization (TCAR)</strong> uses direct carotid access with <em>flow reversal</em> for embolic protection and has become a popular middle path.</p>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; timing after stroke</div>
-          <p>After a completed stroke, revascularization is generally done within about <strong>two weeks</strong> in stable patients (to prevent recurrence) but avoided in the <em>hyperacute</em> setting of a large infarct, where reperfusion can cause hemorrhagic transformation. Coordinate with neurology.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="mesenteric" data-title="Mesenteric ischemia">
-        <h3>Mesenteric ischemia</h3>
-        <p>Reduced blood flow to the gut, splitting into an acute, emergent form and a chronic, indolent one. The arteries at stake are the <strong>celiac trunk, the SMA, and the IMA</strong>.</p>
-        <h4><span class="pin">&raquo;</span> Acute mesenteric ischemia</h4>
-        <p>The hallmark is <strong>pain out of proportion to the physical exam</strong>, a patient writhing in severe abdominal pain with a soft, relatively benign-feeling belly early on. There are four mechanisms.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Causes of acute mesenteric ischemia</caption>
-            <thead><tr><th>Mechanism</th><th>Setting</th><th>Note</th></tr></thead>
-            <tbody>
-              <tr><td><b>Arterial embolism</b> (most common)</td><td>AFib, post-MI</td><td>Lodges in the <b>SMA</b>; classically <b>spares the proximal jejunum</b> (the embolus passes the first jejunal branches)</td></tr>
-              <tr><td><b>Arterial thrombosis</b></td><td>Pre-existing mesenteric atherosclerosis</td><td>Often a known history of chronic mesenteric ischemia</td></tr>
-              <tr><td><b>Non-occlusive (NOMI)</b></td><td>Low-flow or shock, pressors, dialysis</td><td>Splanchnic vasoconstriction; no clot to remove, so treat the hemodynamics</td></tr>
-              <tr><td><b>Venous thrombosis</b></td><td>Hypercoagulable states</td><td>Mesenteric vein thrombosis; subacute; treat with anticoagulation</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Work-up shows <strong>leukocytosis, a rising lactate, and a metabolic acidosis</strong>, with <strong>CTA</strong> as the imaging test of choice. Management is to <strong>resuscitate, anticoagulate with heparin, give broad-spectrum antibiotics</strong>, perform urgent <strong>revascularization</strong> (embolectomy, bypass, or endovascular), and <strong>resect frankly necrotic bowel</strong>, with a planned <strong>second-look laparotomy</strong> at 24 to 48 hours to reassess marginal segments.</p>
-        <div class="box q-box">
-          <div class="lab"><span class="dot"></span>Question</div>
-          <p class="q">Why does an SMA embolus spare the proximal jejunum?</p>
-          <p class="a">The embolus typically lodges a few centimeters into the SMA, <em>distal to</em> the first jejunal branches and the middle colic origin, so the proximal jejunum (and sometimes the proximal colon) retains perfusion while the rest of the small bowel infarcts.</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Chronic mesenteric ischemia</h4>
-        <p>This is "intestinal angina." The triad is <strong>postprandial abdominal pain, food fear (sitophobia), and weight loss</strong>, in an older arteriopath. Because of the rich collateral network, symptoms usually require significant disease in <strong>at least two of the three</strong> mesenteric vessels. Treatment is revascularization, increasingly endovascular (angioplasty or stent of the SMA).</p>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl &middot; MALS</div>
-          <p><strong>Median arcuate ligament syndrome</strong> is extrinsic compression of the <em>celiac</em> artery by the diaphragm's median arcuate ligament, classically in younger, thinner patients with postprandial pain and an epigastric bruit that changes with respiration. Treatment is surgical release of the ligament, not stenting.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="dissection" data-title="Aortic dissection">
-        <h3>Aortic dissection <span class="tag">Emergency</span></h3>
-        <p>A tear in the aortic <strong>intima</strong> lets blood track into the media, creating a <strong>false lumen</strong> that can propagate, occlude branch vessels (malperfusion), or rupture. The presentation is <strong>sudden, severe "tearing" chest or back pain</strong>, sometimes with a pulse or blood-pressure differential between limbs, or signs of organ malperfusion.</p>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Dissection classifications</caption>
-            <thead><tr><th>Stanford</th><th>DeBakey</th><th>Involves</th><th>Default management</th></tr></thead>
-            <tbody>
-              <tr><td rowspan="2"><b>Type A</b></td><td>I</td><td>Ascending plus arch, with or without descending</td><td rowspan="2"><b>Surgical emergency</b> (open repair); risk of tamponade, aortic insufficiency, coronary involvement</td></tr>
-              <tr><td>II</td><td>Ascending only</td></tr>
-              <tr><td><b>Type B</b></td><td>III</td><td>Descending only (distal to the left subclavian)</td><td><b>Medical</b> first; intervene (TEVAR) if complicated</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <h4><span class="pin">&raquo;</span> Initial medical management (any type)</h4>
-        <p>The goal is to reduce the shearing force on the aortic wall. Give an <strong>IV beta-blocker first</strong> (esmolol or labetalol) to bring the heart rate and contractility down, <em>then</em> add a vasodilator such as nitroprusside if the blood pressure is still high. Target a heart rate around 60 and a systolic around 100 to 120.</p>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; sequence matters</div>
-          <p>Never give a vasodilator <em>before</em> beta-blockade. A vasodilator alone triggers reflex tachycardia, which raises the shearing force and can <strong>propagate the dissection</strong>. Beta-blocker first, always.</p>
-        </div>
-        <p><strong>Type A</strong> dissections go to cardiac or vascular surgery emergently. <strong>Type B</strong> dissections are managed medically unless <em>complicated</em> by malperfusion, rupture, rapid expansion, or refractory pain or hypertension, in which case <strong>TEVAR</strong> is the usual intervention.</p>
-      </section>
-
-      <section class="section reveal" id="vte" data-title="DVT &amp; VTE">
-        <h3>Deep vein thrombosis &amp; VTE</h3>
-        <p>Venous thromboembolism spans <strong>DVT</strong> and <strong>pulmonary embolism</strong>. The pathophysiology is captured by <strong>Virchow's triad</strong>.</p>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>Mnemonic &middot; Virchow's triad</div>
-          <p class="word">Stasis &middot; Endothelial injury &middot; Hypercoagulability</p>
-          <p style="margin-top:8px">Every DVT risk factor (immobility, surgery, malignancy, oral contraceptives, inherited thrombophilia) maps onto one of these three.</p>
-        </div>
-        <p>Diagnosis combines pretest probability (the <strong>Wells score</strong>), <strong>D-dimer</strong> (useful to rule out when low-risk), and <strong>compression duplex ultrasound</strong> (the confirmatory test, showing a non-compressible vein). Treatment is <strong>anticoagulation</strong>; an <strong>IVC filter</strong> is reserved mainly for patients with an absolute contraindication to anticoagulation or recurrent PE despite it.</p>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag &middot; phlegmasia</div>
-          <p>Massive iliofemoral DVT can cause <strong>phlegmasia cerulea dolens</strong>, a swollen, blue, painful leg from near-total venous outflow obstruction, which can progress to venous gangrene and compartment syndrome. It is a limb-threatening emergency that may need <strong>thrombolysis or thrombectomy</strong>, not anticoagulation alone. Its milder, white-leg precursor is <em>phlegmasia alba dolens</em>.</p>
-        </div>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl &middot; May-Thurner</div>
-          <p><strong>May-Thurner syndrome</strong> is compression of the <em>left</em> common iliac vein by the overlying right common iliac artery against the spine, predisposing to left-leg DVT, classically in younger women. It is the reason an "unprovoked" left iliofemoral DVT deserves a look at the iliac vein, often treated with thrombolysis plus venous stenting.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="cvi" data-title="Chronic venous insufficiency">
-        <h3>Chronic venous insufficiency &amp; varicose veins</h3>
-        <p>When venous valves fail, blood <strong>refluxes</strong> and venous pressure stays high (venous hypertension), producing varicosities, leg heaviness, edema, skin changes, and ultimately ulceration. Severity is graded by the <strong>CEAP</strong> classification.</p>
-        <div class="box mnem">
-          <div class="lab"><span class="dot"></span>Mnemonic &middot; CEAP</div>
-          <p class="word">Clinical &middot; Etiologic &middot; Anatomic &middot; Pathophysiologic</p>
-          <p style="margin-top:8px">The clinical axis runs C0 (no signs), C1 (telangiectasia or reticular), C2 (varicose veins), C3 (edema), C4 (skin changes: pigmentation, lipodermatosclerosis), C5 (healed ulcer), and C6 (active venous ulcer).</p>
-        </div>
-        <h4><span class="pin">&raquo;</span> Venous vs arterial ulcers</h4>
-        <div class="tbl-wrap">
-          <table>
-            <caption>Distinguishing the two ulcer types</caption>
-            <thead><tr><th>Feature</th><th>Venous ulcer</th><th>Arterial ulcer</th></tr></thead>
-            <tbody>
-              <tr><td><b>Location</b></td><td><b>Medial malleolus</b> (gaiter area)</td><td>Toes, heel, pressure and distal points</td></tr>
-              <tr><td><b>Border / base</b></td><td>Irregular, shallow, granulating, exudative</td><td>Punched-out, dry, pale or necrotic base</td></tr>
-              <tr><td><b>Pain</b></td><td>Mild, better with elevation</td><td>Severe, worse with elevation, better dependent</td></tr>
-              <tr><td><b>Surrounding skin</b></td><td>Pigmentation, edema, lipodermatosclerosis</td><td>Shiny, hairless, cool, atrophic</td></tr>
-              <tr><td><b>Pulses</b></td><td>Present</td><td>Diminished or absent</td></tr>
-              <tr><td><b>Cornerstone treatment</b></td><td><b>Compression</b></td><td><b>Revascularization</b></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="box flag">
-          <div class="lab"><span class="dot"></span>Red flag</div>
-          <p>Never apply compression to a leg you have not confirmed has adequate arterial inflow. Compressing an ischemic (arterial) leg can precipitate tissue loss. Check the ABI before wrapping a "venous-looking" ulcer.</p>
-        </div>
-        <p>Management of chronic venous insufficiency starts with <strong>compression therapy</strong> and leg elevation. Definitive options for refluxing superficial veins include <strong>endovenous thermal ablation</strong> (radiofrequency or laser), <strong>sclerotherapy</strong>, and <strong>phlebectomy</strong>.</p>
-      </section>
-
-      <section class="section reveal" id="diabetic-foot" data-title="The diabetic foot">
-        <h3>The diabetic foot</h3>
-        <p>Diabetic foot disease is the convergence of three processes: <strong>peripheral neuropathy</strong> (loss of protective sensation leading to unnoticed trauma), <strong>ischemia</strong> (PAD, often tibial or below-knee with sparing of the foot vessels), and <strong>infection</strong>. Each worsens the others, and together they make the diabetic foot the leading cause of non-traumatic amputation.</p>
-        <ul class="clean">
-          <li><strong>Neuropathic ulcers</strong> classically sit under pressure points (metatarsal heads, heel) in a foot with intact but unfelt circulation.</li>
-          <li><strong>Charcot foot</strong> is progressive neuropathic joint destruction producing the collapsed "rocker-bottom" deformity; in the acute phase it can mimic infection (red, hot, swollen) without a wound.</li>
-          <li>Severity is staged with systems such as <strong>Wagner</strong> and the <strong>University of Texas</strong> classifications.</li>
-        </ul>
-        <div class="box pearl">
-          <div class="lab"><span class="dot"></span>Pearl</div>
-          <p>Management is multidisciplinary and rests on the same logic as the rest of the service: <strong>offload pressure, debride and control infection, and revascularize if there is ischemia</strong>. A "probe-to-bone" positive ulcer suggests osteomyelitis. Because diabetic disease favors the tibial vessels with patent pedal targets, distal bypass or pedal-loop angioplasty can salvage feet that look unsalvageable.</p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="other-pres" data-title="Other presentations">
-        <h3>Other key presentations</h3>
-        <p>Briefer, but each is a known consult and a known question.</p>
-        <div class="cards stagger">
-          <div class="card"><span class="k">Popliteal aneurysm</span><h5>Clots, not ruptures</h5><p>The most common <em>peripheral</em> aneurysm. The danger is <strong>thrombosis and distal embolization</strong> (limb loss), not rupture. Frequently <strong>bilateral</strong> and associated with AAA, so check the other leg and the aorta.</p></div>
-          <div class="card"><span class="k">Thoracic outlet</span><h5>Three flavors</h5><p><b>Neurogenic</b> (most common, brachial plexus). <b>Venous</b>, the <em>Paget-Schroetter</em> "effort thrombosis" of the subclavian vein. <b>Arterial</b> (rarest), from a cervical rib. Decompression often means <strong>first-rib resection</strong>.</p></div>
-          <div class="card"><span class="k">Subclavian steal</span><h5>Arm steals from brain</h5><p>Proximal subclavian stenosis causes retrograde flow down the <strong>vertebral</strong> artery to feed the arm, producing posterior-circulation symptoms with arm exertion. More common on the <strong>left</strong>.</p></div>
-          <div class="card"><span class="k">Renal artery stenosis</span><h5>Two populations</h5><p><b>Atherosclerotic</b> (older, ostial) and <b>fibromuscular dysplasia</b> (younger women, "string of beads" mid-vessel). Causes renovascular hypertension and flash pulmonary edema.</p></div>
-          <div class="card"><span class="k">Splenic artery aneurysm</span><h5>Most common visceral</h5><p>The commonest splanchnic artery aneurysm, with a notable risk of <strong>rupture in pregnancy</strong> and a female predominance. Treat at smaller sizes in women of childbearing age.</p></div>
-          <div class="card"><span class="k">Buerger's disease</span><h5>Young smoker, digits</h5><p><em>Thromboangiitis obliterans</em>, a non-atherosclerotic inflammatory occlusion of small and medium vessels in <strong>young male smokers</strong>, causing digital ischemia. The only real treatment is <strong>absolute smoking cessation</strong>.</p></div>
-          <div class="card"><span class="k">Popliteal entrapment</span><h5>Young athlete, no risk factors</h5><p>An abnormal relationship of the popliteal artery to the gastrocnemius compresses flow with exertion. Suspect it in a fit young person with claudication and normal arteries at rest.</p></div>
-          <div class="card"><span class="k">Vascular trauma</span><h5>Hard vs soft signs</h5><p><b>Hard signs</b> (pulsatile bleeding, expanding hematoma, bruit or thrill, absent pulse, ischemia) go to the OR. <b>Soft signs</b> get imaging (CTA) and observation.</p></div>
-          <div class="card"><span class="k">Large-vessel vasculitis</span><h5>Two named patterns</h5><p><b>Takayasu</b> ("pulseless disease," young Asian women, aortic-arch branches). <b>Giant cell arteritis</b> (over 50, temporal artery, jaw claudication, vision-threatening).</p></div>
-        </div>
-      </section>
-
-      <div class="pagenav">
-        <a class="pagenav-a prev" href="foundations.html"><div class="dir">&larr; Previous</div><div class="nm">Foundations</div></a>
-        <a class="pagenav-a next" href="operations.html"><div class="dir">Next &rarr;</div><div class="nm">Open operations</div></a>
       </div>
-
-      <footer class="foot">
-        <p><b>Presentations</b></p>
-        <p>These diseases are most of what the service treats and most of what you will be asked. Learn how each one presents, the classification that drives its management, and the red flags that turn a routine consult into an emergency.</p>
-        <p class="mantra">How acute is it, how threatened is the tissue, what does the exam show.</p>
-      </footer>
+      <div class="arterial">
+        <h4>Arterial ulcer</h4>
+        <ul>
+          <li>Toes, heel, pressure points and distal tips</li>
+          <li>Punched out, dry, with a pale or necrotic base</li>
+          <li>Severe pain, worse with elevation, better dependent</li>
+          <li>Shiny, hairless, cool, atrophic skin</li>
+          <li>Pulses diminished or absent</li>
+          <li>Cornerstone: revascularization</li>
+        </ul>
+      </div>
     </div>
-  </main>
+    <aside class="note flag">
+      <p class="note-label">Red flag: check the inflow before you compress</p>
+      <p>Never apply compression to a leg you have not confirmed has adequate arterial inflow, because compressing an ischemic leg can cause tissue loss. Check the ABI before wrapping a "venous-looking" ulcer. As a rough guide, full compression is avoided when the ABI is below about 0.5 to 0.6, and reduced compression is used in the mixed range below 0.8.</p>
+    </aside>
+    <h3>Management</h3>
+    <p>Treatment starts with compression and elevation. For refluxing superficial veins, the options are endovenous thermal ablation (radiofrequency or laser), non-thermal ablation (cyanoacrylate glue or mechanochemical ablation), foam sclerotherapy, and phlebectomy for the varicosities themselves. For a venous ulcer, the EVRA trial (2018) showed that early ablation of superficial reflux, added to compression, healed ulcers faster and reduced recurrence. After thermal ablation, a duplex looks for endovenous heat-induced thrombosis (EHIT) extending toward the deep vein.</p>
+  </section>
 
-</div><!-- /.shell -->
-<button class="totop" id="toTop" aria-label="Back to top">&uarr; TOP</button>
-<script src="assets/app.js"></script>
+  <section class="sec" id="diabetic-foot" data-title="The diabetic foot" data-bed="arterial">
+    <h2>The diabetic foot</h2>
+    <p class="sec-lede">Diabetic foot disease is the convergence of three processes: neuropathy, ischemia and infection. Each worsens the others, and together they make the diabetic foot the leading cause of non-traumatic amputation.</p>
+    <ul>
+      <li><span class="lead-in">Neuropathy.</span> Loss of protective sensation leads to unnoticed trauma. Neuropathic ulcers sit under pressure points (metatarsal heads, heel) in a foot that may have intact circulation.</li>
+      <li><span class="lead-in">Ischemia.</span> Diabetic PAD favors the tibial vessels below the knee, often sparing the foot arteries, and calcification can make the ABI falsely high, so use toe pressures.</li>
+      <li><span class="lead-in">Infection.</span> Can spread fast along tendon sheaths and compartments with surprisingly little systemic response. A deep space infection or wet gangrene is a surgical emergency for drainage first.</li>
+      <li><span class="lead-in">Charcot foot.</span> Progressive neuropathic joint destruction producing the collapsed "rocker-bottom" foot. In the acute phase it can mimic infection (red, hot, swollen) without a wound.</li>
+    </ul>
+    <p>Severity is staged with WIfI, which has largely replaced older systems such as Wagner and the University of Texas classification for limb-threat decisions. A positive probe-to-bone test suggests osteomyelitis; X-ray and then MRI help confirm it.</p>
+    <aside class="note pearl">
+      <p class="note-label">Pearl</p>
+      <p>Management is multidisciplinary and follows the same logic as the rest of the service: drain and debride and control infection first, offload pressure, and revascularize if there is ischemia. Because diabetic disease favors the tibial vessels with patent pedal targets, a distal bypass or a pedal intervention can save a foot that looks unsalvageable. Many centers run this as a "toe and flow" team with podiatry.</p>
+    </aside>
+  </section>
+
+  <section class="sec" id="other-pres" data-title="Other presentations" data-bed="both">
+    <h2>Other key presentations</h2>
+    <p class="sec-lede">Briefer, but each is a known consult and a known question.</p>
+    <dl class="terms wide">
+      <div><dt>Popliteal artery aneurysm <span class="aka">clots, not ruptures</span></dt><dd>The most common peripheral aneurysm. The danger is thrombosis and distal embolization causing limb loss, not rupture. Often bilateral and associated with an AAA, so image the other knee and the aorta. Repair is generally offered at about 2 cm or more, or with mural thrombus or symptoms at any size.</dd></div>
+      <div><dt>Splenic and other visceral aneurysms <span class="aka">pregnancy risk</span></dt><dd>The splenic artery is the most common visceral aneurysm, with a female predominance and a notable risk of rupture in pregnancy. Treat at about 3 cm or more, and at smaller sizes in women who are or may become pregnant. Visceral pseudoaneurysms (after pancreatitis or trauma) are treated at any size, usually by embolization.</dd></div>
+      <div><dt>Renal artery stenosis <span class="aka">two populations</span></dt><dd>Atherosclerotic (older patients, ostial lesions) and fibromuscular dysplasia (younger women, a "string of beads" in the mid vessel). Can cause renovascular hypertension and flash pulmonary edema. CORAL found no routine benefit from stenting atherosclerotic disease, so intervention is selective; FMD is treated with balloon angioplasty without a stent.</dd></div>
+      <div><dt>Fibromuscular dysplasia</dt><dd>A non-atherosclerotic arteriopathy of medium arteries, mainly renal and carotid or vertebral. It can cause dissections and aneurysms elsewhere, so patients are imaged from head to pelvis once.</dd></div>
+      <div><dt>Thoracic outlet syndrome <span class="aka">three types</span></dt><dd>Neurogenic (most common, brachial plexus compression). Venous: Paget-Schroetter "effort thrombosis" of the subclavian vein, treated with thrombolysis then first rib resection. Arterial (rarest): subclavian aneurysm or stenosis from a cervical rib, with embolization to the hand. Decompression usually means first rib resection.</dd></div>
+      <div><dt>Subclavian steal <span class="aka">the arm steals from the brain</span></dt><dd>A proximal subclavian stenosis causes reversed flow down the vertebral artery to feed the arm, giving posterior circulation symptoms with arm exercise and an arm-to-arm blood pressure difference. More common on the left.</dd></div>
+      <div><dt>Atheroembolism <span class="aka">blue toe</span></dt><dd>Cholesterol crystals showered from an aortic or iliac plaque, often after a catheterization: painful blue toes with palpable pulses, livedo reticularis, sometimes kidney injury and eosinophilia. Find and treat the source, statin and antiplatelet; anticoagulation does not help.</dd></div>
+      <div><dt>Buerger disease <span class="aka">young smoker, digits</span></dt><dd>Thromboangiitis obliterans: inflammatory, non-atherosclerotic occlusion of small and medium vessels in young smokers, causing digital ischemia and ulcers. The only treatment that works is complete abstinence from tobacco, including nicotine replacement in some patients.</dd></div>
+      <div><dt>Popliteal entrapment <span class="aka">young athlete</span></dt><dd>An abnormal relationship between the popliteal artery and the gastrocnemius (or popliteus) compresses flow with exercise. Suspect it in a fit young person with calf claudication and normal pulses at rest that fade with plantar flexion.</dd></div>
+      <div><dt>Vascular trauma <span class="aka">hard and soft signs</span></dt><dd>Hard signs (pulsatile bleeding, an expanding hematoma, a bruit or thrill, an absent pulse, distal ischemia) go to the OR. Soft signs (a diminished pulse, a stable hematoma, proximity to a vessel, a neurologic deficit) get CTA or an injured extremity index (ABI below 0.9 is abnormal).</dd></div>
+      <div><dt>Large-vessel vasculitis</dt><dd>Takayasu arteritis ("pulseless disease," younger women, aortic arch branches) and giant cell arteritis (over 50, temporal artery, jaw claudication, threat to vision, but also the subclavian and axillary arteries). Avoid operating during active inflammation.</dd></div>
+    </dl>
+    <p>The most common consults, with their first moves, are on <a href="rounds.html#consults">Rounds and presenting</a>.</p>
+  </section>
+
+  <!-- @pager -->
+<nav class="pager" aria-label="Chapters">
+  <a class="prev" href="foundations.html" rel="prev"><span class="dir">Previous</span><span class="ttl">Foundations</span></a>
+  <a class="next" href="operations.html" rel="next"><span class="dir">Next</span><span class="ttl">Open operations</span></a>
+</nav>
+<!-- /@pager -->
+</main>
+<!-- @aside -->
+<aside class="aside" aria-label="On this page">
+  <p class="aside-label">On this page</p>
+  <ol>
+    <li><a href="#claudication" data-bed="arterial">PAD and claudication</a></li>
+    <li><a href="#clti" data-bed="arterial">CLTI</a></li>
+    <li><a href="#ali" data-bed="arterial">Acute limb ischemia</a></li>
+    <li><a href="#aaa" data-bed="arterial">Abdominal aortic aneurysm</a></li>
+    <li><a href="#carotid" data-bed="arterial">Carotid disease</a></li>
+    <li><a href="#mesenteric" data-bed="arterial">Mesenteric ischemia</a></li>
+    <li><a href="#dissection" data-bed="arterial">Aortic dissection</a></li>
+    <li><a href="#vte" data-bed="venous">DVT and VTE</a></li>
+    <li><a href="#cvi" data-bed="venous">Chronic venous insufficiency</a></li>
+    <li><a href="#diabetic-foot" data-bed="arterial">The diabetic foot</a></li>
+    <li><a href="#other-pres" data-bed="both">Other presentations</a></li>
+  </ol>
+</aside>
+<!-- /@aside -->
+</div>
+<!-- @footer -->
+<footer class="site-foot">
+  <div class="inner">
+    <div>
+      <p><b>An orientation and study aid, not a clinical protocol.</b> Thresholds, classifications and trial data change, and practice varies between hospitals. Check specifics against current SVS and ESVS guidance, your attendings, and local pathways before applying anything to a patient.</p>
+    </div>
+    <div>
+      <p>Compiled by <b>Hashim Salar</b>.</p>
+      <p>Content last reviewed October 2026.</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/app.js?v=52dc44bc" data-index="ab6d8be0" defer></script>
+<!-- /@footer -->
 </body>
 </html>
