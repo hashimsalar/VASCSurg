@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 236" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<defs><marker id="re-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="devf"/></marker></defs>
+<rect x="20" y="60" width="680" height="96" class="lumen"/>
+<rect x="20" y="156" width="680" height="34" class="sunk"/>
+<line x1="20" y1="52" x2="700" y2="52" class="wall" stroke-width="6"/>
+<line x1="20" y1="156" x2="700" y2="156" class="wall" stroke-width="2.5"/>
+<line x1="20" y1="194" x2="700" y2="194" class="wall" stroke-width="6"/>
+<path d="M240,58 C300,64 400,56 470,60 L470,154 C400,150 300,156 240,152 C226,120 226,90 240,58 Z" class="clot"/>
+<line x1="256" y1="64" x2="286" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="274" y1="64" x2="304" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="292" y1="64" x2="322" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="310" y1="64" x2="340" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="328" y1="64" x2="358" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="346" y1="64" x2="376" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="364" y1="64" x2="394" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="382" y1="64" x2="412" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="400" y1="64" x2="430" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="418" y1="64" x2="448" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="436" y1="64" x2="466" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<line x1="454" y1="64" x2="484" y2="150" class="sheet" stroke-width="1.2" opacity=".5"/>
+<path d="M20,108 L170,108 C200,108 205,170 230,172 L470,172" class="dev" stroke-width="4"/>
+<path d="M330,173 L540,173" class="ink" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+<path d="M540,172 C556,170 566,150 568,112" class="dev" stroke-width="3" marker-end="url(#re-a)"/>
+<path d="M568,108 L690,108" class="dev" stroke-width="4" stroke-dasharray="2 7"/>
+<text x="110" y="92" text-anchor="middle" class="sm ">true lumen</text>
+<text x="355" y="40" text-anchor="middle" class="sm th">occlusion</text>
+<text x="300" y="222" text-anchor="middle" class="sm ">wire tracks through the subintimal space</text>
+<text x="600" y="92" text-anchor="middle" class="sm th">back into the true lumen</text>
+<text x="630" y="222" text-anchor="middle" class="sm ">re-entry needle</text>
+</svg>

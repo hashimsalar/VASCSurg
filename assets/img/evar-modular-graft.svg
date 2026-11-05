@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 510" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<path d="M236,16 L284,16 L284,160 L236,160 Z" class="lumen"/>
+<path d="M236,160 C170,190 165,300 238,340 L260,360 L282,340 C355,300 350,190 284,160 Z" class="sunk"/>
+<path d="M238,340 L260,360 L222,500 L190,500 Z M282,340 L260,360 L298,500 L330,500 Z" class="lumen"/>
+<path d="M236,16 L236,160 C170,190 165,300 238,340 L190,500" class="wall" stroke-width="3.5"/>
+<path d="M284,16 L284,160 C350,190 355,300 282,340 L330,500" class="wall" stroke-width="3.5"/>
+<path d="M222,500 L260,362 L298,500" class="wall" stroke-width="3.5"/>
+<path d="M236,104 L150,98 L150,118 L236,118 Z M284,104 L370,98 L370,118 L284,118 Z" class="lumen"/>
+<path d="M236,104 L150,98 M236,118 L150,118 M284,104 L370,98 M284,118 L370,118" class="wall" stroke-width="3"/>
+<rect x="233" y="105" width="54" height="12" class="lumen"/>
+<path d="M243,124 L277,124 L277,284 L262,284 L262,284 L258,284 L243,284 Z" class="graft" stroke-width="2.4"/>
+<path d="M243,282 L258,282 L224,482 L205,482 Z" class="graft" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M262,282 L277,282 L281,306 L265,306 Z" class="graft" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M265,292 L280,292 L318,482 L300,482 Z" class="graft" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 3"/>
+<line x1="243" y1="144" x2="277" y2="144" class="graftl" stroke-width="1.8"/>
+<line x1="243" y1="166" x2="277" y2="166" class="graftl" stroke-width="1.8"/>
+<line x1="243" y1="188" x2="277" y2="188" class="graftl" stroke-width="1.8"/>
+<line x1="243" y1="210" x2="277" y2="210" class="graftl" stroke-width="1.8"/>
+<line x1="243" y1="232" x2="277" y2="232" class="graftl" stroke-width="1.8"/>
+<line x1="243" y1="254" x2="277" y2="254" class="graftl" stroke-width="1.8"/>
+<line x1="243" y1="276" x2="277" y2="276" class="graftl" stroke-width="1.8"/>
+<text x="150" y="92" text-anchor="end" class="sm">renal artery</text>
+<line x1="236" y1="140" x2="126" y2="145" class="ink" stroke-width="1.2"/>
+<circle cx="236" cy="140" r="3.5" class="inkf"/>
+<text x="120" y="150" text-anchor="end" class="th sm">Infrarenal neck:</text>
+<text x="120" y="167" text-anchor="end" class="sm">proximal seal</text>
+<line x1="243" y1="200" x2="126" y2="215" class="ink" stroke-width="1.2"/>
+<circle cx="243" cy="200" r="3.5" class="inkf"/>
+<text x="120" y="220" text-anchor="end" class="th sm">Main body</text>
+<line x1="214" y1="430" x2="126" y2="415" class="ink" stroke-width="1.2"/>
+<circle cx="214" cy="430" r="3.5" class="inkf"/>
+<text x="120" y="420" text-anchor="end" class="th sm">Ipsilateral limb</text>
+<line x1="205" y1="478" x2="126" y2="473" class="ink" stroke-width="1.2"/>
+<circle cx="205" cy="478" r="3.5" class="inkf"/>
+<text x="120" y="478" text-anchor="end" class="th sm">Iliac seal zones</text>
+<line x1="278" y1="300" x2="374" y2="325" class="ink" stroke-width="1.2"/>
+<circle cx="278" cy="300" r="3.5" class="inkf"/>
+<text x="380" y="330" text-anchor="start" class="th sm">Contralateral gate</text>
+<line x1="308" y1="420" x2="374" y2="405" class="ink" stroke-width="1.2"/>
+<circle cx="308" cy="420" r="3.5" class="inkf"/>
+<text x="380" y="410" text-anchor="start" class="th sm">Contralateral limb,</text>
+<text x="380" y="427" text-anchor="start" class="sm">placed from the other groin</text>
+<line x1="330" y1="230" x2="374" y2="231" class="ink" stroke-width="1.2"/>
+<circle cx="330" cy="230" r="3.5" class="inkf"/>
+<text x="380" y="236" text-anchor="start" class="th sm">Aneurysm sac:</text>
+<text x="380" y="253" text-anchor="start" class="sm">excluded</text>
+</svg>

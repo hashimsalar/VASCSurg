@@ -14,6 +14,14 @@ and are regenerated here, so one edit to the page list updates every page:
   <!-- @pager --> ... <!-- /@pager -->     previous / next chapter
   <!-- @footer --> ... <!-- /@footer -->   footer, back-to-top, script
 
+  <!-- @fig ID --> ... <!-- /@fig -->   a figure from scripts/images.json
+  <!-- @credits --> ... <!-- /@credits --> the image credits list (credits.html)
+
+Figure markers are inserted automatically where scripts/images.json says a
+figure belongs (a section, optionally under a named <h3>). Once a marker exists
+you can move it anywhere in the page and the build will keep it there.
+Images are downloaded by scripts/fetch_images.py.
+
 It also writes assets/search-index.js from every <section class="sec">.
 
 Run from anywhere:  python3 scripts/build.py            (all pages)
@@ -51,6 +59,9 @@ GROUPS = [
     ("Sharpen up", [
         ("questions.html", "Questions you'll be asked", "The classic teaching questions, with the answer an attending wants to hear."),
         ("reference.html", "Quick reference", "Every table, classification, and number worth memorizing, on one page."),
+    ]),
+    ("About", [
+        ("credits.html", "Image credits", "Sources, authors and licenses for every image and diagram in the guide."),
     ]),
 ]
 
@@ -203,6 +214,7 @@ def footer(page):
         "    </div>",
         "    <div>",
         "      <p>Compiled by <b>Hashim Salar</b>.</p>",
+        '      <p>Images are credited on the <a href="credits.html">image credits</a> page.</p>',
         f"      <p>Content last reviewed {REVIEWED}.</p>",
         "    </div>",
         "  </div>",
@@ -230,6 +242,158 @@ def text_of(fragment):
     return re.sub(r"\s+", " ", t).strip()
 
 
+# ---------------------------------------------------------------- figures
+
+FIG_MANIFEST = ROOT / "scripts" / "images.json"
+FIG_CREDITS = ROOT / "scripts" / "image-credits.json"
+FIG_RE = re.compile(r"\n?[ \t]*<!-- @fig ([\w-]+) -->.*?<!-- /@fig \1 -->", re.S)
+
+
+def load_figures():
+    if not FIG_MANIFEST.exists():
+        return [], {}
+    figs = json.loads(FIG_MANIFEST.read_text(encoding="utf-8"))
+    credits = json.loads(FIG_CREDITS.read_text(encoding="utf-8")) if FIG_CREDITS.exists() else {}
+    return figs, credits
+
+
+def short_author(fig, cr):
+    """A readable author name for a caption; full details live on the credits page."""
+    name = fig.get("author") or cr.get("author") or "Unknown author"
+    if len(name) > 70:
+        name = re.split(r"(?<=[a-z0-9])\. |; | \(", name)[0]
+    return name.strip(" .")
+
+
+def first_sentence(text):
+    m = re.match(r"(.+?[.!?])(\s|$)", text)
+    return m.group(1) if m else text
+
+
+def inline_svg(path, label):
+    raw = path.read_text(encoding="utf-8")
+    raw = re.sub(r"<\?xml[^>]*\?>\s*", "", raw).strip()
+    return raw.replace("<svg ", f'<svg role="img" aria-label="{esc(label)}" focusable="false" ', 1)
+
+
+def figure_html(fig, cr):
+    fid = fig["id"]
+    if cr.get("original"):
+        media = (f'<div class="fig-media fig-diagram">{inline_svg(ROOT / cr["file"], fig["alt"])}</div>')
+        credit = ('<span class="fig-credit">Diagram drawn for this guide. Based on '
+                  f'{esc(fig.get("basis", ""))} <a href="credits.html#credit-{fid}">Credits</a></span>')
+    else:
+        media = (f'<a class="fig-media" href="{cr["file"]}" aria-label="Open the full image">'
+                 f'<img src="{cr["file"]}" width="{cr["width"]}" height="{cr["height"]}" alt="{esc(fig["alt"])}" '
+                 'loading="lazy" decoding="async"></a>')
+        lic = esc(cr["license"])
+        if cr.get("license_url"):
+            lic = f'<a href="{esc(cr["license_url"])}" rel="license">{lic}</a>'
+        credit = (f'<span class="fig-credit">Image: {esc(short_author(fig, cr))}, {lic}, '
+                  f'via <a href="{esc(cr["source"])}">Wikimedia Commons</a>.</span>')
+    return (f'<figure class="fig" id="fig-{fid}">\n  {media}\n'
+            f'  <figcaption>{esc(fig["caption"])} {credit}</figcaption>\n</figure>')
+
+
+def _section_bounds(src, sec_id):
+    m = re.search(r'<section\b[^>]*\bid="%s"[^>]*>' % re.escape(sec_id), src)
+    if not m:
+        return None
+    end = src.find("</section>", m.end())
+    return m.end(), end
+
+
+def _anchor(src, fig):
+    """Where a new figure marker goes: after the first paragraph under the named <h3>,
+    or after the section lede."""
+    bounds = _section_bounds(src, fig["section"])
+    if not bounds:
+        return None
+    start, end = bounds
+    body = src[start:end]
+    pos = None
+    if fig.get("h3"):
+        for h in re.finditer(r"<h3\b[^>]*>(.*?)</h3>", body, re.S):
+            if text_of(h.group(1)).startswith(fig["h3"]):
+                pos = h.end()
+                nxt = re.match(r"\s*<p\b[^>]*>.*?</p>", body[pos:], re.S)
+                if nxt:
+                    pos += nxt.end()
+                break
+        if pos is None:
+            print(f'  figure {fig["id"]}: no <h3> "{fig["h3"]}" in #{fig["section"]}; placed after the lede', file=sys.stderr)
+    if pos is None:
+        lede = re.search(r'<p class="sec-lede">.*?</p>', body, re.S) or re.search(r"</h2>", body)
+        pos = lede.end() if lede else 0
+    # keep figures that share an anchor in manifest order
+    while True:
+        m = re.match(r"\s*<!-- @fig ([\w-]+) -->.*?<!-- /@fig \1 -->", body[pos:], re.S)
+        if not m:
+            break
+        pos += m.end()
+    return start + pos
+
+
+def stamp_figures(src, page, figs, credits):
+    mine = [f for f in figs if f["page"] == page["file"]]
+    wanted = {f["id"] for f in mine}
+    # drop markers whose figure is gone from the manifest
+    src = FIG_RE.sub(lambda m: m.group(0) if m.group(1) in wanted else "", src)
+    for fig in mine:
+        if f'<!-- @fig {fig["id"]} -->' not in src:
+            at = _anchor(src, fig)
+            if at is None:
+                print(f'  figure {fig["id"]}: no section #{fig["section"]} in {page["file"]}', file=sys.stderr)
+                continue
+            src = src[:at] + f'\n    <!-- @fig {fig["id"]} --><!-- /@fig {fig["id"]} -->' + src[at:]
+        cr = credits.get(fig["id"])
+        content = figure_html(fig, cr) if cr and (ROOT / cr["file"]).exists() else ""
+        pat = re.compile(r"(<!-- @fig %s -->)(.*?)(<!-- /@fig %s -->)" % (re.escape(fig["id"]), re.escape(fig["id"])), re.S)
+        body = ("\n" + content + "\n") if content else ""
+        src = pat.sub(lambda m: m.group(1) + body + m.group(3), src, count=1)
+    return src
+
+
+def credits_html(figs, credits):
+    out = []
+    titles = {}
+    for page in PAGES:
+        path = ROOT / page["file"]
+        if path.exists():
+            titles[page["file"]] = {s["id"]: s["title"] for s in sections(path.read_text(encoding="utf-8"))}
+    for page in PAGES:
+        mine = [f for f in figs if f["page"] == page["file"] and f["id"] in credits]
+        if not mine:
+            continue
+        out.append(f'<h3>{esc(page["title"])}</h3>\n<ol class="img-credits">')
+        for fig in mine:
+            cr = credits[fig["id"]]
+            where = f'{page["file"]}#fig-{fig["id"]}'
+            sec = titles.get(page["file"], {}).get(fig["section"], fig["section"])
+            thumb = (f'<a class="img-credit-thumb" href="{where}" tabindex="-1" aria-hidden="true">'
+                     f'<img src="{cr["file"]}" alt="" width="{cr["width"]}" height="{cr["height"]}" loading="lazy" decoding="async"></a>')
+            lines = [f'<p class="img-credit-title"><a href="{where}">{esc(first_sentence(fig["caption"]))}</a></p>',
+                     f'<p class="img-credit-where">{esc(page["title"])} / {esc(sec)}</p>']
+            if cr.get("original"):
+                lines.append("<p>Original diagram drawn for this guide. Schematic, not to scale where noted.</p>")
+                if fig.get("basis"):
+                    lines.append(f'<p><b>Based on:</b> {esc(fig["basis"])}</p>')
+                lines.append(f'<p><a href="{cr["file"]}">SVG file</a></p>')
+            else:
+                lic = esc(cr["license"])
+                if cr.get("license_url"):
+                    lic = f'<a href="{esc(cr["license_url"])}" rel="license">{lic}</a>'
+                author = fig.get("author") or cr.get("author") or "Unknown author"
+                lines.append(f'<p><b>Author:</b> {esc(author)}</p>')
+                if cr.get("credit") and cr["credit"] != author:
+                    lines.append(f'<p><b>Source credit:</b> {esc(cr["credit"])}</p>')
+                lines.append(f'<p><b>License:</b> {lic}</p>')
+                lines.append(f'<p><b>Original file:</b> <a href="{esc(cr["source"])}">{esc(cr["title"])}</a> on Wikimedia Commons, retrieved {esc(cr.get("retrieved", ""))}</p>')
+            out.append(f'  <li class="img-credit" id="credit-{fig["id"]}">{thumb}<div class="img-credit-body">' + "".join(lines) + "</div></li>")
+        out.append("</ol>")
+    return "\n".join(out)
+
+
 INDEX_VER = ""
 
 
@@ -252,6 +416,19 @@ def build_index():
 def main():
     global INDEX_VER
     only = set(a for a in sys.argv[1:] if a.endswith(".html"))
+    figs, credits = load_figures()
+    placed = 0
+    for page in PAGES:
+        path = ROOT / page["file"]
+        if not path.exists() or (only and page["file"] not in only):
+            continue
+        src = path.read_text(encoding="utf-8")
+        new = stamp_figures(src, page, figs, credits)
+        if page["file"] == "credits.html":
+            new, _ = stamp(new, "credits", credits_html(figs, credits))
+        placed += new.count('<figure class="fig"')
+        if new != src:
+            path.write_text(new, encoding="utf-8")
     index = build_index()
     js = "window.SEARCH_INDEX=" + json.dumps(index, ensure_ascii=False, separators=(",", ":")) + ";\n"
     (ROOT / "assets" / "search-index.js").write_text(js, encoding="utf-8")
@@ -272,7 +449,10 @@ def main():
         if not only or page["file"] in only:
             path.write_text(src, encoding="utf-8")
 
-    print(f"Stamped {len(PAGES) - len(missing)} pages, indexed {len(index)} sections.")
+    print(f"Stamped {len(PAGES) - len(missing)} pages, placed {placed} figures, indexed {len(index)} sections.")
+    waiting = [f["id"] for f in figs if f["id"] not in credits]
+    if waiting:
+        print(f"{len(waiting)} figures have no image yet (run scripts/fetch_images.py): {', '.join(waiting)}", file=sys.stderr)
     if missing:
         print("Missing pages (skipped):", ", ".join(missing), file=sys.stderr)
 

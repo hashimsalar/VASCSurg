@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<rect x="40" y="81" width="440" height="18" rx="9" class="sunk"/>
+<line x1="40" y1="90" x2="430" y2="90" class="ink" stroke-width="8" stroke-linecap="round"/>
+<path d="M430,86 L560,89 L640,89.4 L640,90.6 L560,91 L430,94 Z" class="inkf"/>
+<rect x="480" y="81" width="200" height="18" rx="9" class="lumen"/>
+<line x1="482" y1="82" x2="486" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="489" y1="82" x2="493" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="496" y1="82" x2="500" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="503" y1="82" x2="507" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="510" y1="82" x2="514" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="517" y1="82" x2="521" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="524" y1="82" x2="528" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="531" y1="82" x2="535" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="538" y1="82" x2="542" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="545" y1="82" x2="549" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="552" y1="82" x2="556" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="559" y1="82" x2="563" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="566" y1="82" x2="570" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="573" y1="82" x2="577" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="580" y1="82" x2="584" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="587" y1="82" x2="591" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="594" y1="82" x2="598" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="601" y1="82" x2="605" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="608" y1="82" x2="612" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="615" y1="82" x2="619" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="622" y1="82" x2="626" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="629" y1="82" x2="633" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="636" y1="82" x2="640" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="643" y1="82" x2="647" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="650" y1="82" x2="654" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="657" y1="82" x2="661" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="664" y1="82" x2="668" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="671" y1="82" x2="675" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="678" y1="82" x2="682" y2="98" class="wall" stroke-width="1.6"/>
+<line x1="480" y1="90" x2="676" y2="90" class="ink" stroke-width="1.4"/>
+<circle cx="680" cy="90" r="9" class="artf"/>
+<path d="M40,64 L40,58 L430,58 L430,64" class="ink" stroke-width="1.4"/>
+<text x="235.0" y="50" text-anchor="middle" class="th sm">Stiff body: support and pushability</text>
+<path d="M430,64 L430,58 L560,58 L560,64" class="ink" stroke-width="1.4"/>
+<text x="495.0" y="50" text-anchor="middle" class="th sm">Taper</text>
+<path d="M560,64 L560,58 L690,58 L690,64" class="ink" stroke-width="1.4"/>
+<text x="625.0" y="50" text-anchor="middle" class="th sm">Floppy tip</text>
+<line x1="300" y1="94" x2="300" y2="130" class="ink" stroke-width="1.2"/><text x="300" y="146" text-anchor="middle" class="sm">steel or nitinol core</text>
+<line x1="590" y1="99" x2="590" y2="130" class="ink" stroke-width="1.2"/><text x="590" y="146" text-anchor="middle" class="sm">coil or hydrophilic jacket</text>
+<text x="40" y="204" class="th">Tip shapes</text>
+<path d="M60,250 L200,250" class="dev" stroke-width="6"/>
+<path d="M290,250 L400,250 L436,228" class="dev" stroke-width="6"/>
+<path d="M530,250 L640,250 C676,250 680,210 650,210 C634,210 628,222 636,230" class="dev" stroke-width="6"/>
+<text x="130" y="280" text-anchor="middle" class="sm">Straight</text>
+<text x="362" y="280" text-anchor="middle" class="sm">Angled: steerable</text>
+<text x="600" y="280" text-anchor="middle" class="sm">J: atraumatic</text>
+</svg>

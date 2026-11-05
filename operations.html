@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
-<link rel="stylesheet" href="assets/styles.css?v=449f4c7a">
+<link rel="stylesheet" href="assets/styles.css?v=df72d687">
 <script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('vfg-theme');if(t==='dark'||t==='light')r.setAttribute('data-theme',t);}catch(e){}})();</script>
 <!-- /@head -->
 </head>
@@ -66,6 +66,12 @@
       <li><a class="rail-link" href="reference.html"><span class="rail-n">12</span>Quick reference</a></li>
     </ol>
   </div>
+  <div class="rail-group">
+    <p class="rail-label">About</p>
+    <ol>
+      <li><a class="rail-link" href="credits.html"><span class="rail-n">13</span>Image credits</a></li>
+    </ol>
+  </div>
   <p class="rail-note">Inflow, outflow, conduit. The vascular patient is always a cardiac patient.</p>
 </nav>
 <!-- /@rail -->
@@ -101,6 +107,7 @@
   <section class="sec" id="cea" data-title="CEA and TCAR" data-bed="arterial">
     <h2>Carotid endarterectomy <span class="tag">High yield</span></h2>
     <p class="sec-lede">Removal of the atherosclerotic plaque at the carotid bifurcation to prevent stroke: open the artery, peel out the plaque, and close, usually with a patch. TCAR, the hybrid stenting operation done through a smaller neck incision, closes out this section.</p>
+    <!-- @fig cea-illustration --><!-- /@fig cea-illustration -->
 
     <h3>Indications</h3>
     <ul>
@@ -113,6 +120,7 @@
     <p>Supine with a shoulder roll, the neck extended and the head turned away from the operative side, with the head of the bed slightly up. Anesthesia is either general, with EEG, evoked potentials or a stump pressure used to judge brain perfusion during the clamp, or regional with the patient awake, where the patient's own neuro exam is the monitor. The incision runs along the anterior border of the sternocleidomastoid. Through the platysma, the dissection follows the sternocleidomastoid and the internal jugular vein down to the carotid sheath. The facial vein crosses the bifurcation and is divided, which makes it the reliable landmark.</p>
 
     <h3>The steps</h3>
+    <!-- @fig carotid-plaque --><!-- /@fig carotid-plaque -->
     <ol class="steps">
       <li><strong>Expose the carotid sheath.</strong> Open it to find the common, internal and external carotid arteries and the vagus nerve coursing within, usually posterior in the groove between the carotid and the internal jugular vein. Dissect with as little handling of the bulb as possible: manipulating it can dislodge plaque and can trigger reflex bradycardia through the carotid sinus.</li>
       <li><strong>Identify and protect the nerves.</strong> The hypoglossal nerve crosses the internal and external carotids superiorly, and the ansa cervicalis descends from it on the front of the carotid (the ansa can be divided to free the hypoglossal). Loop the common, external and internal carotids and the superior thyroid artery, with the internal carotid controlled beyond the end of the plaque.</li>
@@ -208,6 +216,7 @@
   <section class="sec" id="open-aaa" data-title="Open AAA repair" data-bed="arterial">
     <h2>Open abdominal aortic aneurysm repair</h2>
     <p class="sec-lede">Replacement of the aneurysmal aorta with a prosthetic (Dacron or PTFE) tube or bifurcated graft, through either a transperitoneal or a retroperitoneal approach. It remains the durable repair, used when anatomy is unsuitable for a stent graft or in younger, fit patients.</p>
+    <!-- @fig open-aaa-model --><!-- /@fig open-aaa-model -->
 
     <h3>Indications</h3>
     <ul>
@@ -307,6 +316,7 @@
   <section class="sec" id="evar" data-title="EVAR and endoleaks" data-bed="arterial">
     <h2>EVAR and endoleaks <span class="tag">High yield</span></h2>
     <p class="sec-lede">Endovascular aneurysm repair excludes the aneurysm from within by deploying a stent graft through the femoral arteries, so blood flows through the graft and the sac is meant to depressurize. It is less invasive than open repair, with lower early mortality, but needs lifelong surveillance imaging and has more late reinterventions. The devices and techniques are on <a href="endovascular.html#evar-tevar">Endovascular</a> and <a href="devices.html#stent-grafts">Stent grafts</a>; what every trainee must know cold are the endoleaks.</p>
+    <!-- @fig evar-illustration --><!-- /@fig evar-illustration -->
 
     <h3>Indications</h3>
     <p>An aneurysm at the repair threshold with suitable anatomy, and rupture with suitable anatomy. The anatomy is the whole question: an adequate proximal neck for a seal (commonly at least 10 to 15 mm of healthy, fairly parallel aorta below the lowest renal artery, a diameter within the device range, angulation under about 60 degrees, and limited thrombus or calcium), suitable iliac landing zones, and iliofemoral arteries large and straight enough to deliver the device, roughly 6 to 7 mm or more depending on the system. Fenestrated and branched grafts extend this to necks that involve the renal and visceral arteries.</p>
@@ -328,6 +338,144 @@
 
     <h3>Endoleaks, the defining complication</h3>
     <p>An endoleak is persistent blood flow into the aneurysm sac after stent-graft placement, which keeps the sac pressurized and at risk. The five types are a perennial question.</p>
+    <!-- @fig endoleak-types -->
+<figure class="fig" id="fig-endoleak-types">
+  <div class="fig-media fig-diagram"><svg role="img" aria-label="Five schematic stent grafts in an aneurysm, each showing where blood enters the sac: Ia and Ib at the seal zones, II from a branch, III at a junction or fabric tear, IV through the fabric, V with no visible leak." focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 932 378" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<defs><marker id="el-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="artf"/></marker></defs>
+<g transform="translate(6 0)">
+<path d="M70,18 L110,18 L110,80 L70,80 Z" class="lumen"/>
+<path d="M70,80 C30,100 30,205 72,232 L90,248 L108,232 C150,205 150,100 110,80 Z" class="sunk"/>
+<path d="M48,300 L72,232 L90,248 L78,300 Z M132,300 L108,232 L90,248 L102,300 Z" class="lumen"/>
+<path d="M70,18 L70,80 C30,100 30,205 72,232 L48,300" class="wall" stroke-width="3"/><path d="M110,18 L110,80 C150,100 150,205 108,232 L132,300" class="wall" stroke-width="3"/>
+<path d="M78,300 L90,250 L102,300" class="wall" stroke-width="3"/>
+<path d="M77,26 L103,26 L103,186 L121,292 L106,292 L92,206 L88,206 L74,292 L59,292 L77,186 Z" class="graft" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="77" y1="46" x2="103" y2="46" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="72" x2="103" y2="72" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="98" x2="103" y2="98" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="124" x2="103" y2="124" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="150" x2="103" y2="150" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="176" x2="103" y2="176" class="graftl" stroke-width="1.6"/>
+<path d="M74,40 C74,70 70,95 58,118" class="artl" stroke-width="3.5" marker-end="url(#el-a)"/>
+<path d="M66,290 C64,262 66,245 70,222" class="artl" stroke-width="3.5" marker-end="url(#el-a)"/>
+<text x="40" y="40" class="th sm">Ia</text><text x="36" y="282" class="th sm">Ib</text>
+<text x="90" y="328" text-anchor="middle" class="th">Type I</text>
+<text x="90" y="349" text-anchor="middle" class="sm">Seal zone leak:</text>
+<text x="90" y="366" text-anchor="middle" class="sm">Ia proximal, Ib distal</text>
+</g>
+<g transform="translate(190 0)">
+<path d="M70,18 L110,18 L110,80 L70,80 Z" class="lumen"/>
+<path d="M70,80 C30,100 30,205 72,232 L90,248 L108,232 C150,205 150,100 110,80 Z" class="sunk"/>
+<path d="M48,300 L72,232 L90,248 L78,300 Z M132,300 L108,232 L90,248 L102,300 Z" class="lumen"/>
+<path d="M70,18 L70,80 C30,100 30,205 72,232 L48,300" class="wall" stroke-width="3"/><path d="M110,18 L110,80 C150,100 150,205 108,232 L132,300" class="wall" stroke-width="3"/>
+<path d="M78,300 L90,250 L102,300" class="wall" stroke-width="3"/>
+<path d="M77,26 L103,26 L103,186 L121,292 L106,292 L92,206 L88,206 L74,292 L59,292 L77,186 Z" class="graft" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="77" y1="46" x2="103" y2="46" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="72" x2="103" y2="72" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="98" x2="103" y2="98" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="124" x2="103" y2="124" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="150" x2="103" y2="150" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="176" x2="103" y2="176" class="graftl" stroke-width="1.6"/>
+<path d="M141,140 L178,128" class="tube-o" stroke-width="14"/><path d="M139,140 L178,128" class="tube-i" stroke-width="8"/>
+<path d="M176,129 C160,134 140,142 118,150" class="artl" stroke-width="3.5" marker-end="url(#el-a)"/>
+<text x="90" y="328" text-anchor="middle" class="th">Type II</text>
+<text x="90" y="349" text-anchor="middle" class="sm">Branch backflow:</text>
+<text x="90" y="366" text-anchor="middle" class="sm">lumbar or IMA</text>
+</g>
+<g transform="translate(374 0)">
+<path d="M70,18 L110,18 L110,80 L70,80 Z" class="lumen"/>
+<path d="M70,80 C30,100 30,205 72,232 L90,248 L108,232 C150,205 150,100 110,80 Z" class="sunk"/>
+<path d="M48,300 L72,232 L90,248 L78,300 Z M132,300 L108,232 L90,248 L102,300 Z" class="lumen"/>
+<path d="M70,18 L70,80 C30,100 30,205 72,232 L48,300" class="wall" stroke-width="3"/><path d="M110,18 L110,80 C150,100 150,205 108,232 L132,300" class="wall" stroke-width="3"/>
+<path d="M78,300 L90,250 L102,300" class="wall" stroke-width="3"/>
+<path d="M77,26 L103,26 L103,186 L121,292 L106,292 L92,206 L88,206 L74,292 L59,292 L77,186 Z" class="graft" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="77" y1="46" x2="103" y2="46" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="72" x2="103" y2="72" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="98" x2="103" y2="98" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="124" x2="103" y2="124" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="150" x2="103" y2="150" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="176" x2="103" y2="176" class="graftl" stroke-width="1.6"/>
+<path d="M100,192 C118,186 128,166 130,138" class="artl" stroke-width="3.5" marker-end="url(#el-a)"/>
+<line x1="96" y1="196" x2="104" y2="188" class="sheet" stroke-width="5"/>
+<text x="90" y="328" text-anchor="middle" class="th">Type III</text>
+<text x="90" y="349" text-anchor="middle" class="sm">Junction separation</text>
+<text x="90" y="366" text-anchor="middle" class="sm">or fabric tear</text>
+</g>
+<g transform="translate(558 0)">
+<path d="M70,18 L110,18 L110,80 L70,80 Z" class="lumen"/>
+<path d="M70,80 C30,100 30,205 72,232 L90,248 L108,232 C150,205 150,100 110,80 Z" class="sunk"/>
+<path d="M48,300 L72,232 L90,248 L78,300 Z M132,300 L108,232 L90,248 L102,300 Z" class="lumen"/>
+<path d="M70,18 L70,80 C30,100 30,205 72,232 L48,300" class="wall" stroke-width="3"/><path d="M110,18 L110,80 C150,100 150,205 108,232 L132,300" class="wall" stroke-width="3"/>
+<path d="M78,300 L90,250 L102,300" class="wall" stroke-width="3"/>
+<path d="M77,26 L103,26 L103,186 L121,292 L106,292 L92,206 L88,206 L74,292 L59,292 L77,186 Z" class="graft" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="77" y1="46" x2="103" y2="46" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="72" x2="103" y2="72" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="98" x2="103" y2="98" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="124" x2="103" y2="124" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="150" x2="103" y2="150" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="176" x2="103" y2="176" class="graftl" stroke-width="1.6"/>
+<circle cx="69" cy="46" r="2.6" class="artf"/><circle cx="111" cy="40" r="2.6" class="artf"/>
+<circle cx="69" cy="62" r="2.6" class="artf"/><circle cx="111" cy="56" r="2.6" class="artf"/>
+<circle cx="69" cy="78" r="2.6" class="artf"/><circle cx="111" cy="72" r="2.6" class="artf"/>
+<circle cx="69" cy="94" r="2.6" class="artf"/><circle cx="111" cy="88" r="2.6" class="artf"/>
+<circle cx="69" cy="110" r="2.6" class="artf"/><circle cx="111" cy="104" r="2.6" class="artf"/>
+<circle cx="69" cy="126" r="2.6" class="artf"/><circle cx="111" cy="120" r="2.6" class="artf"/>
+<circle cx="69" cy="142" r="2.6" class="artf"/><circle cx="111" cy="136" r="2.6" class="artf"/>
+<circle cx="69" cy="158" r="2.6" class="artf"/><circle cx="111" cy="152" r="2.6" class="artf"/>
+<circle cx="69" cy="174" r="2.6" class="artf"/><circle cx="111" cy="168" r="2.6" class="artf"/>
+<text x="90" y="328" text-anchor="middle" class="th">Type IV</text>
+<text x="90" y="349" text-anchor="middle" class="sm">Flow through</text>
+<text x="90" y="366" text-anchor="middle" class="sm">porous fabric</text>
+</g>
+<g transform="translate(742 0)">
+<path d="M70,18 L110,18 L110,80 L70,80 Z" class="lumen"/>
+<path d="M70,80 C20,100 20,215 72,234 L90,248 L108,234 C160,215 160,100 110,80 Z" class="sunk"/>
+<path d="M48,300 L72,232 L90,248 L78,300 Z M132,300 L108,232 L90,248 L102,300 Z" class="lumen"/>
+<path d="M70,18 L70,80 C20,100 20,215 72,234 L48,300" class="wall" stroke-width="3"/><path d="M110,18 L110,80 C160,100 160,215 108,234 L132,300" class="wall" stroke-width="3"/>
+<path d="M78,300 L90,250 L102,300" class="wall" stroke-width="3"/>
+<path d="M77,26 L103,26 L103,186 L121,292 L106,292 L92,206 L88,206 L74,292 L59,292 L77,186 Z" class="graft" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="77" y1="46" x2="103" y2="46" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="72" x2="103" y2="72" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="98" x2="103" y2="98" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="124" x2="103" y2="124" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="150" x2="103" y2="150" class="graftl" stroke-width="1.6"/>
+<line x1="77" y1="176" x2="103" y2="176" class="graftl" stroke-width="1.6"/>
+<line x1="36" y1="150" x2="14" y2="150" class="ink" stroke-width="2.5" marker-end="url(#el-a)"/>
+<line x1="144" y1="150" x2="166" y2="150" class="ink" stroke-width="2.5" marker-end="url(#el-a)"/>
+<line x1="50" y1="214" x2="34" y2="230" class="ink" stroke-width="2.5" marker-end="url(#el-a)"/>
+<line x1="130" y1="214" x2="146" y2="230" class="ink" stroke-width="2.5" marker-end="url(#el-a)"/>
+<text x="90" y="328" text-anchor="middle" class="th">Type V</text>
+<text x="90" y="349" text-anchor="middle" class="sm">Endotension: sac grows,</text>
+<text x="90" y="366" text-anchor="middle" class="sm">no leak seen</text>
+</g>
+</svg></div>
+  <figcaption>The five endoleak types. Types I and III are high-pressure leaks that are fixed promptly; type II, from lumbar or inferior mesenteric branches, is the most common and is usually watched. <span class="fig-credit">Diagram drawn for this guide. Based on White GH, Yu W, May J, et al. Endoleak as a complication of endoluminal grafting of abdominal aortic aneurysms. J Endovasc Surg. 1997;4:152-168; Chaikof EL, Blankensteijn JD, Harris PL, et al. Reporting standards for endovascular aortic aneurysm repair. J Vasc Surg. 2002;35:1048-1060. <a href="credits.html#credit-endoleak-types">Credits</a></span></figcaption>
+</figure>
+<!-- /@fig endoleak-types -->
     <div class="table-wrap"><table class="data">
       <caption>Endoleak classification</caption>
       <thead><tr><th scope="col">Type</th><th scope="col">Source</th><th scope="col">Management</th></tr></thead>
@@ -384,6 +532,7 @@
   <section class="sec" id="aortic-stent" data-title="TEVAR and complex aortic" data-bed="arterial">
     <h2>TEVAR and complex aortic repair</h2>
     <p class="sec-lede">Thoracic endovascular aortic repair places a stent graft in the descending thoracic aorta. When the aneurysm involves the visceral or renal branches, fenestrated and branched grafts (FEVAR and BEVAR) preserve flow to those vessels; the device side of these is covered in <a href="endovascular.html#evar-tevar">Endovascular</a>.</p>
+    <!-- @fig thoracic-stent-graft --><!-- /@fig thoracic-stent-graft -->
 
     <h3>Indications</h3>
     <ul>
@@ -452,6 +601,7 @@
   <section class="sec" id="aortoiliac" data-title="Aortobifemoral and extra-anatomic" data-bed="arterial">
     <h2>Aortobifemoral and extra-anatomic bypass</h2>
     <p class="sec-lede">The open operations for aortoiliac occlusive disease. Aortobifemoral bypass is the durable answer; the extra-anatomic routes avoid the abdomen in patients who cannot have it. Many aortoiliac lesions are now treated endovascularly first, so the open operation is reserved for extensive disease, failed stents, or anatomy that will not take one.</p>
+    <!-- @fig leriche-mra --><!-- /@fig leriche-mra -->
 
     <h3>Indications</h3>
     <ul>
@@ -473,6 +623,81 @@
     </ol>
 
     <h3>Extra-anatomic options</h3>
+    <!-- @fig aortoiliac-bypass-configurations -->
+<figure class="fig" id="fig-aortoiliac-bypass-configurations">
+  <div class="fig-media fig-diagram"><svg role="img" aria-label="Three schematics: a bifurcated graft from the aorta to both femoral arteries; a graft from the axillary artery down the flank to the femoral arteries; a crossover graft between the two femoral arteries." focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 472" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<g transform="translate(0 0)">
+<path d="M115,40 L115,140" class="tube-o" stroke-width="16" /><path d="M115,40 L115,140" class="tube-i" stroke-width="10" />
+<path d="M115,140 L115,176 L72,262 M115,176 L158,262" class="ghost" stroke-width="4"/>
+<path d="M72,262 L62,350" class="tube-o" stroke-width="16" /><path d="M72,262 L62,350" class="tube-i" stroke-width="10" />
+<path d="M158,262 L168,350" class="tube-o" stroke-width="16" /><path d="M158,262 L168,350" class="tube-i" stroke-width="10" />
+<path d="M115,96 L115,150 L66,300 M115,150 L164,300" class="graftl" stroke-width="7"/>
+<circle cx="66" cy="300" r="5" class="graftf"/>
+<circle cx="164" cy="300" r="5" class="graftf"/>
+<text x="115" y="384" text-anchor="middle" class="th">Aortobifemoral</text>
+<text x="115" y="405" text-anchor="middle" class="sm">Anatomic; best patency,</text>
+<text x="115" y="422" text-anchor="middle" class="sm">but needs a laparotomy</text>
+</g>
+<g transform="translate(230 0)">
+<path d="M115,20 L115,140" class="tube-o" stroke-width="16" /><path d="M115,20 L115,140" class="tube-i" stroke-width="10" />
+<path d="M109,34 C80,40 50,48 22,62" class="tube-o" stroke-width="12" /><path d="M109,34 C80,40 50,48 22,62" class="tube-i" stroke-width="7" />
+<text x="18" y="40" class="sm">axillary</text>
+<path d="M115,140 L115,176 L72,262 M115,176 L158,262" class="ghost" stroke-width="4"/>
+<path d="M72,262 L62,350" class="tube-o" stroke-width="16" /><path d="M72,262 L62,350" class="tube-i" stroke-width="10" />
+<path d="M158,262 L168,350" class="tube-o" stroke-width="16" /><path d="M158,262 L168,350" class="tube-i" stroke-width="10" />
+<path d="M30,58 C10,110 8,250 64,300" class="graftl" stroke-width="7"/>
+<path d="M64,300 C96,326 134,326 164,300" class="graftl" stroke-width="7"/>
+<circle cx="66" cy="300" r="5" class="graftf"/>
+<circle cx="164" cy="300" r="5" class="graftf"/>
+<text x="115" y="384" text-anchor="middle" class="th">Axillobifemoral</text>
+<text x="115" y="405" text-anchor="middle" class="sm">Extra-anatomic; for patients</text>
+<text x="115" y="422" text-anchor="middle" class="sm">too sick for the abdomen</text>
+</g>
+<g transform="translate(460 0)">
+<path d="M115,70 L115,176" class="tube-o" stroke-width="16" /><path d="M115,70 L115,176" class="tube-i" stroke-width="10" />
+<path d="M115,176 L72,262 L62,350" class="tube-o" stroke-width="16" /><path d="M115,176 L72,262 L62,350" class="tube-i" stroke-width="10" />
+<path d="M115,176 L158,262" class="ghost" stroke-width="4"/>
+<path d="M158,262 L168,350" class="tube-o" stroke-width="16" /><path d="M158,262 L168,350" class="tube-i" stroke-width="10" />
+<path d="M66,300 C96,262 134,262 164,300" class="graftl" stroke-width="7"/>
+<circle cx="66" cy="300" r="5" class="graftf"/>
+<circle cx="164" cy="300" r="5" class="graftf"/>
+<text x="115" y="384" text-anchor="middle" class="th">Femoral-femoral</text>
+<text x="115" y="405" text-anchor="middle" class="sm">Extra-anatomic; one iliac</text>
+<text x="115" y="422" text-anchor="middle" class="sm">blocked, the other healthy</text>
+</g>
+<path d="M40,452 L80,452" class="tube-o" stroke-width="12" /><path d="M40,452 L80,452" class="tube-i" stroke-width="7" />
+<text x="90" y="457" class="sm">Patent artery</text>
+<path d="M220,452 L260,452" class="ghost" stroke-width="4"/><text x="270" y="457" class="sm">Occluded segment</text>
+<path d="M430,452 L470,452" class="graftl" stroke-width="7"/><text x="480" y="457" class="sm">Graft</text>
+</svg></div>
+  <figcaption>Three ways to bring blood to the groins: aortobifemoral (anatomic), axillobifemoral and femoral-femoral (extra-anatomic). Schematic, not to scale. <span class="fig-credit">Diagram drawn for this guide. Based on Standard bypass configurations as described in Sidawy AN, Perler BA, eds. Rutherford&#x27;s Vascular Surgery and Endovascular Therapy. 10th ed. Elsevier; 2023. <a href="credits.html#credit-aortoiliac-bypass-configurations">Credits</a></span></figcaption>
+</figure>
+<!-- /@fig aortoiliac-bypass-configurations -->
     <dl class="terms wide">
       <div><dt>Axillobifemoral bypass</dt><dd>A ringed (externally supported) prosthetic graft from the first part of the axillary artery, through an infraclavicular incision, tunneled under the skin along the side of the chest and abdomen to the femoral artery, with a femoral-femoral limb to the other side. The axillary anastomosis is placed medially with some slack so arm abduction cannot tear it. The donor arm is the one with the higher pressure and no subclavian stenosis. Patency is lower and more variable than aortobifemoral bypass.</dd></div>
       <div><dt>Femoral-femoral crossover</dt><dd>A prosthetic graft tunneled under the skin above the pubis, from a healthy femoral artery to the opposite, ischemic one, for a unilateral iliac occlusion. The donor iliac must be free of significant disease (or stented first), otherwise both legs suffer.</dd></div>
@@ -517,6 +742,7 @@
   <section class="sec" id="bypass" data-title="Lower extremity bypass" data-bed="arterial">
     <h2>Lower extremity bypass</h2>
     <p class="sec-lede">Rerouting blood around an occluded segment with a graft, the embodiment of inflow, outflow and conduit. You choose a healthy inflow source above the disease, a target (outflow) vessel with good runoff below it, and a conduit to bridge them. Common configurations are femoropopliteal (above or below the knee) and femoro-tibial or femoro-pedal (distal) bypass for more extensive disease.</p>
+    <!-- @fig leg-bypass --><!-- /@fig leg-bypass -->
 
     <h3>Indications</h3>
     <ul>
@@ -613,6 +839,72 @@
     <p>Supine in a hybrid room or with a C-arm, the whole leg prepped (both groins for a saddle embolus), under local with sedation or general anesthesia. The common femoral bifurcation is exposed through a vertical groin incision. A below-knee popliteal exposure allows selective passage into each tibial vessel. For the arm, the brachial artery is exposed at the antecubital fossa under the bicipital aponeurosis.</p>
 
     <h3>The steps</h3>
+    <!-- @fig fogarty-embolectomy -->
+<figure class="fig" id="fig-fogarty-embolectomy">
+  <div class="fig-media fig-diagram"><svg role="img" aria-label="Three-step schematic of an artery containing clot: the catheter passes the clot, the balloon is inflated beyond it, and the clot is pulled out." focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 372" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<defs><marker id="fg-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="inkf"/></marker></defs>
+<rect x="40" y="58" width="640" height="48" class="lumen"/>
+<line x1="40" y1="58" x2="96" y2="58" class="wall" stroke-width="4"/>
+<line x1="124" y1="58" x2="680" y2="58" class="wall" stroke-width="4"/>
+<line x1="40" y1="106" x2="680" y2="106" class="wall" stroke-width="4"/>
+<path d="M330,60 C360,66 410,60 470,64 L470,102 C420,105 370,100 330,104 Z" class="clot"/>
+<path d="M110,18 C110,52 116,82 160,82 L560,82" class="dev" stroke-width="4"/>
+<ellipse cx="566" cy="82" rx="10" ry="4" class="devf"/>
+<circle cx="22" cy="32" r="13" class="inkf"/>
+<text x="22" y="37" text-anchor="middle" class="th" style="fill:var(--sheet,#fff)">1</text>
+<text x="148" y="37">Pass the deflated catheter beyond the clot</text>
+<rect x="40" y="186" width="640" height="48" class="lumen"/>
+<line x1="40" y1="186" x2="96" y2="186" class="wall" stroke-width="4"/>
+<line x1="124" y1="186" x2="680" y2="186" class="wall" stroke-width="4"/>
+<line x1="40" y1="234" x2="680" y2="234" class="wall" stroke-width="4"/>
+<path d="M330,188 C360,194 410,188 470,192 L470,230 C420,233 370,228 330,232 Z" class="clot"/>
+<path d="M110,146 C110,180 116,210 160,210 L516,210" class="dev" stroke-width="4"/>
+<ellipse cx="536" cy="210" rx="24" ry="21" class="devf" fill-opacity=".85"/>
+<circle cx="22" cy="160" r="13" class="inkf"/>
+<text x="22" y="165" text-anchor="middle" class="th" style="fill:var(--sheet,#fff)">2</text>
+<text x="148" y="165">Inflate the balloon gently, just enough to touch the wall</text>
+<rect x="40" y="314" width="640" height="48" class="lumen"/>
+<line x1="40" y1="314" x2="96" y2="314" class="wall" stroke-width="4"/>
+<line x1="124" y1="314" x2="680" y2="314" class="wall" stroke-width="4"/>
+<line x1="40" y1="362" x2="680" y2="362" class="wall" stroke-width="4"/>
+<path d="M150,318 C185,316 225,322 268,318 L268,358 C230,360 190,356 150,358 C138,346 138,330 150,318 Z" class="clot"/>
+<path d="M110,274 C110,308 116,338 160,338 L272,338" class="dev" stroke-width="4"/>
+<ellipse cx="292" cy="338" rx="24" ry="21" class="devf" fill-opacity=".85"/>
+<line x1="400" y1="338" x2="330" y2="338" class="ink" stroke-width="2.5" marker-end="url(#fg-a)"/>
+<circle cx="22" cy="288" r="13" class="inkf"/>
+<text x="22" y="293" text-anchor="middle" class="th" style="fill:var(--sheet,#fff)">3</text>
+<text x="148" y="293">Withdraw steadily: the clot comes out ahead of the balloon</text>
+<text x="110" y="126" text-anchor="middle" class="sm">arteriotomy</text>
+<text x="400" y="126" text-anchor="middle" class="sm">clot</text>
+</svg></div>
+  <figcaption>Balloon embolectomy: pass the deflated Fogarty catheter beyond the clot, inflate the balloon gently, and withdraw it to drag the clot out through the arteriotomy. <span class="fig-credit">Diagram drawn for this guide. Based on Fogarty TJ, Cranley JJ, Krause RJ, Strasser ES, Hafner CD. A method for extraction of arterial emboli and thrombi. Surg Gynecol Obstet. 1963;116:241-244. <a href="credits.html#credit-fogarty-embolectomy">Credits</a></span></figcaption>
+</figure>
+<!-- /@fig fogarty-embolectomy -->
     <ol class="steps">
       <li><strong>Heparinize.</strong> Heparin is usually started at diagnosis (commonly an 80 U/kg bolus, then an infusion per protocol) and topped up in the room.</li>
       <li><strong>Expose and control.</strong> Common, superficial femoral and profunda arteries looped.</li>
@@ -660,6 +952,7 @@
   <section class="sec" id="fasciotomy" data-title="Fasciotomy" data-bed="arterial">
     <h2>Fasciotomy <span class="tag urgent">Emergency</span></h2>
     <p class="sec-lede">Releasing the fascia to relieve compartment syndrome, the limb-threatening rise in pressure within a closed muscle compartment, classically after reperfusion of an ischemic leg, after trauma, or after a fracture. The diagnosis is clinical, with pain out of proportion and pain on passive stretch as the earliest and most reliable signs.</p>
+    <!-- @fig leg-compartments --><!-- /@fig leg-compartments -->
 
     <ul class="facts">
       <li><b>4</b><span>Compartments in the lower leg</span></li>
@@ -711,6 +1004,7 @@
     </ul>
 
     <h3>After the case</h3>
+    <!-- @fig fasciotomy-leg --><!-- /@fig fasciotomy-leg -->
     <dl class="terms">
       <div><dt>Wound care</dt><dd>Negative-pressure or moist dressings changed per the team, watching for bleeding in an anticoagulated patient.</dd></div>
       <div><dt>Muscle viability</dt><dd>A second look within one to three days if viability was in doubt, with further debridement as needed.</dd></div>
@@ -730,6 +1024,7 @@
 
     <h3>Indications</h3>
     <p>Non-salvageable ischemia or infection, intractable rest pain in a limb that cannot be reconstructed, extensive necrosis, or life-threatening sepsis from a necrotic or infected foot. The art is choosing the most distal level that will heal while preserving function.</p>
+    <!-- @fig toe-gangrene --><!-- /@fig toe-gangrene -->
     <div class="table-wrap"><table class="data">
       <caption>Amputation levels, distal to proximal</caption>
       <thead><tr><th scope="col">Level</th><th scope="col">Notes</th></tr></thead>
@@ -799,8 +1094,10 @@
   <section class="sec" id="access" data-title="Dialysis access" data-bed="both">
     <h2>Hemodialysis access</h2>
     <p class="sec-lede">Creating durable access for hemodialysis, almost always elective, and a large share of a vascular service's elective volume. The traditional principle is autogenous (fistula) before prosthetic (graft) before catheter, because a native arteriovenous fistula lasts longest and has the lowest infection rate. The 2019 KDOQI update softened "fistula first" into an individualized plan (the right access for the right patient at the right time), but the order below is still the default.</p>
+    <!-- @fig av-fistula --><!-- /@fig av-fistula -->
 
     <h3>Indications and planning</h3>
+    <!-- @fig av-graft --><!-- /@fig av-graft -->
     <ul>
       <li>Advanced chronic kidney disease approaching dialysis, ideally with a fistula placed months ahead so it can mature, or a patient already dialyzing through a catheter.</li>
       <li>Preoperative vein mapping (a vein of about 2.5 to 3 mm or more and an artery of about 2 mm or more are common thresholds), an Allen test or palmar arch assessment, and a history of prior central lines or pacemaker leads that may have narrowed the central veins.</li>
@@ -898,6 +1195,7 @@
     <p class="sec-lede">The conduit is the third leg of inflow, outflow and conduit, and for an infrainguinal bypass its quality affects patency more than almost any other choice. In the aorta and iliacs, where vessels are large and flow is high, prosthetic grafts do very well; below the knee, the patient's own vein wins.</p>
 
     <h3>The patency hierarchy below the groin</h3>
+    <!-- @fig great-saphenous-course --><!-- /@fig great-saphenous-course -->
     <ol>
       <li><strong>Single-segment great saphenous vein,</strong> ideally at least about 3 mm in diameter, from the same leg or, if needed, the other leg.</li>
       <li><strong>Alternative autologous vein:</strong> arm vein (cephalic or basilic), small saphenous vein, or a spliced composite of segments.</li>
@@ -957,6 +1255,7 @@
     </dl>
 
     <h3>Dissecting and sewing</h3>
+    <!-- @fig debakey-forceps --><!-- /@fig debakey-forceps -->
     <dl class="terms wide">
       <div><dt>DeBakey forceps</dt><dd>The standard vascular tissue forceps, with fine atraumatic serrations. Hold the adventitia, not the intima.</dd></div>
       <div><dt>Potts scissors</dt><dd>Fine scissors with angled blades (in several angles) for extending an arteriotomy along the vessel.</dd></div>
@@ -1050,12 +1349,13 @@
     </div>
     <div>
       <p>Compiled by <b>Hashim Salar</b>.</p>
+      <p>Images are credited on the <a href="credits.html">image credits</a> page.</p>
       <p>Content last reviewed October 2026.</p>
     </div>
   </div>
 </footer>
 <button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="assets/app.js?v=52dc44bc" data-index="ab6d8be0" defer></script>
+<script src="assets/app.js?v=52dc44bc" data-index="05fc4180" defer></script>
 <!-- /@footer -->
 </body>
 </html>

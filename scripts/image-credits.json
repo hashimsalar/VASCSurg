@@ -1,0 +1,157 @@
+{
+ "aortic-arch": {
+  "title": "Gray506.svg",
+  "file": "assets/img/aortic-arch.webp",
+  "width": 1131,
+  "height": 1400,
+  "author": "Henry Vandyke Carter",
+  "credit": "Henry Gray (1918) Anatomy of the Human Body (See \"Book\" section below) Bartleby.com: Gray's Anatomy, Plate 506 Own work by Rhcastilhos",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Gray506.svg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Gray506.svg",
+  "retrieved": "2026-11-05"
+ },
+ "carotid-arteries": {
+  "title": "Blausen 0170 CarotidArteries.png",
+  "file": "assets/img/carotid-arteries.webp",
+  "width": 1400,
+  "height": 1400,
+  "author": "BruceBlaus. When using this image in external sources it can be cited as: Blausen.com staff (2014). \"Medical gallery of Blausen Medical 2014\". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436.",
+  "credit": "Own work",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Blausen_0170_CarotidArteries.png",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Blausen_0170_CarotidArteries.png",
+  "retrieved": "2026-11-05"
+ },
+ "abdominal-aorta": {
+  "title": "Gray531.png",
+  "file": "assets/img/abdominal-aorta.webp",
+  "width": 600,
+  "height": 643,
+  "author": "Henry Vandyke Carter",
+  "credit": "Henry Gray (1918) Anatomy of the Human Body (See \"Book\" section below) Bartleby.com: Gray's Anatomy, Plate 531",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Gray531.png",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Gray531.png",
+  "retrieved": "2026-11-05"
+ },
+ "leg-arteries-labeled": {
+  "title": "2129ab Lower Limb Arteries Anterior Posterior.jpg",
+  "file": "assets/img/leg-arteries-labeled.webp",
+  "width": 1400,
+  "height": 1240,
+  "author": "OpenStax College",
+  "credit": "Anatomy & Physiology, Connexions Web site. http://cnx.org/content/col11496/1.6/, Jun 19, 2013.",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:2129ab_Lower_Limb_Arteries_Anterior_Posterior.jpg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/2129ab_Lower_Limb_Arteries_Anterior_Posterior.jpg",
+  "retrieved": "2026-11-05"
+ },
+ "forearm-arteries": {
+  "title": "Gray527.png",
+  "file": "assets/img/forearm-arteries.webp",
+  "width": 283,
+  "height": 900,
+  "author": "Henry Vandyke Carter",
+  "credit": "Henry Gray (1918) Anatomy of the Human Body (See \"Book\" section below) Bartleby.com: Gray's Anatomy, Plate 527",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Gray527.png",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Gray527.png",
+  "retrieved": "2026-11-05"
+ },
+ "leg-veins-labeled": {
+  "title": "2136ab Lower Limb Veins Anterior Posterior.jpg",
+  "file": "assets/img/leg-veins-labeled.webp",
+  "width": 1400,
+  "height": 1304,
+  "author": "OpenStax College",
+  "credit": "Anatomy & Physiology, Connexions Web site. http://cnx.org/content/col11496/1.6/, Jun 19, 2013.",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:2136ab_Lower_Limb_Veins_Anterior_Posterior.jpg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/2136ab_Lower_Limb_Veins_Anterior_Posterior.jpg",
+  "retrieved": "2026-11-05"
+ },
+ "critical-stenosis": {
+  "file": "assets/img/critical-stenosis.svg",
+  "width": 660,
+  "height": 380,
+  "original": true,
+  "basis": "May AG, Van de Berg L, DeWeese JA, Rob CG. Critical arterial stenosis. Surgery. 1963;54:250-259."
+ },
+ "endoleak-types": {
+  "file": "assets/img/endoleak-types.svg",
+  "width": 932,
+  "height": 378,
+  "original": true,
+  "basis": "White GH, Yu W, May J, et al. Endoleak as a complication of endoluminal grafting of abdominal aortic aneurysms. J Endovasc Surg. 1997;4:152-168; Chaikof EL, Blankensteijn JD, Harris PL, et al. Reporting standards for endovascular aortic aneurysm repair. J Vasc Surg. 2002;35:1048-1060."
+ },
+ "aortoiliac-bypass-configurations": {
+  "file": "assets/img/aortoiliac-bypass.svg",
+  "width": 690,
+  "height": 472,
+  "original": true,
+  "basis": "Standard bypass configurations as described in Sidawy AN, Perler BA, eds. Rutherford's Vascular Surgery and Endovascular Therapy. 10th ed. Elsevier; 2023."
+ },
+ "fogarty-embolectomy": {
+  "file": "assets/img/fogarty-embolectomy.svg",
+  "width": 700,
+  "height": 372,
+  "original": true,
+  "basis": "Fogarty TJ, Cranley JJ, Krause RJ, Strasser ES, Hafner CD. A method for extraction of arterial emboli and thrombi. Surg Gynecol Obstet. 1963;116:241-244."
+ },
+ "cfa-landmarks": {
+  "file": "assets/img/cfa-landmarks.svg",
+  "width": 600,
+  "height": 456,
+  "original": true,
+  "basis": "Fluoroscopic landmarks as described in Rupp SB, Vogelzang RL, Nemcek AA Jr, Yungbluth MM. Relationship of the inguinal ligament to pelvic radiographic landmarks. J Vasc Interv Radiol. 1993;4:409-413; and Sidawy AN, Perler BA, eds. Rutherford's Vascular Surgery and Endovascular Therapy. 10th ed. 2023."
+ },
+ "evar-modular-graft": {
+  "file": "assets/img/evar-modular-graft.svg",
+  "width": 620,
+  "height": 510,
+  "original": true,
+  "basis": "Generic modular bifurcated device as described in Chaikof EL, Dalman RL, Eskandari MK, et al. The Society for Vascular Surgery practice guidelines on the care of patients with an abdominal aortic aneurysm. J Vasc Surg. 2018;67:2-77."
+ },
+ "aortic-zones": {
+  "file": "assets/img/aortic-zones.svg",
+  "width": 680,
+  "height": 790,
+  "original": true,
+  "basis": "Mitchell RS, Ishimaru S, Ehrlich MP, et al. First International Summit on Thoracic Aortic Endografting. J Endovasc Ther. 2002;9 Suppl 2:II98-105; Lombardi JV, Hughes GC, Appoo JJ, et al. Society for Vascular Surgery (SVS) and Society of Thoracic Surgeons (STS) reporting standards for type B aortic dissections. J Vasc Surg. 2020;71:723-747."
+ },
+ "french-scale": {
+  "file": "assets/img/french-scale.svg",
+  "width": 820,
+  "height": 360,
+  "original": true,
+  "basis": "French (Charriere) scale: outer diameter in mm = French size / 3. Guidewire diameters are stated in inches (0.035 in = 0.89 mm; 0.018 in = 0.46 mm; 0.014 in = 0.36 mm)."
+ },
+ "guidewire-anatomy": {
+  "file": "assets/img/guidewire-anatomy.svg",
+  "width": 720,
+  "height": 300,
+  "original": true,
+  "basis": "Generic guidewire construction as described in Schneider PA. Endovascular Skills. 4th ed. CRC Press; 2019."
+ },
+ "catheter-shapes": {
+  "file": "assets/img/catheter-shapes.svg",
+  "width": 846,
+  "height": 356,
+  "original": true,
+  "basis": "Common angiographic catheter tip profiles (pigtail, Omni Flush, Berenstein, Vertebral, Cobra, Simmons, SOS Omni) as shown in manufacturer catalogs, drawn as generic outlines."
+ },
+ "reentry": {
+  "file": "assets/img/reentry.svg",
+  "width": 720,
+  "height": 236,
+  "original": true,
+  "basis": "Subintimal angioplasty as described in Bolia A, Miles KA, Brennan J, Bell PR. Percutaneous transluminal angioplasty of occlusions of the femoral and popliteal arteries by subintimal dissection. Cardiovasc Intervent Radiol. 1990;13:357-363."
+ }
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846 356" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<g transform="translate(34 20)"><path d="M0,250 L0,96 C0,52 52,44 52,80 C52,110 18,112 16,88 C15,74 28,68 36,76" class="dev" stroke-width="6"/></g>
+<text x="60" y="300" text-anchor="middle" class="th sm">Pigtail</text>
+<text x="60" y="318" text-anchor="middle" class="sm">flush</text>
+<g transform="translate(152 20)"><path d="M0,250 L0,110 C0,60 56,52 60,96 C62,120 44,132 34,118" class="dev" stroke-width="6"/></g>
+<text x="178" y="300" text-anchor="middle" class="th sm">Omni Flush</text>
+<text x="178" y="318" text-anchor="middle" class="sm">flush</text>
+<text x="178" y="335" text-anchor="middle" class="sm">reverse curve</text>
+<g transform="translate(270 20)"><path d="M0,250 L0,96 L22,64" class="dev" stroke-width="6"/></g>
+<text x="296" y="300" text-anchor="middle" class="th sm">Berenstein</text>
+<text x="296" y="318" text-anchor="middle" class="sm">short angle</text>
+<g transform="translate(388 20)"><path d="M0,250 L0,104 C0,90 4,84 14,72 L34,52" class="dev" stroke-width="6"/></g>
+<text x="414" y="300" text-anchor="middle" class="th sm">Vertebral</text>
+<text x="414" y="318" text-anchor="middle" class="sm">slight angle</text>
+<g transform="translate(506 20)"><path d="M0,250 L0,140 C0,100 30,82 54,100 L70,124" class="dev" stroke-width="6"/></g>
+<text x="532" y="300" text-anchor="middle" class="th sm">Cobra</text>
+<text x="532" y="318" text-anchor="middle" class="sm">double curve</text>
+<text x="532" y="335" text-anchor="middle" class="sm">downgoing</text>
+<g transform="translate(624 20)"><path d="M0,250 L0,96 C0,30 74,30 74,96 L74,170" class="dev" stroke-width="6"/></g>
+<text x="650" y="300" text-anchor="middle" class="th sm">Simmons</text>
+<text x="650" y="318" text-anchor="middle" class="sm">reverse curve</text>
+<text x="650" y="335" text-anchor="middle" class="sm">formed in aorta</text>
+<g transform="translate(742 20)"><path d="M0,250 L0,118 C0,72 54,70 56,102 C57,120 46,128 40,118" class="dev" stroke-width="6"/></g>
+<text x="768" y="300" text-anchor="middle" class="th sm">SOS Omni</text>
+<text x="768" y="318" text-anchor="middle" class="sm">small reverse</text>
+<text x="768" y="335" text-anchor="middle" class="sm">curve</text>
+<circle cx="34" cy="110" r="2.2" class="sheet"/>
+<circle cx="34" cy="128" r="2.2" class="sheet"/>
+<circle cx="34" cy="146" r="2.2" class="sheet"/>
+</svg>

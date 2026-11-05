@@ -1,0 +1,725 @@
+[
+ {
+  "id": "aortic-arch",
+  "page": "foundations.html",
+  "section": "anatomy",
+  "h3": "The aorta and the arch",
+  "commons": "Gray506.svg",
+  "caption": "The arch of the aorta and its three branches: brachiocephalic (innominate) trunk, left common carotid and left subclavian.",
+  "alt": "Anatomical drawing of the aortic arch giving off the brachiocephalic trunk, left common carotid and left subclavian arteries."
+ },
+ {
+  "id": "carotid-arteries",
+  "page": "foundations.html",
+  "section": "anatomy",
+  "h3": "The carotid bifurcation",
+  "commons": "Blausen 0170 CarotidArteries.png",
+  "caption": "The carotid arteries in the neck. The common carotid divides into the internal carotid (no branches in the neck) and the external carotid (branches in the neck).",
+  "alt": "Illustration of the head and neck showing the common carotid artery dividing into internal and external carotid arteries.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "abdominal-aorta",
+  "page": "foundations.html",
+  "section": "anatomy",
+  "h3": "The visceral aorta",
+  "commons": "Gray531.png",
+  "caption": "The abdominal aorta and its branches: celiac trunk, superior mesenteric, renal and inferior mesenteric arteries, ending at the iliac bifurcation.",
+  "alt": "Gray's Anatomy drawing of the abdominal aorta with its visceral and renal branches."
+ },
+ {
+  "id": "leg-arteries-labeled",
+  "page": "foundations.html",
+  "section": "anatomy",
+  "h3": "The lower extremity, in order",
+  "commons": "2129ab Lower Limb Arteries Anterior Posterior.jpg",
+  "caption": "Arteries of the lower limb, anterior and posterior views, from the external iliac to the pedal arch.",
+  "alt": "Labeled anterior and posterior illustrations of the arteries of the leg from the external iliac artery to the foot."
+ },
+ {
+  "id": "forearm-arteries",
+  "page": "foundations.html",
+  "section": "anatomy",
+  "h3": "The upper extremity, in order",
+  "commons": "Gray527.png",
+  "caption": "Arteries of the forearm and hand. The brachial artery divides into the radial and ulnar arteries, which join in the palmar arches.",
+  "alt": "Gray's Anatomy drawing of the forearm and palm showing the radial and ulnar arteries and the superficial palmar arch."
+ },
+ {
+  "id": "leg-veins-labeled",
+  "page": "foundations.html",
+  "section": "venous",
+  "h3": "Deep veins by name",
+  "commons": "2136ab Lower Limb Veins Anterior Posterior.jpg",
+  "caption": "Veins of the lower limb, anterior and posterior views, showing the deep system and the great and small saphenous veins.",
+  "alt": "Labeled anterior and posterior illustrations of the deep and superficial veins of the leg."
+ },
+ {
+  "id": "saphenofemoral-junction",
+  "page": "foundations.html",
+  "section": "venous",
+  "h3": "Superficial veins and their nerves",
+  "commons": "Gray584.png",
+  "caption": "The great saphenous vein and its tributaries joining the common femoral vein at the saphenofemoral junction.",
+  "alt": "Gray's Anatomy drawing of the upper thigh showing the great saphenous vein and its superficial tributaries draining into the femoral vein."
+ },
+ {
+  "id": "iliac-vessels",
+  "page": "foundations.html",
+  "section": "venous",
+  "h3": "May-Thurner anatomy",
+  "commons": "Gray586.png",
+  "caption": "The common iliac arteries and veins. The right common iliac artery crosses in front of the left common iliac vein, the site of May-Thurner compression.",
+  "alt": "Gray's Anatomy drawing of the aortic and caval bifurcations with the right common iliac artery crossing the left common iliac vein."
+ },
+ {
+  "id": "circle-of-willis",
+  "page": "foundations.html",
+  "section": "collaterals",
+  "commons": "Circle of Willis en.svg",
+  "caption": "The circle of Willis, the main collateral pathway between the carotid and vertebrobasilar circulations.",
+  "alt": "Schematic of the circle of Willis showing the anterior, middle and posterior cerebral arteries joined by communicating arteries."
+ },
+ {
+  "id": "critical-stenosis",
+  "page": "foundations.html",
+  "section": "hemodynamics",
+  "h3": "Critical stenosis",
+  "original": "critical-stenosis.svg",
+  "basis": "May AG, Van de Berg L, DeWeese JA, Rob CG. Critical arterial stenosis. Surgery. 1963;54:250-259.",
+  "caption": "Pressure and flow fall off steeply only once a stenosis passes about 50 percent diameter (75 percent cross-sectional area) reduction, and the threshold drops as flow rises with exercise.",
+  "alt": "Line graph: as percent diameter stenosis rises, flow stays flat then drops sharply past about 50 percent; the curve for high flow during exercise drops earlier."
+ },
+ {
+  "id": "leg-arteries-pulses",
+  "page": "foundations.html",
+  "section": "exam",
+  "h3": "The pulse exam",
+  "commons": "Blausen 0607 LegArteries.png",
+  "caption": "Arteries of the leg. Pulses are felt where an artery runs over bone: the femoral at the groin, the popliteal behind the knee, the dorsalis pedis on the dorsum of the foot and the posterior tibial behind the medial malleolus.",
+  "alt": "Illustration of the leg arteries from the femoral artery to the foot.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "abi-test",
+  "page": "foundations.html",
+  "section": "testing",
+  "h3": "How to measure an ABI",
+  "commons": "Pad abi ENG.svg",
+  "caption": "The ankle-brachial index compares the systolic pressure at the ankle with the higher of the two arm pressures.",
+  "alt": "Illustration of blood pressure cuffs on the arm and ankle with a Doppler probe, showing how the ankle-brachial index is measured."
+ },
+ {
+  "id": "carotid-spectral-doppler",
+  "page": "foundations.html",
+  "section": "testing",
+  "h3": "Duplex criteria you will hear quoted",
+  "commons": "Right proximal common carotid artery normal spectral flow.jpg",
+  "caption": "Duplex ultrasound of a normal common carotid artery: the B-mode image with a color box, and the spectral Doppler waveform from which peak systolic and end-diastolic velocities are measured.",
+  "alt": "Duplex ultrasound screen showing a carotid artery and its spectral Doppler waveform with velocity measurements."
+ },
+ {
+  "id": "cta-volume-rendered",
+  "page": "foundations.html",
+  "section": "imaging",
+  "commons": "Volume rendered CT scan of abdominal and pelvic blood vessels (smaller).gif",
+  "caption": "Volume-rendered CT angiogram of the abdominal and pelvic arteries.",
+  "alt": "Three-dimensional CT reconstruction of the abdominal aorta, its visceral branches and the iliac arteries."
+ },
+ {
+  "id": "coagulation-cascade",
+  "page": "foundations.html",
+  "section": "anticoag",
+  "commons": "Coagulation full.svg",
+  "caption": "The coagulation cascade. Heparin acts through antithrombin on thrombin and factor Xa; the direct oral anticoagulants block factor Xa or thrombin directly.",
+  "alt": "Diagram of the intrinsic, extrinsic and common coagulation pathways converging on thrombin and fibrin."
+ },
+ {
+  "id": "atherosclerosis-complications",
+  "page": "foundations.html",
+  "section": "medical",
+  "commons": "Late complications of atherosclerosis.PNG",
+  "caption": "Late complications of atherosclerosis. The same disease drives stroke, myocardial infarction and limb events, which is why best medical therapy is systemic.",
+  "alt": "Diagram of the progression of atherosclerotic plaque to stenosis, rupture and thrombosis."
+ },
+ {
+  "id": "ecg-12-lead",
+  "page": "foundations.html",
+  "section": "cardiac-risk",
+  "commons": "Normal 12 lead EKG.jpg",
+  "caption": "A normal 12-lead electrocardiogram, part of the preoperative baseline for most patients having major vascular surgery.",
+  "alt": "Printout of a normal 12-lead ECG."
+ },
+ {
+  "id": "pad-illustration",
+  "page": "presentations.html",
+  "section": "claudication",
+  "commons": "Blausen Peripheral Arterial Disease eng.svg",
+  "caption": "Peripheral artery disease: atherosclerotic plaque narrows the leg arteries and limits the rise in flow that exercising muscle needs.",
+  "alt": "Illustration of the legs with a normal artery compared with an artery narrowed by plaque.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "arterial-ulcer",
+  "page": "presentations.html",
+  "section": "clti",
+  "commons": "Arterial ulcer peripheral vascular disease.jpg",
+  "caption": "An arterial ulcer on the dorsum of the foot in a patient with severe peripheral artery disease: punched-out edges and a pale base.",
+  "alt": "Photograph of a small punched-out ulcer on the top of the foot."
+ },
+ {
+  "id": "acute-arterial-thrombosis",
+  "page": "presentations.html",
+  "section": "ali",
+  "commons": "Arterial thrombosis causing cyanosis.jpg",
+  "caption": "Cyanosis of the right foot distal to an acute arterial thrombosis of the leg.",
+  "alt": "Photograph of a foot with dusky blue discoloration of the toes and forefoot."
+ },
+ {
+  "id": "aaa-ct",
+  "page": "presentations.html",
+  "section": "aaa",
+  "commons": "Contrast-enhanced CT scan demonstrating abdominal aortic aneurysm.jpg",
+  "caption": "Contrast-enhanced CT showing an abdominal aortic aneurysm measuring 4.8 by 3.8 cm, with mural thrombus around the enhancing lumen.",
+  "alt": "Axial CT slice of the abdomen showing an enlarged aorta with a crescent of thrombus around the contrast-filled lumen."
+ },
+ {
+  "id": "aaa-ultrasound",
+  "page": "presentations.html",
+  "section": "aaa",
+  "h3": "Screening and surveillance",
+  "commons": "Ultrasonography of abdominal aortic aneurysm in sagittal plane, annotated.jpg",
+  "caption": "Screening ultrasound of an abdominal aortic aneurysm in the sagittal plane, with the diameter measured.",
+  "alt": "Ultrasound image of a dilated abdominal aorta in long axis with calipers across it."
+ },
+ {
+  "id": "carotid-stenosis-ct",
+  "page": "presentations.html",
+  "section": "carotid",
+  "commons": "70PerBlockedRtCarotidACT.png",
+  "caption": "CT angiogram of a 70 percent stenosis of the right internal carotid artery.",
+  "alt": "CT angiogram image of the neck showing narrowing of the right internal carotid artery."
+ },
+ {
+  "id": "mesenteric-ischemia-ct",
+  "page": "presentations.html",
+  "section": "mesenteric",
+  "h3": "Acute mesenteric ischemia",
+  "commons": "Mesenteriale Ischaemie mit Pneumatosis intestinalis und Gas in Mesenterial- und Lebervenen 80M - CT - 001.jpg",
+  "caption": "CT of late acute mesenteric ischemia: gas in the bowel wall (pneumatosis intestinalis) and in the mesenteric and portal veins.",
+  "alt": "CT images of the abdomen showing gas within the bowel wall and in the mesenteric and liver veins."
+ },
+ {
+  "id": "dissection-classification",
+  "page": "presentations.html",
+  "section": "dissection",
+  "commons": "Disekce klasifikace DeBakey a Stanford.png",
+  "caption": "The DeBakey and Stanford classifications of aortic dissection. Stanford type A involves the ascending aorta; type B does not.",
+  "alt": "Diagram of aortic dissection types: DeBakey I, II and III alongside Stanford A and B."
+ },
+ {
+  "id": "type-b-dissection-ct",
+  "page": "presentations.html",
+  "section": "dissection",
+  "h3": "Initial medical management",
+  "commons": "Descending (Type B Stanford) Aortic Dissection.PNG",
+  "caption": "Axial and coronal CT with contrast showing a Stanford type B dissection of the descending thoracic aorta, with true and false lumens separated by the intimal flap.",
+  "alt": "Axial and coronal contrast CT images showing a flap dividing the descending thoracic aorta into two lumens."
+ },
+ {
+  "id": "dvt-leg",
+  "page": "presentations.html",
+  "section": "vte",
+  "commons": "Deep vein thrombosis of the right leg.jpg",
+  "caption": "Deep vein thrombosis of the right leg: swelling and redness of the whole leg.",
+  "alt": "Photograph of a patient's legs with the right leg visibly swollen and red."
+ },
+ {
+  "id": "dvt-ultrasound",
+  "page": "presentations.html",
+  "section": "vte",
+  "h3": "Treatment",
+  "commons": "Ultrasonography of deep vein thrombosis of the femoral vein -annotated.jpg",
+  "caption": "Duplex ultrasound of femoral vein thrombosis: echogenic clot in a vein that does not compress, with no color flow around it.",
+  "alt": "Annotated ultrasound image of a femoral vein filled with thrombus beside the femoral artery."
+ },
+ {
+  "id": "venous-insufficiency-skin",
+  "page": "presentations.html",
+  "section": "cvi",
+  "commons": "Chronicvenousinsufficiency.jpg",
+  "caption": "Skin changes of long-standing venous hypertension: hemosiderin staining and lipodermatosclerosis of the gaiter area.",
+  "alt": "Photograph of lower legs with brown discoloration and thickened skin above the ankles."
+ },
+ {
+  "id": "venous-ulcer",
+  "page": "presentations.html",
+  "section": "cvi",
+  "h3": "Venous or arterial ulcer?",
+  "commons": "Venous ulcer dorsal leg.jpg",
+  "caption": "A chronic venous ulcer: shallow, with irregular edges and a granulating base, in the gaiter area.",
+  "alt": "Photograph of a shallow irregular ulcer on the lower leg."
+ },
+ {
+  "id": "neuropathic-heel-ulcer",
+  "page": "presentations.html",
+  "section": "diabetic-foot",
+  "commons": "Neuropathic heel ulcer diabetic.jpg",
+  "caption": "A neuropathic heel ulcer in a patient with diabetes and profound peripheral neuropathy, which began as an unnoticed blister.",
+  "alt": "Photograph of an ulcer on the plantar surface of the heel."
+ },
+ {
+  "id": "thoracic-outlet",
+  "page": "presentations.html",
+  "section": "other-pres",
+  "commons": "Thoracic Outlet Syndrome.png",
+  "caption": "Thoracic outlet syndrome: the brachial plexus, subclavian artery and subclavian vein can be compressed between the clavicle, first rib and scalene muscles.",
+  "alt": "Illustration of the thoracic outlet showing nerves and vessels passing between the clavicle and first rib."
+ },
+ {
+  "id": "cea-illustration",
+  "page": "operations.html",
+  "section": "cea",
+  "commons": "Blausen 0172 CarotidEndarterectomy.png",
+  "caption": "Carotid endarterectomy: the artery is opened over the bifurcation and the plaque is removed.",
+  "alt": "Illustration of an opened carotid artery with the plaque being lifted out.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "carotid-plaque",
+  "page": "operations.html",
+  "section": "cea",
+  "h3": "The steps",
+  "commons": "Carotid Plaque.jpg",
+  "caption": "An endarterectomy specimen: plaque removed in one piece from the common carotid bifurcation and the origin of the internal carotid artery.",
+  "alt": "Photograph of a carotid plaque specimen shaped like the carotid bifurcation."
+ },
+ {
+  "id": "open-aaa-model",
+  "page": "operations.html",
+  "section": "open-aaa",
+  "commons": "Open infrarenal aortic repair model.jpg",
+  "caption": "Open infrarenal aortic repair practiced on a training model, with an infrarenal aortic cross-clamp in place.",
+  "alt": "Photograph of a surgical training model of the aorta with a clamp across it below the renal arteries."
+ },
+ {
+  "id": "evar-illustration",
+  "page": "operations.html",
+  "section": "evar",
+  "commons": "Aneurysm endovascular.jpg",
+  "caption": "Endovascular aneurysm repair: a stent graft is delivered from the femoral arteries and excludes the aneurysm sac from the circulation.",
+  "alt": "Illustration of a catheter delivering a stent graft into an abdominal aortic aneurysm through the femoral artery."
+ },
+ {
+  "id": "endoleak-types",
+  "page": "operations.html",
+  "section": "evar",
+  "h3": "Endoleaks, the defining complication",
+  "original": "endoleak-types.svg",
+  "basis": "White GH, Yu W, May J, et al. Endoleak as a complication of endoluminal grafting of abdominal aortic aneurysms. J Endovasc Surg. 1997;4:152-168; Chaikof EL, Blankensteijn JD, Harris PL, et al. Reporting standards for endovascular aortic aneurysm repair. J Vasc Surg. 2002;35:1048-1060.",
+  "caption": "The five endoleak types. Types I and III are high-pressure leaks that are fixed promptly; type II, from lumbar or inferior mesenteric branches, is the most common and is usually watched.",
+  "alt": "Five schematic stent grafts in an aneurysm, each showing where blood enters the sac: Ia and Ib at the seal zones, II from a branch, III at a junction or fabric tear, IV through the fabric, V with no visible leak."
+ },
+ {
+  "id": "thoracic-stent-graft",
+  "page": "operations.html",
+  "section": "aortic-stent",
+  "commons": "TAstent.PNG",
+  "caption": "A stent graft placed in the descending thoracic aorta to treat an aneurysm (TEVAR).",
+  "alt": "CT reconstruction of a thoracic aortic stent graft."
+ },
+ {
+  "id": "leriche-mra",
+  "page": "operations.html",
+  "section": "aortoiliac",
+  "commons": "Leriche Syndrom 76w - MRA.jpg",
+  "caption": "Magnetic resonance angiogram of aortoiliac occlusive disease (Leriche syndrome) with collateral flow around the occluded segment, the classic indication for aortobifemoral bypass.",
+  "alt": "MR angiogram showing occlusion of the distal aorta and iliac arteries with collateral vessels reconstituting the femoral arteries."
+ },
+ {
+  "id": "aortoiliac-bypass-configurations",
+  "page": "operations.html",
+  "section": "aortoiliac",
+  "h3": "Extra-anatomic options",
+  "original": "aortoiliac-bypass.svg",
+  "basis": "Standard bypass configurations as described in Sidawy AN, Perler BA, eds. Rutherford's Vascular Surgery and Endovascular Therapy. 10th ed. Elsevier; 2023.",
+  "caption": "Three ways to bring blood to the groins: aortobifemoral (anatomic), axillobifemoral and femoral-femoral (extra-anatomic). Schematic, not to scale.",
+  "alt": "Three schematics: a bifurcated graft from the aorta to both femoral arteries; a graft from the axillary artery down the flank to the femoral arteries; a crossover graft between the two femoral arteries."
+ },
+ {
+  "id": "leg-bypass",
+  "page": "operations.html",
+  "section": "bypass",
+  "commons": "3D Medical Animation Vascular Bypass Grafting.jpg",
+  "caption": "A lower extremity bypass graft carrying blood around an occluded segment of the leg arteries.",
+  "alt": "3D rendering of a leg with a bypass graft running from above to below a blocked artery."
+ },
+ {
+  "id": "fogarty-embolectomy",
+  "page": "operations.html",
+  "section": "embolectomy",
+  "h3": "The steps",
+  "original": "fogarty-embolectomy.svg",
+  "basis": "Fogarty TJ, Cranley JJ, Krause RJ, Strasser ES, Hafner CD. A method for extraction of arterial emboli and thrombi. Surg Gynecol Obstet. 1963;116:241-244.",
+  "caption": "Balloon embolectomy: pass the deflated Fogarty catheter beyond the clot, inflate the balloon gently, and withdraw it to drag the clot out through the arteriotomy.",
+  "alt": "Three-step schematic of an artery containing clot: the catheter passes the clot, the balloon is inflated beyond it, and the clot is pulled out."
+ },
+ {
+  "id": "leg-compartments",
+  "page": "operations.html",
+  "section": "fasciotomy",
+  "commons": "Gray440 - Fascial compartments of leg.svg",
+  "caption": "Cross-section through the middle of the leg showing its four compartments: anterior, lateral, superficial posterior and deep posterior.",
+  "alt": "Cross-sectional drawing of the lower leg with the four fascial compartments colored."
+ },
+ {
+  "id": "fasciotomy-leg",
+  "page": "operations.html",
+  "section": "fasciotomy",
+  "h3": "After the case",
+  "commons": "Fasciotomy leg.jpg",
+  "caption": "A leg fasciotomy wound after the swelling has settled, covered with a split-thickness skin graft.",
+  "alt": "Photograph of a long lower-leg wound covered with a meshed skin graft."
+ },
+ {
+  "id": "toe-gangrene",
+  "page": "operations.html",
+  "section": "amputation",
+  "h3": "Indications",
+  "commons": "Gangrene toes (1).jpg",
+  "caption": "Dry gangrene of the toes from peripheral vascular disease and diabetes.",
+  "alt": "Photograph of a foot with black, mummified toes."
+ },
+ {
+  "id": "av-fistula",
+  "page": "operations.html",
+  "section": "access",
+  "commons": "Blausen 0049 ArteriovenousFistula.png",
+  "caption": "A radiocephalic arteriovenous fistula: the cephalic vein is joined to the radial artery at the wrist and matures into a cannulation site.",
+  "alt": "Illustration of a forearm with the radial artery connected directly to the cephalic vein.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "av-graft",
+  "page": "operations.html",
+  "section": "access",
+  "h3": "Indications and planning",
+  "commons": "Blausen 0050 ArteriovenousGraft.png",
+  "caption": "An arteriovenous graft: a prosthetic tube connects an artery to a vein when the native veins are not suitable for a fistula.",
+  "alt": "Illustration of a forearm with a looped synthetic graft connecting an artery and a vein.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "great-saphenous-course",
+  "page": "operations.html",
+  "section": "conduits",
+  "h3": "The patency hierarchy below the groin",
+  "commons": "Great saphenous vein.png",
+  "caption": "The course of the great saphenous vein from the medial ankle to the groin, the conduit of choice for infrainguinal bypass.",
+  "alt": "Drawing of the leg showing the great saphenous vein running up the medial side."
+ },
+ {
+  "id": "debakey-forceps",
+  "page": "operations.html",
+  "section": "instruments",
+  "h3": "Dissecting and sewing",
+  "commons": "Debakey forceps.jpg",
+  "caption": "DeBakey forceps, the atraumatic forceps used to handle arteries without crushing the intima.",
+  "alt": "Photograph of a pair of long, straight DeBakey tissue forceps."
+ },
+ {
+  "id": "femoral-access-procedure",
+  "page": "endovascular.html",
+  "section": "access",
+  "commons": "Femoral endovascular procedure.jpg",
+  "caption": "A femoral endovascular procedure under way, with a sheath in the common femoral artery.",
+  "alt": "Photograph of the groin during an endovascular procedure with a sheath and wires in place."
+ },
+ {
+  "id": "cfa-landmarks",
+  "page": "endovascular.html",
+  "section": "access",
+  "h3": "The common femoral artery, the default door",
+  "original": "cfa-landmarks.svg",
+  "basis": "Fluoroscopic landmarks as described in Rupp SB, Vogelzang RL, Nemcek AA Jr, Yungbluth MM. Relationship of the inguinal ligament to pelvic radiographic landmarks. J Vasc Interv Radiol. 1993;4:409-413; and Sidawy AN, Perler BA, eds. Rutherford's Vascular Surgery and Endovascular Therapy. 10th ed. 2023.",
+  "caption": "Where to puncture: the common femoral artery over the middle of the femoral head, below the inguinal ligament and above the bifurcation. Too high risks retroperitoneal bleeding; too low risks pseudoaneurysm.",
+  "alt": "Schematic of the femoral head with the inguinal ligament above, the common femoral artery crossing the head, and the bifurcation below, with the target zone marked over the middle of the femoral head."
+ },
+ {
+  "id": "seldinger-wire",
+  "page": "endovascular.html",
+  "section": "wires-catheters",
+  "commons": "Catheter Schema 2 pose du fil.svg",
+  "caption": "The Seldinger technique: once the needle is in the lumen, a guidewire is passed through it, the needle is removed, and sheaths and catheters follow over the wire.",
+  "alt": "Schematic of a needle in a blood vessel with a guidewire advanced through it into the lumen."
+ },
+ {
+  "id": "selective-angiography",
+  "page": "endovascular.html",
+  "section": "angiography",
+  "commons": "Catheterization selective angiography.JPG",
+  "caption": "Selective catheter angiography of the abdominal aorta and its branches.",
+  "alt": "Angiogram showing contrast filling the aorta and branch arteries through a catheter."
+ },
+ {
+  "id": "ivus-coronary",
+  "page": "endovascular.html",
+  "section": "ivus",
+  "h3": "Intravascular ultrasound (IVUS)",
+  "commons": "IVUS of CAD.png",
+  "caption": "An intravascular ultrasound cross-section (left) with the lumen and vessel wall traced (right). The same measurements size balloons and stents in peripheral arteries and veins.",
+  "alt": "Grayscale intravascular ultrasound cross-section of an artery beside a color-coded version outlining lumen and plaque."
+ },
+ {
+  "id": "hybrid-or",
+  "page": "endovascular.html",
+  "section": "radiation-contrast",
+  "commons": "Hybrid operating theatre gemelli rome.jpg",
+  "caption": "A hybrid operating room for cardiovascular surgery, with a fixed C-arm imaging system over the operating table.",
+  "alt": "Photograph of an operating room with a large ceiling-mounted X-ray C-arm and monitors around the table."
+ },
+ {
+  "id": "ct-angiography",
+  "page": "endovascular.html",
+  "section": "planning",
+  "h3": "Read the imaging as inflow, outflow and target",
+  "commons": "Abdominal CT angiography.jpg",
+  "caption": "Abdominal CT angiography, the usual planning study: it shows inflow, calcification, access vessel size and the lesion before anyone is in the room.",
+  "alt": "CT angiography images of the abdominal aorta and its branches."
+ },
+ {
+  "id": "angioplasty-scheme",
+  "page": "endovascular.html",
+  "section": "toolkit",
+  "h3": "Balloon angioplasty",
+  "commons": "Angioplasty-scheme.svg",
+  "caption": "Balloon angioplasty: the balloon is positioned across the stenosis over a wire and inflated to widen the lumen.",
+  "alt": "Schematic of a balloon catheter crossing a narrowed artery, then inflating to open it."
+ },
+ {
+  "id": "balloon-stent",
+  "page": "endovascular.html",
+  "section": "toolkit",
+  "h3": "Stents",
+  "commons": "Angioplasty - Balloon Inflated with Stent.png",
+  "caption": "A balloon-expandable stent deployed by inflating the balloon it is mounted on.",
+  "alt": "Illustration of an inflated balloon expanding a metal stent inside an artery."
+ },
+ {
+  "id": "atherectomy",
+  "page": "endovascular.html",
+  "section": "toolkit",
+  "h3": "Atherectomy",
+  "commons": "Blausen Atherectomy eng.svg",
+  "caption": "Atherectomy removes or modifies plaque, rather than only stretching it, before balloon angioplasty or stenting.",
+  "alt": "Illustration of an atherectomy catheter cutting plaque from inside an artery.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "evar-ct",
+  "page": "endovascular.html",
+  "section": "evar-tevar",
+  "commons": "Endovasc.jpg",
+  "caption": "CT of an abdominal aortic endoprosthesis after endovascular aneurysm repair.",
+  "alt": "CT reconstruction of a bifurcated stent graft in the abdominal aorta."
+ },
+ {
+  "id": "aaa-neck-anatomy",
+  "page": "endovascular.html",
+  "section": "evar-tevar",
+  "h3": "What makes an aneurysm suitable",
+  "commons": "AAA-X4.jpg",
+  "caption": "Aneurysm neck anatomy. A very short neck between the renal arteries and the start of the aneurysm leaves too little seal for a standard EVAR device.",
+  "alt": "Diagrams of abdominal aortic aneurysms with different neck lengths below the renal arteries."
+ },
+ {
+  "id": "evar-modular-graft",
+  "page": "endovascular.html",
+  "section": "evar-tevar",
+  "h3": "How EVAR goes, in brief",
+  "original": "evar-modular-graft.svg",
+  "basis": "Generic modular bifurcated device as described in Chaikof EL, Dalman RL, Eskandari MK, et al. The Society for Vascular Surgery practice guidelines on the care of patients with an abdominal aortic aneurysm. J Vasc Surg. 2018;67:2-77.",
+  "caption": "A modular bifurcated stent graft: the main body seals in the infrarenal neck, the contralateral gate is cannulated from the other groin, and limbs seal in the common iliac arteries. Schematic, not to scale.",
+  "alt": "Schematic of an aortic aneurysm with a bifurcated stent graft: main body below the renal arteries, ipsilateral limb, and contralateral limb docked into the gate."
+ },
+ {
+  "id": "aortic-zones",
+  "page": "endovascular.html",
+  "section": "aortic-zones",
+  "h3": "The Ishimaru arch zones",
+  "original": "aortic-zones.svg",
+  "basis": "Mitchell RS, Ishimaru S, Ehrlich MP, et al. First International Summit on Thoracic Aortic Endografting. J Endovasc Ther. 2002;9 Suppl 2:II98-105; Lombardi JV, Hughes GC, Appoo JJ, et al. Society for Vascular Surgery (SVS) and Society of Thoracic Surgeons (STS) reporting standards for type B aortic dissections. J Vasc Surg. 2020;71:723-747.",
+  "caption": "Aortic landing zones. Zones 0 to 4 are the Ishimaru arch zones; the SVS/STS map continues them down to zone 11 in the external iliac arteries. Schematic, not to scale.",
+  "alt": "Schematic of the aorta from the ascending aorta to the iliac arteries divided into numbered zones 0 to 11 at the branch origins."
+ },
+ {
+  "id": "fenestrated-branched",
+  "page": "endovascular.html",
+  "section": "complex",
+  "commons": "ArtistsFenBranchInSituCropped.jpg",
+  "caption": "Artist's rendering of a fenestrated and branched endograft in the visceral aorta, with bridging stents into the visceral and renal arteries.",
+  "alt": "Illustration of an aortic stent graft with side branches stented into the celiac, superior mesenteric and renal arteries."
+ },
+ {
+  "id": "thrombolysis-angiogram",
+  "page": "endovascular.html",
+  "section": "thrombolysis",
+  "commons": "Angiograph before and after thrombolytic therapy in a case of thrombosis on the hand.png",
+  "caption": "Angiograms of the hand before and after thrombolytic therapy, showing restored flow in previously occluded arteries.",
+  "alt": "Two angiograms of the hand side by side: missing arteries before treatment and filled arteries after."
+ },
+ {
+  "id": "pseudoaneurysm-coiling",
+  "page": "endovascular.html",
+  "section": "embolization",
+  "h3": "Embolization",
+  "commons": "Aneurysma spurium Arteria profunda femoris - 80jw - DSA Coiling - 001.jpg",
+  "caption": "Digital subtraction angiography of a profunda femoris pseudoaneurysm treated by coil embolization.",
+  "alt": "Angiogram images of a pseudoaneurysm off the deep femoral artery before and after it is packed with coils."
+ },
+ {
+  "id": "ivc-filter-xray",
+  "page": "endovascular.html",
+  "section": "embolization",
+  "h3": "Inferior vena cava filters",
+  "commons": "IVCFilterMark.png",
+  "caption": "An inferior vena cava filter on imaging, positioned below the renal veins.",
+  "alt": "X-ray image of the abdomen with a cone-shaped metal filter in the inferior vena cava."
+ },
+ {
+  "id": "radial-pseudoaneurysm",
+  "page": "endovascular.html",
+  "section": "closure-complications",
+  "h3": "Access-site complications",
+  "commons": "Radial artery pseudaneurysm 20180607b.jpg",
+  "caption": "A radial artery pseudoaneurysm after repeated arterial punctures. Femoral pseudoaneurysms after catheterization present the same way, as a pulsatile mass at the puncture site.",
+  "alt": "Photograph of a swelling over the radial artery at the wrist."
+ },
+ {
+  "id": "cath-lab",
+  "page": "endovascular.html",
+  "section": "peri-procedure",
+  "commons": "Herzkatheterlabor modern.jpeg",
+  "caption": "A modern catheterization laboratory, where many diagnostic and therapeutic angiograms are done.",
+  "alt": "Photograph of a catheterization lab with an X-ray C-arm, procedure table and monitors."
+ },
+ {
+  "id": "french-scale",
+  "page": "devices.html",
+  "section": "basics",
+  "h3": "The compatibility chain",
+  "original": "french-scale.svg",
+  "basis": "French (Charriere) scale: outer diameter in mm = French size / 3. Guidewire diameters are stated in inches (0.035 in = 0.89 mm; 0.018 in = 0.46 mm; 0.014 in = 0.36 mm).",
+  "caption": "French size is circumference-based: divide by 3 for the diameter in millimeters. Sheaths are labeled by the inner diameter they accept, catheters by their outer diameter, wires in thousandths of an inch.",
+  "alt": "Circles drawn to scale for 4, 5, 6, 7, 8, 10, 12, 14, 18 and 24 French with their diameters in millimeters, and dots for 0.014, 0.018 and 0.035 inch wires."
+ },
+ {
+  "id": "seldinger-set",
+  "page": "devices.html",
+  "section": "needles",
+  "commons": "Seldinger Set.jpg",
+  "caption": "An access needle with its guidewire, the basic set for Seldinger access.",
+  "alt": "Photograph of a hollow access needle beside a coiled guidewire."
+ },
+ {
+  "id": "introducer-sheaths",
+  "page": "devices.html",
+  "section": "sheaths",
+  "commons": "Introducer sheaths.jpg",
+  "caption": "Introducer sheaths with their dilators. The hemostatic valve lets devices pass while blood stays in, and the side port is for flushing and contrast.",
+  "alt": "Photograph of introducer sheaths with dilators and side-arm flush ports."
+ },
+ {
+  "id": "guidewire-anatomy",
+  "page": "devices.html",
+  "section": "wires",
+  "original": "guidewire-anatomy.svg",
+  "basis": "Generic guidewire construction as described in Schneider PA. Endovascular Skills. 4th ed. CRC Press; 2019.",
+  "caption": "How a guidewire is built: a stiff core that tapers toward a soft, floppy tip, a coil or polymer jacket, and a tip shape (straight, angled or J). Schematic, not to scale.",
+  "alt": "Schematic of a guidewire showing the core wire tapering inside a coil, with straight, angled and J-shaped tip options."
+ },
+ {
+  "id": "catheter-shapes",
+  "page": "devices.html",
+  "section": "catheters",
+  "original": "catheter-shapes.svg",
+  "basis": "Common angiographic catheter tip profiles (pigtail, Omni Flush, Berenstein, Vertebral, Cobra, Simmons, SOS Omni) as shown in manufacturer catalogs, drawn as generic outlines.",
+  "caption": "Common catheter tip shapes. Flush catheters (pigtail, Omni Flush) deliver large injections through side holes; selective shapes are chosen to match the angle of the branch to be entered. Schematic, not to scale.",
+  "alt": "Outlines of seven catheter tips: pigtail, Omni Flush, Berenstein, Vertebral, Cobra, Simmons and SOS Omni."
+ },
+ {
+  "id": "balloon-catheter",
+  "page": "devices.html",
+  "section": "balloons",
+  "commons": "Balloon-Tipped Catheter.png",
+  "caption": "A balloon catheter: the balloon is labeled by its inflated diameter and length, and has nominal and rated burst pressures.",
+  "alt": "Illustration of a catheter with an inflated balloon near its tip."
+ },
+ {
+  "id": "stents-photo",
+  "page": "devices.html",
+  "section": "stents",
+  "commons": "Stent4 (fcm).jpg",
+  "caption": "Two metal stents beside a centimeter scale.",
+  "alt": "Photograph of two mesh metal stents next to a ruler."
+ },
+ {
+  "id": "fenestrated-graft",
+  "page": "devices.html",
+  "section": "stent-grafts",
+  "commons": "FenGraft.jpg",
+  "caption": "An aortic stent graft modified with fenestrations to accommodate stents into side branches.",
+  "alt": "Photograph of a fabric-covered aortic stent graft with holes cut for branch arteries."
+ },
+ {
+  "id": "angiojet",
+  "page": "devices.html",
+  "section": "thrombectomy",
+  "commons": "Blausen 0024 Angiojet.png",
+  "caption": "Rheolytic thrombectomy: high-speed saline jets at the catheter tip break up thrombus and draw it back into the catheter.",
+  "alt": "Illustration of a thrombectomy catheter inside a clotted vessel with jets fragmenting the clot.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "atherectomy-devices",
+  "page": "devices.html",
+  "section": "atherectomy",
+  "commons": "Blausen Atherectomy eng.svg",
+  "caption": "Atherectomy debulks plaque. Directional, orbital, rotational and laser devices do this in different ways.",
+  "alt": "Illustration of an atherectomy catheter cutting plaque from inside an artery.",
+  "author": "Blausen.com staff (2014), Medical gallery of Blausen Medical 2014, WikiJournal of Medicine 1(2), doi:10.15347/wjm/2014.010"
+ },
+ {
+  "id": "reentry",
+  "page": "devices.html",
+  "section": "reentry",
+  "original": "reentry.svg",
+  "basis": "Subintimal angioplasty as described in Bolia A, Miles KA, Brennan J, Bell PR. Percutaneous transluminal angioplasty of occlusions of the femoral and popliteal arteries by subintimal dissection. Cardiovasc Intervent Radiol. 1990;13:357-363.",
+  "caption": "Subintimal crossing and re-entry: the wire loops through the wall alongside the occlusion, and a re-entry device aims a needle back into the true lumen beyond it. Schematic, not to scale.",
+  "alt": "Schematic of an occluded artery with a looped wire running in the vessel wall past the blockage and a needle re-entering the true lumen distally."
+ },
+ {
+  "id": "ivc-filter-device",
+  "page": "devices.html",
+  "section": "embolization-tools",
+  "commons": "Inferior vena cava filter.jpg",
+  "caption": "A retrieved inferior vena cava filter, with the hook at its apex used for snare retrieval.",
+  "alt": "Photograph of a cone-shaped metal IVC filter with a hook at the top."
+ },
+ {
+  "id": "radial-compression",
+  "page": "devices.html",
+  "section": "closure",
+  "commons": "Vascular closure device.jpg",
+  "caption": "A radial compression band after transradial catheterization, deflated gradually to let the puncture seal. Femoral closure devices are described below.",
+  "alt": "Photograph of a wrist with an inflatable compression band over the radial artery puncture."
+ },
+ {
+  "id": "co2-angiography",
+  "page": "devices.html",
+  "section": "imaging-tools",
+  "commons": "CO2 angiography.jpg",
+  "caption": "A carbon dioxide angiogram of the abdominal aorta, visceral and iliac arteries, an option when iodinated contrast must be limited.",
+  "alt": "Angiogram with CO2 showing the abdominal aorta and its branches as dark outlines."
+ }
+]

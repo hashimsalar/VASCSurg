@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 372" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<defs><marker id="fg-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="inkf"/></marker></defs>
+<rect x="40" y="58" width="640" height="48" class="lumen"/>
+<line x1="40" y1="58" x2="96" y2="58" class="wall" stroke-width="4"/>
+<line x1="124" y1="58" x2="680" y2="58" class="wall" stroke-width="4"/>
+<line x1="40" y1="106" x2="680" y2="106" class="wall" stroke-width="4"/>
+<path d="M330,60 C360,66 410,60 470,64 L470,102 C420,105 370,100 330,104 Z" class="clot"/>
+<path d="M110,18 C110,52 116,82 160,82 L560,82" class="dev" stroke-width="4"/>
+<ellipse cx="566" cy="82" rx="10" ry="4" class="devf"/>
+<circle cx="22" cy="32" r="13" class="inkf"/>
+<text x="22" y="37" text-anchor="middle" class="th" style="fill:var(--sheet,#fff)">1</text>
+<text x="148" y="37">Pass the deflated catheter beyond the clot</text>
+<rect x="40" y="186" width="640" height="48" class="lumen"/>
+<line x1="40" y1="186" x2="96" y2="186" class="wall" stroke-width="4"/>
+<line x1="124" y1="186" x2="680" y2="186" class="wall" stroke-width="4"/>
+<line x1="40" y1="234" x2="680" y2="234" class="wall" stroke-width="4"/>
+<path d="M330,188 C360,194 410,188 470,192 L470,230 C420,233 370,228 330,232 Z" class="clot"/>
+<path d="M110,146 C110,180 116,210 160,210 L516,210" class="dev" stroke-width="4"/>
+<ellipse cx="536" cy="210" rx="24" ry="21" class="devf" fill-opacity=".85"/>
+<circle cx="22" cy="160" r="13" class="inkf"/>
+<text x="22" y="165" text-anchor="middle" class="th" style="fill:var(--sheet,#fff)">2</text>
+<text x="148" y="165">Inflate the balloon gently, just enough to touch the wall</text>
+<rect x="40" y="314" width="640" height="48" class="lumen"/>
+<line x1="40" y1="314" x2="96" y2="314" class="wall" stroke-width="4"/>
+<line x1="124" y1="314" x2="680" y2="314" class="wall" stroke-width="4"/>
+<line x1="40" y1="362" x2="680" y2="362" class="wall" stroke-width="4"/>
+<path d="M150,318 C185,316 225,322 268,318 L268,358 C230,360 190,356 150,358 C138,346 138,330 150,318 Z" class="clot"/>
+<path d="M110,274 C110,308 116,338 160,338 L272,338" class="dev" stroke-width="4"/>
+<ellipse cx="292" cy="338" rx="24" ry="21" class="devf" fill-opacity=".85"/>
+<line x1="400" y1="338" x2="330" y2="338" class="ink" stroke-width="2.5" marker-end="url(#fg-a)"/>
+<circle cx="22" cy="288" r="13" class="inkf"/>
+<text x="22" y="293" text-anchor="middle" class="th" style="fill:var(--sheet,#fff)">3</text>
+<text x="148" y="293">Withdraw steadily: the clot comes out ahead of the balloon</text>
+<text x="110" y="126" text-anchor="middle" class="sm">arteriotomy</text>
+<text x="400" y="126" text-anchor="middle" class="sm">clot</text>
+</svg>

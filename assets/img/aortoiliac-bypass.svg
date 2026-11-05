@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 472" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<g transform="translate(0 0)">
+<path d="M115,40 L115,140" class="tube-o" stroke-width="16" /><path d="M115,40 L115,140" class="tube-i" stroke-width="10" />
+<path d="M115,140 L115,176 L72,262 M115,176 L158,262" class="ghost" stroke-width="4"/>
+<path d="M72,262 L62,350" class="tube-o" stroke-width="16" /><path d="M72,262 L62,350" class="tube-i" stroke-width="10" />
+<path d="M158,262 L168,350" class="tube-o" stroke-width="16" /><path d="M158,262 L168,350" class="tube-i" stroke-width="10" />
+<path d="M115,96 L115,150 L66,300 M115,150 L164,300" class="graftl" stroke-width="7"/>
+<circle cx="66" cy="300" r="5" class="graftf"/>
+<circle cx="164" cy="300" r="5" class="graftf"/>
+<text x="115" y="384" text-anchor="middle" class="th">Aortobifemoral</text>
+<text x="115" y="405" text-anchor="middle" class="sm">Anatomic; best patency,</text>
+<text x="115" y="422" text-anchor="middle" class="sm">but needs a laparotomy</text>
+</g>
+<g transform="translate(230 0)">
+<path d="M115,20 L115,140" class="tube-o" stroke-width="16" /><path d="M115,20 L115,140" class="tube-i" stroke-width="10" />
+<path d="M109,34 C80,40 50,48 22,62" class="tube-o" stroke-width="12" /><path d="M109,34 C80,40 50,48 22,62" class="tube-i" stroke-width="7" />
+<text x="18" y="40" class="sm">axillary</text>
+<path d="M115,140 L115,176 L72,262 M115,176 L158,262" class="ghost" stroke-width="4"/>
+<path d="M72,262 L62,350" class="tube-o" stroke-width="16" /><path d="M72,262 L62,350" class="tube-i" stroke-width="10" />
+<path d="M158,262 L168,350" class="tube-o" stroke-width="16" /><path d="M158,262 L168,350" class="tube-i" stroke-width="10" />
+<path d="M30,58 C10,110 8,250 64,300" class="graftl" stroke-width="7"/>
+<path d="M64,300 C96,326 134,326 164,300" class="graftl" stroke-width="7"/>
+<circle cx="66" cy="300" r="5" class="graftf"/>
+<circle cx="164" cy="300" r="5" class="graftf"/>
+<text x="115" y="384" text-anchor="middle" class="th">Axillobifemoral</text>
+<text x="115" y="405" text-anchor="middle" class="sm">Extra-anatomic; for patients</text>
+<text x="115" y="422" text-anchor="middle" class="sm">too sick for the abdomen</text>
+</g>
+<g transform="translate(460 0)">
+<path d="M115,70 L115,176" class="tube-o" stroke-width="16" /><path d="M115,70 L115,176" class="tube-i" stroke-width="10" />
+<path d="M115,176 L72,262 L62,350" class="tube-o" stroke-width="16" /><path d="M115,176 L72,262 L62,350" class="tube-i" stroke-width="10" />
+<path d="M115,176 L158,262" class="ghost" stroke-width="4"/>
+<path d="M158,262 L168,350" class="tube-o" stroke-width="16" /><path d="M158,262 L168,350" class="tube-i" stroke-width="10" />
+<path d="M66,300 C96,262 134,262 164,300" class="graftl" stroke-width="7"/>
+<circle cx="66" cy="300" r="5" class="graftf"/>
+<circle cx="164" cy="300" r="5" class="graftf"/>
+<text x="115" y="384" text-anchor="middle" class="th">Femoral-femoral</text>
+<text x="115" y="405" text-anchor="middle" class="sm">Extra-anatomic; one iliac</text>
+<text x="115" y="422" text-anchor="middle" class="sm">blocked, the other healthy</text>
+</g>
+<path d="M40,452 L80,452" class="tube-o" stroke-width="12" /><path d="M40,452 L80,452" class="tube-i" stroke-width="7" />
+<text x="90" y="457" class="sm">Patent artery</text>
+<path d="M220,452 L260,452" class="ghost" stroke-width="4"/><text x="270" y="457" class="sm">Occluded segment</text>
+<path d="M430,452 L470,452" class="graftl" stroke-width="7"/><text x="480" y="457" class="sm">Graft</text>
+</svg>

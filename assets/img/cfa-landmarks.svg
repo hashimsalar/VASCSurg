@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 456" class="dg">
+<style>
+.dg text{font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;fill:var(--ink-2,#4E5B67)}
+.dg .th{fill:var(--ink,#17222D);font-weight:700}
+.dg .sm{font-size:13px}
+.dg .ink{stroke:var(--ink,#17222D);fill:none}
+.dg .inkf{fill:var(--ink,#17222D)}
+.dg .rule{stroke:var(--rule-2,#C4CCD4);fill:none}
+.dg .sunk{fill:var(--sunk,#E7EBEF)}
+.dg .sheet{fill:var(--sheet,#FFFFFF)}
+.dg .wall{stroke:var(--artery,#B01E2E);fill:none}
+.dg .lumen{fill:var(--artery-tint,#FBEEEF)}
+.dg .tube-o{stroke:var(--artery,#B01E2E);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .tube-i{stroke:var(--artery-tint,#FBEEEF);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .artf{fill:var(--artery,#B01E2E)}
+.dg .artl{stroke:var(--artery,#B01E2E);fill:none}
+.dg .graft{stroke:var(--pearl,#0B7559);fill:var(--pearl-tint,#E7F4EE)}
+.dg .graftl{stroke:var(--pearl,#0B7559);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .graftf{fill:var(--pearl,#0B7559)}
+.dg .clot{fill:var(--mnem,#8A5A00);fill-opacity:.8}
+.dg .vein{stroke:var(--vein,#23539E);fill:none}
+.dg .veinf{fill:var(--vein,#23539E)}
+.dg .dev{stroke:var(--tip,#583D96);fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dg .devf{fill:var(--tip,#583D96)}
+.dg .ghost{stroke:var(--rule-2,#C4CCD4);fill:none;stroke-dasharray:6 6;stroke-linecap:round}
+</style>
+<defs><marker id="cf-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="inkf"/></marker></defs>
+<circle cx="220" cy="196" r="64" class="sunk"/><circle cx="220" cy="196" r="64" class="ink" stroke-width="2.5" opacity=".7"/>
+<path d="M180,244 C160,262 140,280 122,300 L122,446 L182,446 L182,320 C196,300 224,280 246,252 Z" class="sunk"/>
+<path d="M180,244 C160,262 140,280 122,300 L122,446 M246,252 C224,280 196,300 182,320 L182,446" class="ink" stroke-width="2.5" opacity=".7"/>
+<text x="220" y="201" text-anchor="middle" class="sm">femoral head</text>
+<line x1="56" y1="70" x2="440" y2="168" class="ink" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="40" y="58" class="sm">ASIS</text><text x="446" y="182" class="sm">pubic tubercle</text>
+<path d="M330,24 C318,70 300,104 286,140" class="tube-o" stroke-width="18" /><path d="M330,24 C318,70 300,104 286,140" class="tube-i" stroke-width="12" />
+<path d="M286,140 C276,180 270,214 266,292" class="tube-o" stroke-width="18" /><path d="M286,140 C276,180 270,214 266,292" class="tube-i" stroke-width="12" />
+<path d="M266,292 C266,350 272,400 280,446" class="tube-o" stroke-width="16" /><path d="M266,292 C266,350 272,400 280,446" class="tube-i" stroke-width="10" />
+<path d="M266,292 C250,330 236,380 226,446" class="tube-o" stroke-width="14" /><path d="M266,292 C250,330 236,380 226,446" class="tube-i" stroke-width="8" />
+<path d="M300,104 C330,96 360,70 380,24" class="tube-o" stroke-width="10" /><path d="M300,104 C330,96 360,70 380,24" class="tube-i" stroke-width="5" />
+<path d="M272,176 L264,248" stroke="var(--pearl,#0B7559)" stroke-width="26" stroke-linecap="round" opacity=".35"/>
+<path d="M272,176 L264,248" stroke="var(--pearl,#0B7559)" stroke-width="3" stroke-dasharray="4 4"/>
+<text x="318" y="22" text-anchor="end" class="sm">external iliac</text>
+<text x="388" y="30" text-anchor="start" class="sm">inferior epigastric</text>
+<text x="330" y="120" text-anchor="start" class="th sm">Too high: above the ligament,</text>
+<text x="330" y="138" text-anchor="start" class="sm">bleeding into the retroperitoneum</text>
+<text x="312" y="206" text-anchor="start" class="th sm">Target: common femoral artery</text>
+<text x="312" y="224" text-anchor="start" class="sm">over the middle of the femoral head</text>
+<text x="300" y="302" text-anchor="start" class="th sm">Too low: at or past the bifurcation,</text>
+<text x="300" y="320" text-anchor="start" class="sm">pseudoaneurysm or AV fistula</text>
+<text x="284" y="440" text-anchor="start" class="sm">SFA</text>
+<text x="186" y="440" text-anchor="end" class="sm">profunda</text>
+<circle cx="298" cy="118" r="5" class="inkf"/><line x1="303" y1="118" x2="326" y2="118" class="ink" stroke-width="1.5"/>
+<circle cx="268" cy="212" r="5" class="inkf"/><line x1="273" y1="212" x2="308" y2="206" class="ink" stroke-width="1.5"/>
+<circle cx="266" cy="294" r="5" class="inkf"/><line x1="271" y1="296" x2="296" y2="300" class="ink" stroke-width="1.5"/>
+<text transform="translate(70 92) rotate(14.3)" class="sm">inguinal ligament</text>
+</svg>
