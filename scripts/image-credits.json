@@ -192,5 +192,31 @@
   "source": "https://commons.wikimedia.org/wiki/File:Circle_of_Willis_en.svg",
   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Circle_of_Willis_en.svg",
   "retrieved": "2026-11-06"
+ },
+ "leg-arteries-pulses": {
+  "title": "Blausen 0607 LegArteries.png",
+  "file": "assets/img/leg-arteries-pulses.webp",
+  "width": 700,
+  "height": 1400,
+  "author": "BruceBlaus. When using this image in external sources it can be cited as: Blausen.com staff (2014). \"Medical gallery of Blausen Medical 2014\". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436.",
+  "credit": "Own work",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Blausen_0607_LegArteries.png",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Blausen_0607_LegArteries.png",
+  "retrieved": "2026-11-06"
+ },
+ "abi-test": {
+  "title": "Pad abi ENG.svg",
+  "file": "assets/img/abi-test.webp",
+  "width": 1400,
+  "height": 1087,
+  "author": "Jmarchn",
+  "credit": "Own work",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Pad_abi_ENG.svg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pad_abi_ENG.svg",
+  "retrieved": "2026-11-06"
  }
 }
