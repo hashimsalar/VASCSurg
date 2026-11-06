@@ -153,5 +153,44 @@
   "height": 236,
   "original": true,
   "basis": "Subintimal angioplasty as described in Bolia A, Miles KA, Brennan J, Bell PR. Percutaneous transluminal angioplasty of occlusions of the femoral and popliteal arteries by subintimal dissection. Cardiovasc Intervent Radiol. 1990;13:357-363."
+ },
+ "saphenofemoral-junction": {
+  "title": "Gray584.png",
+  "file": "assets/img/saphenofemoral-junction.webp",
+  "width": 439,
+  "height": 550,
+  "author": "Henry Vandyke Carter",
+  "credit": "Henry Gray (1918) Anatomy of the Human Body (See \"Book\" section below) Bartleby.com: Gray's Anatomy, Plate 584",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Gray584.png",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Gray584.png",
+  "retrieved": "2026-11-06"
+ },
+ "iliac-vessels": {
+  "title": "Gray586.png",
+  "file": "assets/img/iliac-vessels.webp",
+  "width": 450,
+  "height": 429,
+  "author": "Henry Vandyke Carter",
+  "credit": "Henry Gray (1918) Anatomy of the Human Body (See \"Book\" section below) Bartleby.com: Gray's Anatomy, Plate 586",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Gray586.png",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Gray586.png",
+  "retrieved": "2026-11-06"
+ },
+ "circle-of-willis": {
+  "title": "Circle of Willis en.svg",
+  "file": "assets/img/circle-of-willis.webp",
+  "width": 889,
+  "height": 1400,
+  "author": "Rhcastilhos",
+  "credit": "Gray519.png",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Circle_of_Willis_en.svg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Circle_of_Willis_en.svg",
+  "retrieved": "2026-11-06"
  }
 }
