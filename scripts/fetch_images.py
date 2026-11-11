@@ -16,6 +16,10 @@ are accepted. Anything else stops the script so it can be replaced.
 
 Run from anywhere:  python3 scripts/fetch_images.py          (fetch missing images)
                     python3 scripts/fetch_images.py --force  (re-fetch everything)
+                    python3 scripts/fetch_images.py --from assets/img
+                        (use image files you downloaded yourself into that folder,
+                         named as Wikimedia names them; author and license still
+                         come from the Wikimedia API)
 Then run scripts/build.py to place the figures in the pages.
 """
 import html
@@ -100,6 +104,26 @@ def save_webp(raw, dest):
     return im.size
 
 
+def norm(name):
+    """Compare a saved file name with a Commons title: decode, spaces for underscores,
+    drop a thumbnail's "1400px-" prefix, ignore case."""
+    name = urllib.parse.unquote(Path(name).name).replace("_", " ").strip().lower()
+    return re.sub(r"^\d+px-", "", name)
+
+
+def find_local(folder, e):
+    title = e["commons"].lower()
+    for f in sorted(folder.iterdir()):
+        if not f.is_file() or f.suffix.lower() in (".webp", ".svg", ".json"):
+            continue
+        n = norm(f.name)
+        stem = n.rsplit(".", 1)[0]
+        # a thumbnail of an SVG, GIF or TIFF adds .png or .jpg to the original name
+        if n == title or stem == title or stem == e["id"]:
+            return f
+    return None
+
+
 def svg_size(path):
     m = re.search(r'viewBox="[\d.\-]+ [\d.\-]+ ([\d.]+) ([\d.]+)"', path.read_text(encoding="utf-8"))
     return [round(float(m.group(1))), round(float(m.group(2)))]
@@ -107,6 +131,9 @@ def svg_size(path):
 
 def main():
     force = "--force" in sys.argv
+    local = Path(sys.argv[sys.argv.index("--from") + 1]).resolve() if "--from" in sys.argv else None
+    if local and not local.is_dir():
+        raise SystemExit(f"No such folder: {local}")
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     credits = json.loads(CREDITS.read_text(encoding="utf-8")) if CREDITS.exists() else {}
     IMG.mkdir(parents=True, exist_ok=True)
@@ -140,8 +167,16 @@ def main():
         src = ii.get("thumburl") or ii["url"]
         if ii.get("mime") in ("image/jpeg", "image/png") and ii.get("width", 0) <= MAX_SIDE and ii.get("height", 0) <= MAX_SIDE:
             src = ii["url"]
-        print(f'{e["id"]}: {e["commons"]} ({lic})', flush=True)
-        size = save_webp(request(src), IMG / f'{e["id"]}.webp')
+        if local:
+            found = find_local(local, e)
+            if not found:
+                print(f'  not in folder yet: {e["id"]} ({e["commons"]})', flush=True)
+                continue
+            print(f'{e["id"]}: {found.name} ({lic})', flush=True)
+            size = save_webp(found.read_bytes(), IMG / f'{e["id"]}.webp')
+        else:
+            print(f'{e["id"]}: {e["commons"]} ({lic})', flush=True)
+            size = save_webp(request(src), IMG / f'{e["id"]}.webp')
         credits[e["id"]] = {
             "title": e["commons"],
             "file": f'assets/img/{e["id"]}.webp',
@@ -155,7 +190,8 @@ def main():
             "retrieved": time.strftime("%Y-%m-%d"),
         }
         CREDITS.write_text(json.dumps(credits, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-        time.sleep(1)
+        if not local:
+            time.sleep(1)
 
     keep = set(ids)
     for stale in [k for k in credits if k not in keep]:
